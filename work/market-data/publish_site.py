@@ -8,6 +8,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "outputs"
 TARGET = Path("/tmp/quant-site-public")
+ROOT_REDIRECT = """<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=quant-dual-market-site/">
+  <title>Dual-market simulation dashboard</title>
+</head>
+<body>
+  <p><a href="quant-dual-market-site/">Open dashboard</a></p>
+</body>
+</html>
+"""
 
 
 def copy_dir(name):
@@ -26,6 +39,7 @@ def main():
     TARGET.mkdir(parents=True, exist_ok=True)
     copy_dir("quant-dual-market-site")
     copy_dir("daily-quant")
+    (TARGET / "index.html").write_text(ROOT_REDIRECT, encoding="utf-8")
     manifest = {
         "updatedAt": datetime.now().isoformat(timespec="seconds"),
         "source": "outputs",
