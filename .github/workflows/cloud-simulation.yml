@@ -132,6 +132,8 @@ jobs:
       - name: Configure GitHub Pages
         if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload dashboard
         if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
