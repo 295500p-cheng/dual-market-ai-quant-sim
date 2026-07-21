@@ -4,6 +4,7 @@ import json
 import math
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode
@@ -34,10 +35,18 @@ def write_json_atomic(path, data):
     temporary.replace(path)
 
 
-def http_get(url, headers=None, timeout=10):
-    request = Request(url, headers=headers or {})
-    with urlopen(request, timeout=timeout) as response:
-        return response.read()
+def http_get(url, headers=None, timeout=10, attempts=3):
+    last_error = None
+    for attempt in range(attempts):
+        try:
+            request = Request(url, headers=headers or {})
+            with urlopen(request, timeout=timeout) as response:
+                return response.read()
+        except Exception as exc:
+            last_error = exc
+            if attempt + 1 < attempts:
+                time.sleep(2 ** attempt)
+    raise last_error
 
 
 def sina_code(row):
@@ -280,6 +289,23 @@ def result_message(status, target, counts, preserved):
     return f"{market_label}行情刷新失败；已停止本轮评分和模拟执行，并保留上一份有效数据（{preserved} 条）。"
 
 
+def minimum_coverage(expected):
+    return {
+        "a_share": max(1, math.ceil(expected["a_share"] * 0.65)),
+        "us_stock": max(1, math.ceil(expected["us_stock"] * 0.80)),
+    }
+
+
+def expected_coverage(a_share, us_stock, benchmarks, us_limit=None):
+    expected_us = len(us_stock) + sum(1 for row in benchmarks if row.get("market") == "美股")
+    if us_limit is not None:
+        expected_us = min(expected_us, us_limit)
+    return {
+        "a_share": len(a_share) + sum(1 for row in benchmarks if row.get("market") == "A股"),
+        "us_stock": expected_us,
+    }
+
+
 def main():
     a_share = read_csv(CONFIG / "universe-a-share.csv")
     us_stock = read_csv(CONFIG / "universe-us-stock.csv")
@@ -307,8 +333,10 @@ def main():
             errors.append({"market": "美股", "provider": "yahoo_chart", "error": str(exc)})
 
     counts = {"a_share": len(a_results), "us_stock": len(us_results)}
+    expected = expected_coverage(a_share, us_stock, benchmarks, us_limit=test_limit)
+    minimum = minimum_coverage(expected)
     required = {"a_share", "us_stock"} if target == "both" else {target}
-    successful_markets = {key for key in required if counts[key] > 0}
+    successful_markets = {key for key in required if counts[key] >= minimum[key]}
     if successful_markets == required:
         status = "success"
     elif successful_markets:
@@ -324,6 +352,8 @@ def main():
         "status": status,
         "target": target,
         "counts": counts,
+        "expectedCounts": expected,
+        "minimumCounts": minimum,
         "usingCachedData": status != "success",
         "preservedRecords": len(existing.get("records", [])),
         "message": result_message(status, target, counts, len(existing.get("records", []))),

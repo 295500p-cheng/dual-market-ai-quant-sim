@@ -129,7 +129,7 @@ def execution_metrics(rows, week_start):
             latest_by_signal[key] = row
     week_rows = list(latest_by_signal.values())
     buys = [row for row in week_rows if row.get("entry_status") in {"模拟买入", "已持仓"}]
-    exits = [row for row in week_rows if row.get("exit_status") in {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}]
+    exits = [row for row in week_rows if row.get("exit_status") in {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}]
     holding = [row for row in week_rows if row.get("exit_status") == "模拟持有"]
     waiting = [row for row in week_rows if row.get("entry_status") == "等待触发"]
     return {

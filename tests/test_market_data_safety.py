@@ -59,6 +59,14 @@ class MarketDataSafetyTests(unittest.TestCase):
         row = self.execute({"current_price": 100, "timestamp": "2020-01-01 10:00:00"})
         self.assertEqual(row["entry_status"], "数据不足")
 
+    def test_same_day_but_old_quote_cannot_trigger_simulated_buy(self):
+        now = datetime.now(execution.CHINA_TZ)
+        old = now.replace(hour=9, minute=30, second=0, microsecond=0)
+        if (now - old).total_seconds() <= 35 * 60:
+            old = old.replace(day=max(1, old.day - 1))
+        row = self.execute({"current_price": 100, "timestamp": old.strftime("%Y-%m-%d %H:%M:%S")})
+        self.assertEqual(row["entry_status"], "数据不足")
+
     def test_current_quote_can_trigger_simulated_buy(self):
         timestamp = datetime.now(execution.CHINA_TZ).strftime("%Y-%m-%d %H:%M:%S")
         row = self.execute({"current_price": 100, "timestamp": timestamp})
@@ -173,6 +181,14 @@ class MarketDataSafetyTests(unittest.TestCase):
         merged = fetch.merge_records(existing, fresh, {"a_share"})
         self.assertEqual({row["market"] for row in merged}, {"A股", "美股"})
 
+    def test_quick_health_check_uses_sample_size_as_expected_count(self):
+        a_share = [{"symbol": str(index)} for index in range(30)]
+        us_stock = [{"symbol": str(index)} for index in range(24)]
+        benchmarks = [{"market": "A股"}, {"market": "美股"}]
+        expected = fetch.expected_coverage(a_share, us_stock, benchmarks, us_limit=6)
+        self.assertEqual(expected, {"a_share": 31, "us_stock": 6})
+        self.assertEqual(fetch.minimum_coverage(expected)["us_stock"], 5)
+
     def test_historical_overallocation_is_not_negative_available_cash(self):
         available, gap, raw = portfolio.funding_state(230_000, 500)
         self.assertEqual(available, 0)
@@ -225,6 +241,36 @@ class MarketDataSafetyTests(unittest.TestCase):
     def test_cloud_schedule_skips_weekend(self):
         now = datetime(2026, 7, 19, 15, 0, tzinfo=timezone.utc)
         self.assertEqual(cloud_schedule.active_markets(now), [])
+
+    def test_a_share_entry_window_starts_at_ten(self):
+        before = datetime(2026, 7, 21, 1, 45, tzinfo=timezone.utc)
+        during = datetime(2026, 7, 21, 2, 15, tzinfo=timezone.utc)
+        self.assertFalse(execution.entry_window_open("A股", before))
+        self.assertTrue(execution.entry_window_open("A股", during))
+
+    def test_us_entry_window_avoids_opening_volatility(self):
+        before = datetime(2026, 7, 21, 13, 45, tzinfo=timezone.utc)
+        during = datetime(2026, 7, 21, 14, 15, tzinfo=timezone.utc)
+        self.assertFalse(execution.entry_window_open("美股", before))
+        self.assertTrue(execution.entry_window_open("美股", during))
+
+    def test_position_exits_after_five_trading_days(self):
+        timestamp = datetime.now(execution.US_TZ).isoformat(timespec="seconds")
+        open_position = {
+            "entry_price": "100.00",
+            "take_profit": "120.00-125.00",
+            "stop_loss": "80.00",
+            "updated_at": "2026-07-13T10:00:00",
+            "_entry_time": "2026-07-13T10:00:00",
+        }
+        row = execution.simulated_execution(
+            {**self.pick, "market": "美股"},
+            {"current_price": 101, "timestamp": timestamp},
+            "盘中可核验行情候选",
+            "2026-07-20T14:00:00",
+            open_position=open_position,
+        )
+        self.assertEqual(row["exit_status"], "模拟到期卖出")
 
 
 if __name__ == "__main__":

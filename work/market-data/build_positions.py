@@ -16,7 +16,7 @@ LEDGER = EXECUTION / "execution-ledger.csv"
 
 OPEN_ENTRY_STATUSES = {"模拟买入", "已持仓"}
 POSITION_TERMS = ("entry_price", "take_profit", "stop_loss")
-POSITION_CLOSE_STATUSES = {"模拟止盈", "模拟止损", "区间冲突，按止损优先", "历史资金校正"}
+POSITION_CLOSE_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先", "历史资金校正"}
 
 
 def read_json(path):

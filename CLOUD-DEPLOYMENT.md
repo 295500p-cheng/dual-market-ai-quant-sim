@@ -9,9 +9,11 @@ This repository runs a simulation-only dual-market research workflow. It does no
 - Stale, missing, test, and high-risk signals cannot create simulated entries.
 - Updated ledgers are committed by `github-actions[bot]` so the next run continues the same simulated account.
 - The dashboard is deployed with GitHub Pages after each successful market cycle.
+- ServerChan sends simulated fills, one close summary per market day, a manual connection test, and a daily-deduplicated failure alert.
+- New entries use fresh quotes (35 minutes or newer), minimum provider coverage, restricted entry windows, two confirmations, and position limits.
 
 ## Manual check
 
-Open **Actions > Cloud simulated trading > Run workflow**, leave `auto` selected, and run it. The deployment URL appears in the `github-pages` environment after the job completes.
+Set the repository secret `SERVERCHAN_SENDKEY`, then open **Actions > Cloud simulated trading > Run workflow**. Select `auto`; enable `push_test` for the first run. The deployment URL appears in the `github-pages` environment after the job completes.
 
 The schedule is best effort: GitHub may delay scheduled jobs during periods of high load.

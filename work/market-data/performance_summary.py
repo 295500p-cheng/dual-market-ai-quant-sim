@@ -16,7 +16,7 @@ EXECUTION_LEDGER = ROOT / "outputs" / "daily-quant" / "execution" / "execution-l
 
 
 COUNTED_RESULTS = {"命中", "失败"}
-EXIT_STATUSES = {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}
+EXIT_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}
 
 
 def parse_date(value):
@@ -136,7 +136,7 @@ def execution_summary(executions, start_date, end_date):
     return {
         "signals": len(rows),
         "buys": len([row for row in rows if row.get("entry_status") in {"模拟买入", "已持仓"}]),
-        "exits": len([row for row in rows if row.get("exit_status") in {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}]),
+        "exits": len([row for row in rows if row.get("exit_status") in EXIT_STATUSES]),
         "holding": len([row for row in rows if row.get("exit_status") == "模拟持有"]),
         "waiting": len([row for row in rows if row.get("entry_status") == "等待触发"]),
     }

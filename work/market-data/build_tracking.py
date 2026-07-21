@@ -80,7 +80,7 @@ def status_for(candidate, quote, execution):
         return candidate.get("result_label") or "已复盘"
     if execution_status == "模拟持有":
         return "模拟持有，等待复盘"
-    if execution_status in {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}:
+    if execution_status in {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}:
         return execution_status
     if quote and record_date(quote) > candidate.get("date", ""):
         return "已有次日行情，等待复盘脚本确认"

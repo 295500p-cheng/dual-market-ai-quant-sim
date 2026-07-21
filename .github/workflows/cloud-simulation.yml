@@ -16,6 +16,11 @@ on:
           - a_share
           - us_stock
           - both
+      push_test:
+        description: Send a ServerChan test message
+        required: true
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -63,12 +68,34 @@ jobs:
         if: steps.market.outputs.run_cycle == 'true'
         run: python3 -m unittest discover -s tests -p 'test_*.py'
 
+      - name: Snapshot ledger before this cycle
+        if: steps.market.outputs.run_cycle == 'true'
+        run: cp outputs/daily-quant/execution/execution-ledger.csv /tmp/execution-ledger-before.csv
+
       - name: Run simulated market cycle
         if: steps.market.outputs.run_cycle == 'true'
+        id: cycle
+        continue-on-error: true
         run: scripts/run_cloud_cycle.sh "${{ steps.market.outputs.market }}"
 
+      - name: Send WeChat notifications
+        if: always() && steps.market.outputs.run_cycle == 'true'
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+        run: >-
+          python3 work/market-data/notify_serverchan.py
+          --before /tmp/execution-ledger-before.csv
+          --market "${{ steps.market.outputs.market }}"
+          --result "${{ steps.cycle.outcome }}"
+
+      - name: Test WeChat connection
+        if: github.event_name == 'workflow_dispatch' && inputs.push_test
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+        run: python3 work/market-data/notify_serverchan.py --test
+
       - name: Save updated simulation ledger
-        if: steps.market.outputs.run_cycle == 'true'
+        if: always() && steps.market.outputs.run_cycle == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -79,23 +106,26 @@ jobs:
           fi
 
       - name: Prepare public dashboard
-        if: steps.market.outputs.run_cycle == 'true'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
         run: |
           python3 work/market-data/publish_site.py
           touch /tmp/quant-site-public/.nojekyll
 
       - name: Configure GitHub Pages
-        if: steps.market.outputs.run_cycle == 'true'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
         uses: actions/configure-pages@v5
 
       - name: Upload dashboard
-        if: steps.market.outputs.run_cycle == 'true'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
         uses: actions/upload-pages-artifact@v4
         with:
           path: /tmp/quant-site-public
 
       - name: Deploy dashboard
-        if: steps.market.outputs.run_cycle == 'true'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
 
+      - name: Fail the workflow when the market cycle failed
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'failure'
+        run: exit 1

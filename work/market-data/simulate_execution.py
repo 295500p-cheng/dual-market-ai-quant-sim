@@ -3,7 +3,7 @@ import csv
 import json
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, time, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -105,7 +105,7 @@ def clamp(value, low, high):
     return round(min(max(value, low), high), 2)
 
 
-EXIT_STATUSES = {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}
+EXIT_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}
 POSITION_CLOSE_STATUSES = EXIT_STATUSES | {"历史资金校正"}
 POSITION_TERMS = ("entry_price", "take_profit", "stop_loss")
 MAX_POSITIONS = 6
@@ -113,6 +113,7 @@ MAX_POSITIONS_PER_MARKET = 3
 MAX_DAILY_BUYS = 2
 ENTRY_CONFIRMATIONS = 2
 MIN_ENTRY_SCORE = 82
+MAX_HOLDING_TRADING_DAYS = 5
 BLOCKED_SOURCE_TERMS = ("测试", "不是实时", "数据不足", "本轮跳过", "过旧", "失败")
 CHINA_TZ = ZoneInfo("Asia/Shanghai")
 US_TZ = ZoneInfo("America/New_York")
@@ -131,22 +132,65 @@ def merge_open_position(existing, row):
     return merged
 
 
-def quote_is_current(quote, market, now=None):
+def quote_timestamp(quote, market):
     value = quote.get("timestamp") if quote else ""
     if not value:
-        return False
+        return None
     try:
         if "T" in str(value):
             timestamp = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
         else:
             timestamp = datetime.strptime(str(value), "%Y-%m-%d %H:%M:%S").replace(tzinfo=CHINA_TZ)
     except ValueError:
-        return False
+        return None
     if timestamp.tzinfo is None:
         timestamp = timestamp.replace(tzinfo=CHINA_TZ if market == "A股" else US_TZ)
+    return timestamp
+
+
+def quote_is_current(quote, market, now=None, max_age_minutes=35):
+    timestamp = quote_timestamp(quote, market)
+    if timestamp is None:
+        return False
     current = now or datetime.now(timezone.utc)
     market_tz = CHINA_TZ if market == "A股" else US_TZ
-    return timestamp.astimezone(market_tz).date() == current.astimezone(market_tz).date()
+    age_seconds = (current.astimezone(timezone.utc) - timestamp.astimezone(timezone.utc)).total_seconds()
+    return (
+        timestamp.astimezone(market_tz).date() == current.astimezone(market_tz).date()
+        and -300 <= age_seconds <= max_age_minutes * 60
+    )
+
+
+def entry_window_open(market, now=None):
+    current = now or datetime.now(timezone.utc)
+    local = current.astimezone(CHINA_TZ if market == "A股" else US_TZ)
+    if local.weekday() >= 5:
+        return False
+    value = local.time().replace(tzinfo=None)
+    if market == "A股":
+        return time(10, 0) <= value <= time(11, 30) or time(13, 15) <= value <= time(14, 30)
+    return time(10, 0) <= value <= time(15, 15)
+
+
+def trading_days_elapsed(start_value, end_value):
+    try:
+        start = datetime.fromisoformat(str(start_value).replace("Z", "+00:00")).date()
+    except (TypeError, ValueError):
+        try:
+            start = datetime.strptime(str(start_value)[:10], "%Y-%m-%d").date()
+        except (TypeError, ValueError):
+            return 0
+    try:
+        end = datetime.fromisoformat(str(end_value).replace("Z", "+00:00")).date()
+    except (TypeError, ValueError):
+        end = datetime.strptime(str(end_value)[:10], "%Y-%m-%d").date()
+    days = 0
+    cursor = start
+    while cursor < end:
+        cursor = cursor.fromordinal(cursor.toordinal() + 1)
+        if cursor.weekday() < 5:
+            days += 1
+    return days
 
 
 def entry_gate_reason(pick, source_status):
@@ -262,6 +306,10 @@ def simulated_execution(
             exit_status = "模拟止盈"
             exit_price = f"{take_low:.2f}"
             risk_note = "推荐后持仓跟踪中，当前价触及止盈观察区，模拟退出。"
+        elif trading_days_elapsed(entry_time, updated_at) >= MAX_HOLDING_TRADING_DAYS:
+            exit_status = "模拟到期卖出"
+            exit_price = f"{current:.2f}"
+            risk_note = f"已持有{MAX_HOLDING_TRADING_DAYS}个交易日，按时间止损/止盈规则模拟退出，释放资金等待新信号。"
         elif gate_reason:
             exit_status = "模拟持有"
             exit_price = ""
@@ -488,6 +536,8 @@ def main():
                     f"可用模拟现金不足：本次按交易单位需要 {required_cash:,.2f}，"
                     f"当前可用 {available_cash:,.2f}；只保留信号，不模拟买入。"
                 )
+            elif not entry_window_open(market):
+                block_reason = f"当前不在{market}自动买入时间窗；仍会继续检查已有持仓的止盈、止损和到期退出。"
             row = simulated_execution(
                 pick,
                 quote,

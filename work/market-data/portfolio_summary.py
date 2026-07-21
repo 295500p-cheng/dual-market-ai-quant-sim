@@ -19,7 +19,7 @@ INITIAL_CAPITAL = 100_000.0
 POSITION_NOTIONAL = 10_000.0
 MAX_POSITIONS = 6
 MAX_POSITIONS_PER_MARKET = 3
-EXIT_STATUSES = {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}
+EXIT_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}
 
 
 def read_json(path):

@@ -13,7 +13,7 @@ REVIEWS = ROOT / "outputs" / "daily-quant" / "reviews"
 LOG = ROOT / "outputs" / "daily-quant" / "strategy-log"
 LEDGER = LOG / "candidate-ledger.csv"
 EXECUTION_LEDGER = ROOT / "outputs" / "daily-quant" / "execution" / "execution-ledger.csv"
-EXIT_STATUSES = {"模拟止盈", "模拟止损", "区间冲突，按止损优先"}
+EXIT_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}
 
 
 def read_json(path):
