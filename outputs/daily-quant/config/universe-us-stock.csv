@@ -1,0 +1,20 @@
+symbol,name,sector,role,benchmark,priority,risk_level,overnight_fit,why_in_universe,risk_flags
+NVDA,Nvidia,AI芯片/加速器,AI芯片核心龙头,SMH,1,高,中,AI芯片主线核心标的，适合观察半导体相对强弱和隔夜弹性,高估值;新闻/财报跳空;高波动
+AVGO,Broadcom,AI芯片/网络,定制AI芯片与网络代表,SMH,1,中高,中高,AI硬件扩散代表，适合观察半导体强势是否外溢,大客户预期;财报跳空;估值波动
+AMD,Advanced Micro Devices,AI GPU/半导体,AI芯片追赶者,SMH,2,高,中,高弹性半导体样本，适合观察风险偏好扩散,高波动;产品预期;相对弱势风险
+MU,Micron Technology,存储芯片,AI存储/周期弹性代表,SMH,2,高,中,存储周期与AI硬件需求样本，适合观察半导体扩散,周期波动;财报跳空;库存周期
+INTC,Intel,半导体制造/CPU,高波动修复样本,SMH,3,高,低,传统芯片修复和政策预期样本，只作高风险观察,转型风险;财报跳空;高波动
+TSM,Taiwan Semiconductor,半导体制造,全球晶圆代工核心,SMH,2,中,中,半导体制造核心权重，适合作为AI硬件链确认,地缘风险;ADR汇率;客户集中
+ASML,ASML Holding,半导体设备,EUV设备核心,SMH,2,中,中,半导体设备全球核心，适合观察设备链趋势,出口限制;订单周期;欧洲ADR波动
+AMAT,Applied Materials,半导体设备,设备链代表,SMH,3,中,中,设备链样本，用于验证半导体扩散,订单周期;财报风险
+LRCX,Lam Research,半导体设备,设备链代表,SMH,3,中,中,设备链样本，用于与AMAT/KLAC比较相对强弱,订单周期;财报风险
+KLAC,KLA,半导体设备/检测,设备链质量代表,SMH,3,中,中,半导体设备质量样本，适合做稳健设备链观察,估值;财报风险
+MSFT,Microsoft,AI云/软件,大型科技稳健对照,QQQ,1,中,中,AI云和软件核心，适合观察大型科技轮动与低波动隔夜,监管;财报;AI资本开支担忧
+GOOGL,Alphabet,AI应用/广告/云,大型科技轮动代表,QQQ,2,中,中,AI应用和广告云业务代表，适合观察Mag7轮动,监管;广告周期;财报跳空
+META,Meta Platforms,AI应用/社交广告,AI应用与广告弹性代表,QQQ,2,中高,中,大型科技高弹性样本，适合观察广告/AI应用轮动,监管;广告周期;资本开支
+AMZN,Amazon,云/电商/AI资本开支,云与消费科技代表,QQQ,2,中,中,AWS与电商双因子，适合观察云资本开支预期,利润率;资本开支;消费
+AAPL,Apple,消费电子/大科技,低波动大市值对照,QQQ,3,中,低,消费电子权重，适合作为Mag7防御/弱强对照,产品周期;中国市场;监管
+TSLA,Tesla,电动车/机器人,高波动主题代表,QQQ,3,高,低,高波动主题样本，只作风险偏好观察,高波动;交付数据;政策/舆情
+ORCL,Oracle,云/数据库,AI云基础设施扩散,QQQ,3,中高,中,云基础设施和AI订单扩散样本,财报跳空;订单预期
+PLTR,Palantir,AI软件/数据分析,高波动AI软件代表,QQQ,3,高,低,AI软件高弹性样本，只作高风险观察,估值;财报跳空;高波动
+CRM,Salesforce,企业软件,软件风险偏好对照,QQQ,3,中,低,企业软件代表，用于观察软件相对硬件强弱,业绩指引;估值

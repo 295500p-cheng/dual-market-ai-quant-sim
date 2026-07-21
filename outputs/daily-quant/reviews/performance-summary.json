@@ -1,0 +1,297 @@
+{
+  "updatedAt": "2026-07-21T19:31:24",
+  "status": "模拟交易汇总，不是真实账户报表",
+  "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
+  "periods": [
+    {
+      "key": "weekly",
+      "label": "近7天",
+      "period": "2026-07-15 至 2026-07-21",
+      "metrics": {
+        "calls": 63,
+        "reviewed": 0,
+        "pending": 63,
+        "winRate": "暂无",
+        "candidateWinRate": "暂无",
+        "executionTrades": 22,
+        "executionWins": 8,
+        "executionLosses": 14,
+        "executionWinRate": "36.4%",
+        "executionRealizedPnl": "-141.33",
+        "avgStockReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "bestStrategy": "暂无",
+        "signals": 82,
+        "buys": 45,
+        "exits": 15,
+        "holding": 30,
+        "waiting": 37
+      },
+      "marketRows": [
+        {
+          "market": "A股",
+          "calls": 24,
+          "reviewed": 0,
+          "winRate": "暂无",
+          "avgStockReturn": "暂无",
+          "avgRelativeReturn": "暂无"
+        },
+        {
+          "market": "美股",
+          "calls": 39,
+          "reviewed": 0,
+          "winRate": "暂无",
+          "avgStockReturn": "暂无",
+          "avgRelativeReturn": "暂无"
+        }
+      ],
+      "stockRows": [],
+      "strategyRows": []
+    },
+    {
+      "key": "monthly",
+      "label": "本月",
+      "period": "2026-07-01 至 2026-07-21",
+      "metrics": {
+        "calls": 134,
+        "reviewed": 14,
+        "pending": 120,
+        "winRate": "21.4%",
+        "candidateWinRate": "21.4%",
+        "executionTrades": 45,
+        "executionWins": 19,
+        "executionLosses": 26,
+        "executionWinRate": "42.2%",
+        "executionRealizedPnl": "-2,976.78",
+        "avgStockReturn": "-3.01%",
+        "avgOvernightReturn": "-2.75%",
+        "avgRelativeReturn": "-0.63%",
+        "bestStrategy": "快照：强势观察 37.5%/8笔",
+        "signals": 178,
+        "buys": 124,
+        "exits": 32,
+        "holding": 87,
+        "waiting": 54
+      },
+      "marketRows": [
+        {
+          "market": "A股",
+          "calls": 60,
+          "reviewed": 5,
+          "winRate": "20.0%",
+          "avgStockReturn": "-0.71%",
+          "avgRelativeReturn": "+0.31%"
+        },
+        {
+          "market": "美股",
+          "calls": 74,
+          "reviewed": 9,
+          "winRate": "22.2%",
+          "avgStockReturn": "-4.29%",
+          "avgRelativeReturn": "-1.15%"
+        }
+      ],
+      "stockRows": [
+        {
+          "market": "美股",
+          "symbol": "META",
+          "name": "Meta Platforms, Inc.",
+          "calls": 3,
+          "reviewed": 1,
+          "winRate": "100.0%",
+          "avgStockReturn": "+2.55%",
+          "avgOvernightReturn": "+1.28%",
+          "avgIntradayReturn": "+2.55%",
+          "avgRelativeReturn": "+4.40%",
+          "latestResult": "命中"
+        },
+        {
+          "market": "A股",
+          "symbol": "000977",
+          "name": "浪潮信息",
+          "calls": 5,
+          "reviewed": 1,
+          "winRate": "100.0%",
+          "avgStockReturn": "+1.94%",
+          "avgOvernightReturn": "-1.00%",
+          "avgIntradayReturn": "+1.94%",
+          "avgRelativeReturn": "+2.97%",
+          "latestResult": "命中"
+        },
+        {
+          "market": "美股",
+          "symbol": "GOOGL",
+          "name": "Alphabet Inc.",
+          "calls": 6,
+          "reviewed": 1,
+          "winRate": "100.0%",
+          "avgStockReturn": "+0.16%",
+          "avgOvernightReturn": "+0.56%",
+          "avgIntradayReturn": "+0.16%",
+          "avgRelativeReturn": "+2.01%",
+          "latestResult": "命中"
+        },
+        {
+          "market": "美股",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "calls": 5,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-0.83%",
+          "avgOvernightReturn": "-1.96%",
+          "avgIntradayReturn": "-0.83%",
+          "avgRelativeReturn": "+2.95%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "calls": 2,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-0.51%",
+          "avgOvernightReturn": "-0.57%",
+          "avgIntradayReturn": "-0.51%",
+          "avgRelativeReturn": "+0.43%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "A股",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "calls": 4,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-1.12%",
+          "avgOvernightReturn": "-1.09%",
+          "avgIntradayReturn": "-1.12%",
+          "avgRelativeReturn": "-0.09%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "美股",
+          "symbol": "ORCL",
+          "name": "Oracle Corporation",
+          "calls": 4,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-2.12%",
+          "avgOvernightReturn": "-0.65%",
+          "avgIntradayReturn": "-2.12%",
+          "avgRelativeReturn": "-0.27%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "A股",
+          "symbol": "600519",
+          "name": "贵州茅台",
+          "calls": 5,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-1.50%",
+          "avgOvernightReturn": "-0.57%",
+          "avgIntradayReturn": "-1.50%",
+          "avgRelativeReturn": "-0.47%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "美股",
+          "symbol": "TSM",
+          "name": "Taiwan Semiconductor Manufacturing Company Limited",
+          "calls": 2,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-4.25%",
+          "avgOvernightReturn": "-3.05%",
+          "avgIntradayReturn": "-4.25%",
+          "avgRelativeReturn": "-0.47%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "calls": 5,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-2.33%",
+          "avgOvernightReturn": "-1.70%",
+          "avgIntradayReturn": "-2.33%",
+          "avgRelativeReturn": "-1.30%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "美股",
+          "symbol": "ASML",
+          "name": "ASML Holding N.V.",
+          "calls": 5,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-5.13%",
+          "avgOvernightReturn": "-5.67%",
+          "avgIntradayReturn": "-5.13%",
+          "avgRelativeReturn": "-1.35%",
+          "latestResult": "失败"
+        },
+        {
+          "market": "美股",
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices, Inc.",
+          "calls": 4,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-6.51%",
+          "avgOvernightReturn": "-6.52%",
+          "avgIntradayReturn": "-6.51%",
+          "avgRelativeReturn": "-2.73%",
+          "latestResult": "失败"
+        }
+      ],
+      "strategyRows": [
+        {
+          "strategy": "快照：强势观察",
+          "calls": 14,
+          "reviewed": 8,
+          "winRate": "37.5%",
+          "avgStockReturn": "-0.55%",
+          "avgRelativeReturn": "+1.36%"
+        },
+        {
+          "strategy": "快照：边缘观察",
+          "calls": 3,
+          "reviewed": 2,
+          "winRate": "0.0%",
+          "avgStockReturn": "-11.23%",
+          "avgRelativeReturn": "-7.45%"
+        },
+        {
+          "strategy": "盘中：强势观察",
+          "calls": 23,
+          "reviewed": 2,
+          "winRate": "0.0%",
+          "avgStockReturn": "-3.62%",
+          "avgRelativeReturn": "-0.81%"
+        },
+        {
+          "strategy": "快照：候选观察",
+          "calls": 4,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-1.50%",
+          "avgRelativeReturn": "-0.47%"
+        },
+        {
+          "strategy": "快照：高风险强势观察",
+          "calls": 1,
+          "reviewed": 1,
+          "winRate": "0.0%",
+          "avgStockReturn": "-6.51%",
+          "avgRelativeReturn": "-2.73%"
+        }
+      ]
+    }
+  ]
+}

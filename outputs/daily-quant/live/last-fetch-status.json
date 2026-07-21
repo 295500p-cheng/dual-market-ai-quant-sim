@@ -1,0 +1,13 @@
+{
+  "attemptedAt": "2026-07-21T19:31:24",
+  "status": "success",
+  "target": "us_stock",
+  "counts": {
+    "a_share": 0,
+    "us_stock": 25
+  },
+  "usingCachedData": false,
+  "preservedRecords": 56,
+  "message": "美股行情刷新成功。",
+  "errors": []
+}

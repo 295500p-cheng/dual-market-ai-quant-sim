@@ -1,0 +1,101 @@
+name: Cloud simulated trading
+
+on:
+  schedule:
+    # Off-hour minutes reduce GitHub's documented top-of-hour scheduling delays.
+    - cron: "2,17,32,47 1-21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      market:
+        description: Market cycle to run
+        required: true
+        default: auto
+        type: choice
+        options:
+          - auto
+          - a_share
+          - us_stock
+          - both
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cloud-simulated-trading
+  cancel-in-progress: false
+
+jobs:
+  simulate-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out simulation state
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Choose active market
+        id: market
+        env:
+          REQUESTED_MARKET: ${{ inputs.market || 'auto' }}
+        run: |
+          market="$REQUESTED_MARKET"
+          if [ "$market" = "auto" ]; then
+            market="$(python3 work/market-data/cloud_schedule.py)"
+          fi
+          echo "market=$market" >> "$GITHUB_OUTPUT"
+          if [ "$market" = "closed" ]; then
+            echo "run_cycle=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_cycle=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Verify safety rules
+        if: steps.market.outputs.run_cycle == 'true'
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Run simulated market cycle
+        if: steps.market.outputs.run_cycle == 'true'
+        run: scripts/run_cloud_cycle.sh "${{ steps.market.outputs.market }}"
+
+      - name: Save updated simulation ledger
+        if: steps.market.outputs.run_cycle == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/daily-quant
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update simulated market state"
+            git push
+          fi
+
+      - name: Prepare public dashboard
+        if: steps.market.outputs.run_cycle == 'true'
+        run: |
+          python3 work/market-data/publish_site.py
+          touch /tmp/quant-site-public/.nojekyll
+
+      - name: Configure GitHub Pages
+        if: steps.market.outputs.run_cycle == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard
+        if: steps.market.outputs.run_cycle == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: /tmp/quant-site-public
+
+      - name: Deploy dashboard
+        if: steps.market.outputs.run_cycle == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+

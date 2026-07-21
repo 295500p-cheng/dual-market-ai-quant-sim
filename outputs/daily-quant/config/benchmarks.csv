@@ -1,0 +1,16 @@
+market,symbol,name,type,use
+A股,000300,沪深300指数,index,大盘权重基准
+A股,399006,创业板指,index,成长风格基准
+A股,000688,科创50指数,index,科创/硬科技基准
+A股,000905,中证500指数,index,中盘风格基准
+A股,510300,沪深300ETF,ETF,大盘ETF交易基准
+A股,159915,创业板ETF,ETF,成长ETF交易基准
+A股,588000,科创50ETF,ETF,科创ETF交易基准
+A股,512760,半导体ETF,ETF,半导体主题基准
+A股,512880,证券ETF,ETF,券商情绪基准
+美股,SPY,S&P 500 ETF,ETF,美股大盘基准
+美股,QQQ,Nasdaq 100 ETF,ETF,科技成长基准
+美股,SMH,VanEck Semiconductor ETF,ETF,半导体基准
+美股,SOXX,iShares Semiconductor ETF,ETF,半导体备选基准
+美股,XLK,Technology Select Sector SPDR,ETF,科技行业基准
+美股,^VIX,CBOE Volatility Index,index,风险偏好/波动率过滤

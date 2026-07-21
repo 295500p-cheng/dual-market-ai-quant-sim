@@ -1,0 +1,47 @@
+{
+  "updatedAt": "2026-07-13T08:40:21",
+  "status": "等待一周真实样本",
+  "period": "2026-07-07 至 2026-07-13",
+  "summary": "本周已有 335 条候选等待真实复盘，暂不计算周胜率。",
+  "metrics": {
+    "reviewedTrades": 0,
+    "pendingTrades": 335,
+    "weeklyWinRate": "暂无",
+    "overnightTrades": 0,
+    "overnightWinRate": "暂无",
+    "aShareWinRate": "暂无",
+    "usStockWinRate": "暂无",
+    "avgRelativeReturn": "暂无",
+    "bestBucket": "暂无",
+    "weakBucket": "暂无",
+    "executionSignals": 39,
+    "executionBuys": 33,
+    "executionExits": 0,
+    "executionHolding": 33,
+    "executionWaiting": 6
+  },
+  "marketRows": [
+    {
+      "market": "A股",
+      "reviewed": 0,
+      "winRate": "暂无",
+      "overnightAvg": "暂无",
+      "relativeAvg": "暂无",
+      "lesson": "等待真实复盘样本"
+    },
+    {
+      "market": "美股",
+      "reviewed": 0,
+      "winRate": "暂无",
+      "overnightAvg": "暂无",
+      "relativeAvg": "暂无",
+      "lesson": "等待真实复盘样本"
+    }
+  ],
+  "actionRows": [],
+  "nextWeekFocus": [
+    "继续积累真实复盘样本，不用模拟数据计算胜率。",
+    "优先观察隔夜评分高于60的候选是否真的贡献胜率。",
+    "一周后比较A股和美股哪个市场的信号更稳定，再调整权重。"
+  ]
+}

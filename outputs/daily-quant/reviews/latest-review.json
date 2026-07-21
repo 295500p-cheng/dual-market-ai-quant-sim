@@ -1,0 +1,134 @@
+{
+  "updatedAt": "2026-07-07T23:04:23",
+  "status": "暂无新增复盘，显示累计真实样本",
+  "summary": "本轮没有新的可复盘候选；当前累计真实复盘 115 笔，胜率 25.2%。",
+  "scorecard": {
+    "signalQuality": "25.2%",
+    "overnightEffect": "25.7% / 113 笔",
+    "riskControl": "继续跟踪已触发模拟持仓和待复盘候选",
+    "execution": "按台账自动复盘",
+    "nextOptimization": "等待下一交易日新增样本；当前只做小步降权，不扩大结论。"
+  },
+  "rows": [
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "market": "美股",
+      "previousCall": "快照：高风险强势观察，买入区 547.63-555.36，止损 532.73",
+      "openResult": "开盘 516.08，相对推荐价 -6.52%",
+      "closeResult": "收盘 516.11，相对推荐价 -6.51%",
+      "overnightReturn": "-6.52%",
+      "relativeReturn": "-2.73%",
+      "verdict": "失败",
+      "lesson": "模拟买入后收盘或相对表现不足，降低该条件权重。"
+    },
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 448.18-454.50，止损 440.50",
+      "openResult": "开盘 438.02，相对推荐价 -3.05%",
+      "closeResult": "收盘 432.57，相对推荐价 -4.25%",
+      "overnightReturn": "-3.05%",
+      "relativeReturn": "-0.47%",
+      "verdict": "失败",
+      "lesson": "模拟买入后收盘或相对表现不足，降低该条件权重。"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 363.53-368.66，止损 357.30",
+      "openResult": "开盘 368.53，相对推荐价 +0.56%",
+      "closeResult": "收盘 367.03，相对推荐价 +0.16%",
+      "overnightReturn": "+0.56%",
+      "relativeReturn": "+2.01%",
+      "verdict": "命中",
+      "lesson": "模拟执行后表现有效，保留相对强弱和量价过滤。"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 370.91-376.14，止损 364.55",
+      "openResult": "开盘 366.55，相对推荐价 -1.96%",
+      "closeResult": "收盘 370.78，相对推荐价 -0.83%",
+      "overnightReturn": "-1.96%",
+      "relativeReturn": "+2.95%",
+      "verdict": "失败",
+      "lesson": "模拟买入后收盘或相对表现不足，降低该条件权重。"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 595.49-603.89，止损 585.28",
+      "openResult": "开盘 608.00，相对推荐价 +1.28%",
+      "closeResult": "收盘 615.58，相对推荐价 +2.55%",
+      "overnightReturn": "+1.28%",
+      "relativeReturn": "+4.40%",
+      "verdict": "命中",
+      "lesson": "模拟执行后表现有效，保留相对强弱和量价过滤。"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "market": "美股",
+      "previousCall": "快照：高风险强势观察，买入区 547.63-555.36，止损 532.73",
+      "openResult": "开盘 516.08，相对推荐价 -6.52%",
+      "closeResult": "收盘 516.11，相对推荐价 -6.51%",
+      "overnightReturn": "-6.52%",
+      "relativeReturn": "-2.73%",
+      "verdict": "失败",
+      "lesson": "模拟买入后收盘或相对表现不足，降低该条件权重。"
+    },
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 448.18-454.50，止损 440.50",
+      "openResult": "开盘 438.02，相对推荐价 -3.05%",
+      "closeResult": "收盘 432.57，相对推荐价 -4.25%",
+      "overnightReturn": "-3.05%",
+      "relativeReturn": "-0.47%",
+      "verdict": "失败",
+      "lesson": "模拟买入后收盘或相对表现不足，降低该条件权重。"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 363.53-368.66，止损 357.30",
+      "openResult": "开盘 368.53，相对推荐价 +0.56%",
+      "closeResult": "收盘 367.03，相对推荐价 +0.16%",
+      "overnightReturn": "+0.56%",
+      "relativeReturn": "+2.01%",
+      "verdict": "命中",
+      "lesson": "模拟执行后表现有效，保留相对强弱和量价过滤。"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 370.91-376.14，止损 364.55",
+      "openResult": "开盘 366.55，相对推荐价 -1.96%",
+      "closeResult": "收盘 370.78，相对推荐价 -0.83%",
+      "overnightReturn": "-1.96%",
+      "relativeReturn": "+2.95%",
+      "verdict": "失败",
+      "lesson": "模拟买入后收盘或相对表现不足，降低该条件权重。"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "美股",
+      "previousCall": "快照：强势观察，买入区 595.49-603.89，止损 585.28",
+      "openResult": "开盘 608.00，相对推荐价 +1.28%",
+      "closeResult": "收盘 615.58，相对推荐价 +2.55%",
+      "overnightReturn": "+1.28%",
+      "relativeReturn": "+4.40%",
+      "verdict": "命中",
+      "lesson": "模拟执行后表现有效，保留相对强弱和量价过滤。"
+    }
+  ]
+}

@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>双市场 AI 量化投研平台</title>
+    <link rel="stylesheet" href="styles.css?v=20260713-positions-1" />
+  </head>
+  <body class="compact-mode">
+    <header class="topbar">
+      <a class="brand" href="#workspace" aria-label="回到工作台">
+        <span class="brand-mark">Q</span>
+        <span>双市场量化</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#picks">今日推荐</a>
+        <a href="#tracker">推荐跟踪</a>
+        <a href="#positions">模拟持仓</a>
+        <a href="#execution">模拟执行</a>
+        <a href="#overnight">隔夜持股</a>
+        <a href="#overnightBacktest">15天复盘</a>
+        <a href="#review">复盘胜率</a>
+        <a href="#weekly">周回测</a>
+        <a href="#summary">周/月汇总</a>
+        <a href="#daily">策略优化</a>
+        <a href="#research">学习对照</a>
+      </nav>
+      <div class="top-actions">
+        <label class="density-toggle">
+          <input id="densityToggle" type="checkbox" checked />
+          <span>紧凑</span>
+        </label>
+        <a class="top-action" href="#daily">规则文件</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="workspace" id="workspace">
+        <section class="portfolio-strip" aria-label="模拟账户总览">
+          <div class="portfolio-head">
+            <div>
+              <span class="status-dot"></span>
+              <strong>模拟账户总览</strong>
+              <small id="portfolioUpdated">更新时间：读取中</small>
+              <small class="refresh-state" id="refreshStatus">自动刷新：读取中</small>
+            </div>
+            <a href="../daily-quant/execution/portfolio-summary.json">查看模拟账户数据</a>
+          </div>
+          <div class="portfolio-grid">
+            <article>
+              <span>总资产</span>
+              <strong id="pfTotalAssets">读取中</strong>
+              <small id="pfInitialCapital">初始资金读取中</small>
+            </article>
+            <article>
+              <span>累计盈亏</span>
+              <strong id="pfPnl">读取中</strong>
+              <small id="pfPnlPct">读取中</small>
+            </article>
+            <article>
+              <span>可用现金</span>
+              <strong id="pfCash">读取中</strong>
+              <small id="pfCashRatio">读取中</small>
+            </article>
+            <article>
+              <span>持仓数</span>
+              <strong id="pfHoldings">读取中</strong>
+              <small id="pfMarketValue">读取中</small>
+            </article>
+            <article>
+              <span>今日模拟交易</span>
+              <strong id="pfTodayTrades">读取中</strong>
+              <small id="pfSignals">读取中</small>
+            </article>
+          </div>
+        </section>
+        <div class="workspace-copy">
+          <p class="eyebrow">每日推荐 · 隔夜推荐 · 次日复盘 · 胜率统计 · 策略优化</p>
+          <h1>每天推荐，第二天复盘，持续优化胜率。</h1>
+          <p class="lead">
+            参考聚宽、BigQuant、vn.py、QuantConnect、QuantRocket、TradingView 与 IBKR 的成熟量化逻辑，
+            输出当前价、观察买入区、止盈止损、卖出条件和隔夜持股评分。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#picks">查看今日推荐</a>
+            <a class="ghost-btn" href="#review">查看复盘胜率</a>
+          </div>
+        </div>
+
+        <section class="terminal-panel" aria-label="量化投研工作台预览">
+          <div class="panel-head">
+            <div>
+              <span class="status-dot"></span>
+              <strong>真实数据状态</strong>
+            </div>
+            <div class="segmented" role="tablist" aria-label="市场切换">
+              <button class="segment active" data-market="cn" type="button">A股</button>
+              <button class="segment" data-market="us" type="button">美股</button>
+            </div>
+          </div>
+
+          <div class="metric-grid">
+            <article>
+              <span>真实隔夜胜率</span>
+              <strong data-field="win">暂无</strong>
+            </article>
+            <article>
+              <span>真实最大回撤</span>
+              <strong data-field="drawdown">暂无</strong>
+            </article>
+            <article>
+              <span>已复盘样本</span>
+              <strong data-field="holding">0</strong>
+            </article>
+            <article>
+              <span>数据状态</span>
+              <strong data-field="risk">待开盘</strong>
+            </article>
+          </div>
+
+          <div class="chart-wrap">
+            <canvas id="equityChart" width="860" height="340" aria-label="回测净值曲线"></canvas>
+          </div>
+
+          <div class="trade-list" aria-label="策略步骤">
+            <div><span>01</span> 收盘前筛选候选池</div>
+            <div><span>02</span> 排除公告、停牌、极端波动</div>
+            <div><span>03</span> 次日开盘或规则触发退出</div>
+          </div>
+        </section>
+      </section>
+
+      <section class="daily-loop" id="daily">
+        <div class="section-head compact">
+          <p class="eyebrow">策略优化闭环</p>
+          <h2>推荐、复盘、统计胜率，然后优化下一次推荐。</h2>
+          <p>
+            这个平台真正要做的不是一次性给股票，而是把每一次推荐、隔夜表现、涨跌结果、错误原因和优化动作记录下来。
+          </p>
+        </div>
+        <div class="loop-board">
+          <article>
+            <span>每天</span>
+            <h3>股票推荐</h3>
+            <p>A股和美股分别给出具体股票候选，输出当前价、观察买入区、止盈止损和卖出条件。</p>
+          </article>
+          <article>
+            <span>收盘前</span>
+            <h3>隔夜推荐</h3>
+            <p>单独给出适合隔夜持股的股票，并说明为什么适合、什么情况下必须放弃。</p>
+          </article>
+          <article>
+            <span>次日</span>
+            <h3>复盘优化</h3>
+            <p>复盘涨跌、隔夜收益、是否跑赢基准、是否触发止盈止损，并调整策略权重。</p>
+          </article>
+        </div>
+        <div class="record-links" aria-label="复盘记录入口">
+          <a href="../daily-quant/strategy-log/candidate-ledger.csv">候选总表</a>
+          <a href="../daily-quant/strategy-log/review-template.md">复盘评分表</a>
+          <a href="../daily-quant/strategy-log/strategy-rules.md">策略规则库</a>
+          <a href="../daily-quant/strategy-log/system-study-matrix.md">学习对照表</a>
+          <a href="../daily-quant/strategy-log/simulation-audit-2026-07-05.md">模拟推荐自检</a>
+          <a href="../daily-quant/config/universe-a-share.csv">A股候选池</a>
+          <a href="../daily-quant/config/universe-us-stock.csv">美股候选池</a>
+          <a href="../daily-quant/config/data-fields.md">数据字段标准</a>
+          <a href="../daily-quant/config/update-rules.md">更新规则</a>
+          <a href="../daily-quant/reviews/performance-stats.json">胜率统计数据</a>
+          <a href="../daily-quant/reviews/weekly-review.json">周回测数据</a>
+          <a href="../daily-quant/reviews/performance-summary.json">周/月汇总数据</a>
+          <a href="../daily-quant/reviews/overnight-15d-backtest.json">15天隔夜复盘</a>
+          <a href="../daily-quant/reviews/price-history.csv">每日价格台账</a>
+          <a href="../daily-quant/reviews/recommendation-tracker.json">推荐跟踪数据</a>
+          <a href="../daily-quant/execution/current-positions.json">当前模拟持仓</a>
+          <a href="../daily-quant/execution/portfolio-summary.json">模拟账户汇总</a>
+          <a href="../daily-quant/execution/latest-executions.json">模拟执行数据</a>
+          <a href="../daily-quant/execution/execution-ledger.csv">模拟执行台账</a>
+          <a href="../daily-quant/final-objective.md">最终目标说明</a>
+        </div>
+      </section>
+
+      <section class="picks" id="picks">
+        <div class="section-head">
+          <p class="eyebrow">今日推荐面板</p>
+          <h2>有可靠行情时，显示今日评分靠前和适合隔夜的股票。</h2>
+          <div class="demo-warning" id="modeWarning">正在读取数据状态。</div>
+          <p id="liveStatus">正在读取最新策略结果。</p>
+        </div>
+
+        <div class="live-toolbar">
+          <span id="liveUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/live/latest-picks.json">查看原始推荐数据</a>
+        </div>
+
+        <div class="pick-columns" id="livePickColumns">
+          <section class="pick-panel">
+            <div class="pick-head"><span>A股</span><strong>读取中</strong></div>
+          </section>
+          <section class="pick-panel">
+            <div class="pick-head"><span>美股</span><strong>读取中</strong></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="review-panel" id="tracker">
+        <div class="section-head">
+          <p class="eyebrow">推荐跟踪面板</p>
+          <h2>系统自动记住每次推荐，第二天直接看涨跌和结论。</h2>
+          <p id="trackerStatus">正在读取推荐跟踪结果。</p>
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="trackerUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/reviews/recommendation-tracker.json">查看原始跟踪数据</a>
+        </div>
+        <div class="stats-grid tracker-grid">
+          <article><span>已记录推荐</span><strong id="trackerTotal">读取中</strong></article>
+          <article><span>等待复盘</span><strong id="trackerPending">读取中</strong></article>
+          <article><span>模拟持有</span><strong id="trackerHolding">读取中</strong></article>
+          <article><span>已复盘</span><strong id="trackerReviewed">读取中</strong></article>
+        </div>
+        <div class="review-table-wrap">
+          <table class="review-table tracker-table">
+            <thead>
+              <tr>
+                <th>推荐时间</th>
+                <th>标的</th>
+                <th>推荐价</th>
+                <th>当前/复盘价</th>
+                <th>涨跌</th>
+                <th>执行状态</th>
+                <th>下一步</th>
+              </tr>
+            </thead>
+            <tbody id="trackerRows">
+              <tr><td colspan="7">读取中</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="positions-panel" id="positions">
+        <div class="section-head">
+          <p class="eyebrow">当前模拟持仓</p>
+          <h2>持仓数量、金额、盈亏与风控线统一核算。</h2>
+          <p id="positionsStatus">正在读取当前模拟持仓。</p>
+        </div>
+        <div class="demo-warning execution-warning">
+          模拟持仓，不接券商、不真实下单。A股按100股一手并执行T+1可用规则，美股按整股计算。
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="positionsUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/execution/current-positions.json">查看原始持仓数据</a>
+        </div>
+        <div class="positions-grid">
+          <article><span>当前持仓</span><strong id="posTotal">读取中</strong></article>
+          <article><span>A股 / 美股</span><strong id="posMarkets">读取中</strong></article>
+          <article><span>持仓成本</span><strong id="posCost">读取中</strong></article>
+          <article><span>持仓市值</span><strong id="posMarketValue">读取中</strong></article>
+          <article><span>浮动盈亏</span><strong id="posPnl">读取中</strong><small id="posPnlDetail">读取中</small></article>
+        </div>
+        <div class="review-table-wrap">
+          <table class="review-table positions-table">
+            <thead>
+              <tr>
+                <th>标的</th>
+                <th>持仓 / 可用</th>
+                <th>成本价</th>
+                <th>最新价</th>
+                <th>持仓成本</th>
+                <th>持仓市值</th>
+                <th>浮动盈亏</th>
+                <th>今日涨跌</th>
+                <th>止盈/止损</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody id="positionsRows">
+              <tr><td colspan="10">读取中</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="execution-panel" id="execution">
+        <div class="section-head">
+          <p class="eyebrow">自动模拟执行</p>
+          <h2>先让策略自动模拟买入卖出，再用结果做复盘。</h2>
+          <p id="executionStatus">正在读取自动执行模拟。</p>
+        </div>
+        <div class="demo-warning execution-warning">
+          当前只做模拟执行，不连接券商、不自动真实下单。真实交易必须另行确认、接入券商、设置资金上限和风控开关。
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="executionUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/execution/latest-executions.json">查看原始模拟执行数据</a>
+        </div>
+        <div class="execution-grid">
+          <article><span>策略信号</span><strong id="execSignals">读取中</strong></article>
+          <article><span>模拟买入</span><strong id="execTriggered">读取中</strong></article>
+          <article><span>模拟退出</span><strong id="execExited">读取中</strong></article>
+          <article><span>等待触发</span><strong id="execWaiting">读取中</strong></article>
+        </div>
+        <div class="review-table-wrap">
+          <table class="review-table execution-table">
+            <thead>
+              <tr>
+                <th>标的</th>
+                <th>市场</th>
+                <th>买入执行</th>
+                <th>退出执行</th>
+                <th>模拟收益</th>
+                <th>执行说明</th>
+              </tr>
+            </thead>
+            <tbody id="executionRows">
+              <tr><td colspan="6">读取中</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="review-panel" id="review">
+        <div class="section-head">
+          <p class="eyebrow">复盘胜率面板</p>
+          <h2>每天复盘昨日推荐，累计胜率并判断策略是否要优化。</h2>
+          <p id="reviewStatus">正在读取最新复盘结果。</p>
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="reviewUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/reviews/latest-review.json">查看原始复盘数据</a>
+        </div>
+        <div class="stats-grid">
+          <article><span>总样本</span><strong id="statTotalTrades">读取中</strong></article>
+          <article><span>总胜率</span><strong id="statTotalWinRate">读取中</strong></article>
+          <article><span>隔夜胜率</span><strong id="statOvernightWinRate">读取中</strong></article>
+          <article><span>A股 / 美股胜率</span><strong id="statMarketWinRate">读取中</strong></article>
+        </div>
+        <div class="review-summary">
+          <article><span>信号质量</span><strong id="scoreSignal">读取中</strong></article>
+          <article><span>隔夜效果</span><strong id="scoreOvernight">读取中</strong></article>
+          <article><span>风险控制</span><strong id="scoreRisk">读取中</strong></article>
+          <article><span>下一步优化</span><strong id="scoreNext">读取中</strong></article>
+        </div>
+        <div class="review-table-wrap">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th>标的</th>
+                <th>市场</th>
+                <th>昨日建议</th>
+                <th>开盘结果</th>
+                <th>收盘结果</th>
+                <th>隔夜</th>
+                <th>相对基准</th>
+                <th>结论</th>
+              </tr>
+            </thead>
+            <tbody id="reviewRows">
+              <tr><td colspan="8">读取中</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="weekly-panel" id="weekly">
+        <div class="section-head">
+          <p class="eyebrow">每周回测面板</p>
+          <h2>每周汇总一次真实复盘，看策略是否真的在进步。</h2>
+          <p id="weeklyStatus">正在读取本周回测结果。</p>
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="weeklyUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/reviews/weekly-review.json">查看原始周回测数据</a>
+        </div>
+        <div class="weekly-grid">
+          <article><span>本周已复盘</span><strong id="weeklyReviewed">读取中</strong></article>
+          <article><span>本周胜率</span><strong id="weeklyWinRate">读取中</strong></article>
+          <article><span>隔夜胜率</span><strong id="weeklyOvernight">读取中</strong></article>
+          <article><span>A股 / 美股</span><strong id="weeklyMarkets">读取中</strong></article>
+          <article><span>平均相对基准</span><strong id="weeklyRelative">读取中</strong></article>
+          <article><span>等待复盘</span><strong id="weeklyPending">读取中</strong></article>
+          <article><span>模拟执行</span><strong id="weeklyExecution">读取中</strong></article>
+        </div>
+        <div class="weekly-split">
+          <div class="weekly-block">
+            <h3>市场对比</h3>
+            <div class="mini-table" id="weeklyMarketRows">
+              <div>读取中</div>
+            </div>
+          </div>
+          <div class="weekly-block">
+            <h3>下周优化重点</h3>
+            <ul id="weeklyFocus">
+              <li>读取中</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary-panel" id="summary">
+        <div class="section-head">
+          <p class="eyebrow">周/月汇总分析</p>
+          <h2>按实际模拟平仓汇总胜率，并单独查看去重后的候选表现。</h2>
+          <p id="summaryStatus">正在读取周/月汇总。</p>
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="summaryUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/reviews/performance-summary.json">查看原始汇总数据</a>
+        </div>
+        <div class="period-summary-grid" id="periodSummaryCards">
+          <article><span>周期</span><strong>读取中</strong></article>
+        </div>
+        <div class="summary-layout">
+          <article class="summary-block">
+            <div class="summary-title">
+              <h3>近7天股票表现</h3>
+              <span id="weeklySummaryPeriod">读取中</span>
+            </div>
+            <div class="review-table-wrap">
+              <table class="review-table summary-table">
+                <thead>
+                  <tr>
+                    <th>股票</th>
+                    <th>市场</th>
+                    <th>次数</th>
+                    <th>涨跌幅</th>
+                    <th>隔夜</th>
+                    <th>相对基准</th>
+                    <th>信号复盘胜率</th>
+                    <th>最新结论</th>
+                  </tr>
+                </thead>
+                <tbody id="weeklySummaryRows">
+                  <tr><td colspan="8">读取中</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article class="summary-block">
+            <div class="summary-title">
+              <h3>本月股票表现</h3>
+              <span id="monthlySummaryPeriod">读取中</span>
+            </div>
+            <div class="review-table-wrap">
+              <table class="review-table summary-table">
+                <thead>
+                  <tr>
+                    <th>股票</th>
+                    <th>市场</th>
+                    <th>次数</th>
+                    <th>涨跌幅</th>
+                    <th>隔夜</th>
+                    <th>相对基准</th>
+                    <th>信号复盘胜率</th>
+                    <th>最新结论</th>
+                  </tr>
+                </thead>
+                <tbody id="monthlySummaryRows">
+                  <tr><td colspan="8">读取中</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+        <div class="summary-layout strategy-layout">
+          <article class="summary-block">
+            <div class="summary-title">
+              <h3>近7天信号复盘胜率</h3>
+            </div>
+            <div class="review-table-wrap">
+              <table class="review-table strategy-table">
+                <thead>
+                  <tr>
+                    <th>策略标签</th>
+                    <th>推荐</th>
+                    <th>已复盘</th>
+                    <th>胜率</th>
+                    <th>股票涨跌</th>
+                    <th>相对基准</th>
+                  </tr>
+                </thead>
+                <tbody id="weeklyStrategyRows">
+                  <tr><td colspan="6">读取中</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article class="summary-block">
+            <div class="summary-title">
+              <h3>本月信号复盘胜率</h3>
+            </div>
+            <div class="review-table-wrap">
+              <table class="review-table strategy-table">
+                <thead>
+                  <tr>
+                    <th>策略标签</th>
+                    <th>推荐</th>
+                    <th>已复盘</th>
+                    <th>胜率</th>
+                    <th>股票涨跌</th>
+                    <th>相对基准</th>
+                  </tr>
+                </thead>
+                <tbody id="monthlyStrategyRows">
+                  <tr><td colspan="6">读取中</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="overnight-backtest-panel" id="overnightBacktest">
+        <div class="section-head">
+          <p class="eyebrow">15天隔夜复盘</p>
+          <h2>下拉选择范围和股票，查看半个月隔夜推荐的胜率、走势和每天股价。</h2>
+          <p id="overnightBacktestStatus">正在读取15天隔夜复盘。</p>
+        </div>
+        <div class="live-toolbar review-toolbar">
+          <span id="overnightBacktestUpdated">更新时间：读取中</span>
+          <a href="../daily-quant/reviews/overnight-15d-backtest.json">查看原始15天复盘数据</a>
+        </div>
+        <div class="backtest-controls" aria-label="15天隔夜复盘筛选">
+          <label>
+            范围
+            <select id="overnightBacktestFilter">
+              <option value="all">全部</option>
+            </select>
+          </label>
+          <label>
+            股票
+            <select id="overnightBacktestStock">
+              <option value="all">全部股票</option>
+            </select>
+          </label>
+        </div>
+        <div class="overnight-backtest-grid">
+          <article><span>15天推荐</span><strong id="overnightBtCalls">读取中</strong></article>
+          <article><span>已复盘</span><strong id="overnightBtReviewed">读取中</strong></article>
+          <article><span>胜率</span><strong id="overnightBtWinRate">读取中</strong></article>
+          <article><span>平均隔夜</span><strong id="overnightBtOvernight">读取中</strong></article>
+          <article><span>收盘涨跌</span><strong id="overnightBtClose">读取中</strong></article>
+          <article><span>最大回撤</span><strong id="overnightBtDrawdown">读取中</strong></article>
+        </div>
+        <div class="backtest-split">
+          <article class="backtest-chart-panel">
+            <div class="summary-title">
+              <h3>15天走势</h3>
+              <span id="overnightBtWindow">读取中</span>
+            </div>
+            <canvas id="overnightTrendChart" width="860" height="320" aria-label="15天隔夜复盘走势"></canvas>
+          </article>
+          <article class="backtest-notes">
+            <h3>当前结论</h3>
+            <div class="mini-table">
+              <div class="mini-row backtest-note-row"><strong>最佳标的</strong><span id="overnightBtBest">读取中</span></div>
+              <div class="mini-row backtest-note-row"><strong>薄弱标的</strong><span id="overnightBtWeak">读取中</span></div>
+              <div class="mini-row backtest-note-row"><strong>等待复盘</strong><span id="overnightBtPending">读取中</span></div>
+            </div>
+          </article>
+        </div>
+        <details class="backtest-details" open>
+          <summary>每日走势与胜率</summary>
+          <div class="review-table-wrap">
+            <table class="review-table overnight-daily-table">
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>当日股票</th>
+                  <th>推荐</th>
+                  <th>已复盘</th>
+                  <th>胜率</th>
+                  <th>平均隔夜</th>
+                  <th>收盘涨跌</th>
+                  <th>相对基准</th>
+                  <th>走势值</th>
+                </tr>
+              </thead>
+              <tbody id="overnightDailyRows">
+                <tr><td colspan="9">读取中</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="backtest-details" open>
+          <summary>所选股票推荐明细</summary>
+          <div class="review-table-wrap">
+            <table class="review-table overnight-call-table">
+              <thead>
+                <tr>
+                  <th>推荐时间</th>
+                  <th>股票</th>
+                  <th>策略</th>
+                  <th>推荐价/买入区</th>
+                  <th>止盈/止损</th>
+                  <th>次日开收盘</th>
+                  <th>收益</th>
+                  <th>结论</th>
+                </tr>
+              </thead>
+              <tbody id="overnightCallRows">
+                <tr><td colspan="8">读取中</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="backtest-details" open>
+          <summary>所选股票每日股价</summary>
+          <div class="review-table-wrap">
+            <table class="review-table overnight-price-table">
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>股票</th>
+                  <th>开盘</th>
+                  <th>最高</th>
+                  <th>最低</th>
+                  <th>收盘/最新</th>
+                  <th>涨跌幅</th>
+                  <th>成交量</th>
+                  <th>来源时间</th>
+                </tr>
+              </thead>
+              <tbody id="overnightPriceRows">
+                <tr><td colspan="9">读取中</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <section class="band" id="overnight">
+        <div class="section-head">
+          <p class="eyebrow">核心重点</p>
+          <h2>隔夜持股不是一个策略，而是一套验证流程。</h2>
+          <p>
+            页面会把“收盘买入、隔夜持有、次日卖出”的想法拆成信号、过滤、执行、风控四层，避免只看历史收益。
+          </p>
+        </div>
+        <div class="overnight-grid">
+          <article class="feature">
+            <span class="feature-icon">C→O</span>
+            <h3>收盘到开盘收益拆分</h3>
+            <p>单独观察 close-to-open，不把日内波动混在一起，适合美股和 ETF 的隔夜效应研究。</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon">T+1</span>
+            <h3>A股机制过滤</h3>
+            <p>考虑 T+1、涨跌停、集合竞价、停牌、财报公告和流动性约束，避免把不可交易收益算进回测。</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon">VAR</span>
+            <h3>隔夜风险闸门</h3>
+            <p>用跳空风险、单票仓位、行业集中度、事件日黑名单和连续亏损暂停规则保护本金。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split" id="markets">
+        <div class="section-head market-intro">
+          <p class="eyebrow">市场规则说明</p>
+          <h2>这个区域只解释A股和美股的策略差异，不是推荐面板。</h2>
+          <p>真正该看的操作区在“动态推荐”和“每日复盘”。这里用于说明为什么两个市场不能用同一套规则。</p>
+        </div>
+        <div class="market-column cn">
+          <div class="section-head compact">
+            <p class="eyebrow">中国市场</p>
+            <h2>A股策略方向</h2>
+          </div>
+          <ul class="check-list">
+            <li>多因子选股：估值、质量、动量、情绪、成交活跃度。</li>
+            <li>隔夜持股：收盘强弱、资金流、公告风险、次日开盘退出。</li>
+            <li>ETF轮动：宽基、行业、红利、债券、商品 ETF 的组合切换。</li>
+            <li>风控重点：涨跌停、T+1、停牌、滑点、容量和财报窗口。</li>
+          </ul>
+        </div>
+        <div class="market-column us">
+          <div class="section-head compact">
+            <p class="eyebrow">美国市场</p>
+            <h2>美股策略方向</h2>
+          </div>
+          <ul class="check-list">
+            <li>隔夜收益：close-to-open、新闻驱动、财报后漂移、指数 ETF。</li>
+            <li>趋势与动量：科技股、行业 ETF、波动率调整后的仓位。</li>
+            <li>组合再平衡：股票、ETF、现金、风险预算的动态配置。</li>
+            <li>风控重点：盘前盘后流动性、财报跳空、汇率、券商 API 稳定性。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="band light" id="system">
+        <div class="section-head">
+          <p class="eyebrow">策略流程</p>
+          <h2>参考优秀量化系统后，固定为一条可复盘流程。</h2>
+        </div>
+        <div class="pipeline" aria-label="量化策略流程">
+          <article>
+            <span>1</span>
+            <h3>研究</h3>
+            <p>像 QuantConnect、聚宽一样，从数据、因子和假设开始。</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>回测</h3>
+            <p>展示收益、回撤、胜率、换手、滑点和样本外表现。</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>观察</h3>
+            <p>参考 BigQuant、vn.py 的模拟与策略运行思路，先观察验证。</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>实盘准备</h3>
+            <p>借鉴 IBKR、QuantRocket 的交易接口、账户数据和执行监控表达。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reference" id="research">
+        <div class="section-head compact">
+          <p class="eyebrow">国内外优秀系统学习对照表</p>
+          <h2>只学习成熟流程，不照搬收益承诺。</h2>
+          <p>这里记录每个平台学到了什么、本站已经采纳了什么，以及接下来要补什么。</p>
+        </div>
+        <div class="reference-table matrix-table">
+          <div class="row head"><span>系统</span><span>学到的做法</span><span>本站已采纳</span><span>下一步</span></div>
+          <div class="row"><span>聚宽 / BigQuant / 米筐</span><span>A股数据、因子研究、AI量化、回测、模拟交易和策略优化。</span><span>A股候选池、多因子评分、推荐台账、每日复盘。</span><span>补公告、财报、停牌、涨跌停和滑点过滤。</span></div>
+          <div class="row"><span>vn.py</span><span>交易接口、CTA、算法交易、行情录制、回测和风险管理。</span><span>模拟买入、模拟持有、止盈止损和执行风险说明。</span><span>实盘前再接券商接口、风控开关和急停。</span></div>
+          <div class="row"><span>QuantConnect / QuantRocket</span><span>研究、回测、优化、纸面交易、实盘交易、执行监控的完整闭环。</span><span>15分钟推荐、模拟执行、次日复盘、每周回测。</span><span>一周后用真实样本优化权重和仓位规则。</span></div>
+          <div class="row"><span>TradingView / IBKR</span><span>指标脚本、策略信号、提醒、行情、下单、账户和持仓接口。</span><span>页面展示买入区、止盈止损、卖出条件；真实交易暂不启用。</span><span>后续如要自动交易，先 paper，再加资金上限。</span></div>
+        </div>
+        <div class="record-links source-links" aria-label="学习对照入口">
+          <a href="../daily-quant/strategy-log/system-study-matrix.md">查看完整学习对照表</a>
+          <a href="https://www.joinquant.com/">聚宽</a>
+          <a href="https://www.bigquant.com/">BigQuant</a>
+          <a href="https://rqalpha.readthedocs.io/zh-cn/latest/">米筐 RQAlpha</a>
+          <a href="https://www.vnpy.com/">vn.py</a>
+          <a href="https://www.quantconnect.com/docs/v2/">QuantConnect</a>
+          <a href="https://www.quantrocket.com/docs/">QuantRocket</a>
+          <a href="https://www.tradingview.com/pine-script-docs/">TradingView</a>
+          <a href="https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/">IBKR API</a>
+        </div>
+      </section>
+
+      <p class="risk-note">
+        风险提示：页面内容用于量化研究、策略观察和复盘记录，不构成投资建议。历史回测不代表未来收益，实盘交易可能发生本金损失。
+      </p>
+    </main>
+
+    <script src="script.js?v=20260713-account-fix-1"></script>
+  </body>
+</html>
