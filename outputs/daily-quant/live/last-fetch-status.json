@@ -1,10 +1,18 @@
 {
-  "attemptedAt": "2026-07-21T19:46:00",
+  "attemptedAt": "2026-07-21T19:02:30",
   "status": "success",
   "target": "us_stock",
   "counts": {
     "a_share": 0,
     "us_stock": 25
+  },
+  "expectedCounts": {
+    "a_share": 31,
+    "us_stock": 25
+  },
+  "minimumCounts": {
+    "a_share": 21,
+    "us_stock": 20
   },
   "usingCachedData": false,
   "preservedRecords": 56,
