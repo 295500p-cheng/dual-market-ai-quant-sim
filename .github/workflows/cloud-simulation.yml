@@ -25,6 +25,11 @@ on:
         required: true
         default: false
         type: boolean
+      publish_only:
+        description: Publish dashboard without running a simulation cycle
+        required: true
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -56,7 +61,14 @@ jobs:
         id: market
         env:
           REQUESTED_MARKET: ${{ inputs.market || 'auto' }}
+          PUBLISH_ONLY: ${{ inputs.publish_only || 'false' }}
         run: |
+          if [ "$PUBLISH_ONLY" = "true" ]; then
+            echo "market=closed" >> "$GITHUB_OUTPUT"
+            echo "run_cycle=false" >> "$GITHUB_OUTPUT"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           market="$REQUESTED_MARKET"
           if [ "$market" = "auto" ]; then
             market="$(python3 work/market-data/cloud_schedule.py)"
@@ -64,8 +76,10 @@ jobs:
           echo "market=$market" >> "$GITHUB_OUTPUT"
           if [ "$market" = "closed" ]; then
             echo "run_cycle=false" >> "$GITHUB_OUTPUT"
+            echo "publish=false" >> "$GITHUB_OUTPUT"
           else
             echo "run_cycle=true" >> "$GITHUB_OUTPUT"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Verify safety rules
@@ -110,23 +124,23 @@ jobs:
           fi
 
       - name: Prepare public dashboard
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
+        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         run: |
           python3 work/market-data/publish_site.py
           touch /tmp/quant-site-public/.nojekyll
 
       - name: Configure GitHub Pages
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
+        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         uses: actions/configure-pages@v5
 
       - name: Upload dashboard
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
+        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         uses: actions/upload-pages-artifact@v4
         with:
           path: /tmp/quant-site-public
 
       - name: Deploy dashboard
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
+        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         id: deployment
         uses: actions/deploy-pages@v4
 
