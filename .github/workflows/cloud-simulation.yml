@@ -2,8 +2,12 @@ name: Cloud simulated trading
 
 on:
   schedule:
-    # Off-hour minutes reduce GitHub's documented top-of-hour scheduling delays.
-    - cron: "2,17,32,47 1-21 * * 1-5"
+    # Restrict wakeups to each market's weekday session so a private repository
+    # remains comfortably inside the GitHub Free monthly Actions allowance.
+    - cron: "2,17,32,47 9-11,13-15 * * 1-5"
+      timezone: "Asia/Shanghai"
+    - cron: "2,17,32,47 9-16 * * 1-5"
+      timezone: "America/New_York"
   workflow_dispatch:
     inputs:
       market:
@@ -106,23 +110,23 @@ jobs:
           fi
 
       - name: Prepare public dashboard
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
         run: |
           python3 work/market-data/publish_site.py
           touch /tmp/quant-site-public/.nojekyll
 
       - name: Configure GitHub Pages
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
         uses: actions/configure-pages@v5
 
       - name: Upload dashboard
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
         uses: actions/upload-pages-artifact@v4
         with:
           path: /tmp/quant-site-public
 
       - name: Deploy dashboard
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success'
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'success' && github.event.repository.private == false
         id: deployment
         uses: actions/deploy-pages@v4
 
