@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T15:18:44",
+  "updatedAt": "2026-07-23T17:01:20",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-07-17 至 2026-07-23",
       "metrics": {
-        "calls": 47,
+        "calls": 48,
         "reviewed": 0,
-        "pending": 47,
+        "pending": 48,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 16,
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 32,
+          "calls": 33,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -54,9 +54,9 @@
       "label": "本月",
       "period": "2026-07-01 至 2026-07-23",
       "metrics": {
-        "calls": 142,
+        "calls": 143,
         "reviewed": 14,
-        "pending": 128,
+        "pending": 129,
         "winRate": "21.4%",
         "candidateWinRate": "21.4%",
         "executionTrades": 46,
@@ -85,7 +85,7 @@
         },
         {
           "market": "美股",
-          "calls": 82,
+          "calls": 83,
           "reviewed": 9,
           "winRate": "22.2%",
           "avgStockReturn": "-4.29%",
@@ -227,7 +227,7 @@
           "market": "美股",
           "symbol": "ASML",
           "name": "ASML Holding N.V.",
-          "calls": 5,
+          "calls": 6,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-5.13%",
