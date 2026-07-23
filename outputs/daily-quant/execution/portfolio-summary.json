@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T18:20:52",
+  "updatedAt": "2026-07-23T19:57:14",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；A股按100股一手、美股按整股。可用现金最低显示为0，历史超额仓位产生的资金缺口单列为模拟资金超额，不是欠款；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "96,713.13",
+    "totalAssets": "96,785.74",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-3,286.87",
-    "cumulativePnlPct": "-3.29%",
+    "cumulativePnl": "-3,214.26",
+    "cumulativePnlPct": "-3.21%",
     "realizedPnl": "-3,226.53",
-    "floatingPnl": "-60.34",
+    "floatingPnl": "12.27",
     "availableCash": "62,426.06",
-    "cashRatio": "+64.55%",
+    "cashRatio": "+64.50%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "62,426.06",
-    "fundingStatus": "现金占比 +64.55%",
-    "marketValue": "34,287.07",
-    "positionRatio": "+35.45%",
+    "fundingStatus": "现金占比 +64.50%",
+    "marketValue": "34,359.68",
+    "positionRatio": "+35.50%",
     "holdings": 4,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -29,8 +29,8 @@
     "todayTrades": 0,
     "todayBuys": 0,
     "todayExits": 0,
-    "signals": 12,
-    "waiting": 6
+    "signals": 13,
+    "waiting": 7
   },
   "positions": [
     {
@@ -45,6 +45,20 @@
       "marketValue": "7,782.00",
       "pnl": "156.00",
       "pnlPct": "+2.05%",
+      "status": "模拟持有"
+    },
+    {
+      "market": "美股",
+      "symbol": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "entryPrice": "561.78",
+      "currentPrice": "560.24",
+      "quantity": 17,
+      "availableQuantity": 17,
+      "notional": "9,550.26",
+      "marketValue": "9,524.08",
+      "pnl": "-26.18",
+      "pnlPct": "-0.27%",
       "status": "模拟持有"
     },
     {
@@ -63,30 +77,16 @@
     },
     {
       "market": "美股",
-      "symbol": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "entryPrice": "561.78",
-      "currentPrice": "557.71",
-      "quantity": 17,
-      "availableQuantity": 17,
-      "notional": "9,550.26",
-      "marketValue": "9,481.07",
-      "pnl": "-69.19",
-      "pnlPct": "-0.72%",
-      "status": "模拟持有"
-    },
-    {
-      "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
       "entryPrice": "1813.43",
-      "currentPrice": "1790.40",
+      "currentPrice": "1796.32",
       "quantity": 5,
       "availableQuantity": 5,
       "notional": "9,067.15",
-      "marketValue": "8,952.00",
-      "pnl": "-115.15",
-      "pnlPct": "-1.27%",
+      "marketValue": "8,981.60",
+      "pnl": "-85.55",
+      "pnlPct": "-0.94%",
       "status": "模拟持有"
     }
   ]
