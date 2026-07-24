@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T15:02:09",
+  "updatedAt": "2026-07-24T16:53:48",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；A股按100股一手、美股按整股。可用现金最低显示为0，历史超额仓位产生的资金缺口单列为模拟资金超额，不是欠款；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,28 +9,28 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "96,445.92",
+    "totalAssets": "96,470.14",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-3,554.08",
-    "cumulativePnlPct": "-3.55%",
+    "cumulativePnl": "-3,529.86",
+    "cumulativePnlPct": "-3.53%",
     "realizedPnl": "-3,465.21",
-    "floatingPnl": "-88.88",
-    "availableCash": "71,737.64",
-    "cashRatio": "+74.38%",
+    "floatingPnl": "-64.65",
+    "availableCash": "61,754.54",
+    "cashRatio": "+64.01%",
     "simulatedFundingGap": "0.00",
-    "rawSimulatedCash": "71,737.64",
-    "fundingStatus": "现金占比 +74.38%",
-    "marketValue": "24,708.27",
-    "positionRatio": "+25.62%",
-    "holdings": 3,
+    "rawSimulatedCash": "61,754.54",
+    "fundingStatus": "现金占比 +64.01%",
+    "marketValue": "34,715.60",
+    "positionRatio": "+35.99%",
+    "holdings": 4,
     "maxHoldings": 6,
     "overLimit": 0,
     "historicalCorrections": 5,
-    "todayTrades": 1,
-    "todayBuys": 0,
+    "todayTrades": 2,
+    "todayBuys": 1,
     "todayExits": 1,
-    "signals": 16,
-    "waiting": 10
+    "signals": 15,
+    "waiting": 9
   },
   "positions": [
     {
@@ -45,6 +45,20 @@
       "marketValue": "7,782.00",
       "pnl": "156.00",
       "pnlPct": "+2.05%",
+      "status": "模拟持有"
+    },
+    {
+      "market": "美股",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "entryPrice": "332.77",
+      "currentPrice": "332.77",
+      "quantity": 30,
+      "availableQuantity": 30,
+      "notional": "9,983.10",
+      "marketValue": "9,983.25",
+      "pnl": "0.15",
+      "pnlPct": "0.00%",
       "status": "模拟持有"
     },
     {
@@ -66,13 +80,13 @@
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
       "entryPrice": "1813.43",
-      "currentPrice": "1770.86",
+      "currentPrice": "1775.67",
       "quantity": 5,
       "availableQuantity": 5,
       "notional": "9,067.15",
-      "marketValue": "8,854.27",
-      "pnl": "-212.88",
-      "pnlPct": "-2.35%",
+      "marketValue": "8,878.35",
+      "pnl": "-188.80",
+      "pnlPct": "-2.08%",
       "status": "模拟持有"
     }
   ]
