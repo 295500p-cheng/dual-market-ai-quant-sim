@@ -1,37 +1,37 @@
 {
-  "updatedAt": "2026-07-24T19:57:48",
+  "updatedAt": "2026-07-27T15:48:54",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-07-18 至 2026-07-24",
+      "period": "2026-07-21 至 2026-07-27",
       "metrics": {
-        "calls": 36,
+        "calls": 25,
         "reviewed": 0,
-        "pending": 36,
+        "pending": 25,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
-        "executionTrades": 12,
-        "executionWins": 3,
-        "executionLosses": 9,
-        "executionWinRate": "25.0%",
-        "executionRealizedPnl": "-1,255.23",
+        "executionTrades": 5,
+        "executionWins": 1,
+        "executionLosses": 4,
+        "executionWinRate": "20.0%",
+        "executionRealizedPnl": "-631.82",
         "avgStockReturn": "暂无",
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 50,
-        "buys": 22,
-        "exits": 9,
-        "holding": 13,
-        "waiting": 28
+        "signals": 33,
+        "buys": 13,
+        "exits": 4,
+        "holding": 9,
+        "waiting": 20
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 5,
+          "calls": 0,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 31,
+          "calls": 25,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -52,11 +52,11 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-07-01 至 2026-07-24",
+      "period": "2026-07-01 至 2026-07-27",
       "metrics": {
-        "calls": 148,
+        "calls": 153,
         "reviewed": 14,
-        "pending": 134,
+        "pending": 139,
         "winRate": "21.4%",
         "candidateWinRate": "21.4%",
         "executionTrades": 48,
@@ -68,11 +68,11 @@
         "avgOvernightReturn": "-2.75%",
         "avgRelativeReturn": "-0.63%",
         "bestStrategy": "快照：强势观察 37.5%/8笔",
-        "signals": 197,
-        "buys": 132,
+        "signals": 203,
+        "buys": 133,
         "exits": 35,
-        "holding": 92,
-        "waiting": 65
+        "holding": 93,
+        "waiting": 70
       },
       "marketRows": [
         {
@@ -85,7 +85,7 @@
         },
         {
           "market": "美股",
-          "calls": 88,
+          "calls": 93,
           "reviewed": 9,
           "winRate": "22.2%",
           "avgStockReturn": "-4.29%",
@@ -123,7 +123,7 @@
           "market": "美股",
           "symbol": "GOOGL",
           "name": "Alphabet Inc.",
-          "calls": 8,
+          "calls": 9,
           "reviewed": 1,
           "winRate": "100.0%",
           "avgStockReturn": "+0.16%",
@@ -175,7 +175,7 @@
           "market": "美股",
           "symbol": "ORCL",
           "name": "Oracle Corporation",
-          "calls": 4,
+          "calls": 5,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-2.12%",
@@ -269,7 +269,7 @@
         },
         {
           "strategy": "盘中：强势观察",
-          "calls": 28,
+          "calls": 31,
           "reviewed": 2,
           "winRate": "0.0%",
           "avgStockReturn": "-3.62%",
