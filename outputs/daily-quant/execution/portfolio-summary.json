@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T17:58:43",
+  "updatedAt": "2026-07-29T19:37:44",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；A股按100股一手、美股按整股。可用现金最低显示为0，历史超额仓位产生的资金缺口单列为模拟资金超额，不是欠款；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "96,928.63",
+    "totalAssets": "96,796.94",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-3,071.37",
-    "cumulativePnlPct": "-3.07%",
+    "cumulativePnl": "-3,203.06",
+    "cumulativePnlPct": "-3.20%",
     "realizedPnl": "-3,691.91",
-    "floatingPnl": "620.53",
+    "floatingPnl": "488.85",
     "availableCash": "51,091.05",
-    "cashRatio": "+52.71%",
+    "cashRatio": "+52.78%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "51,091.05",
-    "fundingStatus": "现金占比 +52.71%",
-    "marketValue": "45,837.57",
-    "positionRatio": "+47.29%",
+    "fundingStatus": "现金占比 +52.78%",
+    "marketValue": "45,705.89",
+    "positionRatio": "+47.22%",
     "holdings": 5,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -29,8 +29,8 @@
     "todayTrades": 0,
     "todayBuys": 0,
     "todayExits": 0,
-    "signals": 15,
-    "waiting": 8
+    "signals": 13,
+    "waiting": 6
   },
   "positions": [
     {
@@ -38,13 +38,13 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "entryPrice": "332.77",
-      "currentPrice": "342.71",
+      "currentPrice": "340.66",
       "quantity": 30,
       "availableQuantity": 30,
       "notional": "9,983.10",
-      "marketValue": "10,281.45",
-      "pnl": "298.35",
-      "pnlPct": "+2.99%",
+      "marketValue": "10,219.80",
+      "pnl": "236.70",
+      "pnlPct": "+2.37%",
       "status": "模拟持有"
     },
     {
@@ -66,13 +66,13 @@
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
       "entryPrice": "392.30",
-      "currentPrice": "396.30",
+      "currentPrice": "395.28",
       "quantity": 25,
       "availableQuantity": 25,
       "notional": "9,807.50",
-      "marketValue": "9,907.38",
-      "pnl": "99.88",
-      "pnlPct": "+1.02%",
+      "marketValue": "9,882.00",
+      "pnl": "74.50",
+      "pnlPct": "+0.76%",
       "status": "模拟持有"
     },
     {
@@ -80,13 +80,13 @@
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
       "entryPrice": "334.36",
-      "currentPrice": "337.75",
+      "currentPrice": "336.21",
       "quantity": 29,
       "availableQuantity": 29,
       "notional": "9,696.44",
-      "marketValue": "9,794.75",
-      "pnl": "98.31",
-      "pnlPct": "+1.01%",
+      "marketValue": "9,750.09",
+      "pnl": "53.65",
+      "pnlPct": "+0.55%",
       "status": "模拟持有"
     },
     {
