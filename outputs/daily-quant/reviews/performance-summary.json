@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T16:40:38",
+  "updatedAt": "2026-07-29T17:58:43",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-07-23 至 2026-07-29",
       "metrics": {
-        "calls": 24,
+        "calls": 26,
         "reviewed": 0,
-        "pending": 24,
+        "pending": 26,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 2,
@@ -22,11 +22,11 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 29,
+        "signals": 31,
         "buys": 13,
         "exits": 2,
         "holding": 11,
-        "waiting": 16
+        "waiting": 18
       },
       "marketRows": [
         {
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 24,
+          "calls": 26,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -54,9 +54,9 @@
       "label": "本月",
       "period": "2026-07-01 至 2026-07-29",
       "metrics": {
-        "calls": 162,
+        "calls": 164,
         "reviewed": 14,
-        "pending": 148,
+        "pending": 150,
         "winRate": "21.4%",
         "candidateWinRate": "21.4%",
         "executionTrades": 48,
@@ -68,11 +68,11 @@
         "avgOvernightReturn": "-2.75%",
         "avgRelativeReturn": "-0.63%",
         "bestStrategy": "快照：强势观察 37.5%/8笔",
-        "signals": 214,
+        "signals": 216,
         "buys": 140,
         "exits": 35,
         "holding": 100,
-        "waiting": 74
+        "waiting": 76
       },
       "marketRows": [
         {
@@ -85,7 +85,7 @@
         },
         {
           "market": "美股",
-          "calls": 102,
+          "calls": 104,
           "reviewed": 9,
           "winRate": "22.2%",
           "avgStockReturn": "-4.29%",
@@ -97,7 +97,7 @@
           "market": "美股",
           "symbol": "META",
           "name": "Meta Platforms, Inc.",
-          "calls": 3,
+          "calls": 4,
           "reviewed": 1,
           "winRate": "100.0%",
           "avgStockReturn": "+2.55%",
@@ -269,7 +269,7 @@
         },
         {
           "strategy": "盘中：强势观察",
-          "calls": 37,
+          "calls": 38,
           "reviewed": 2,
           "winRate": "0.0%",
           "avgStockReturn": "-3.62%",
