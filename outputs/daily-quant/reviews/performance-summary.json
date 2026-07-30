@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T15:18:41",
+  "updatedAt": "2026-07-30T17:05:20",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-07-24 至 2026-07-30",
       "metrics": {
-        "calls": 26,
+        "calls": 27,
         "reviewed": 0,
-        "pending": 26,
+        "pending": 27,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 3,
@@ -22,11 +22,11 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 33,
+        "signals": 34,
         "buys": 14,
-        "exits": 3,
-        "holding": 11,
-        "waiting": 19
+        "exits": 2,
+        "holding": 12,
+        "waiting": 20
       },
       "marketRows": [
         {
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 26,
+          "calls": 27,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -54,9 +54,9 @@
       "label": "本月",
       "period": "2026-07-01 至 2026-07-30",
       "metrics": {
-        "calls": 169,
+        "calls": 170,
         "reviewed": 14,
-        "pending": 155,
+        "pending": 156,
         "winRate": "21.4%",
         "candidateWinRate": "21.4%",
         "executionTrades": 49,
@@ -68,11 +68,11 @@
         "avgOvernightReturn": "-2.75%",
         "avgRelativeReturn": "-0.63%",
         "bestStrategy": "快照：强势观察 37.5%/8笔",
-        "signals": 223,
+        "signals": 224,
         "buys": 143,
-        "exits": 36,
-        "holding": 102,
-        "waiting": 80
+        "exits": 35,
+        "holding": 103,
+        "waiting": 81
       },
       "marketRows": [
         {
@@ -85,7 +85,7 @@
         },
         {
           "market": "美股",
-          "calls": 109,
+          "calls": 110,
           "reviewed": 9,
           "winRate": "22.2%",
           "avgStockReturn": "-4.29%",
@@ -201,7 +201,7 @@
           "market": "美股",
           "symbol": "TSM",
           "name": "Taiwan Semiconductor Manufacturing Company Limited",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-4.25%",
@@ -269,7 +269,7 @@
         },
         {
           "strategy": "盘中：强势观察",
-          "calls": 41,
+          "calls": 42,
           "reviewed": 2,
           "winRate": "0.0%",
           "avgStockReturn": "-3.62%",
