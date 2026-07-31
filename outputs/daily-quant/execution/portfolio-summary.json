@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T18:49:48",
+  "updatedAt": "2026-07-31T15:24:52",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；A股按100股一手、美股按整股。可用现金最低显示为0，历史超额仓位产生的资金缺口单列为模拟资金超额，不是欠款；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,30 +9,44 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "96,740.89",
+    "totalAssets": "97,035.58",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-3,259.11",
-    "cumulativePnlPct": "-3.26%",
-    "realizedPnl": "-3,348.66",
-    "floatingPnl": "89.55",
-    "availableCash": "51,720.33",
-    "cashRatio": "+53.46%",
+    "cumulativePnl": "-2,964.42",
+    "cumulativePnlPct": "-2.96%",
+    "realizedPnl": "-3,258.66",
+    "floatingPnl": "294.24",
+    "availableCash": "71,489.87",
+    "cashRatio": "+73.67%",
     "simulatedFundingGap": "0.00",
-    "rawSimulatedCash": "51,720.33",
-    "fundingStatus": "现金占比 +53.46%",
-    "marketValue": "45,020.56",
-    "positionRatio": "+46.54%",
-    "holdings": 5,
+    "rawSimulatedCash": "71,489.87",
+    "fundingStatus": "现金占比 +73.67%",
+    "marketValue": "25,545.71",
+    "positionRatio": "+26.33%",
+    "holdings": 3,
     "maxHoldings": 6,
     "overLimit": 0,
     "historicalCorrections": 5,
     "todayTrades": 2,
-    "todayBuys": 1,
-    "todayExits": 1,
-    "signals": 16,
-    "waiting": 9
+    "todayBuys": 0,
+    "todayExits": 2,
+    "signals": 15,
+    "waiting": 8
   },
   "positions": [
+    {
+      "market": "美股",
+      "symbol": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "entryPrice": "501.13",
+      "currentPrice": "510.09",
+      "quantity": 19,
+      "availableQuantity": 19,
+      "notional": "9,521.47",
+      "marketValue": "9,691.71",
+      "pnl": "170.24",
+      "pnlPct": "+1.79%",
+      "status": "模拟持有"
+    },
     {
       "market": "A股",
       "symbol": "600036",
@@ -48,34 +62,6 @@
       "status": "模拟持有"
     },
     {
-      "market": "美股",
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "entryPrice": "332.77",
-      "currentPrice": "333.92",
-      "quantity": 30,
-      "availableQuantity": 30,
-      "notional": "9,983.10",
-      "marketValue": "10,017.60",
-      "pnl": "34.50",
-      "pnlPct": "+0.35%",
-      "status": "模拟持有"
-    },
-    {
-      "market": "美股",
-      "symbol": "GOOGL",
-      "name": "Alphabet Inc.",
-      "entryPrice": "334.36",
-      "currentPrice": "334.59",
-      "quantity": 29,
-      "availableQuantity": 29,
-      "notional": "9,696.44",
-      "marketValue": "9,703.11",
-      "pnl": "6.67",
-      "pnlPct": "+0.07%",
-      "status": "模拟持有"
-    },
-    {
       "market": "A股",
       "symbol": "300059",
       "name": "东方财富",
@@ -87,20 +73,6 @@
       "marketValue": "8,072.00",
       "pnl": "-32.00",
       "pnlPct": "-0.39%",
-      "status": "模拟持有"
-    },
-    {
-      "market": "美股",
-      "symbol": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "entryPrice": "501.13",
-      "currentPrice": "497.15",
-      "quantity": 19,
-      "availableQuantity": 19,
-      "notional": "9,521.47",
-      "marketValue": "9,445.85",
-      "pnl": "-75.62",
-      "pnlPct": "-0.79%",
       "status": "模拟持有"
     }
   ]
