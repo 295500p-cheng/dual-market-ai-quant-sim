@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T15:24:52",
+  "updatedAt": "2026-07-31T17:07:36",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-07-25 至 2026-07-31",
       "metrics": {
-        "calls": 27,
+        "calls": 28,
         "reviewed": 0,
-        "pending": 27,
+        "pending": 28,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 3,
@@ -22,10 +22,10 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 33,
-        "buys": 14,
-        "exits": 2,
-        "holding": 12,
+        "signals": 34,
+        "buys": 15,
+        "exits": 1,
+        "holding": 14,
         "waiting": 19
       },
       "marketRows": [
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 27,
+          "calls": 28,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -54,9 +54,9 @@
       "label": "本月",
       "period": "2026-07-01 至 2026-07-31",
       "metrics": {
-        "calls": 175,
+        "calls": 176,
         "reviewed": 14,
-        "pending": 161,
+        "pending": 162,
         "winRate": "21.4%",
         "candidateWinRate": "21.4%",
         "executionTrades": 51,
@@ -68,10 +68,10 @@
         "avgOvernightReturn": "-2.75%",
         "avgRelativeReturn": "-0.63%",
         "bestStrategy": "快照：强势观察 37.5%/8笔",
-        "signals": 230,
-        "buys": 146,
-        "exits": 37,
-        "holding": 104,
+        "signals": 231,
+        "buys": 147,
+        "exits": 36,
+        "holding": 106,
         "waiting": 84
       },
       "marketRows": [
@@ -85,7 +85,7 @@
         },
         {
           "market": "美股",
-          "calls": 115,
+          "calls": 116,
           "reviewed": 9,
           "winRate": "22.2%",
           "avgStockReturn": "-4.29%",
@@ -97,7 +97,7 @@
           "market": "美股",
           "symbol": "META",
           "name": "Meta Platforms, Inc.",
-          "calls": 4,
+          "calls": 5,
           "reviewed": 1,
           "winRate": "100.0%",
           "avgStockReturn": "+2.55%",
