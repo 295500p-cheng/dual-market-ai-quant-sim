@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:49:09",
+  "updatedAt": "2026-08-03T17:59:27",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；A股按100股一手、美股按整股。可用现金最低显示为0，历史超额仓位产生的资金缺口单列为模拟资金超额，不是欠款；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,28 +9,28 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,747.25",
+    "totalAssets": "97,871.41",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,252.75",
-    "cumulativePnlPct": "-2.25%",
+    "cumulativePnl": "-2,128.59",
+    "cumulativePnlPct": "-2.13%",
     "realizedPnl": "-2,577.87",
-    "floatingPnl": "325.11",
-    "availableCash": "72,170.66",
-    "cashRatio": "+73.83%",
+    "floatingPnl": "449.28",
+    "availableCash": "62,441.72",
+    "cashRatio": "+63.80%",
     "simulatedFundingGap": "0.00",
-    "rawSimulatedCash": "72,170.66",
-    "fundingStatus": "现金占比 +73.83%",
-    "marketValue": "25,576.58",
-    "positionRatio": "+26.17%",
-    "holdings": 3,
+    "rawSimulatedCash": "62,441.72",
+    "fundingStatus": "现金占比 +63.80%",
+    "marketValue": "35,429.69",
+    "positionRatio": "+36.20%",
+    "holdings": 4,
     "maxHoldings": 6,
     "overLimit": 0,
     "historicalCorrections": 5,
-    "todayTrades": 2,
-    "todayBuys": 0,
+    "todayTrades": 3,
+    "todayBuys": 1,
     "todayExits": 2,
     "signals": 15,
-    "waiting": 8
+    "waiting": 9
   },
   "positions": [
     {
@@ -38,13 +38,13 @@
       "symbol": "AMAT",
       "name": "Applied Materials, Inc.",
       "entryPrice": "501.13",
-      "currentPrice": "511.71",
+      "currentPrice": "518.25",
       "quantity": 19,
       "availableQuantity": 19,
       "notional": "9,521.47",
-      "marketValue": "9,722.58",
-      "pnl": "201.11",
-      "pnlPct": "+2.11%",
+      "marketValue": "9,846.75",
+      "pnl": "325.28",
+      "pnlPct": "+3.42%",
       "status": "模拟持有"
     },
     {
@@ -59,6 +59,20 @@
       "marketValue": "7,782.00",
       "pnl": "156.00",
       "pnlPct": "+2.05%",
+      "status": "模拟持有"
+    },
+    {
+      "market": "美股",
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "entryPrice": "374.19",
+      "currentPrice": "374.19",
+      "quantity": 26,
+      "availableQuantity": 26,
+      "notional": "9,728.94",
+      "marketValue": "9,728.94",
+      "pnl": "0.00",
+      "pnlPct": "0.00%",
       "status": "模拟持有"
     },
     {
