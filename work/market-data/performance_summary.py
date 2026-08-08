@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import csv
 import json
+import math
 import re
 from collections import defaultdict
 from datetime import date, datetime, timedelta
@@ -160,7 +161,95 @@ def profit_factor(trades):
     return f"{gross_profit / gross_loss:.2f}"
 
 
-def execution_performance(executions, today):
+def wilson_interval(wins, total, z=1.96):
+    if not total:
+        return None, None
+    proportion = wins / total
+    denominator = 1 + z**2 / total
+    centre = proportion + z**2 / (2 * total)
+    margin = z * math.sqrt(
+        proportion * (1 - proportion) / total + z**2 / (4 * total**2)
+    )
+    return (centre - margin) / denominator * 100, (centre + margin) / denominator * 100
+
+
+def strategy_diagnostics(current, candidates):
+    sample_target = 20
+    total = len(current)
+    wins = len([row for row in current if row["returnPct"] > 0])
+    observed_rate = wins / total * 100 if total else None
+    confidence_low, confidence_high = wilson_interval(wins, total)
+
+    # The execution rules use an approximate +3.5% target and -2.5% stop.
+    target_gain = 3.5
+    stop_loss = 2.5
+    break_even_rate = stop_loss / (target_gain + stop_loss) * 100
+
+    current_candidates = [
+        row
+        for row in candidates
+        if (parse_date(row.get("date")) or date.min) >= CURRENT_RULES_SINCE.date()
+        and row.get("result_label") in COUNTED_RESULTS
+    ]
+    strong_candidates = [
+        row for row in current_candidates if "强势观察" in (row.get("action") or "")
+    ]
+
+    def candidate_rate(rows):
+        candidate_wins = len([row for row in rows if row.get("result_label") == "命中"])
+        return candidate_wins / len(rows) * 100 if rows else None
+
+    all_candidate_rate = candidate_rate(current_candidates)
+    strong_candidate_rate = candidate_rate(strong_candidates)
+    filter_lift = (
+        observed_rate - all_candidate_rate
+        if observed_rate is not None and all_candidate_rate is not None
+        else None
+    )
+    a_trades = len([row for row in current if row.get("market") == "A股"])
+    us_trades = len([row for row in current if row.get("market") == "美股"])
+    positive_returns = [row["returnPct"] for row in current if row["returnPct"] > 0]
+    negative_returns = [row["returnPct"] for row in current if row["returnPct"] <= 0]
+
+    if total < sample_target:
+        decision = "保持参数"
+        rationale = (
+            f"现行规则只有 {total} 笔独立平仓，距离调参门槛还差 {sample_target - total} 笔；"
+            "继续积累样本，暂不因短期胜率放宽或收紧阈值。"
+        )
+    elif observed_rate is not None and observed_rate < break_even_rate:
+        decision = "收紧并复测"
+        rationale = "样本已达到门槛，但胜率低于当前止盈止损结构的盈亏平衡线。"
+    else:
+        decision = "保持并分市场验证"
+        rationale = "样本达到门槛且高于盈亏平衡线，保持规则并继续分别观察A股与美股。"
+
+    return {
+        "decision": decision,
+        "rationale": rationale,
+        "sampleTarget": sample_target,
+        "samples": total,
+        "remainingSamples": max(sample_target - total, 0),
+        "observedWinRate": rate_text(wins, total),
+        "confidence95Low": pct(confidence_low),
+        "confidence95High": pct(confidence_high),
+        "breakEvenWinRate": pct(break_even_rate),
+        "edgeOverBreakEven": pct(
+            observed_rate - break_even_rate if observed_rate is not None else None
+        ),
+        "avgWin": pct(avg(positive_returns)),
+        "avgLoss": pct(avg(negative_returns)),
+        "candidateTrades": len(current_candidates),
+        "candidateWinRate": pct(all_candidate_rate),
+        "strongCandidateTrades": len(strong_candidates),
+        "strongCandidateWinRate": pct(strong_candidate_rate),
+        "filterLift": pct(filter_lift),
+        "aShareClosedTrades": a_trades,
+        "usStockClosedTrades": us_trades,
+    }
+
+
+def execution_performance(executions, today, candidates=None):
     all_trades = closed_round_trips(executions)
     live_trades = [row for row in all_trades if row["isLiveTrade"]]
     current = [row for row in live_trades if row["isCurrentRule"]]
@@ -219,6 +308,7 @@ def execution_performance(executions, today):
         "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
         "optimization": optimization,
         "metrics": metrics,
+        "diagnostics": strategy_diagnostics(current, candidates or []),
         "strategyBreakdown": [
             {
                 "name": action,
@@ -420,7 +510,7 @@ def main():
     }
     REVIEWS.mkdir(parents=True, exist_ok=True)
     (REVIEWS / "performance-summary.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    execution_stats = execution_performance(executions, today)
+    execution_stats = execution_performance(executions, today, candidates)
     (REVIEWS / "execution-performance-stats.json").write_text(
         json.dumps(execution_stats, ensure_ascii=False, indent=2), encoding="utf-8"
     )

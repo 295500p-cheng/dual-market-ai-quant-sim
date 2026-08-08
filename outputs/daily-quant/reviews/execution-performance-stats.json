@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T14:23:21",
+  "updatedAt": "2026-08-08T15:54:14",
   "status": "现行自动模拟规则胜率",
   "summary": "现行规则已平仓 7 笔，5 胜 2 负，胜率 71.4%；近7天 4 笔，胜率 75.0%。",
   "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
@@ -23,6 +23,27 @@
     "allLiveTrades": 41,
     "allLiveWinRate": "39.0%",
     "currentRuleSince": "2026-07-21T18:40"
+  },
+  "diagnostics": {
+    "decision": "保持参数",
+    "rationale": "现行规则只有 7 笔独立平仓，距离调参门槛还差 13 笔；继续积累样本，暂不因短期胜率放宽或收紧阈值。",
+    "sampleTarget": 20,
+    "samples": 7,
+    "remainingSamples": 13,
+    "observedWinRate": "71.4%",
+    "confidence95Low": "+35.89%",
+    "confidence95High": "+91.78%",
+    "breakEvenWinRate": "+41.67%",
+    "edgeOverBreakEven": "+29.76%",
+    "avgWin": "+3.50%",
+    "avgLoss": "-2.50%",
+    "candidateTrades": 18,
+    "candidateWinRate": "+44.44%",
+    "strongCandidateTrades": 12,
+    "strongCandidateWinRate": "+50.00%",
+    "filterLift": "+26.98%",
+    "aShareClosedTrades": 0,
+    "usStockClosedTrades": 7
   },
   "strategyBreakdown": [
     {

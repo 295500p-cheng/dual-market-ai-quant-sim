@@ -207,8 +207,9 @@ async function renderTracker() {
 }
 
 function trendClass(value) {
-  if (String(value).startsWith("+")) return "positive";
-  if (String(value).startsWith("-")) return "negative";
+  const numeric = Number(String(value ?? "").replaceAll(",", "").replace("%", ""));
+  if (numeric > 0) return "positive";
+  if (numeric < 0) return "negative";
   return "";
 }
 
@@ -221,8 +222,12 @@ async function renderPortfolioSummary() {
   document.querySelector("#pfPnl").textContent = metrics.cumulativePnl ?? "待计算";
   document.querySelector("#pfPnl").className = trendClass(metrics.cumulativePnl);
   document.querySelector("#pfPnlPct").textContent =
-    `累计 ${metrics.cumulativePnlPct ?? "待计算"} · 浮动 ${metrics.floatingPnl ?? "待计算"}`;
+    `累计 ${metrics.cumulativePnlPct ?? "待计算"} · 旧规则及迁移 ${metrics.legacyCarryoverPnl ?? "待计算"} · 浮动 ${metrics.floatingPnl ?? "待计算"}`;
   document.querySelector("#pfPnlPct").className = trendClass(metrics.cumulativePnlPct);
+  document.querySelector("#pfCurrentPnl").textContent = metrics.currentRuleRealizedPnl ?? "待计算";
+  document.querySelector("#pfCurrentPnl").className = trendClass(metrics.currentRuleRealizedPnl);
+  document.querySelector("#pfCurrentStats").textContent =
+    `${metrics.currentRuleClosedTrades ?? 0} 笔平仓 · 胜率 ${metrics.currentRuleWinRate ?? "暂无"}`;
   document.querySelector("#pfCash").textContent = metrics.availableCash ?? "待计算";
   document.querySelector("#pfCashRatio").textContent = metrics.fundingStatus ?? `现金占比 ${metrics.cashRatio ?? "待计算"}`;
   document.querySelector("#pfCashRatio").className = metrics.overLimit > 0 ? "negative" : "";
@@ -307,7 +312,25 @@ async function renderStats() {
     `${metrics.recentWinRate} / ${metrics.recentTrades} 笔`;
   document.querySelector("#statMarketWinRate").textContent =
     `A股 ${metrics.aShareWinRate} / 美股 ${metrics.usStockWinRate}`;
+  renderStrategyDiagnostics(data.diagnostics);
   updateHeroMetrics();
+}
+
+function renderStrategyDiagnostics(diagnostics) {
+  if (!diagnostics) return;
+  document.querySelector("#diagnosticDecision").textContent = diagnostics.decision;
+  document.querySelector("#diagnosticRationale").textContent = diagnostics.rationale;
+  document.querySelector("#diagnosticSamples").textContent =
+    `${diagnostics.samples} / ${diagnostics.sampleTarget} 笔`;
+  document.querySelector("#diagnosticConfidence").textContent =
+    `${diagnostics.confidence95Low} 至 ${diagnostics.confidence95High}`;
+  document.querySelector("#diagnosticBreakEven").textContent =
+    `${diagnostics.breakEvenWinRate}（领先 ${diagnostics.edgeOverBreakEven}）`;
+  document.querySelector("#diagnosticCandidates").textContent =
+    `${diagnostics.candidateWinRate} / ${diagnostics.candidateTrades} 条`;
+  document.querySelector("#diagnosticLift").textContent = diagnostics.filterLift;
+  document.querySelector("#diagnosticMarkets").textContent =
+    `A股 ${diagnostics.aShareClosedTrades} / 美股 ${diagnostics.usStockClosedTrades}`;
 }
 
 function applyExecutionPerformanceSummary() {

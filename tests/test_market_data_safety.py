@@ -154,6 +154,44 @@ class MarketDataSafetyTests(unittest.TestCase):
         self.assertEqual(sizing.simulated_quantity("A股", 37.25), 200)
         self.assertEqual(sizing.simulated_quantity("美股", 242.67), 41)
 
+    def test_new_a_share_order_never_exceeds_position_cap(self):
+        self.assertEqual(sizing.entry_order_quantity("A股", 80.0), 100)
+        self.assertEqual(sizing.entry_order_quantity("A股", 120.0), 0)
+        self.assertEqual(sizing.entry_order_cost("A股", 120.0), 0)
+        self.assertEqual(sizing.entry_order_quantity("美股", 12_000.0), 0)
+        self.assertEqual(sizing.simulated_quantity("A股", 120.0), 100)
+
+    def test_current_rule_metrics_separate_legacy_account_loss(self):
+        rows = [
+            {
+                "updated_at": "2026-07-22T10:00:00",
+                "market": "美股",
+                "symbol": "WIN",
+                "name": "Winner",
+                "entry_status": "模拟买入",
+                "exit_status": "模拟持有",
+                "entry_price": "100.00",
+                "source_status": "开盘后可核验行情候选",
+                "action": "盘中：强势观察",
+            },
+            {
+                "updated_at": "2026-07-23T10:00:00",
+                "market": "美股",
+                "symbol": "WIN",
+                "name": "Winner",
+                "entry_status": "已持仓",
+                "exit_status": "模拟止盈",
+                "entry_price": "100.00",
+                "exit_price": "103.50",
+                "source_status": "开盘后可核验行情候选",
+            },
+        ]
+        metrics = portfolio.current_rule_metrics(rows, -500)
+        self.assertEqual(metrics["currentRuleClosedTrades"], 1)
+        self.assertEqual(metrics["currentRuleWinRate"], "100.0%")
+        self.assertEqual(metrics["currentRuleRealizedPnl"], "350.00")
+        self.assertEqual(metrics["legacyCarryoverPnl"], "-850.00")
+
     def test_a_share_t_plus_one_quantity_is_frozen(self):
         self.assertEqual(sizing.available_quantity("A股", 200, "2026-07-13T10:00:00", "2026-07-13"), 0)
         self.assertEqual(sizing.available_quantity("A股", 200, "2026-07-12T10:00:00", "2026-07-13"), 200)
@@ -315,6 +353,34 @@ class MarketDataSafetyTests(unittest.TestCase):
         self.assertEqual(stats["metrics"]["totalTrades"], 1)
         self.assertEqual(stats["metrics"]["totalWinRate"], "100.0%")
         self.assertEqual(stats["metrics"]["recentTrades"], 1)
+
+    def test_wilson_interval_reflects_small_sample_uncertainty(self):
+        low, high = performance.wilson_interval(5, 7)
+        self.assertGreater(low, 35)
+        self.assertLess(low, 37)
+        self.assertGreater(high, 91)
+        self.assertLess(high, 93)
+
+    def test_strategy_diagnostics_holds_parameters_until_twenty_trades(self):
+        current = [
+            {"returnPct": value, "market": "美股"}
+            for value in (3.5, 2.1, 1.8, 1.2, 0.9, -2.5, -1.7)
+        ]
+        candidates = [
+            {
+                "date": "2026-08-01",
+                "action": "盘中：强势观察",
+                "result_label": result,
+            }
+            for result in ("命中", "命中", "失败", "失败")
+        ]
+        diagnostics = performance.strategy_diagnostics(current, candidates)
+        self.assertEqual(diagnostics["decision"], "保持参数")
+        self.assertEqual(diagnostics["sampleTarget"], 20)
+        self.assertEqual(diagnostics["remainingSamples"], 13)
+        self.assertEqual(diagnostics["candidateWinRate"], "+50.00%")
+        self.assertEqual(diagnostics["aShareClosedTrades"], 0)
+        self.assertEqual(diagnostics["usStockClosedTrades"], 7)
 
     def test_cloud_close_schedule_forces_a_share_review(self):
         now = datetime(2026, 7, 19, 15, 0, tzinfo=timezone.utc)

@@ -5,6 +5,7 @@ import re
 from datetime import date, datetime
 from pathlib import Path
 
+from performance_summary import closed_round_trips
 from position_sizing import simulated_cost
 
 
@@ -99,6 +100,18 @@ def realized_pnl(rows):
     return pnl
 
 
+def current_rule_metrics(rows, account_realized):
+    trades = [row for row in closed_round_trips(rows) if row["isCurrentRule"]]
+    wins = len([row for row in trades if row["returnPct"] > 0])
+    realized = sum(row["pnl"] for row in trades)
+    return {
+        "currentRuleRealizedPnl": money(realized),
+        "currentRuleClosedTrades": len(trades),
+        "currentRuleWinRate": f"{wins / len(trades) * 100:.1f}%" if trades else "暂无",
+        "legacyCarryoverPnl": money(account_realized - realized),
+    }
+
+
 def todays_trade_counts(rows):
     today = date.today().isoformat()
     buys = 0
@@ -169,6 +182,7 @@ def main():
     buys_today, exits_today = todays_trade_counts(ledger_rows)
     corrected_positions = historical_correction_count(ledger_rows)
     latest_metrics = latest_executions.get("metrics", {})
+    strategy_metrics = current_rule_metrics(ledger_rows, realized)
 
     data = {
         "updatedAt": datetime.now().isoformat(timespec="seconds"),
@@ -207,6 +221,7 @@ def main():
             "todayExits": exits_today,
             "signals": latest_metrics.get("signals", 0),
             "waiting": latest_metrics.get("waiting", 0),
+            **strategy_metrics,
         },
         "positions": build_position_rows(positions),
     }

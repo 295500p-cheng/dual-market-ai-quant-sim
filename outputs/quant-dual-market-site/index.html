@@ -58,6 +58,11 @@
               <small id="pfPnlPct">读取中</small>
             </article>
             <article>
+              <span>现行策略已实现</span>
+              <strong id="pfCurrentPnl">读取中</strong>
+              <small id="pfCurrentStats">读取中</small>
+            </article>
+            <article>
               <span>可用现金</span>
               <strong id="pfCash">读取中</strong>
               <small id="pfCashRatio">读取中</small>
@@ -155,6 +160,23 @@
             <p>复盘涨跌、隔夜收益、是否跑赢基准、是否触发止盈止损，并调整策略权重。</p>
           </article>
         </div>
+        <section class="strategy-diagnostic" aria-labelledby="diagnosticTitle">
+          <div class="diagnostic-head">
+            <div>
+              <p class="eyebrow">自动调参闸门</p>
+              <h3 id="diagnosticTitle">策略诊断：<span id="diagnosticDecision">读取中</span></h3>
+            </div>
+            <p id="diagnosticRationale">正在核对独立平仓样本和候选池表现。</p>
+          </div>
+          <div class="diagnostic-grid">
+            <div><span>样本进度</span><strong id="diagnosticSamples">--</strong></div>
+            <div><span>95% 胜率区间</span><strong id="diagnosticConfidence">--</strong></div>
+            <div><span>盈亏平衡线</span><strong id="diagnosticBreakEven">--</strong></div>
+            <div><span>同期候选池</span><strong id="diagnosticCandidates">--</strong></div>
+            <div><span>执行筛选提升</span><strong id="diagnosticLift">--</strong></div>
+            <div><span>市场覆盖</span><strong id="diagnosticMarkets">--</strong></div>
+          </div>
+        </section>
         <div class="record-links" aria-label="复盘记录入口">
           <a href="../daily-quant/strategy-log/candidate-ledger.csv">候选总表</a>
           <a href="../daily-quant/strategy-log/review-template.md">复盘评分表</a>

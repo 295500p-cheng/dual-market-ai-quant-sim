@@ -7,7 +7,7 @@ from datetime import datetime, time, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from position_sizing import available_quantity, simulated_cost
+from position_sizing import available_quantity, entry_order_cost, entry_order_quantity
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -513,7 +513,8 @@ def main():
             if not quote:
                 quote = {}
             quote_price = number(quote.get("current_price")) if quote_is_current(quote, market) else None
-            required_cash = simulated_cost(market, quote_price)
+            order_quantity = entry_order_quantity(market, quote_price)
+            required_cash = entry_order_cost(market, quote_price)
             block_reason = ""
             gate_reason = entry_gate_reason(pick, source_status)
             confirmation_count = confirmation_rows.get(position_key, 0) + 1
@@ -531,6 +532,11 @@ def main():
                 )
             elif daily_buys >= MAX_DAILY_BUYS:
                 block_reason = f"今日已新增 {daily_buys} 只模拟持仓，达到每日上限 {MAX_DAILY_BUYS} 只。"
+            elif quote_price is not None and order_quantity <= 0:
+                block_reason = (
+                    f"{market}最小交易单位成本超过单票模拟资金上限 10,000.00；"
+                    "不扩大仓位、不拆分交易单位，本轮信号只跟踪。"
+                )
             elif quote_price is not None and available_cash < required_cash:
                 block_reason = (
                     f"可用模拟现金不足：本次按交易单位需要 {required_cash:,.2f}，"
