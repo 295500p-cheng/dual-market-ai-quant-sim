@@ -5,7 +5,12 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from performance_summary import closed_execution_trades, profit_factor
+from performance_summary import (
+    BLOCKED_SOURCE_TERMS,
+    closed_execution_trades,
+    dedupe_daily_candidates,
+    profit_factor,
+)
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -128,28 +133,41 @@ def build_action_rows(rows):
 
 def execution_metrics(rows, week_start):
     latest_by_signal = {}
+    buy_events = set()
+    exit_events = set()
     for row in rows:
         updated_at = row.get("updated_at", "")
         updated_date = parse_date(updated_at[:10]) if len(updated_at) >= 10 else None
         if updated_date and updated_date >= week_start:
             key = (updated_at[:10], row.get("market"), row.get("symbol"))
             latest_by_signal[key] = row
+            source = row.get("source_status", "")
+            if any(term in source for term in BLOCKED_SOURCE_TERMS):
+                continue
+            event_key = (updated_at, row.get("market"), row.get("symbol"))
+            if row.get("entry_status") == "模拟买入":
+                buy_events.add(event_key)
+            if row.get("exit_status") in {
+                "模拟止盈",
+                "模拟止损",
+                "模拟到期卖出",
+                "区间冲突，按止损优先",
+            }:
+                exit_events.add((*event_key, row.get("exit_status")))
     week_rows = list(latest_by_signal.values())
-    buys = [row for row in week_rows if row.get("entry_status") in {"模拟买入", "已持仓"}]
-    exits = [row for row in week_rows if row.get("exit_status") in {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}]
     holding = [row for row in week_rows if row.get("exit_status") == "模拟持有"]
     waiting = [row for row in week_rows if row.get("entry_status") == "等待触发"]
     return {
         "executionSignals": len(week_rows),
-        "executionBuys": len(buys),
-        "executionExits": len(exits),
+        "executionBuys": len(buy_events),
+        "executionExits": len(exit_events),
         "executionHolding": len(holding),
         "executionWaiting": len(waiting),
     }
 
 
 def main():
-    rows = read_rows()
+    rows = dedupe_daily_candidates(read_rows())
     today = date.today()
     week_start = today - timedelta(days=6)
     week_rows = [row for row in rows if (parse_date(row.get("date")) or date.min) >= week_start]

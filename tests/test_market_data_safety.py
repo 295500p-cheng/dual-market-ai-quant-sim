@@ -26,6 +26,7 @@ performance = load_module("performance_summary", "work/market-data/performance_s
 overnight = load_module("overnight_backtest", "work/market-data/overnight_backtest.py")
 cloud_schedule = load_module("cloud_schedule", "work/market-data/cloud_schedule.py")
 review = load_module("review_candidates", "work/market-data/review_candidates.py")
+weekly = load_module("weekly_review", "work/market-data/weekly_review.py")
 
 
 class MarketDataSafetyTests(unittest.TestCase):
@@ -392,6 +393,37 @@ class MarketDataSafetyTests(unittest.TestCase):
         self.assertEqual(len(trades), 1)
         self.assertTrue(trades[0]["matchedEntry"])
         self.assertAlmostEqual(trades[0]["returnPct"], 3.5)
+
+    def test_weekly_execution_metrics_preserve_buy_and_exit_events(self):
+        rows = [
+            {
+                "updated_at": "2026-08-03T17:00:00",
+                "market": "美股",
+                "symbol": "MSFT",
+                "entry_status": "模拟买入",
+                "exit_status": "模拟持有",
+                "source_status": "开盘后可核验行情候选",
+            },
+            {
+                "updated_at": "2026-08-04T15:00:00",
+                "market": "美股",
+                "symbol": "MSFT",
+                "entry_status": "已持仓",
+                "exit_status": "模拟止盈",
+                "source_status": "开盘后可核验行情候选",
+            },
+            {
+                "updated_at": "2026-08-04T15:15:00",
+                "market": "美股",
+                "symbol": "MSFT",
+                "entry_status": "等待触发",
+                "exit_status": "未执行",
+                "source_status": "开盘后可核验行情候选",
+            },
+        ]
+        metrics = weekly.execution_metrics(rows, date(2026, 8, 2))
+        self.assertEqual(metrics["executionBuys"], 1)
+        self.assertEqual(metrics["executionExits"], 1)
 
     def test_a_share_entry_window_starts_at_ten(self):
         before = datetime(2026, 7, 21, 1, 45, tzinfo=timezone.utc)

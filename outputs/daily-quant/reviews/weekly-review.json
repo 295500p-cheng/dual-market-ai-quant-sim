@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-08T15:15:34",
+  "updatedAt": "2026-08-08T15:17:48",
   "status": "本周实际模拟平仓已更新",
   "period": "2026-08-02 至 2026-08-08",
   "summary": "本周实际模拟平仓 4 笔，3 胜 1 负，胜率 75.0%。",
   "metrics": {
     "reviewedTrades": 4,
-    "pendingTrades": 46,
+    "pendingTrades": 20,
     "weeklyWinRate": "75.0%",
     "overnightTrades": 4,
     "overnightWinRate": "+2.00%",
@@ -18,8 +18,8 @@
     "bestBucket": "暂无",
     "weakBucket": "暂无",
     "executionSignals": 27,
-    "executionBuys": 11,
-    "executionExits": 2,
+    "executionBuys": 3,
+    "executionExits": 4,
     "executionHolding": 9,
     "executionWaiting": 16
   },
