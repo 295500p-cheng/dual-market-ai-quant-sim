@@ -112,7 +112,7 @@ def main():
     }
     updated = 0
     for record in snapshot.get("records", []):
-        if record.get("asset_type") != "stock":
+        if record.get("asset_type") not in {"stock", "benchmark", "index", "ETF", "etf"}:
             continue
         row = history_row(snapshot, record)
         if not row["market"] or not row["symbol"]:

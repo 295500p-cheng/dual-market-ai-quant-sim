@@ -1,0 +1,99 @@
+{
+  "updatedAt": "2026-08-08T15:15:34",
+  "status": "现行自动模拟规则胜率",
+  "summary": "现行规则已平仓 7 笔，5 胜 2 负，胜率 71.4%；近7天 4 笔，胜率 75.0%。",
+  "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
+  "optimization": "现行规则样本不足20笔，暂不继续调参；优先恢复A股轮次并积累独立样本。",
+  "metrics": {
+    "totalTrades": 7,
+    "totalWins": 5,
+    "totalLosses": 2,
+    "totalWinRate": "71.4%",
+    "recentTrades": 4,
+    "recentWins": 3,
+    "recentLosses": 1,
+    "recentWinRate": "75.0%",
+    "aShareTrades": 0,
+    "aShareWinRate": "暂无",
+    "usStockTrades": 7,
+    "usStockWinRate": "71.4%",
+    "avgReturn": "+1.79%",
+    "profitFactor": "3.45",
+    "realizedPnl": "+1,204.20",
+    "allLiveTrades": 41,
+    "allLiveWinRate": "39.0%",
+    "currentRuleSince": "2026-07-21T18:40"
+  },
+  "strategyBreakdown": [
+    {
+      "name": "盘中：强势观察",
+      "trades": 7,
+      "winRate": "71.4%"
+    }
+  ],
+  "recentClosedTrades": [
+    {
+      "updatedAt": "2026-08-05T17:04:51",
+      "market": "美股",
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止损",
+      "returnPct": "-2.50%"
+    },
+    {
+      "updatedAt": "2026-08-04T15:30:41",
+      "market": "美股",
+      "symbol": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止盈",
+      "returnPct": "+3.50%"
+    },
+    {
+      "updatedAt": "2026-08-03T15:49:09",
+      "market": "美股",
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止盈",
+      "returnPct": "+3.50%"
+    },
+    {
+      "updatedAt": "2026-08-03T15:49:09",
+      "market": "美股",
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止盈",
+      "returnPct": "+3.50%"
+    },
+    {
+      "updatedAt": "2026-07-31T15:24:52",
+      "market": "美股",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止损",
+      "returnPct": "-2.50%"
+    },
+    {
+      "updatedAt": "2026-07-31T15:24:52",
+      "market": "美股",
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止盈",
+      "returnPct": "+3.50%"
+    },
+    {
+      "updatedAt": "2026-07-30T15:18:41",
+      "market": "美股",
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止盈",
+      "returnPct": "+3.50%"
+    }
+  ]
+}

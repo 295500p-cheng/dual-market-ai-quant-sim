@@ -5,6 +5,8 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+from performance_summary import closed_execution_trades, profit_factor
+
 
 ROOT = Path(__file__).resolve().parents[2]
 REVIEWS = ROOT / "outputs" / "daily-quant" / "reviews"
@@ -87,15 +89,20 @@ def build_market_rows(rows):
     output = []
     for market in ["A股", "美股"]:
         market_rows = [row for row in rows if row.get("market") == market]
-        counted = reviewed_trades(market_rows)
+        wins = [row for row in market_rows if row.get("returnPct", 0) > 0]
+        avg_return = (
+            sum(row["returnPct"] for row in market_rows) / len(market_rows)
+            if market_rows
+            else None
+        )
         output.append(
             {
                 "market": market,
-                "reviewed": len(counted),
-                "winRate": win_rate(market_rows),
-                "overnightAvg": average_return(counted, "overnight_return"),
-                "relativeAvg": average_return(counted, "relative_return"),
-                "lesson": "等待真实复盘样本" if not counted else "保留有效因子，降低失败标签权重",
+                "reviewed": len(market_rows),
+                "winRate": f"{len(wins) / len(market_rows) * 100:.1f}%" if market_rows else "暂无",
+                "overnightAvg": f"{avg_return:+.2f}%" if avg_return is not None else "暂无",
+                "relativeAvg": f"{sum(row['pnl'] for row in market_rows):+,.2f}" if market_rows else "暂无",
+                "lesson": "等待实际模拟平仓样本" if not market_rows else "按实际模拟平仓持续跟踪",
             }
         )
     return output
@@ -147,16 +154,30 @@ def main():
     week_start = today - timedelta(days=6)
     week_rows = [row for row in rows if (parse_date(row.get("date")) or date.min) >= week_start]
     counted = reviewed_trades(week_rows)
-    overnight_rows = [row for row in counted if (number(row.get("overnight_score")) or 0) >= 60]
     pending = [row for row in week_rows if row.get("review_status") == "待复盘"]
     best, worst = best_and_worst(counted, "action")
-    execution = execution_metrics(read_execution_rows(), week_start)
+    execution_rows = read_execution_rows()
+    execution = execution_metrics(execution_rows, week_start)
+    trades = closed_execution_trades(execution_rows, week_start, today)
+    wins = [row for row in trades if row["returnPct"] > 0]
+    weekly_rate = f"{len(wins) / len(trades) * 100:.1f}%" if trades else "暂无"
+    average_trade = (
+        f"{sum(row['returnPct'] for row in trades) / len(trades):+.2f}%"
+        if trades
+        else "暂无"
+    )
+    realized_pnl = f"{sum(row['pnl'] for row in trades):+,.2f}" if trades else "暂无"
 
-    status = "等待一周真实样本" if not counted else "本周回测已更新"
+    def market_rate(market):
+        items = [row for row in trades if row.get("market") == market]
+        market_wins = [row for row in items if row["returnPct"] > 0]
+        return f"{len(market_wins) / len(items) * 100:.1f}%" if items else "暂无"
+
+    status = "等待本周模拟平仓" if not trades else "本周实际模拟平仓已更新"
     summary = (
-        f"本周已有 {len(pending)} 条候选等待真实复盘，暂不计算周胜率。"
-        if not counted
-        else f"本周复盘 {len(counted)} 笔，周胜率 {win_rate(counted)}。"
+        f"本周暂无实际模拟平仓，已有 {len(pending)} 条候选等待复盘。"
+        if not trades
+        else f"本周实际模拟平仓 {len(trades)} 笔，{len(wins)} 胜 {len(trades) - len(wins)} 负，胜率 {weekly_rate}。"
     )
     data = {
         "updatedAt": datetime.now().isoformat(timespec="seconds"),
@@ -164,24 +185,27 @@ def main():
         "period": f"{week_start.isoformat()} 至 {today.isoformat()}",
         "summary": summary,
         "metrics": {
-            "reviewedTrades": len(counted),
+            "reviewedTrades": len(trades),
             "pendingTrades": len(pending),
-            "weeklyWinRate": win_rate(counted),
-            "overnightTrades": len(overnight_rows),
-            "overnightWinRate": win_rate(overnight_rows),
-            "aShareWinRate": win_rate([row for row in counted if row.get("market") == "A股"]),
-            "usStockWinRate": win_rate([row for row in counted if row.get("market") == "美股"]),
-            "avgRelativeReturn": average_return(counted, "relative_return"),
+            "weeklyWinRate": weekly_rate,
+            "overnightTrades": len(trades),
+            "overnightWinRate": average_trade,
+            "aShareWinRate": market_rate("A股"),
+            "usStockWinRate": market_rate("美股"),
+            "avgRelativeReturn": realized_pnl,
+            "executionAvgReturn": average_trade,
+            "executionProfitFactor": profit_factor(trades),
+            "executionRealizedPnl": realized_pnl,
             "bestBucket": best,
             "weakBucket": worst,
             **execution,
         },
-        "marketRows": build_market_rows(counted),
+        "marketRows": build_market_rows(trades),
         "actionRows": build_action_rows(counted),
         "nextWeekFocus": [
-            "继续积累真实复盘样本，不用模拟数据计算胜率。",
-            "优先观察隔夜评分高于60的候选是否真的贡献胜率。",
-            "一周后比较A股和美股哪个市场的信号更稳定，再调整权重。",
+            "继续积累实际模拟平仓样本，样本少于20笔时不继续调参。",
+            "优先恢复A股云端轮次，避免只用美股样本判断整体策略。",
+            "按市场分别比较胜率、平均收益和盈亏因子，再调整权重。",
         ],
     }
     REVIEWS.mkdir(parents=True, exist_ok=True)

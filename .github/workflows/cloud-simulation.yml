@@ -8,6 +8,10 @@ on:
       timezone: "Asia/Shanghai"
     - cron: "2,17,32,47 9-16 * * 1-5"
       timezone: "America/New_York"
+    - cron: "5 15 * * 1-5"
+      timezone: "Asia/Shanghai"
+    - cron: "5 16 * * 1-5"
+      timezone: "America/New_York"
   workflow_dispatch:
     inputs:
       market:
@@ -30,22 +34,25 @@ on:
         required: true
         default: false
         type: boolean
+      review_now:
+        description: Run close review instead of an intraday simulation cycle
+        required: true
+        default: false
+        type: boolean
 
 permissions:
   contents: write
   pages: write
   id-token: write
 
-concurrency:
-  group: cloud-simulated-trading
-  cancel-in-progress: false
-
 jobs:
-  simulate-and-publish:
+  simulate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: cloud-simulation-state
+      cancel-in-progress: false
+    outputs:
+      publish: ${{ steps.market.outputs.publish }}
     steps:
       - name: Check out simulation state
         uses: actions/checkout@v6
@@ -62,25 +69,34 @@ jobs:
         env:
           REQUESTED_MARKET: ${{ inputs.market || 'auto' }}
           PUBLISH_ONLY: ${{ inputs.publish_only || 'false' }}
+          REVIEW_NOW: ${{ inputs.review_now || 'false' }}
+          SCHEDULE_EXPRESSION: ${{ github.event.schedule || '' }}
         run: |
-          if [ "$PUBLISH_ONLY" = "true" ]; then
-            echo "market=closed" >> "$GITHUB_OUTPUT"
-            echo "run_cycle=false" >> "$GITHUB_OUTPUT"
-            echo "publish=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
           market="$REQUESTED_MARKET"
-          if [ "$market" = "auto" ]; then
-            market="$(python3 work/market-data/cloud_schedule.py)"
-          fi
-          echo "market=$market" >> "$GITHUB_OUTPUT"
-          if [ "$market" = "closed" ]; then
+          mode="cycle"
+
+          if [ "$PUBLISH_ONLY" = "true" ]; then
+            market="closed"
             echo "run_cycle=false" >> "$GITHUB_OUTPUT"
-            echo "publish=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "run_cycle=true" >> "$GITHUB_OUTPUT"
             echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            if [ "$market" = "auto" ]; then
+              read -r market mode <<< "$(python3 work/market-data/cloud_schedule.py --schedule "$SCHEDULE_EXPRESSION")"
+            elif [ "$REVIEW_NOW" = "true" ]; then
+              mode="review"
+            fi
+
+            if [ "$market" = "closed" ]; then
+              echo "run_cycle=false" >> "$GITHUB_OUTPUT"
+              echo "publish=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "run_cycle=true" >> "$GITHUB_OUTPUT"
+              echo "publish=true" >> "$GITHUB_OUTPUT"
+            fi
           fi
+
+          echo "market=$market" >> "$GITHUB_OUTPUT"
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
 
       - name: Verify safety rules
         if: steps.market.outputs.run_cycle == 'true'
@@ -90,11 +106,11 @@ jobs:
         if: steps.market.outputs.run_cycle == 'true'
         run: cp outputs/daily-quant/execution/execution-ledger.csv /tmp/execution-ledger-before.csv
 
-      - name: Run simulated market cycle
+      - name: Run simulated market cycle or close review
         if: steps.market.outputs.run_cycle == 'true'
         id: cycle
         continue-on-error: true
-        run: scripts/run_cloud_cycle.sh "${{ steps.market.outputs.market }}"
+        run: scripts/run_cloud_cycle.sh "${{ steps.market.outputs.market }}" "${{ steps.market.outputs.mode }}"
 
       - name: Send WeChat notifications
         if: always() && steps.market.outputs.run_cycle == 'true'
@@ -112,7 +128,7 @@ jobs:
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
         run: python3 work/market-data/notify_serverchan.py --test
 
-      - name: Save updated simulation ledger
+      - name: Save updated simulation and review state
         if: always() && steps.market.outputs.run_cycle == 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -123,29 +139,46 @@ jobs:
             git push
           fi
 
+      - name: Fail the workflow when the market cycle failed
+        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'failure'
+        run: exit 1
+
+  publish:
+    needs: simulate
+    if: needs.simulate.result == 'success' && needs.simulate.outputs.publish == 'true' && github.event.repository.private == false
+    runs-on: ubuntu-latest
+    concurrency:
+      group: cloud-pages-publish
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out latest simulation state
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
       - name: Prepare public dashboard
-        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         run: |
           python3 work/market-data/publish_site.py
           touch /tmp/quant-site-public/.nojekyll
 
       - name: Configure GitHub Pages
-        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
       - name: Upload dashboard
-        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         uses: actions/upload-pages-artifact@v4
         with:
           path: /tmp/quant-site-public
 
       - name: Deploy dashboard
-        if: steps.market.outputs.publish == 'true' && (steps.market.outputs.run_cycle == 'false' || steps.cycle.outcome == 'success') && github.event.repository.private == false
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Fail the workflow when the market cycle failed
-        if: steps.market.outputs.run_cycle == 'true' && steps.cycle.outcome == 'failure'
-        run: exit 1

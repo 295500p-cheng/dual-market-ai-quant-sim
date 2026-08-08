@@ -8,16 +8,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-LIVE = ROOT / "outputs" / "daily-quant" / "live"
 REVIEWS = ROOT / "outputs" / "daily-quant" / "reviews"
 LOG = ROOT / "outputs" / "daily-quant" / "strategy-log"
 LEDGER = LOG / "candidate-ledger.csv"
 EXECUTION_LEDGER = ROOT / "outputs" / "daily-quant" / "execution" / "execution-ledger.csv"
+PRICE_HISTORY = REVIEWS / "price-history.csv"
 EXIT_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}
-
-
-def read_json(path):
-    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def write_json(path, data):
@@ -73,16 +69,40 @@ def record_date(row):
     return timestamp[:10] if len(timestamp) >= 10 else ""
 
 
-def records_by_symbol(snapshot):
+def history_by_symbol(rows):
     records = {}
     benchmarks = {}
-    for row in snapshot.get("records", []):
-        keys = {row.get("symbol"), row.get("name"), row.get("provider_symbol")}
+    for row in sorted(rows, key=lambda item: item.get("date", "")):
         target = benchmarks if row.get("asset_type") in {"benchmark", "index", "ETF", "etf"} else records
-        for key in keys:
+        for key in {row.get("symbol"), row.get("name")}:
             if key:
-                target[(row.get("market"), key)] = row
+                target.setdefault((row.get("market"), key), []).append(row)
     return records, benchmarks
+
+
+def history_quote(row):
+    if not row:
+        return None
+    return {
+        **row,
+        "current_price": row.get("close_price"),
+        "timestamp": row.get("quote_time"),
+        "raw_date": row.get("date"),
+    }
+
+
+def next_history_quote(items, candidate_date):
+    for row in items or []:
+        if row.get("date", "") > candidate_date:
+            return history_quote(row)
+    return None
+
+
+def history_quote_on_date(items, target_date):
+    for row in items or []:
+        if row.get("date") == target_date:
+            return history_quote(row)
+    return None
 
 
 def read_ledger():
@@ -110,17 +130,27 @@ def execution_for_candidate(rows, candidate):
     return match
 
 
+def daily_candidate_key(row):
+    return row.get("date"), row.get("market"), row.get("symbol")
+
+
+def latest_daily_candidates(rows):
+    latest = {}
+    for row in rows:
+        key = daily_candidate_key(row)
+        if not all(key):
+            continue
+        previous = latest.get(key)
+        if previous is None or row.get("time", "") >= previous.get("time", ""):
+            latest[key] = row
+    return list(latest.values())
+
+
 def write_ledger(fieldnames, rows):
     with LEDGER.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
-
-
-def is_reviewable(candidate, quote):
-    quote_date = record_date(quote)
-    candidate_date = candidate.get("date", "")
-    return bool(quote_date and candidate_date and quote_date > candidate_date)
 
 
 def hit_range(low_price, high_price, zone_text):
@@ -139,7 +169,7 @@ def first_zone_price(zone_text):
 def review_row(candidate, quote, benchmark, execution=None):
     ref_price = number(candidate.get("current_price"))
     open_price = number(quote.get("open_price"))
-    close_price = number(quote.get("current_price"))
+    close_price = number(quote.get("current_price") or quote.get("close_price"))
     high_price = number(quote.get("high_price"))
     low_price = number(quote.get("low_price"))
     open_return = pct(open_price, ref_price)
@@ -243,7 +273,11 @@ def build_review_rows(reviewed, pending_count):
 
 
 def build_existing_review_rows(rows, limit=10):
-    reviewed_rows = [row for row in rows if row.get("result_label") in {"命中", "失败"}]
+    reviewed_rows = [
+        row
+        for row in latest_daily_candidates(rows)
+        if row.get("result_label") in {"命中", "失败"}
+    ]
     if not reviewed_rows:
         return []
     output = []
@@ -266,7 +300,11 @@ def build_existing_review_rows(rows, limit=10):
 
 
 def stats_from_rows(rows):
-    counted = [row for row in rows if row.get("result_label") in {"命中", "失败"}]
+    counted = [
+        row
+        for row in latest_daily_candidates(rows)
+        if row.get("result_label") in {"命中", "失败"}
+    ]
     wins = [row for row in counted if row.get("result_label") == "命中"]
     overnight_counted = [row for row in counted if number(row.get("overnight_score")) and number(row.get("overnight_score")) >= 60]
     overnight_wins = [row for row in overnight_counted if row.get("result_label") == "命中"]
@@ -294,7 +332,7 @@ def stats_from_rows(rows):
 
 def build_strategy_breakdown(rows):
     groups = {}
-    for row in rows:
+    for row in latest_daily_candidates(rows):
         label = row.get("action") or "未分组"
         bucket = groups.setdefault(label, {"name": label, "trades": 0, "wins": 0})
         if row.get("result_label") in {"命中", "失败"}:
@@ -310,23 +348,44 @@ def build_strategy_breakdown(rows):
 def main():
     target = target_market_key()
     target_market = None if target == "both" else market_name(target)
-    snapshot = read_json(LIVE / "market-snapshot.json")
-    records, benchmarks = records_by_symbol(snapshot)
+    records, benchmarks = history_by_symbol(read_csv(PRICE_HISTORY))
     fieldnames, ledger_rows = read_ledger()
     executions = read_execution_rows()
 
+    pending_rows = [
+        row
+        for row in ledger_rows
+        if row.get("review_status") == "待复盘"
+        and (not target_market or row.get("market") == target_market)
+    ]
+    selected_ids = {id(row) for row in latest_daily_candidates(pending_rows)}
     reviewed = []
     pending = []
+    skipped = 0
+    ledger_changed = False
     for row in ledger_rows:
         if row.get("review_status") != "待复盘":
             continue
         if target_market and row.get("market") != target_market:
             continue
-        quote = records.get((row.get("market"), row.get("symbol")))
-        if not quote or not is_reviewable(row, quote):
+        if id(row) not in selected_ids:
+            row["review_status"] = "已跳过"
+            row["result_label"] = "重复观察"
+            row["lesson"] = "同一股票同一交易日的15分钟重复观察已去重，不重复计入胜率。"
+            skipped += 1
+            ledger_changed = True
+            continue
+        quote = next_history_quote(
+            records.get((row.get("market"), row.get("symbol"))),
+            row.get("date", ""),
+        )
+        if not quote:
             pending.append(row)
             continue
-        benchmark = benchmarks.get((row.get("market"), row.get("benchmark")))
+        benchmark = history_quote_on_date(
+            benchmarks.get((row.get("market"), row.get("benchmark"))),
+            record_date(quote),
+        )
         execution = execution_for_candidate(executions, row)
         if not execution:
             pending.append(row)
@@ -334,8 +393,9 @@ def main():
         result = review_row(row, quote, benchmark, execution)
         update_candidate(row, result)
         reviewed.append((row, result))
+        ledger_changed = True
 
-    if reviewed:
+    if ledger_changed:
         write_ledger(fieldnames, ledger_rows)
 
     all_reviewed_rows = [row for row in ledger_rows if row.get("review_status") == "已复盘"]
@@ -390,7 +450,17 @@ def main():
             "strategyBreakdown": build_strategy_breakdown(all_reviewed_rows),
         },
     )
-    print(json.dumps({"reviewed": len(reviewed), "pending": len(pending), "totalTrades": metrics["totalTrades"]}, ensure_ascii=False))
+    print(
+        json.dumps(
+            {
+                "reviewed": len(reviewed),
+                "skippedDuplicates": skipped,
+                "pending": len(pending),
+                "totalTrades": metrics["totalTrades"],
+            },
+            ensure_ascii=False,
+        )
+    )
 
 
 if __name__ == "__main__":

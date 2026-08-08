@@ -1,7 +1,7 @@
 import importlib.util
 import sys
 import unittest
-from datetime import datetime
+from datetime import date, datetime
 from datetime import timezone
 from pathlib import Path
 
@@ -25,6 +25,7 @@ normalizer = load_module("normalize_legacy_positions", "work/market-data/normali
 performance = load_module("performance_summary", "work/market-data/performance_summary.py")
 overnight = load_module("overnight_backtest", "work/market-data/overnight_backtest.py")
 cloud_schedule = load_module("cloud_schedule", "work/market-data/cloud_schedule.py")
+review = load_module("review_candidates", "work/market-data/review_candidates.py")
 
 
 class MarketDataSafetyTests(unittest.TestCase):
@@ -241,6 +242,156 @@ class MarketDataSafetyTests(unittest.TestCase):
     def test_cloud_schedule_skips_weekend(self):
         now = datetime(2026, 7, 19, 15, 0, tzinfo=timezone.utc)
         self.assertEqual(cloud_schedule.active_markets(now), [])
+
+    def test_cloud_schedule_keeps_intended_market_when_runner_is_late(self):
+        late = datetime(2026, 7, 21, 18, 0, tzinfo=timezone.utc)
+        self.assertEqual(
+            cloud_schedule.cycle_request(cloud_schedule.A_SHARE_CRON, late),
+            ("a_share", "cycle"),
+        )
+        self.assertEqual(
+            cloud_schedule.cycle_request(cloud_schedule.US_STOCK_CRON, late),
+            ("us_stock", "cycle"),
+        )
+
+    def test_cloud_schedule_selects_daily_review(self):
+        self.assertEqual(
+            cloud_schedule.cycle_request("5 15 * * 1-5"),
+            ("a_share", "review"),
+        )
+
+    def test_execution_performance_excludes_test_snapshot(self):
+        rows = [
+            {
+                "updated_at": "2026-07-22T10:00:00",
+                "market": "美股",
+                "symbol": "TEST",
+                "name": "测试",
+                "action": "盘中：强势观察",
+                "source_status": "行情源测试快照，不是实时推荐",
+                "entry_status": "模拟买入",
+                "entry_price": "100.00",
+                "exit_status": "模拟持有",
+            },
+            {
+                "updated_at": "2026-07-23T10:00:00",
+                "market": "美股",
+                "symbol": "TEST",
+                "name": "测试",
+                "action": "持仓跟踪",
+                "source_status": "行情源测试快照，不是实时推荐",
+                "entry_status": "已持仓",
+                "entry_price": "100.00",
+                "exit_status": "模拟止盈",
+                "exit_price": "103.50",
+            },
+            {
+                "updated_at": "2026-08-03T10:00:00",
+                "market": "美股",
+                "symbol": "LIVE",
+                "name": "正式样本",
+                "action": "盘中：强势观察",
+                "source_status": "开盘后可核验行情候选",
+                "entry_status": "模拟买入",
+                "entry_price": "100.00",
+                "exit_status": "模拟持有",
+            },
+            {
+                "updated_at": "2026-08-05T10:00:00",
+                "market": "美股",
+                "symbol": "LIVE",
+                "name": "正式样本",
+                "action": "持仓跟踪",
+                "source_status": "开盘后可核验行情候选",
+                "entry_status": "已持仓",
+                "entry_price": "100.00",
+                "exit_status": "模拟止盈",
+                "exit_price": "103.50",
+            },
+        ]
+        stats = performance.execution_performance(rows, date(2026, 8, 8))
+        self.assertEqual(stats["metrics"]["totalTrades"], 1)
+        self.assertEqual(stats["metrics"]["totalWinRate"], "100.0%")
+        self.assertEqual(stats["metrics"]["recentTrades"], 1)
+
+    def test_cloud_close_schedule_forces_a_share_review(self):
+        now = datetime(2026, 7, 19, 15, 0, tzinfo=timezone.utc)
+        self.assertEqual(cloud_schedule.cycle_request("5 15 * * 1-5", now), ("a_share", "review"))
+
+    def test_cloud_close_schedule_forces_us_review(self):
+        now = datetime(2026, 7, 19, 15, 0, tzinfo=timezone.utc)
+        self.assertEqual(cloud_schedule.cycle_request("5 16 * * 1-5", now), ("us_stock", "review"))
+
+    def test_cloud_intraday_schedule_keeps_requested_market(self):
+        now = datetime(2026, 7, 19, 15, 0, tzinfo=timezone.utc)
+        schedule = "2,17,32,47 9-11,13-15 * * 1-5"
+        self.assertEqual(cloud_schedule.cycle_request(schedule, now), ("a_share", "cycle"))
+
+    def test_review_uses_first_history_date_after_candidate(self):
+        rows = [
+            {"date": "2026-08-05", "close_price": "100"},
+            {"date": "2026-08-06", "close_price": "103"},
+            {"date": "2026-08-07", "close_price": "104"},
+        ]
+        quote = review.next_history_quote(rows, "2026-08-05")
+        self.assertEqual(quote["raw_date"], "2026-08-06")
+        self.assertEqual(quote["current_price"], "103")
+
+    def test_review_benchmark_matches_stock_review_date(self):
+        rows = [
+            {"date": "2026-08-05", "change_pct": "0.5"},
+            {"date": "2026-08-06", "change_pct": "1.2"},
+        ]
+        quote = review.history_quote_on_date(rows, "2026-08-06")
+        self.assertEqual(quote["change_pct"], "1.2")
+
+    def test_review_deduplicates_intraday_candidate_observations(self):
+        rows = [
+            {"date": "2026-08-06", "time": "10:00:00", "market": "美股", "symbol": "MSFT"},
+            {"date": "2026-08-06", "time": "10:15:00", "market": "美股", "symbol": "MSFT"},
+            {"date": "2026-08-06", "time": "10:15:00", "market": "美股", "symbol": "AAPL"},
+        ]
+        deduped = review.latest_daily_candidates(rows)
+        self.assertEqual(len(deduped), 2)
+        msft = next(row for row in deduped if row["symbol"] == "MSFT")
+        self.assertEqual(msft["time"], "10:15:00")
+
+    def test_execution_performance_counts_one_closed_round_trip(self):
+        rows = [
+            {
+                "updated_at": "2026-08-03T17:00:00",
+                "market": "美股",
+                "symbol": "MSFT",
+                "entry_status": "模拟买入",
+                "entry_price": "100",
+                "exit_status": "模拟持有",
+                "source_status": "开盘后可核验行情候选",
+                "action": "盘中：强势观察",
+            },
+            {
+                "updated_at": "2026-08-03T17:15:00",
+                "market": "美股",
+                "symbol": "MSFT",
+                "entry_status": "已持仓",
+                "entry_price": "100",
+                "exit_status": "模拟持有",
+                "source_status": "开盘后可核验行情候选",
+            },
+            {
+                "updated_at": "2026-08-04T17:00:00",
+                "market": "美股",
+                "symbol": "MSFT",
+                "entry_status": "已持仓",
+                "entry_price": "100",
+                "exit_status": "模拟止盈",
+                "exit_price": "103.5",
+                "source_status": "开盘后可核验行情候选",
+            },
+        ]
+        trades = performance.closed_round_trips(rows)
+        self.assertEqual(len(trades), 1)
+        self.assertTrue(trades[0]["matchedEntry"])
+        self.assertAlmostEqual(trades[0]["returnPct"], 3.5)
 
     def test_a_share_entry_window_starts_at_ten(self):
         before = datetime(2026, 7, 21, 1, 45, tzinfo=timezone.utc)

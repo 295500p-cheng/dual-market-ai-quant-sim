@@ -4,16 +4,36 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 market="${1:-auto}"
+mode="${2:-cycle}"
+
+if [[ "$mode" != "cycle" && "$mode" != "review" ]]; then
+  echo "mode must be cycle or review" >&2
+  exit 2
+fi
+
 case "$market" in
   a_share)
-    scripts/run_a_share_cycle.sh
+    if [[ "$mode" == "review" ]]; then
+      scripts/run_a_share_review.sh
+    else
+      scripts/run_a_share_cycle.sh
+    fi
     ;;
   us_stock)
-    scripts/run_us_stock_cycle.sh
+    if [[ "$mode" == "review" ]]; then
+      scripts/run_us_stock_review.sh
+    else
+      scripts/run_us_stock_cycle.sh
+    fi
     ;;
   both)
-    scripts/run_a_share_cycle.sh
-    scripts/run_us_stock_cycle.sh
+    if [[ "$mode" == "review" ]]; then
+      scripts/run_a_share_review.sh
+      scripts/run_us_stock_review.sh
+    else
+      scripts/run_a_share_cycle.sh
+      scripts/run_us_stock_cycle.sh
+    fi
     ;;
   closed)
     echo '{"status":"skipped","reason":"当前不在A股或美股交易时段。"}'
@@ -23,4 +43,3 @@ case "$market" in
     exit 2
     ;;
 esac
-

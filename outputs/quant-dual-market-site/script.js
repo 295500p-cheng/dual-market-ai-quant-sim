@@ -298,16 +298,30 @@ async function renderPositions() {
 }
 
 async function renderStats() {
-  const data = await loadJson("../daily-quant/reviews/performance-stats.json");
+  const data = await loadJson("../daily-quant/reviews/execution-performance-stats.json");
   latestStats = data;
   const metrics = data.metrics;
   document.querySelector("#statTotalTrades").textContent = `${metrics.totalTrades} 笔`;
   document.querySelector("#statTotalWinRate").textContent = metrics.totalWinRate;
   document.querySelector("#statOvernightWinRate").textContent =
-    `${metrics.overnightWinRate} / ${metrics.overnightTrades} 笔`;
+    `${metrics.recentWinRate} / ${metrics.recentTrades} 笔`;
   document.querySelector("#statMarketWinRate").textContent =
     `A股 ${metrics.aShareWinRate} / 美股 ${metrics.usStockWinRate}`;
   updateHeroMetrics();
+}
+
+function applyExecutionPerformanceSummary() {
+  if (!latestStats?.metrics) return;
+  const metrics = latestStats.metrics;
+  document.querySelector("#reviewStatus").textContent = `${latestStats.status}：${latestStats.summary}`;
+  document.querySelector("#reviewUpdated").textContent = `更新时间：${latestStats.updatedAt}`;
+  document.querySelector("#scoreSignal").textContent =
+    `${metrics.totalWinRate} / ${metrics.totalTrades} 笔已平仓`;
+  document.querySelector("#scoreOvernight").textContent =
+    `近7天 ${metrics.recentWinRate} / ${metrics.recentTrades} 笔`;
+  document.querySelector("#scoreRisk").textContent =
+    `平均 ${metrics.avgReturn} · 盈亏因子 ${metrics.profitFactor}`;
+  document.querySelector("#scoreNext").textContent = latestStats.optimization;
 }
 
 function renderExecutionRow(row) {
@@ -366,11 +380,11 @@ async function renderWeeklyReview() {
   document.querySelector("#weeklyReviewed").textContent = `${metrics.reviewedTrades} 笔`;
   document.querySelector("#weeklyWinRate").textContent = metrics.weeklyWinRate;
   document.querySelector("#weeklyOvernight").textContent =
-    `${metrics.overnightWinRate} / ${metrics.overnightTrades} 笔`;
+    `${metrics.executionAvgReturn ?? metrics.overnightWinRate} / ${metrics.overnightTrades} 笔`;
   document.querySelector("#weeklyMarkets").textContent =
     `A股 ${metrics.aShareWinRate} / 美股 ${metrics.usStockWinRate}`;
-  document.querySelector("#weeklyRelative").textContent = metrics.avgRelativeReturn;
-  document.querySelector("#weeklyPending").textContent = `${metrics.pendingTrades} 条`;
+  document.querySelector("#weeklyRelative").textContent = metrics.executionRealizedPnl ?? metrics.avgRelativeReturn;
+  document.querySelector("#weeklyPending").textContent = `${metrics.executionWaiting ?? metrics.pendingTrades} 条`;
   document.querySelector("#weeklyExecution").textContent =
     `${metrics.executionBuys ?? 0} 买入 / ${metrics.executionExits ?? 0} 退出`;
   document.querySelector("#weeklyMarketRows").innerHTML = renderWeeklyMarketRows(data.marketRows);
@@ -715,6 +729,7 @@ async function refreshLivePanels() {
     settle(renderPerformanceSummary, "#summaryStatus", "周/月汇总数据读取失败，请确认本地预览服务仍在运行。"),
     settle(renderOvernightBacktest, "#overnightBacktestStatus", "15天隔夜复盘数据读取失败，请确认本地预览服务仍在运行。"),
   ]);
+  applyExecutionPerformanceSummary();
 }
 
 document.querySelector("#overnightBacktestFilter").addEventListener("change", renderOvernightBacktestView);

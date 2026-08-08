@@ -17,11 +17,20 @@ EXECUTION_LEDGER = ROOT / "outputs" / "daily-quant" / "execution" / "execution-l
 
 COUNTED_RESULTS = {"命中", "失败"}
 EXIT_STATUSES = {"模拟止盈", "模拟止损", "模拟到期卖出", "区间冲突，按止损优先"}
+CURRENT_RULES_SINCE = datetime(2026, 7, 21, 18, 40)
+BLOCKED_SOURCE_TERMS = ("测试", "不是实时", "数据不足", "本轮跳过", "过旧", "失败")
 
 
 def parse_date(value):
     try:
         return datetime.strptime(value, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return None
+
+
+def parse_timestamp(value):
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00")).replace(tzinfo=None)
     except (TypeError, ValueError):
         return None
 
@@ -88,32 +97,153 @@ def dedupe_daily_candidates(rows):
     return list(latest.values())
 
 
-def closed_execution_trades(executions, start_date, end_date):
+def closed_round_trips(executions):
+    open_positions = {}
     trades = []
     seen = set()
-    for row in executions:
-        updated_date = parse_date((row.get("updated_at") or "")[:10])
-        if not updated_date or not (start_date <= updated_date <= end_date):
-            continue
+    for row in sorted(executions, key=lambda item: item.get("updated_at", "")):
+        key = (row.get("market"), row.get("symbol"))
+        if row.get("entry_status") == "模拟买入" and row.get("exit_status") == "模拟持有":
+            open_positions[key] = row
         if row.get("exit_status") not in EXIT_STATUSES:
             continue
-        key = (row.get("updated_at"), row.get("market"), row.get("symbol"), row.get("exit_status"))
-        if key in seen:
+        event_key = (row.get("updated_at"), row.get("market"), row.get("symbol"), row.get("exit_status"))
+        if event_key in seen:
             continue
-        seen.add(key)
+        seen.add(event_key)
+        entry_row = open_positions.pop(key, None)
         entry = number(row.get("entry_price"))
         exit_price = number(row.get("exit_price"))
         if entry in (None, 0) or exit_price is None:
             continue
         return_pct = (exit_price / entry - 1) * 100
+        entry_source = (entry_row or row).get("source_status", "")
+        entry_time = (entry_row or row).get("updated_at", "")
+        entry_timestamp = parse_timestamp(entry_time)
+        live_trade = not any(term in entry_source for term in BLOCKED_SOURCE_TERMS)
         trades.append(
             {
                 **row,
                 "returnPct": return_pct,
                 "pnl": simulated_cost(row.get("market"), entry) * return_pct / 100,
+                "entryUpdatedAt": entry_time,
+                "entryAction": (entry_row or row).get("action", ""),
+                "entrySourceStatus": entry_source,
+                "matchedEntry": bool(entry_row),
+                "isLiveTrade": live_trade,
+                "isCurrentRule": bool(
+                    live_trade and entry_timestamp and entry_timestamp >= CURRENT_RULES_SINCE
+                ),
             }
         )
     return trades
+
+
+def closed_execution_trades(executions, start_date, end_date):
+    trades = []
+    for row in closed_round_trips(executions):
+        updated_date = parse_date((row.get("updated_at") or "")[:10])
+        if updated_date and start_date <= updated_date <= end_date and row["isLiveTrade"]:
+            trades.append(row)
+    return trades
+
+
+def rate_text(wins, total):
+    return f"{wins / total * 100:.1f}%" if total else "暂无"
+
+
+def profit_factor(trades):
+    gross_profit = sum(row["pnl"] for row in trades if row["pnl"] > 0)
+    gross_loss = -sum(row["pnl"] for row in trades if row["pnl"] < 0)
+    if gross_loss <= 0:
+        return "暂无" if gross_profit <= 0 else "无亏损"
+    return f"{gross_profit / gross_loss:.2f}"
+
+
+def execution_performance(executions, today):
+    all_trades = closed_round_trips(executions)
+    live_trades = [row for row in all_trades if row["isLiveTrade"]]
+    current = [row for row in live_trades if row["isCurrentRule"]]
+    recent_start = today - timedelta(days=6)
+    recent = [
+        row
+        for row in current
+        if (parse_date((row.get("updated_at") or "")[:10]) or date.min) >= recent_start
+    ]
+
+    def market_metrics(market):
+        rows = [row for row in current if row.get("market") == market]
+        wins = len([row for row in rows if row["returnPct"] > 0])
+        return len(rows), rate_text(wins, len(rows))
+
+    current_wins = len([row for row in current if row["returnPct"] > 0])
+    recent_wins = len([row for row in recent if row["returnPct"] > 0])
+    live_wins = len([row for row in live_trades if row["returnPct"] > 0])
+    a_trades, a_rate = market_metrics("A股")
+    us_trades, us_rate = market_metrics("美股")
+    average_return = avg(row["returnPct"] for row in current)
+    realized_pnl = sum(row["pnl"] for row in current)
+    metrics = {
+        "totalTrades": len(current),
+        "totalWins": current_wins,
+        "totalLosses": len(current) - current_wins,
+        "totalWinRate": rate_text(current_wins, len(current)),
+        "recentTrades": len(recent),
+        "recentWins": recent_wins,
+        "recentLosses": len(recent) - recent_wins,
+        "recentWinRate": rate_text(recent_wins, len(recent)),
+        "aShareTrades": a_trades,
+        "aShareWinRate": a_rate,
+        "usStockTrades": us_trades,
+        "usStockWinRate": us_rate,
+        "avgReturn": pct(average_return),
+        "profitFactor": profit_factor(current),
+        "realizedPnl": f"{realized_pnl:+,.2f}" if current else "暂无",
+        "allLiveTrades": len(live_trades),
+        "allLiveWinRate": rate_text(live_wins, len(live_trades)),
+        "currentRuleSince": CURRENT_RULES_SINCE.isoformat(timespec="minutes"),
+    }
+    if len(current) < 20:
+        optimization = "现行规则样本不足20笔，暂不继续调参；优先恢复A股轮次并积累独立样本。"
+    elif average_return is not None and average_return <= 0:
+        optimization = "现行规则平均收益不为正，下一轮应收紧趋势与大盘过滤并重新验证。"
+    else:
+        optimization = "现行规则样本和收益为正，继续保持阈值并按市场分别监控。"
+    return {
+        "updatedAt": datetime.now().isoformat(timespec="seconds"),
+        "status": "现行自动模拟规则胜率",
+        "summary": (
+            f"现行规则已平仓 {len(current)} 笔，{current_wins} 胜 {len(current) - current_wins} 负，"
+            f"胜率 {metrics['totalWinRate']}；近7天 {len(recent)} 笔，胜率 {metrics['recentWinRate']}。"
+        ),
+        "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
+        "optimization": optimization,
+        "metrics": metrics,
+        "strategyBreakdown": [
+            {
+                "name": action,
+                "trades": len(items),
+                "winRate": rate_text(
+                    len([row for row in items if row["returnPct"] > 0]), len(items)
+                ),
+            }
+            for action, items in sorted(
+                group_rows(current, "entryAction").items(), key=lambda item: len(item[1]), reverse=True
+            )
+        ],
+        "recentClosedTrades": [
+            {
+                "updatedAt": row.get("updated_at"),
+                "market": row.get("market"),
+                "symbol": row.get("symbol"),
+                "name": row.get("name"),
+                "entryAction": row.get("entryAction"),
+                "exitStatus": row.get("exit_status"),
+                "returnPct": pct(row["returnPct"]),
+            }
+            for row in current[-12:][::-1]
+        ],
+    }
 
 
 def group_rows(rows, key):
@@ -290,6 +420,10 @@ def main():
     }
     REVIEWS.mkdir(parents=True, exist_ok=True)
     (REVIEWS / "performance-summary.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    execution_stats = execution_performance(executions, today)
+    (REVIEWS / "execution-performance-stats.json").write_text(
+        json.dumps(execution_stats, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print(
         json.dumps(
             {

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import sys
 from datetime import datetime, time, timezone
 from zoneinfo import ZoneInfo
@@ -6,6 +7,18 @@ from zoneinfo import ZoneInfo
 
 CHINA_TZ = ZoneInfo("Asia/Shanghai")
 US_TZ = ZoneInfo("America/New_York")
+A_SHARE_CRON = "2,17,32,47 9-11,13-15 * * 1-5"
+US_STOCK_CRON = "2,17,32,47 9-16 * * 1-5"
+A_SHARE_REVIEW_CRON = "5 15 * * 1-5"
+US_STOCK_REVIEW_CRON = "5 16 * * 1-5"
+CYCLE_SCHEDULES = {
+    A_SHARE_CRON: ("a_share", "cycle"),
+    US_STOCK_CRON: ("us_stock", "cycle"),
+}
+REVIEW_SCHEDULES = {
+    A_SHARE_REVIEW_CRON: ("a_share", "review"),
+    US_STOCK_REVIEW_CRON: ("us_stock", "review"),
+}
 
 
 def within(value, start, end):
@@ -30,16 +43,26 @@ def active_markets(now_utc=None):
     return active
 
 
-def main():
-    active = active_markets()
+def cycle_request(schedule_expression="", now_utc=None):
+    if schedule_expression in CYCLE_SCHEDULES:
+        return CYCLE_SCHEDULES[schedule_expression]
+    if schedule_expression in REVIEW_SCHEDULES:
+        return REVIEW_SCHEDULES[schedule_expression]
+    active = active_markets(now_utc)
     if not active:
-        print("closed")
-    elif len(active) == 2:
-        print("both")
-    else:
-        print(active[0])
+        return "closed", "cycle"
+    if len(active) == 2:
+        return "both", "cycle"
+    return active[0], "cycle"
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--schedule", default="")
+    args = parser.parse_args()
+    market, mode = cycle_request(args.schedule)
+    print(f"{market} {mode}")
 
 
 if __name__ == "__main__":
     sys.exit(main())
-
