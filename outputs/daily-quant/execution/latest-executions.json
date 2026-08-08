@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T14:19:07",
+  "updatedAt": "2026-08-08T14:23:21",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -191,8 +191,8 @@
       "risk_note": "已持仓，但新规则降权：A股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。 下一交易日开盘优先观察退出或降低模拟仓位。"
     },
     {
-      "signal_id": "2026-08-08T14:19:07|美股|MSFT",
-      "updated_at": "2026-08-08T14:19:07",
+      "signal_id": "2026-08-08T14:23:21|美股|MSFT",
+      "updated_at": "2026-08-08T14:23:21",
       "market": "美股",
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
@@ -211,8 +211,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-08T14:19:07|美股|ASML",
-      "updated_at": "2026-08-08T14:19:07",
+      "signal_id": "2026-08-08T14:23:21|美股|ASML",
+      "updated_at": "2026-08-08T14:23:21",
       "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
@@ -231,8 +231,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-08T14:19:07|美股|AMD",
-      "updated_at": "2026-08-08T14:19:07",
+      "signal_id": "2026-08-08T14:23:21|美股|AMD",
+      "updated_at": "2026-08-08T14:23:21",
       "market": "美股",
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
@@ -251,8 +251,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-08T14:19:07|美股|MU",
-      "updated_at": "2026-08-08T14:19:07",
+      "signal_id": "2026-08-08T14:23:21|美股|MU",
+      "updated_at": "2026-08-08T14:23:21",
       "market": "美股",
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
@@ -271,8 +271,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-08T14:19:07|美股|LRCX",
-      "updated_at": "2026-08-08T14:19:07",
+      "signal_id": "2026-08-08T14:23:21|美股|LRCX",
+      "updated_at": "2026-08-08T14:23:21",
       "market": "美股",
       "symbol": "LRCX",
       "name": "Lam Research Corporation",
@@ -291,8 +291,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-08T14:19:07|美股|KLAC",
-      "updated_at": "2026-08-08T14:19:07",
+      "signal_id": "2026-08-08T14:23:21|美股|KLAC",
+      "updated_at": "2026-08-08T14:23:21",
       "market": "美股",
       "symbol": "KLAC",
       "name": "KLA Corporation",
