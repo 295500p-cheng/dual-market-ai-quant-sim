@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T15:25:04",
+  "updatedAt": "2026-08-08T15:21:39",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；A股按100股一手、美股按整股。可用现金最低显示为0，历史超额仓位产生的资金缺口单列为模拟资金超额，不是欠款；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,597.10",
+    "totalAssets": "97,642.50",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,402.90",
-    "cumulativePnlPct": "-2.40%",
+    "cumulativePnl": "-2,357.50",
+    "cumulativePnlPct": "-2.36%",
     "realizedPnl": "-2,487.71",
-    "floatingPnl": "84.81",
+    "floatingPnl": "130.21",
     "availableCash": "62,033.04",
-    "cashRatio": "+63.56%",
+    "cashRatio": "+63.53%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "62,033.04",
-    "fundingStatus": "现金占比 +63.56%",
-    "marketValue": "35,564.06",
-    "positionRatio": "+36.44%",
+    "fundingStatus": "现金占比 +63.53%",
+    "marketValue": "35,609.46",
+    "positionRatio": "+36.47%",
     "holdings": 4,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -30,7 +30,7 @@
     "todayBuys": 0,
     "todayExits": 0,
     "signals": 15,
-    "waiting": 9
+    "waiting": 5
   },
   "positions": [
     {
@@ -52,13 +52,13 @@
       "symbol": "KLAC",
       "name": "KLA Corporation",
       "entryPrice": "195.80",
-      "currentPrice": "196.77",
+      "currentPrice": "198.11",
       "quantity": 51,
       "availableQuantity": 51,
       "notional": "9,985.80",
-      "marketValue": "10,035.27",
-      "pnl": "49.47",
-      "pnlPct": "+0.50%",
+      "marketValue": "10,103.61",
+      "pnl": "117.81",
+      "pnlPct": "+1.18%",
       "status": "模拟持有"
     },
     {
@@ -80,13 +80,13 @@
       "symbol": "LRCX",
       "name": "Lam Research Corporation",
       "entryPrice": "314.95",
-      "currentPrice": "312.09",
+      "currentPrice": "311.35",
       "quantity": 31,
       "availableQuantity": 31,
       "notional": "9,763.45",
-      "marketValue": "9,674.79",
-      "pnl": "-88.66",
-      "pnlPct": "-0.91%",
+      "marketValue": "9,651.85",
+      "pnl": "-111.60",
+      "pnlPct": "-1.14%",
       "status": "模拟持有"
     }
   ]

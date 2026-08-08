@@ -1,26 +1,31 @@
 {
-  "updatedAt": "2026-07-07T23:04:23",
-  "status": "真实胜率",
-  "note": "胜率只统计已复盘且触发交易结果的真实样本；未触发买入区不计入胜率。",
+  "updatedAt": "2026-08-08T15:21:53",
+  "status": "候选次日表现统计",
+  "note": "这是去重候选在下一交易日的表现统计，不等于实际平仓胜率；未触发模拟买入的候选不计入。",
   "metrics": {
-    "totalTrades": 115,
-    "totalWinRate": "25.2%",
-    "overnightTrades": 113,
-    "overnightWinRate": "25.7%",
+    "totalTrades": 56,
+    "totalWinRate": "32.1%",
+    "overnightTrades": 48,
+    "overnightWinRate": "33.3%",
     "aShareTrades": 5,
     "aShareWinRate": "20.0%",
-    "usStockTrades": 110,
-    "usStockWinRate": "25.5%"
+    "usStockTrades": 51,
+    "usStockWinRate": "33.3%"
   },
   "strategyBreakdown": [
     {
       "name": "快照：强势观察",
-      "trades": 29,
-      "winRate": "44.8%"
+      "trades": 8,
+      "winRate": "37.5%"
     },
     {
       "name": "快照：候选观察",
-      "trades": 3,
+      "trades": 1,
+      "winRate": "0.0%"
+    },
+    {
+      "name": "快照：高风险强势观察",
+      "trades": 1,
       "winRate": "0.0%"
     },
     {
@@ -30,23 +35,43 @@
     },
     {
       "name": "盘中：强势观察",
-      "trades": 57,
-      "winRate": "26.3%"
-    },
-    {
-      "name": "盘中：高风险强势观察",
-      "trades": 15,
-      "winRate": "0.0%"
+      "trades": 16,
+      "winRate": "37.5%"
     },
     {
       "name": "盘中：候选观察",
-      "trades": 3,
-      "winRate": "33.3%"
+      "trades": 13,
+      "winRate": "46.2%"
     },
     {
-      "name": "快照：高风险强势观察",
-      "trades": 6,
+      "name": "收盘：强势观察",
+      "trades": 8,
+      "winRate": "25.0%"
+    },
+    {
+      "name": "收盘：候选观察",
+      "trades": 5,
+      "winRate": "20.0%"
+    },
+    {
+      "name": "盘中：边缘观察",
+      "trades": 1,
       "winRate": "0.0%"
+    },
+    {
+      "name": "收盘：高风险强势观察",
+      "trades": 0,
+      "winRate": "暂无"
+    },
+    {
+      "name": "收盘：边缘观察",
+      "trades": 1,
+      "winRate": "0.0%"
+    },
+    {
+      "name": "盘中：高风险强势观察",
+      "trades": 0,
+      "winRate": "暂无"
     }
   ]
 }

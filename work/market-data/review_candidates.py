@@ -20,6 +20,13 @@ def write_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def read_csv(path):
+    if not path.exists():
+        return []
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
 def number(value):
     if value is None:
         return None
@@ -148,7 +155,7 @@ def latest_daily_candidates(rows):
 
 def write_ledger(fieldnames, rows):
     with LEDGER.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -233,7 +240,7 @@ def update_candidate(candidate, result):
     candidate["lesson"] = result["lesson"]
 
 
-def build_review_rows(reviewed, pending_count):
+def build_review_rows(reviewed, pending_count, limit=20):
     if not reviewed:
         return [
             {
@@ -251,7 +258,7 @@ def build_review_rows(reviewed, pending_count):
         ]
 
     rows = []
-    for candidate, result in reviewed:
+    for candidate, result in reviewed[-limit:]:
         rows.append(
             {
                 "symbol": candidate["symbol"],
@@ -404,22 +411,28 @@ def main():
 
     display_rows = build_review_rows(reviewed, len(pending))
     if reviewed:
-        status = "真实复盘已更新"
-        summary = f"本轮复盘 {len(reviewed)} 条候选，命中率 {metrics['totalWinRate']}。"
+        status = "候选次日复盘已更新"
+        summary = (
+            f"本轮复盘 {len(reviewed)} 个去重候选，候选次日命中率 {metrics['totalWinRate']}；"
+            "实际模拟平仓胜率请以成交胜率面板为准。"
+        )
         signal_quality = metrics["totalWinRate"]
         overnight_effect = f"{metrics['overnightWinRate']} / {metrics['overnightTrades']} 笔"
         risk_control = "已按买入区、止损、相对基准复盘"
         next_optimization = "根据失败样本小步调整因子权重，不做过拟合。"
     elif metrics["totalTrades"]:
-        status = "暂无新增复盘，显示累计真实样本"
-        summary = f"本轮没有新的可复盘候选；当前累计真实复盘 {metrics['totalTrades']} 笔，胜率 {metrics['totalWinRate']}。"
+        status = "暂无新增候选复盘，显示累计样本"
+        summary = (
+            f"本轮没有新的可复盘候选；累计候选次日样本 {metrics['totalTrades']} 笔，"
+            f"命中率 {metrics['totalWinRate']}。实际平仓胜率请以成交胜率面板为准。"
+        )
         signal_quality = metrics["totalWinRate"]
         overnight_effect = f"{metrics['overnightWinRate']} / {metrics['overnightTrades']} 笔"
         risk_control = "继续跟踪已触发模拟持仓和待复盘候选"
         next_optimization = "等待下一交易日新增样本；当前只做小步降权，不扩大结论。"
         display_rows = build_existing_review_rows(all_reviewed_rows)
     else:
-        status = "等待真实复盘"
+        status = "等待候选次日复盘"
         summary = f"候选台账已有 {len(pending)} 条待复盘，但当前行情没有覆盖候选之后的新交易日。"
         signal_quality = "待计算"
         overnight_effect = "待计算"
@@ -444,8 +457,8 @@ def main():
         REVIEWS / "performance-stats.json",
         {
             "updatedAt": now,
-            "status": "真实胜率" if metrics["totalTrades"] else "暂无真实胜率",
-            "note": "胜率只统计已复盘且触发交易结果的真实样本；未触发买入区不计入胜率。",
+            "status": "候选次日表现统计" if metrics["totalTrades"] else "暂无候选次日样本",
+            "note": "这是去重候选在下一交易日的表现统计，不等于实际平仓胜率；未触发模拟买入的候选不计入。",
             "metrics": metrics,
             "strategyBreakdown": build_strategy_breakdown(all_reviewed_rows),
         },

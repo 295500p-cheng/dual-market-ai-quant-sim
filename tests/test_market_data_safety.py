@@ -1,5 +1,6 @@
 import importlib.util
 import sys
+import tempfile
 import unittest
 from datetime import date, datetime
 from datetime import timezone
@@ -338,6 +339,13 @@ class MarketDataSafetyTests(unittest.TestCase):
         self.assertEqual(quote["raw_date"], "2026-08-06")
         self.assertEqual(quote["current_price"], "103")
 
+    def test_review_price_history_reader_handles_csv(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "price-history.csv"
+            path.write_text("date,symbol,close_price\n2026-08-06,MSFT,103\n", encoding="utf-8")
+            rows = review.read_csv(path)
+        self.assertEqual(rows, [{"date": "2026-08-06", "symbol": "MSFT", "close_price": "103"}])
+
     def test_review_benchmark_matches_stock_review_date(self):
         rows = [
             {"date": "2026-08-05", "change_pct": "0.5"},
@@ -356,6 +364,39 @@ class MarketDataSafetyTests(unittest.TestCase):
         self.assertEqual(len(deduped), 2)
         msft = next(row for row in deduped if row["symbol"] == "MSFT")
         self.assertEqual(msft["time"], "10:15:00")
+
+    def test_review_detail_panel_limits_large_backfill(self):
+        reviewed = []
+        result = {
+            "execution_entry": "模拟买入",
+            "execution_price": "100",
+            "execution_exit": "模拟持有",
+            "exit_price": "",
+        }
+        for index in range(25):
+            reviewed.append(
+                (
+                    {
+                        "symbol": f"S{index}",
+                        "name": "测试",
+                        "market": "美股",
+                        "action": "盘中：强势观察",
+                        "buy_zone": "99-101",
+                        "stop_loss": "97",
+                        "next_open": "100",
+                        "next_close": "101",
+                        "overnight_return": "+0.00%",
+                        "intraday_return": "+1.00%",
+                        "relative_return": "+0.50%",
+                        "result_label": "命中",
+                        "lesson": "测试",
+                    },
+                    result,
+                )
+            )
+        rows = review.build_review_rows(reviewed, 0)
+        self.assertEqual(len(rows), 20)
+        self.assertEqual(rows[0]["symbol"], "S5")
 
     def test_execution_performance_counts_one_closed_round_trip(self):
         rows = [
