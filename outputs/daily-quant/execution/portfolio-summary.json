@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T16:27:17",
+  "updatedAt": "2026-08-10T17:29:21",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,315.97",
+    "totalAssets": "97,221.96",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,684.03",
-    "cumulativePnlPct": "-2.68%",
+    "cumulativePnl": "-2,778.04",
+    "cumulativePnlPct": "-2.78%",
     "realizedPnl": "-2,635.68",
-    "floatingPnl": "-48.35",
+    "floatingPnl": "-142.36",
     "availableCash": "69,167.93",
-    "cashRatio": "+71.08%",
+    "cashRatio": "+71.14%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "69,167.93",
-    "fundingStatus": "现金占比 +71.08%",
-    "marketValue": "28,148.03",
-    "positionRatio": "+28.92%",
+    "fundingStatus": "现金占比 +71.14%",
+    "marketValue": "28,054.03",
+    "positionRatio": "+28.86%",
     "holdings": 3,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -38,20 +38,6 @@
   },
   "positions": [
     {
-      "market": "美股",
-      "symbol": "MSFT",
-      "name": "Microsoft Corporation",
-      "entryPrice": "509.61",
-      "currentPrice": "510.57",
-      "quantity": 19,
-      "availableQuantity": 19,
-      "notional": "9,682.59",
-      "marketValue": "9,700.83",
-      "pnl": "18.24",
-      "pnlPct": "+0.19%",
-      "status": "模拟持有"
-    },
-    {
       "market": "A股",
       "symbol": "000333",
       "name": "美的集团",
@@ -67,16 +53,30 @@
     },
     {
       "market": "美股",
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "entryPrice": "509.61",
+      "currentPrice": "508.36",
+      "quantity": 19,
+      "availableQuantity": 19,
+      "notional": "9,682.59",
+      "marketValue": "9,658.84",
+      "pnl": "-23.75",
+      "pnlPct": "-0.25%",
+      "status": "模拟持有"
+    },
+    {
+      "market": "美股",
       "symbol": "KLAC",
       "name": "KLA Corporation",
       "entryPrice": "195.80",
-      "currentPrice": "194.46",
+      "currentPrice": "193.44",
       "quantity": 51,
       "availableQuantity": 51,
       "notional": "9,985.80",
-      "marketValue": "9,917.20",
-      "pnl": "-68.60",
-      "pnlPct": "-0.68%",
+      "marketValue": "9,865.18",
+      "pnl": "-120.62",
+      "pnlPct": "-1.21%",
       "status": "模拟持有"
     }
   ]
