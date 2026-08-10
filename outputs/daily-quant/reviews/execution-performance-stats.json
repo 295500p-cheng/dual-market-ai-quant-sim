@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-08T15:57:07",
+  "updatedAt": "2026-08-10T03:13:21",
   "status": "现行自动模拟规则胜率",
-  "summary": "现行规则已平仓 7 笔，5 胜 2 负，胜率 71.4%；近7天 4 笔，胜率 75.0%。",
+  "summary": "现行规则已平仓 7 笔，5 胜 2 负，胜率 71.4%；近7天 2 笔，胜率 50.0%。",
   "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
   "optimization": "现行规则样本不足20笔，暂不继续调参；优先恢复A股轮次并积累独立样本。",
   "metrics": {
@@ -9,10 +9,10 @@
     "totalWins": 5,
     "totalLosses": 2,
     "totalWinRate": "71.4%",
-    "recentTrades": 4,
-    "recentWins": 3,
+    "recentTrades": 2,
+    "recentWins": 1,
     "recentLosses": 1,
-    "recentWinRate": "75.0%",
+    "recentWinRate": "50.0%",
     "aShareTrades": 0,
     "aShareWinRate": "暂无",
     "usStockTrades": 7,
@@ -20,8 +20,8 @@
     "avgReturn": "+1.79%",
     "profitFactor": "3.45",
     "realizedPnl": "+1,204.20",
-    "allLiveTrades": 41,
-    "allLiveWinRate": "39.0%",
+    "allLiveTrades": 43,
+    "allLiveWinRate": "39.5%",
     "currentRuleSince": "2026-07-21T18:40"
   },
   "diagnostics": {
