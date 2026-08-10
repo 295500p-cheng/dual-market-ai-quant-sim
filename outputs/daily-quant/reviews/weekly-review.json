@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-08-08T14:23:21",
+  "updatedAt": "2026-08-10T08:47:59",
   "status": "本周实际模拟平仓已更新",
-  "period": "2026-08-02 至 2026-08-08",
-  "summary": "本周实际模拟平仓 4 笔，3 胜 1 负，胜率 75.0%。",
+  "period": "2026-08-04 至 2026-08-10",
+  "summary": "本周实际模拟平仓 4 笔，2 胜 2 负，胜率 50.0%。",
   "metrics": {
     "reviewedTrades": 4,
-    "pendingTrades": 0,
-    "weeklyWinRate": "75.0%",
+    "pendingTrades": 7,
+    "weeklyWinRate": "50.0%",
     "overnightTrades": 4,
-    "overnightWinRate": "+2.00%",
-    "aShareWinRate": "暂无",
-    "usStockWinRate": "75.0%",
-    "avgRelativeReturn": "+770.95",
-    "executionAvgReturn": "+2.00%",
-    "executionProfitFactor": "4.17",
-    "executionRealizedPnl": "+770.95",
-    "bestBucket": "盘中：强势观察 33.3%/3笔",
+    "overnightWinRate": "+0.59%",
+    "aShareWinRate": "50.0%",
+    "usStockWinRate": "50.0%",
+    "avgRelativeReturn": "+186.16",
+    "executionAvgReturn": "+0.59%",
+    "executionProfitFactor": "1.53",
+    "executionRealizedPnl": "+186.16",
+    "bestBucket": "盘中：强势观察 0.0%/2笔",
     "weakBucket": "盘中：候选观察 0.0%/1笔",
-    "executionSignals": 33,
+    "executionSignals": 36,
     "executionBuys": 3,
     "executionExits": 4,
-    "executionHolding": 9,
-    "executionWaiting": 16
+    "executionHolding": 7,
+    "executionWaiting": 14
   },
   "marketRows": [
     {
       "market": "A股",
-      "reviewed": 0,
-      "winRate": "暂无",
-      "overnightAvg": "暂无",
-      "relativeAvg": "暂无",
-      "lesson": "等待实际模拟平仓样本"
+      "reviewed": 2,
+      "winRate": "50.0%",
+      "overnightAvg": "+0.67%",
+      "relativeAvg": "+96.00",
+      "lesson": "按实际模拟平仓持续跟踪"
     },
     {
       "market": "美股",
-      "reviewed": 4,
-      "winRate": "75.0%",
-      "overnightAvg": "+2.00%",
-      "relativeAvg": "+770.95",
+      "reviewed": 2,
+      "winRate": "50.0%",
+      "overnightAvg": "+0.50%",
+      "relativeAvg": "+90.16",
       "lesson": "按实际模拟平仓持续跟踪"
     }
   ],
   "actionRows": [
     {
       "action": "盘中：强势观察",
-      "reviewed": 3,
-      "winRate": "33.3%",
+      "reviewed": 2,
+      "winRate": "0.0%",
       "relativeAvg": "暂无"
     },
     {
