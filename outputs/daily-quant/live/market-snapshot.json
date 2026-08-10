@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-10T20:25:08",
+  "updatedAt": "2026-08-10T20:46:34",
   "marketUpdatedAt": {
-    "us_stock": "2026-08-10T20:25:08",
+    "us_stock": "2026-08-10T20:46:34",
     "a_share": "2026-08-10T08:47:59"
   },
   "fetchStatus": "success",
@@ -1216,8 +1216,8 @@
       "high_price": 151.99,
       "low_price": 146.62,
       "change_pct": 2.7411,
-      "volume": 23681985.0,
-      "turnover": 3577163834.25,
+      "volume": 21279163.0,
+      "turnover": 3214217571.15,
       "timestamp": "2026-08-10T20:04:02+00:00",
       "raw_time": 1786392242.0,
       "benchmark_change_pct": -0.2987,
@@ -1400,16 +1400,16 @@
       "risk_level": "",
       "overnight_fit": "",
       "risk_flags": "",
-      "current_price": 15.45,
+      "current_price": 15.46,
       "previous_close": 14.9,
       "open_price": 15.399999618530273,
       "high_price": 15.72,
       "low_price": 15.1,
-      "change_pct": 3.6913,
+      "change_pct": 3.7584,
       "volume": 0.0,
       "turnover": 0.0,
-      "timestamp": "2026-08-10T20:10:01+00:00",
-      "raw_time": 1786392601.0
+      "timestamp": "2026-08-10T20:15:01+00:00",
+      "raw_time": 1786392901.0
     }
   ],
   "errors": []
