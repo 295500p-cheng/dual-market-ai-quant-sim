@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-08-10T04:56:49",
+  "updatedAt": "2026-08-10T06:14:14",
   "status": "当前模拟持仓，不是真实账户",
   "summary": "按交易软件口径展示模拟股数、可用数量、持仓成本、持仓市值、浮动盈亏和风控线；A股按100股一手并执行T+1可用规则。",
   "metrics": {
-    "positions": 2,
-    "aShare": 0,
+    "positions": 3,
+    "aShare": 1,
     "usStock": 2,
     "winners": 1,
     "losers": 1,
-    "totalQuantity": 82,
-    "totalCostValue": 19749.25,
-    "totalCost": "19,749.25",
-    "totalMarketValueValue": 19755.46,
-    "totalMarketValue": "19,755.46",
+    "totalQuantity": 182,
+    "totalCostValue": 28277.25,
+    "totalCost": "28,277.25",
+    "totalMarketValueValue": 28283.46,
+    "totalMarketValue": "28,283.46",
     "totalFloatingPnlValue": 6.209999999999127,
     "totalFloatingPnl": "6.21",
-    "tPlusOneLocked": 0
+    "tPlusOneLocked": 1
   },
   "rows": [
     {
@@ -71,6 +71,33 @@
       "stopBuffer": "+3.77%",
       "status": "模拟持有",
       "nextAction": "已持仓，但新规则降权：美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。 下一交易日开盘优先观察退出或降低模拟仓位。"
+    },
+    {
+      "market": "A股",
+      "symbol": "000333",
+      "name": "美的集团",
+      "entryTime": "2026-08-10T06:14:14",
+      "quoteTime": "2026-08-10 14:14:12",
+      "currentPrice": "85.28",
+      "previousClose": "83.50",
+      "dayReturn": "+2.13%",
+      "entryPrice": "85.28",
+      "quantity": 100,
+      "availableQuantity": 0,
+      "frozenQuantity": 100,
+      "costAmountValue": 8528.0,
+      "costAmount": "8,528.00",
+      "marketValueValue": 8528.0,
+      "marketValue": "8,528.00",
+      "floatingPnlAmountValue": 0.0,
+      "floatingPnlAmount": "0.00",
+      "positionReturn": "0.00%",
+      "takeProfit": "88.26-89.54",
+      "stopLoss": "83.15",
+      "takeProfitGap": "+3.49%",
+      "stopBuffer": "+2.56%",
+      "status": "模拟持有（T+1锁定）",
+      "nextAction": "A股当日模拟买入，可用数量为0；下一交易日解锁后再执行止盈止损。"
     }
   ]
 }
