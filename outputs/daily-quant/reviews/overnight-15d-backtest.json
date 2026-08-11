@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T04:41:18",
+  "updatedAt": "2026-08-11T05:55:58",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-07-28 至 2026-08-11",
@@ -2425,11 +2425,11 @@
           "open": "395.00",
           "high": "395.28",
           "low": "389.52",
-          "close": "394.04",
+          "close": "391.81",
           "previousClose": "393.87",
-          "changePct": "+0.04%",
-          "volume": "9321036.0",
-          "quoteTime": "2026-08-11 11:30:00",
+          "changePct": "-0.52%",
+          "volume": "12241307.0",
+          "quoteTime": "2026-08-11 13:55:54",
           "source": "sina"
         }
       ]
@@ -2779,11 +2779,11 @@
           "open": "67.93",
           "high": "68.19",
           "low": "65.52",
-          "close": "66.99",
+          "close": "66.58",
           "previousClose": "69.18",
-          "changePct": "-3.17%",
-          "volume": "95644207.0",
-          "quoteTime": "2026-08-11 11:30:00",
+          "changePct": "-3.76%",
+          "volume": "108221817.0",
+          "quoteTime": "2026-08-11 13:55:56",
           "source": "sina"
         }
       ]
@@ -3090,16 +3090,16 @@
       "callRows": [
         {
           "date": "2026-08-11",
-          "time": "03:06:02",
+          "time": "05:55:58",
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "93.38",
-          "buyZone": "92.63-93.94",
-          "takeProfit": "96.65-98.05",
-          "stopLoss": "91.05",
+          "recommendedPrice": "93.87",
+          "buyZone": "93.12-94.43",
+          "takeProfit": "97.16-98.56",
+          "stopLoss": "91.52",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -3131,13 +3131,13 @@
           "symbol": "603501",
           "name": "豪威集团",
           "open": "89.00",
-          "high": "93.98",
+          "high": "94.89",
           "low": "88.68",
-          "close": "93.78",
+          "close": "93.87",
           "previousClose": "89.14",
-          "changePct": "+5.21%",
-          "volume": "29613488.0",
-          "quoteTime": "2026-08-11 11:30:00",
+          "changePct": "+5.31%",
+          "volume": "35630542.0",
+          "quoteTime": "2026-08-11 13:55:54",
           "source": "sina"
         }
       ]
@@ -3444,16 +3444,16 @@
       "callRows": [
         {
           "date": "2026-08-11",
-          "time": "03:06:02",
+          "time": "05:55:58",
           "market": "A股",
           "symbol": "300274",
           "name": "阳光电源",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "120.48",
-          "buyZone": "119.52-121.20",
-          "takeProfit": "124.70-126.50",
-          "stopLoss": "117.47",
+          "recommendedPrice": "121.13",
+          "buyZone": "120.16-121.86",
+          "takeProfit": "125.37-127.19",
+          "stopLoss": "118.10",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -3487,11 +3487,11 @@
           "open": "113.82",
           "high": "122.21",
           "low": "113.08",
-          "close": "120.38",
+          "close": "121.13",
           "previousClose": "113.71",
-          "changePct": "+5.87%",
-          "volume": "62429877.0",
-          "quoteTime": "2026-08-11 11:30:00",
+          "changePct": "+6.53%",
+          "volume": "72590004.0",
+          "quoteTime": "2026-08-11 13:55:54",
           "source": "sina"
         }
       ]
