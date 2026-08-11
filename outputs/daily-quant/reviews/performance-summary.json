@@ -1,37 +1,37 @@
 {
-  "updatedAt": "2026-08-10T21:21:39",
+  "updatedAt": "2026-08-11T03:06:03",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-08-04 至 2026-08-10",
+      "period": "2026-08-05 至 2026-08-11",
       "metrics": {
-        "calls": 31,
-        "reviewed": 3,
-        "pending": 16,
+        "calls": 30,
+        "reviewed": 1,
+        "pending": 21,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
-        "executionTrades": 5,
-        "executionWins": 2,
+        "executionTrades": 4,
+        "executionWins": 1,
         "executionLosses": 3,
-        "executionWinRate": "40.0%",
-        "executionRealizedPnl": "-57.81",
-        "avgStockReturn": "-0.98%",
-        "avgOvernightReturn": "-0.22%",
+        "executionWinRate": "25.0%",
+        "executionRealizedPnl": "-391.07",
+        "avgStockReturn": "-0.24%",
+        "avgOvernightReturn": "-0.79%",
         "avgRelativeReturn": "-2.20%",
-        "bestStrategy": "盘中：强势观察 0.0%/2笔",
-        "signals": 47,
-        "buys": 12,
-        "exits": 5,
-        "holding": 7,
-        "waiting": 18
+        "bestStrategy": "盘中：候选观察 0.0%/1笔",
+        "signals": 45,
+        "buys": 9,
+        "exits": 4,
+        "holding": 5,
+        "waiting": 19
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 7,
+          "calls": 12,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -39,10 +39,10 @@
         },
         {
           "market": "美股",
-          "calls": 24,
-          "reviewed": 3,
+          "calls": 18,
+          "reviewed": 1,
           "winRate": "0.0%",
-          "avgStockReturn": "-0.98%",
+          "avgStockReturn": "-0.24%",
           "avgRelativeReturn": "-2.20%"
         }
       ],
@@ -51,38 +51,17 @@
           "market": "美股",
           "symbol": "LRCX",
           "name": "Lam Research Corporation",
-          "calls": 2,
-          "reviewed": 2,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.81%",
-          "avgOvernightReturn": "-0.25%",
-          "avgIntradayReturn": "-0.81%",
-          "avgRelativeReturn": "-2.20%",
-          "latestResult": "失败"
-        },
-        {
-          "market": "美股",
-          "symbol": "KLAC",
-          "name": "KLA Corporation",
           "calls": 1,
           "reviewed": 1,
           "winRate": "0.0%",
-          "avgStockReturn": "-1.32%",
-          "avgOvernightReturn": "-0.17%",
-          "avgIntradayReturn": "-1.32%",
-          "avgRelativeReturn": "暂无",
+          "avgStockReturn": "-0.24%",
+          "avgOvernightReturn": "-0.79%",
+          "avgIntradayReturn": "-0.24%",
+          "avgRelativeReturn": "-2.20%",
           "latestResult": "失败"
         }
       ],
       "strategyRows": [
-        {
-          "strategy": "盘中：强势观察",
-          "calls": 10,
-          "reviewed": 2,
-          "winRate": "0.0%",
-          "avgStockReturn": "-1.35%",
-          "avgRelativeReturn": "暂无"
-        },
         {
           "strategy": "盘中：候选观察",
           "calls": 11,
@@ -96,11 +75,11 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-08-01 至 2026-08-10",
+      "period": "2026-08-01 至 2026-08-11",
       "metrics": {
-        "calls": 36,
+        "calls": 41,
         "reviewed": 4,
-        "pending": 16,
+        "pending": 21,
         "winRate": "25.0%",
         "candidateWinRate": "25.0%",
         "executionTrades": 7,
@@ -112,16 +91,16 @@
         "avgOvernightReturn": "-0.57%",
         "avgRelativeReturn": "-2.20%",
         "bestStrategy": "盘中：强势观察 33.3%/3笔",
-        "signals": 53,
-        "buys": 14,
+        "signals": 59,
+        "buys": 15,
         "exits": 5,
-        "holding": 9,
-        "waiting": 22
+        "holding": 10,
+        "waiting": 27
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 7,
+          "calls": 12,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -180,7 +159,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 15,
+          "calls": 19,
           "reviewed": 3,
           "winRate": "33.3%",
           "avgStockReturn": "-0.39%",
