@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T08:06:07",
+  "updatedAt": "2026-08-12T08:36:40",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-07-29 至 2026-08-12",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 7,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -323,20 +323,20 @@
                 "symbol": "603501",
                 "name": "豪威集团",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "300274",
                 "name": "阳光电源",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -414,12 +414,12 @@
           "name": "豪威集团",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|300274",
@@ -428,12 +428,12 @@
           "name": "阳光电源",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -443,7 +443,7 @@
       "metrics": {
         "calls": 4,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -715,20 +715,20 @@
                 "symbol": "603501",
                 "name": "豪威集团",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "300274",
                 "name": "阳光电源",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -792,12 +792,12 @@
           "name": "豪威集团",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|300274",
@@ -806,12 +806,12 @@
           "name": "阳光电源",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -2774,7 +2774,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -3031,13 +3031,13 @@
                 "symbol": "603501",
                 "name": "豪威集团",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -3078,13 +3078,13 @@
           "buyZone": "92.51-93.82",
           "takeProfit": "96.52-97.92",
           "stopLoss": "90.93",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "92.71",
+          "nextClose": "91.52",
+          "overnightReturn": "-0.59%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-2.45%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
@@ -3143,7 +3143,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -3400,13 +3400,13 @@
                 "symbol": "300274",
                 "name": "阳光电源",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -3447,13 +3447,13 @@
           "buyZone": "119.11-120.79",
           "takeProfit": "124.27-126.07",
           "stopLoss": "117.07",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "120.90",
+          "nextClose": "117.53",
+          "overnightReturn": "+0.69%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-3.61%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
