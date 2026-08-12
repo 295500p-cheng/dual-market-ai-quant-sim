@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T06:45:48",
+  "updatedAt": "2026-08-12T08:06:07",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,18 +9,18 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,469.11",
+    "totalAssets": "97,466.11",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,530.89",
+    "cumulativePnl": "-2,533.89",
     "cumulativePnlPct": "-2.53%",
     "realizedPnl": "-2,330.19",
-    "floatingPnl": "-200.70",
+    "floatingPnl": "-203.70",
     "availableCash": "70,462.82",
     "cashRatio": "+72.29%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "70,462.82",
     "fundingStatus": "现金占比 +72.29%",
-    "marketValue": "27,006.29",
+    "marketValue": "27,003.29",
     "positionRatio": "+27.71%",
     "holdings": 3,
     "maxHoldings": 6,
@@ -56,13 +56,13 @@
       "symbol": "000333",
       "name": "美的集团",
       "entryPrice": "85.28",
-      "currentPrice": "84.37",
+      "currentPrice": "84.34",
       "quantity": 100,
       "availableQuantity": 100,
       "notional": "8,528.00",
-      "marketValue": "8,437.00",
-      "pnl": "-91.00",
-      "pnlPct": "-1.07%",
+      "marketValue": "8,434.00",
+      "pnl": "-94.00",
+      "pnlPct": "-1.10%",
       "status": "模拟持有"
     },
     {
