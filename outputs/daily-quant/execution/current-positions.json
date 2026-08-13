@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T17:34:02",
+  "updatedAt": "2026-08-13T18:39:52",
   "status": "当前模拟持仓，不是真实账户",
   "summary": "按交易软件口径展示模拟股数、可用数量、持仓成本、持仓市值、浮动盈亏和风控线；A股按100股一手并执行T+1可用规则。",
   "metrics": {
@@ -11,10 +11,10 @@
     "totalQuantity": 118,
     "totalCostValue": 18446.36,
     "totalCost": "18,446.36",
-    "totalMarketValueValue": 18517.9,
-    "totalMarketValue": "18,517.90",
-    "totalFloatingPnlValue": 71.54000000000087,
-    "totalFloatingPnl": "71.54",
+    "totalMarketValueValue": 18423.4,
+    "totalMarketValue": "18,423.40",
+    "totalFloatingPnlValue": -22.959999999999127,
+    "totalFloatingPnl": "-22.96",
     "tPlusOneLocked": 0
   },
   "rows": [
@@ -50,27 +50,27 @@
       "symbol": "AMAT",
       "name": "Applied Materials, Inc.",
       "entryTime": "2026-08-12T16:30:41",
-      "quoteTime": "2026-08-13T17:33:58+00:00",
-      "currentPrice": "561.05",
+      "quoteTime": "2026-08-13T18:39:47+00:00",
+      "currentPrice": "555.80",
       "previousClose": "548.15",
-      "dayReturn": "+2.35%",
+      "dayReturn": "+1.40%",
       "entryPrice": "551.02",
       "quantity": 18,
       "availableQuantity": 18,
       "frozenQuantity": 0,
       "costAmountValue": 9918.36,
       "costAmount": "9,918.36",
-      "marketValueValue": 10098.9,
-      "marketValue": "10,098.90",
-      "floatingPnlAmountValue": 180.53999999999905,
-      "floatingPnlAmount": "180.54",
-      "positionReturn": "+1.82%",
+      "marketValueValue": 10004.4,
+      "marketValue": "10,004.40",
+      "floatingPnlAmountValue": 86.03999999999905,
+      "floatingPnlAmount": "86.04",
+      "positionReturn": "+0.87%",
       "takeProfit": "570.31-578.58",
       "stopLoss": "537.25",
-      "takeProfitGap": "+1.65%",
-      "stopBuffer": "+4.43%",
+      "takeProfitGap": "+2.61%",
+      "stopBuffer": "+3.45%",
       "status": "模拟持有",
-      "nextAction": "继续按15分钟行情跟踪，未触发止盈止损。"
+      "nextAction": "已持仓，但新规则降权：美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。 下一交易日开盘优先观察退出或降低模拟仓位。"
     }
   ]
 }

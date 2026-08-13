@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T17:34:02",
+  "updatedAt": "2026-08-13T18:39:52",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-08-07 至 2026-08-13",
       "metrics": {
-        "calls": 59,
+        "calls": 60,
         "reviewed": 0,
-        "pending": 23,
+        "pending": 24,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 7,
@@ -22,11 +22,11 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 74,
-        "buys": 6,
-        "exits": 5,
+        "signals": 75,
+        "buys": 5,
+        "exits": 4,
         "holding": 1,
-        "waiting": 21
+        "waiting": 23
       },
       "marketRows": [
         {
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 32,
+          "calls": 33,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -54,9 +54,9 @@
       "label": "本月",
       "period": "2026-08-01 至 2026-08-13",
       "metrics": {
-        "calls": 79,
+        "calls": 80,
         "reviewed": 4,
-        "pending": 23,
+        "pending": 24,
         "winRate": "25.0%",
         "candidateWinRate": "25.0%",
         "executionTrades": 11,
@@ -68,11 +68,11 @@
         "avgOvernightReturn": "-0.57%",
         "avgRelativeReturn": "-2.20%",
         "bestStrategy": "盘中：强势观察 33.3%/3笔",
-        "signals": 101,
-        "buys": 17,
-        "exits": 7,
+        "signals": 102,
+        "buys": 16,
+        "exits": 6,
         "holding": 10,
-        "waiting": 37
+        "waiting": 39
       },
       "marketRows": [
         {
@@ -85,7 +85,7 @@
         },
         {
           "market": "美股",
-          "calls": 52,
+          "calls": 53,
           "reviewed": 4,
           "winRate": "25.0%",
           "avgStockReturn": "-0.35%",
@@ -144,7 +144,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 20,
+          "calls": 21,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.24%",
