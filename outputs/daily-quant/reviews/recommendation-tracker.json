@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-13T08:37:38",
+  "updatedAt": "2026-08-13T08:39:58",
   "status": "自动记录，不用手记",
   "summary": "每次推荐会自动进入台账；第二天复盘面板会显示涨跌、隔夜收益、是否命中和优化结论。",
   "metrics": {
     "tracked": 30,
-    "pending": 25,
+    "pending": 17,
     "holding": 0,
     "reviewed": 0
   },
@@ -105,7 +105,7 @@
       "stopLoss": "1321.41",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -125,7 +125,7 @@
       "stopLoss": "386.37",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -145,7 +145,7 @@
       "stopLoss": "77.47",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -165,7 +165,7 @@
       "stopLoss": "87.40",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -245,7 +245,7 @@
       "stopLoss": "88.05",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -265,7 +265,7 @@
       "stopLoss": "78.51",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -285,7 +285,7 @@
       "stopLoss": "429.91",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -305,7 +305,7 @@
       "stopLoss": "117.70",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },

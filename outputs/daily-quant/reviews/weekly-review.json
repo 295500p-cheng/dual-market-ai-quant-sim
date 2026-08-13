@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-08-12T20:50:32",
+  "updatedAt": "2026-08-13T08:39:58",
   "status": "本周实际模拟平仓已更新",
-  "period": "2026-08-06 至 2026-08-12",
+  "period": "2026-08-07 至 2026-08-13",
   "summary": "本周实际模拟平仓 5 笔，2 胜 3 负，胜率 40.0%。",
   "metrics": {
     "reviewedTrades": 5,
-    "pendingTrades": 13,
+    "pendingTrades": 14,
     "weeklyWinRate": "40.0%",
     "overnightTrades": 5,
     "overnightWinRate": "-0.12%",
@@ -15,13 +15,13 @@
     "executionAvgReturn": "-0.12%",
     "executionProfitFactor": "0.86",
     "executionRealizedPnl": "-84.54",
-    "bestBucket": "盘中：候选观察 0.0%/1笔",
-    "weakBucket": "盘中：候选观察 0.0%/1笔",
-    "executionSignals": 63,
+    "bestBucket": "暂无",
+    "weakBucket": "暂无",
+    "executionSignals": 65,
     "executionBuys": 5,
     "executionExits": 5,
-    "executionHolding": 2,
-    "executionWaiting": 16
+    "executionHolding": 0,
+    "executionWaiting": 14
   },
   "marketRows": [
     {
@@ -41,14 +41,7 @@
       "lesson": "按实际模拟平仓持续跟踪"
     }
   ],
-  "actionRows": [
-    {
-      "action": "盘中：候选观察",
-      "reviewed": 1,
-      "winRate": "0.0%",
-      "relativeAvg": "-2.20%"
-    }
-  ],
+  "actionRows": [],
   "nextWeekFocus": [
     "继续积累实际模拟平仓样本，样本少于20笔时不继续调参。",
     "优先恢复A股云端轮次，避免只用美股样本判断整体策略。",
