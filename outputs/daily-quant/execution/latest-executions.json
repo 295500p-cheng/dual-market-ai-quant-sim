@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-14T16:26:27",
+  "updatedAt": "2026-08-14T17:31:28",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
-    "signals": 7,
+    "signals": 6,
     "triggered": 0,
     "exited": 0,
-    "waiting": 2,
+    "waiting": 1,
     "dataMissing": 5
   },
   "rows": [
@@ -111,44 +111,24 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-14T16:26:27|美股|AMD",
-      "updated_at": "2026-08-14T16:26:27",
+      "signal_id": "2026-08-14T17:31:28|美股|AMD",
+      "updated_at": "2026-08-14T17:31:28",
       "market": "美股",
       "symbol": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
+      "name": "Advanced Micro Devices",
       "action": "盘中：高风险强势观察",
       "source_status": "开盘后可核验行情候选",
-      "quote_time": "2026-08-14T16:26:24+00:00",
-      "current_price": "501.62",
-      "buy_zone": "497.60-504.62",
+      "quote_time": "2026-08-14T17:31:20+00:00",
+      "current_price": "502.64",
+      "buy_zone": "498.62-505.66",
       "entry_status": "等待触发",
       "entry_price": "",
-      "take_profit": "519.17-534.22",
-      "stop_loss": "484.06",
+      "take_profit": "520.23-535.31",
+      "stop_loss": "485.05",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
       "risk_note": "高风险强势信号只保留观察，不自动模拟买入。"
-    },
-    {
-      "signal_id": "2026-08-14T16:26:27|美股|MSFT",
-      "updated_at": "2026-08-14T16:26:27",
-      "market": "美股",
-      "symbol": "MSFT",
-      "name": "Microsoft Corporation",
-      "action": "盘中：候选观察",
-      "source_status": "开盘后可核验行情候选",
-      "quote_time": "2026-08-14T16:26:25+00:00",
-      "current_price": "497.41",
-      "buy_zone": "493.43-500.39",
-      "entry_status": "等待触发",
-      "entry_price": "",
-      "take_profit": "514.82-522.28",
-      "stop_loss": "484.97",
-      "exit_status": "未执行",
-      "exit_price": "",
-      "result_return": "",
-      "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
     }
   ]
 }

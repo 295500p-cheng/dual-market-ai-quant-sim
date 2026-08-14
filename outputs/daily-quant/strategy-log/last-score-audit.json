@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-14T16:26:27",
+  "updatedAt": "2026-08-14T17:31:28",
   "scoredCount": 41,
   "target": "us_stock",
   "aShareCandidates": 5,
-  "usStockCandidates": 2,
+  "usStockCandidates": 1,
   "top": {
     "a_share": [
       {
@@ -156,59 +156,30 @@
       {
         "market": "美股",
         "symbol": "AMD",
-        "name": "Advanced Micro Devices, Inc.",
+        "name": "Advanced Micro Devices",
         "benchmark": "SMH",
-        "sourceTimestamp": "2026-08-14T16:26:24+00:00",
+        "sourceTimestamp": "2026-08-14T17:31:20+00:00",
         "rank": 1,
         "action": "盘中：高风险强势观察",
-        "currentPrice": "当前 501.62",
-        "buyZone": "497.60-504.62",
-        "takeProfit": "519.17-534.22",
-        "stopLoss": "484.06",
+        "currentPrice": "当前 502.64",
+        "buyZone": "498.62-505.66",
+        "takeProfit": "520.23-535.31",
+        "stopLoss": "485.05",
         "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
         "dayScore": 86,
         "overnightScore": 65,
         "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI GPU/半导体；相对基准 4.4783%。",
+        "logic": "AI GPU/半导体；相对基准 5.0342%。",
         "risk": "高风险；高波动;产品预期;相对弱势风险",
         "scoreBreakdown": {
           "trend_score": 20,
           "volume_price_score": 14,
           "relative_strength_score": 20,
-          "relative_return": 4.4783,
+          "relative_return": 5.0342,
           "sector_sync_score": 15,
           "event_risk_score": 4,
           "overnight_fit_score": 13,
           "total_score": 86
-        }
-      },
-      {
-        "market": "美股",
-        "symbol": "MSFT",
-        "name": "Microsoft Corporation",
-        "benchmark": "QQQ",
-        "sourceTimestamp": "2026-08-14T16:26:25+00:00",
-        "rank": 2,
-        "action": "盘中：候选观察",
-        "currentPrice": "当前 497.41",
-        "buyZone": "493.43-500.39",
-        "takeProfit": "514.82-522.28",
-        "stopLoss": "484.97",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 74,
-        "overnightScore": 65,
-        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI云/软件；相对基准 0.3854%。",
-        "risk": "中风险；监管;财报;AI资本开支担忧",
-        "scoreBreakdown": {
-          "trend_score": 13,
-          "volume_price_score": 14,
-          "relative_strength_score": 14,
-          "relative_return": 0.3854,
-          "sector_sync_score": 12,
-          "event_risk_score": 8,
-          "overnight_fit_score": 13,
-          "total_score": 74
         }
       }
     ]
