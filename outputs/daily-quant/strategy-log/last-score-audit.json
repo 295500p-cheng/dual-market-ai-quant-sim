@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T17:31:28",
+  "updatedAt": "2026-08-14T18:29:22",
   "scoredCount": 41,
   "target": "us_stock",
   "aShareCandidates": 5,
@@ -156,30 +156,30 @@
       {
         "market": "美股",
         "symbol": "AMD",
-        "name": "Advanced Micro Devices",
+        "name": "Advanced Micro Devices, Inc.",
         "benchmark": "SMH",
-        "sourceTimestamp": "2026-08-14T17:31:20+00:00",
+        "sourceTimestamp": "2026-08-14T18:29:17+00:00",
         "rank": 1,
         "action": "盘中：高风险强势观察",
-        "currentPrice": "当前 502.64",
-        "buyZone": "498.62-505.66",
-        "takeProfit": "520.23-535.31",
-        "stopLoss": "485.05",
+        "currentPrice": "当前 507.76",
+        "buyZone": "503.70-510.81",
+        "takeProfit": "525.53-540.76",
+        "stopLoss": "489.99",
         "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 86,
+        "dayScore": 87,
         "overnightScore": 65,
         "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI GPU/半导体；相对基准 5.0342%。",
+        "logic": "AI GPU/半导体；相对基准 6.0602%。",
         "risk": "高风险；高波动;产品预期;相对弱势风险",
         "scoreBreakdown": {
           "trend_score": 20,
-          "volume_price_score": 14,
+          "volume_price_score": 15,
           "relative_strength_score": 20,
-          "relative_return": 5.0342,
+          "relative_return": 6.0602,
           "sector_sync_score": 15,
           "event_risk_score": 4,
           "overnight_fit_score": 13,
-          "total_score": 86
+          "total_score": 87
         }
       }
     ]
