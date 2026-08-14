@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-14T08:24:05",
+  "updatedAt": "2026-08-14T20:34:50",
   "status": "候选次日表现统计",
   "note": "这是去重候选在下一交易日的表现统计，不等于实际平仓胜率；未触发模拟买入的候选不计入。",
   "metrics": {
-    "totalTrades": 87,
-    "totalWinRate": "40.2%",
-    "overnightTrades": 66,
-    "overnightWinRate": "34.8%",
+    "totalTrades": 88,
+    "totalWinRate": "39.8%",
+    "overnightTrades": 67,
+    "overnightWinRate": "34.3%",
     "aShareTrades": 36,
     "aShareWinRate": "50.0%",
-    "usStockTrades": 51,
-    "usStockWinRate": "33.3%"
+    "usStockTrades": 52,
+    "usStockWinRate": "32.7%"
   },
   "strategyBreakdown": [
     {
@@ -35,8 +35,8 @@
     },
     {
       "name": "盘中：强势观察",
-      "trades": 25,
-      "winRate": "48.0%"
+      "trades": 26,
+      "winRate": "46.2%"
     },
     {
       "name": "盘中：候选观察",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T20:16:28",
+  "updatedAt": "2026-08-14T20:34:50",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-14T20:16:28|美股|AMD",
-      "updated_at": "2026-08-14T20:16:28",
+      "signal_id": "2026-08-14T20:34:50|美股|AMD",
+      "updated_at": "2026-08-14T20:34:50",
       "market": "美股",
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "高风险强势信号只保留观察，不自动模拟买入。"
     },
     {
-      "signal_id": "2026-08-14T20:16:28|美股|MU",
-      "updated_at": "2026-08-14T20:16:28",
+      "signal_id": "2026-08-14T20:34:50|美股|MU",
+      "updated_at": "2026-08-14T20:34:50",
       "market": "美股",
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
