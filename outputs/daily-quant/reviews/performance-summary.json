@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T05:38:42",
+  "updatedAt": "2026-08-17T06:20:42",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-08-11 至 2026-08-17",
       "metrics": {
-        "calls": 62,
+        "calls": 64,
         "reviewed": 1,
-        "pending": 18,
+        "pending": 20,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
         "executionTrades": 6,
@@ -22,16 +22,16 @@
         "avgOvernightReturn": "-11.16%",
         "avgRelativeReturn": "-9.38%",
         "bestStrategy": "盘中：强势观察 0.0%/1笔",
-        "signals": 68,
+        "signals": 70,
         "buys": 3,
         "exits": 3,
         "holding": 0,
-        "waiting": 23
+        "waiting": 25
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 33,
+          "calls": 35,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -77,9 +77,9 @@
       "label": "本月",
       "period": "2026-08-01 至 2026-08-17",
       "metrics": {
-        "calls": 98,
+        "calls": 100,
         "reviewed": 5,
-        "pending": 18,
+        "pending": 20,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
         "executionTrades": 13,
@@ -91,16 +91,16 @@
         "avgOvernightReturn": "-2.69%",
         "avgRelativeReturn": "-5.79%",
         "bestStrategy": "盘中：强势观察 25.0%/4笔",
-        "signals": 121,
+        "signals": 123,
         "buys": 17,
         "exits": 8,
         "holding": 9,
-        "waiting": 45
+        "waiting": 47
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 40,
+          "calls": 42,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -180,7 +180,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 29,
+          "calls": 31,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.24%",
