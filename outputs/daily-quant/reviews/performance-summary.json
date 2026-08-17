@@ -1,37 +1,37 @@
 {
-  "updatedAt": "2026-08-14T20:50:40",
+  "updatedAt": "2026-08-17T02:21:22",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-08-08 至 2026-08-14",
+      "period": "2026-08-11 至 2026-08-17",
       "metrics": {
-        "calls": 72,
+        "calls": 59,
         "reviewed": 1,
-        "pending": 12,
+        "pending": 15,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
-        "executionTrades": 9,
-        "executionWins": 4,
-        "executionLosses": 5,
-        "executionWinRate": "44.4%",
-        "executionRealizedPnl": "+114.20",
+        "executionTrades": 6,
+        "executionWins": 3,
+        "executionLosses": 3,
+        "executionWinRate": "50.0%",
+        "executionRealizedPnl": "+262.17",
         "avgStockReturn": "-9.60%",
         "avgOvernightReturn": "-11.16%",
         "avgRelativeReturn": "-9.38%",
         "bestStrategy": "盘中：强势观察 0.0%/1笔",
-        "signals": 88,
-        "buys": 6,
-        "exits": 6,
+        "signals": 65,
+        "buys": 3,
+        "exits": 3,
         "holding": 0,
-        "waiting": 23
+        "waiting": 20
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 34,
+          "calls": 30,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 38,
+          "calls": 29,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -64,7 +64,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 14,
+          "calls": 10,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -75,11 +75,11 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-08-01 至 2026-08-14",
+      "period": "2026-08-01 至 2026-08-17",
       "metrics": {
-        "calls": 92,
+        "calls": 95,
         "reviewed": 5,
-        "pending": 12,
+        "pending": 15,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
         "executionTrades": 13,
@@ -91,16 +91,16 @@
         "avgOvernightReturn": "-2.69%",
         "avgRelativeReturn": "-5.79%",
         "bestStrategy": "盘中：强势观察 25.0%/4笔",
-        "signals": 115,
+        "signals": 118,
         "buys": 17,
         "exits": 8,
         "holding": 9,
-        "waiting": 39
+        "waiting": 42
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 34,
+          "calls": 37,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -180,7 +180,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 26,
+          "calls": 27,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.24%",
