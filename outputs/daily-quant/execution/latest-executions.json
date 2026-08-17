@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T20:02:47",
+  "updatedAt": "2026-08-17T20:30:42",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-17T20:02:47|美股|AMAT",
-      "updated_at": "2026-08-17T20:02:47",
+      "signal_id": "2026-08-17T20:30:42|美股|AMAT",
+      "updated_at": "2026-08-17T20:30:42",
       "market": "美股",
       "symbol": "AMAT",
       "name": "Applied Materials, Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "上一轮已触发买入，当前价尚未触及止盈止损，继续模拟持有。"
     },
     {
-      "signal_id": "2026-08-17T20:02:47|美股|MU",
-      "updated_at": "2026-08-17T20:02:47",
+      "signal_id": "2026-08-17T20:30:42|美股|MU",
+      "updated_at": "2026-08-17T20:30:42",
       "market": "美股",
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "高风险强势信号只保留观察，不自动模拟买入。"
     },
     {
-      "signal_id": "2026-08-17T20:02:47|美股|LRCX",
-      "updated_at": "2026-08-17T20:02:47",
+      "signal_id": "2026-08-17T20:30:42|美股|LRCX",
+      "updated_at": "2026-08-17T20:30:42",
       "market": "美股",
       "symbol": "LRCX",
       "name": "Lam Research Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "上一轮已触发买入，当前价尚未触及止盈止损，继续模拟持有。"
     },
     {
-      "signal_id": "2026-08-17T20:02:47|美股|ASML",
-      "updated_at": "2026-08-17T20:02:47",
+      "signal_id": "2026-08-17T20:30:42|美股|ASML",
+      "updated_at": "2026-08-17T20:30:42",
       "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
@@ -191,15 +191,15 @@
       "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
     },
     {
-      "signal_id": "2026-08-17T20:02:47|美股|TSM",
-      "updated_at": "2026-08-17T20:02:47",
+      "signal_id": "2026-08-17T20:30:42|美股|TSM",
+      "updated_at": "2026-08-17T20:30:42",
       "market": "美股",
       "symbol": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
       "action": "盘中：候选观察",
       "source_status": "开盘后可核验行情候选",
-      "quote_time": "2026-08-17T20:00:00+00:00",
-      "current_price": "430.95",
+      "quote_time": "2026-08-17T20:00:02+00:00",
+      "current_price": "430.97",
       "buy_zone": "427.50-433.53",
       "entry_status": "等待触发",
       "entry_price": "",
