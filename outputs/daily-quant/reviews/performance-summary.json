@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T08:25:17",
+  "updatedAt": "2026-08-17T13:45:51",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-08-11 至 2026-08-17",
       "metrics": {
-        "calls": 64,
+        "calls": 68,
         "reviewed": 1,
-        "pending": 13,
+        "pending": 17,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
         "executionTrades": 6,
@@ -22,11 +22,11 @@
         "avgOvernightReturn": "-11.16%",
         "avgRelativeReturn": "-9.38%",
         "bestStrategy": "盘中：强势观察 0.0%/1笔",
-        "signals": 70,
+        "signals": 74,
         "buys": 3,
         "exits": 3,
         "holding": 0,
-        "waiting": 20
+        "waiting": 24
       },
       "marketRows": [
         {
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 29,
+          "calls": 33,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -51,7 +51,7 @@
           "market": "美股",
           "symbol": "AMAT",
           "name": "Applied Materials, Inc.",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -64,7 +64,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 10,
+          "calls": 11,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -77,9 +77,9 @@
       "label": "本月",
       "period": "2026-08-01 至 2026-08-17",
       "metrics": {
-        "calls": 100,
+        "calls": 104,
         "reviewed": 5,
-        "pending": 13,
+        "pending": 17,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
         "executionTrades": 13,
@@ -91,11 +91,11 @@
         "avgOvernightReturn": "-2.69%",
         "avgRelativeReturn": "-5.79%",
         "bestStrategy": "盘中：强势观察 25.0%/4笔",
-        "signals": 123,
+        "signals": 127,
         "buys": 17,
         "exits": 8,
         "holding": 9,
-        "waiting": 42
+        "waiting": 46
       },
       "marketRows": [
         {
@@ -108,7 +108,7 @@
         },
         {
           "market": "美股",
-          "calls": 58,
+          "calls": 62,
           "reviewed": 5,
           "winRate": "20.0%",
           "avgStockReturn": "-2.20%",
@@ -133,7 +133,7 @@
           "market": "美股",
           "symbol": "LRCX",
           "name": "Lam Research Corporation",
-          "calls": 5,
+          "calls": 6,
           "reviewed": 2,
           "winRate": "0.0%",
           "avgStockReturn": "-0.81%",
@@ -146,7 +146,7 @@
           "market": "美股",
           "symbol": "AMAT",
           "name": "Applied Materials, Inc.",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -159,7 +159,7 @@
           "market": "美股",
           "symbol": "KLAC",
           "name": "KLA Corporation",
-          "calls": 3,
+          "calls": 4,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-1.32%",
@@ -172,7 +172,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 25,
+          "calls": 26,
           "reviewed": 4,
           "winRate": "25.0%",
           "avgStockReturn": "-2.69%",
@@ -180,7 +180,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 28,
+          "calls": 29,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.24%",
