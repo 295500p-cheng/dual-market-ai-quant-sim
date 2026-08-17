@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T20:46:30",
+  "updatedAt": "2026-08-17T21:12:03",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-17T20:46:30|美股|AMAT",
-      "updated_at": "2026-08-17T20:46:30",
+      "signal_id": "2026-08-17T21:12:03|美股|AMAT",
+      "updated_at": "2026-08-17T21:12:03",
       "market": "美股",
       "symbol": "AMAT",
       "name": "Applied Materials, Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-17T20:46:30|美股|MU",
-      "updated_at": "2026-08-17T20:46:30",
+      "signal_id": "2026-08-17T21:12:03|美股|MU",
+      "updated_at": "2026-08-17T21:12:03",
       "market": "美股",
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-17T20:46:30|美股|LRCX",
-      "updated_at": "2026-08-17T20:46:30",
+      "signal_id": "2026-08-17T21:12:03|美股|LRCX",
+      "updated_at": "2026-08-17T21:12:03",
       "market": "美股",
       "symbol": "LRCX",
       "name": "Lam Research Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-17T20:46:30|美股|ASML",
-      "updated_at": "2026-08-17T20:46:30",
+      "signal_id": "2026-08-17T21:12:03|美股|ASML",
+      "updated_at": "2026-08-17T21:12:03",
       "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-17T20:46:30|美股|TSM",
-      "updated_at": "2026-08-17T20:46:30",
+      "signal_id": "2026-08-17T21:12:03|美股|TSM",
+      "updated_at": "2026-08-17T21:12:03",
       "market": "美股",
       "symbol": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
