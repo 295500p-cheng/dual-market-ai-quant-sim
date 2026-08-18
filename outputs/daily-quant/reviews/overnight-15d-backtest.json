@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T07:05:46",
+  "updatedAt": "2026-08-18T07:48:47",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-04 至 2026-08-18",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 12,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -361,20 +361,20 @@
                 "symbol": "002371",
                 "name": "北方华创",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "70",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 3,
           "reviewed": 0,
-          "pending": 3,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -438,12 +438,12 @@
           "name": "工业富联",
           "calls": 3,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|603501",
@@ -480,12 +480,12 @@
           "name": "北方华创",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -495,7 +495,7 @@
       "metrics": {
         "calls": 7,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -790,20 +790,20 @@
                 "symbol": "002371",
                 "name": "北方华创",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "70",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -853,12 +853,12 @@
           "name": "工业富联",
           "calls": 3,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|603501",
@@ -895,12 +895,12 @@
           "name": "北方华创",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -2637,7 +2637,7 @@
           "previousClose": "399.98",
           "changePct": "-0.93%",
           "volume": "16933180.0",
-          "quoteTime": "2026-08-18 15:05:30",
+          "quoteTime": "2026-08-18 15:35:00",
           "source": "sina"
         }
       ]
@@ -2650,7 +2650,7 @@
       "metrics": {
         "calls": 3,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -2923,13 +2923,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "70",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -2970,13 +2970,13 @@
           "buyZone": "67.68-68.64",
           "takeProfit": "70.62-71.64",
           "stopLoss": "66.52",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "67.70",
+          "nextClose": "66.20",
+          "overnightReturn": "-0.78%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-3.09%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-08-14",
@@ -3122,7 +3122,7 @@
           "previousClose": "68.23",
           "changePct": "-2.98%",
           "volume": "131581727.0",
-          "quoteTime": "2026-08-18 15:05:44",
+          "quoteTime": "2026-08-18 15:34:59",
           "source": "sina"
         }
       ]
@@ -3551,7 +3551,7 @@
           "previousClose": "92.14",
           "changePct": "-1.74%",
           "volume": "18203604.0",
-          "quoteTime": "2026-08-18 15:05:44",
+          "quoteTime": "2026-08-18 15:34:59",
           "source": "sina"
         }
       ]
@@ -3980,7 +3980,7 @@
           "previousClose": "118.80",
           "changePct": "-0.64%",
           "volume": "44137690.0",
-          "quoteTime": "2026-08-18 15:05:30",
+          "quoteTime": "2026-08-18 15:35:45",
           "source": "sina"
         }
       ]
@@ -3993,7 +3993,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -4250,13 +4250,13 @@
                 "symbol": "002371",
                 "name": "北方华创",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -4297,13 +4297,13 @@
           "buyZone": "759.84-770.57",
           "takeProfit": "792.78-804.27",
           "stopLoss": "746.82",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "770.00",
+          "nextClose": "777.00",
+          "overnightReturn": "+0.53%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.76%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
@@ -4409,7 +4409,7 @@
           "previousClose": "765.97",
           "changePct": "+1.44%",
           "volume": "8166634.0",
-          "quoteTime": "2026-08-18 15:05:30",
+          "quoteTime": "2026-08-18 15:35:15",
           "source": "sina"
         }
       ]
