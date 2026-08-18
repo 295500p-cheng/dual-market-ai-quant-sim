@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T20:00:27",
+  "updatedAt": "2026-08-18T20:35:07",
   "scoredCount": 41,
   "target": "us_stock",
   "aShareCandidates": 4,
@@ -129,7 +129,7 @@
         "symbol": "CRM",
         "name": "Salesforce",
         "benchmark": "QQQ",
-        "sourceTimestamp": "2026-08-18T19:59:59+00:00",
+        "sourceTimestamp": "2026-08-18T20:00:02+00:00",
         "rank": 1,
         "action": "盘中：候选观察",
         "currentPrice": "当前 196.14",
