@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T18:15:46",
+  "updatedAt": "2026-08-18T19:02:11",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,132.60",
+    "totalAssets": "97,123.64",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,867.40",
-    "cumulativePnlPct": "-2.87%",
+    "cumulativePnl": "-2,876.36",
+    "cumulativePnlPct": "-2.88%",
     "realizedPnl": "-2,860.36",
-    "floatingPnl": "-7.04",
+    "floatingPnl": "-16.00",
     "availableCash": "87,197.56",
-    "cashRatio": "+89.77%",
+    "cashRatio": "+89.78%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "87,197.56",
-    "fundingStatus": "现金占比 +89.77%",
-    "marketValue": "9,935.04",
-    "positionRatio": "+10.23%",
+    "fundingStatus": "现金占比 +89.78%",
+    "marketValue": "9,926.08",
+    "positionRatio": "+10.22%",
     "holdings": 1,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -42,13 +42,13 @@
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "entryPrice": "310.69",
-      "currentPrice": "310.47",
+      "currentPrice": "310.19",
       "quantity": 32,
       "availableQuantity": 32,
       "notional": "9,942.08",
-      "marketValue": "9,935.04",
-      "pnl": "-7.04",
-      "pnlPct": "-0.07%",
+      "marketValue": "9,926.08",
+      "pnl": "-16.00",
+      "pnlPct": "-0.16%",
       "status": "模拟持有"
     }
   ]
