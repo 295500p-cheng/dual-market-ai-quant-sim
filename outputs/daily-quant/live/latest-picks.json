@@ -1,9 +1,39 @@
 {
-  "updatedAt": "2026-08-18T03:12:02",
+  "updatedAt": "2026-08-18T03:59:28",
   "status": "盘中可核验行情候选",
   "note": "已用新浪财经A股盘中行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
-    "a_share": [],
+    "a_share": [
+      {
+        "market": "A股",
+        "symbol": "000333",
+        "name": "美的集团",
+        "benchmark": "沪深300",
+        "sourceTimestamp": "2026-08-18 11:30:00",
+        "rank": 1,
+        "action": "盘中：边缘观察",
+        "currentPrice": "当前 82.86",
+        "buyZone": "82.20-83.36",
+        "takeProfit": "85.76-87.00",
+        "stopLoss": "80.79",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 72,
+        "overnightScore": 30,
+        "overnightView": "隔夜降权：只做观察，不作为自动模拟买入；需次日重新确认强于基准和尾盘承接。",
+        "logic": "家电/消费；相对基准 1.0946%。",
+        "risk": "低风险；消费周期;汇率/出口",
+        "scoreBreakdown": {
+          "trend_score": 13,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 1.0946,
+          "sector_sync_score": 12,
+          "event_risk_score": 10,
+          "overnight_fit_score": 6,
+          "total_score": 72
+        }
+      }
+    ],
     "us_stock": [
       {
         "market": "美股",
