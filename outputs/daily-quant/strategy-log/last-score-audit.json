@@ -1,41 +1,11 @@
 {
-  "updatedAt": "2026-08-18T02:17:09",
+  "updatedAt": "2026-08-18T03:12:02",
   "scoredCount": 41,
   "target": "a_share",
-  "aShareCandidates": 1,
+  "aShareCandidates": 0,
   "usStockCandidates": 5,
   "top": {
-    "a_share": [
-      {
-        "market": "A股",
-        "symbol": "300274",
-        "name": "阳光电源",
-        "benchmark": "创业板指",
-        "sourceTimestamp": "2026-08-18 10:17:06",
-        "rank": 1,
-        "action": "盘中：边缘观察",
-        "currentPrice": "当前 118.85",
-        "buyZone": "117.90-119.56",
-        "takeProfit": "123.01-124.79",
-        "stopLoss": "115.88",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 70,
-        "overnightScore": 50,
-        "overnightView": "隔夜降权：只做观察，不作为自动模拟买入；需次日重新确认强于基准和尾盘承接。",
-        "logic": "光伏/储能；相对基准 0.8657%。",
-        "risk": "中高风险；行业周期;海外需求波动",
-        "scoreBreakdown": {
-          "trend_score": 13,
-          "volume_price_score": 15,
-          "relative_strength_score": 14,
-          "relative_return": 0.8657,
-          "sector_sync_score": 12,
-          "event_risk_score": 6,
-          "overnight_fit_score": 10,
-          "total_score": 70
-        }
-      }
-    ],
+    "a_share": [],
     "us_stock": [
       {
         "market": "美股",
