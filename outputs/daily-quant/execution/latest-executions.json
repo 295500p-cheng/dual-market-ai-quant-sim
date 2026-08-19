@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T20:01:55",
+  "updatedAt": "2026-08-19T20:32:25",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "A股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
     },
     {
-      "signal_id": "2026-08-19T20:01:55|美股|AMZN",
-      "updated_at": "2026-08-19T20:01:55",
+      "signal_id": "2026-08-19T20:32:25|美股|AMZN",
+      "updated_at": "2026-08-19T20:32:25",
       "market": "美股",
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
@@ -131,15 +131,15 @@
       "risk_note": "今日已新增 2 只模拟持仓，达到每日上限 2 只。"
     },
     {
-      "signal_id": "2026-08-19T20:01:55|美股|CRM",
-      "updated_at": "2026-08-19T20:01:55",
+      "signal_id": "2026-08-19T20:32:25|美股|CRM",
+      "updated_at": "2026-08-19T20:32:25",
       "market": "美股",
       "symbol": "CRM",
       "name": "Salesforce",
       "action": "盘中：强势观察",
       "source_status": "开盘后可核验行情候选",
-      "quote_time": "2026-08-19T19:59:58+00:00",
-      "current_price": "206.12",
+      "quote_time": "2026-08-19T20:00:03+00:00",
+      "current_price": "206.09",
       "buy_zone": "204.47-207.35",
       "entry_status": "等待触发",
       "entry_price": "",
@@ -151,8 +151,8 @@
       "risk_note": "今日已新增 2 只模拟持仓，达到每日上限 2 只。"
     },
     {
-      "signal_id": "2026-08-19T20:01:55|美股|TSLA",
-      "updated_at": "2026-08-19T20:01:55",
+      "signal_id": "2026-08-19T20:32:25|美股|TSLA",
+      "updated_at": "2026-08-19T20:32:25",
       "market": "美股",
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
@@ -171,8 +171,8 @@
       "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
     },
     {
-      "signal_id": "2026-08-19T20:01:55|美股|AAPL",
-      "updated_at": "2026-08-19T20:01:55",
+      "signal_id": "2026-08-19T20:32:25|美股|AAPL",
+      "updated_at": "2026-08-19T20:32:25",
       "market": "美股",
       "symbol": "AAPL",
       "name": "Apple Inc.",
@@ -191,8 +191,8 @@
       "risk_note": "已持仓，但新规则降权：美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。 下一交易日开盘优先观察退出或降低模拟仓位。"
     },
     {
-      "signal_id": "2026-08-19T20:01:55|美股|PLTR",
-      "updated_at": "2026-08-19T20:01:55",
+      "signal_id": "2026-08-19T20:32:25|美股|PLTR",
+      "updated_at": "2026-08-19T20:32:25",
       "market": "美股",
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
