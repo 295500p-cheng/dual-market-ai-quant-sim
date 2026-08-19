@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T07:55:10",
+  "updatedAt": "2026-08-19T13:50:25",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,183.52",
+    "totalAssets": "97,285.92",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,816.48",
-    "cumulativePnlPct": "-2.82%",
+    "cumulativePnl": "-2,714.08",
+    "cumulativePnlPct": "-2.71%",
     "realizedPnl": "-2,860.36",
-    "floatingPnl": "43.88",
+    "floatingPnl": "146.28",
     "availableCash": "70,960.56",
-    "cashRatio": "+73.02%",
+    "cashRatio": "+72.94%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "70,960.56",
-    "fundingStatus": "现金占比 +73.02%",
-    "marketValue": "26,222.96",
-    "positionRatio": "+26.98%",
+    "fundingStatus": "现金占比 +72.94%",
+    "marketValue": "26,325.36",
+    "positionRatio": "+27.06%",
     "holdings": 3,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -30,13 +30,27 @@
     "todayBuys": 2,
     "todayExits": 0,
     "signals": 9,
-    "waiting": 3,
+    "waiting": 6,
     "currentRuleRealizedPnl": "735.55",
     "currentRuleClosedTrades": 16,
     "currentRuleWinRate": "50.0%",
     "legacyCarryoverPnl": "-3,595.91"
   },
   "positions": [
+    {
+      "market": "美股",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "entryPrice": "310.69",
+      "currentPrice": "313.23",
+      "quantity": 32,
+      "availableQuantity": 32,
+      "notional": "9,942.08",
+      "marketValue": "10,023.36",
+      "pnl": "81.28",
+      "pnlPct": "+0.82%",
+      "status": "模拟持有"
+    },
     {
       "market": "A股",
       "symbol": "600036",
@@ -64,20 +78,6 @@
       "pnl": "21.00",
       "pnlPct": "+0.25%",
       "status": "模拟持有（T+1锁定）"
-    },
-    {
-      "market": "美股",
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "entryPrice": "310.69",
-      "currentPrice": "310.03",
-      "quantity": 32,
-      "availableQuantity": 32,
-      "notional": "9,942.08",
-      "marketValue": "9,920.96",
-      "pnl": "-21.12",
-      "pnlPct": "-0.21%",
-      "status": "模拟持有"
     }
   ]
 }
