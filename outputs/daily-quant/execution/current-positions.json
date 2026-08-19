@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-08-19T04:08:44",
+  "updatedAt": "2026-08-19T05:35:14",
   "status": "当前模拟持仓，不是真实账户",
   "summary": "按交易软件口径展示模拟股数、可用数量、持仓成本、持仓市值、浮动盈亏和风控线；A股按100股一手并执行T+1可用规则。",
   "metrics": {
-    "positions": 1,
-    "aShare": 0,
+    "positions": 2,
+    "aShare": 1,
     "usStock": 1,
     "winners": 0,
     "losers": 1,
-    "totalQuantity": 32,
-    "totalCostValue": 9942.08,
-    "totalCost": "9,942.08",
-    "totalMarketValueValue": 9920.96,
-    "totalMarketValue": "9,920.96",
-    "totalFloatingPnlValue": -21.1200000000008,
+    "totalQuantity": 232,
+    "totalCostValue": 17728.08,
+    "totalCost": "17,728.08",
+    "totalMarketValueValue": 17706.96,
+    "totalMarketValue": "17,706.96",
+    "totalFloatingPnlValue": -21.12000000000262,
     "totalFloatingPnl": "-21.12",
-    "tPlusOneLocked": 0
+    "tPlusOneLocked": 1
   },
   "rows": [
     {
@@ -44,6 +44,33 @@
       "stopBuffer": "+2.35%",
       "status": "模拟持有",
       "nextAction": "已持仓，但新规则降权：美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。 下一交易日开盘优先观察退出或降低模拟仓位。"
+    },
+    {
+      "market": "A股",
+      "symbol": "600036",
+      "name": "招商银行",
+      "entryTime": "2026-08-19T05:35:14",
+      "quoteTime": "2026-08-19 13:35:10",
+      "currentPrice": "38.93",
+      "previousClose": "38.29",
+      "dayReturn": "+1.67%",
+      "entryPrice": "38.93",
+      "quantity": 200,
+      "availableQuantity": 0,
+      "frozenQuantity": 200,
+      "costAmountValue": 7786.0,
+      "costAmount": "7,786.00",
+      "marketValueValue": 7786.0,
+      "marketValue": "7,786.00",
+      "floatingPnlAmountValue": 0.0,
+      "floatingPnlAmount": "0.00",
+      "positionReturn": "0.00%",
+      "takeProfit": "40.29-40.88",
+      "stopLoss": "37.96",
+      "takeProfitGap": "+3.49%",
+      "stopBuffer": "+2.56%",
+      "status": "模拟持有（T+1锁定）",
+      "nextAction": "A股当日模拟买入，可用数量为0；下一交易日解锁后再执行止盈止损。"
     }
   ]
 }
