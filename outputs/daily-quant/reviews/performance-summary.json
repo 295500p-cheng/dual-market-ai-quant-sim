@@ -1,37 +1,37 @@
 {
-  "updatedAt": "2026-08-18T21:03:19",
+  "updatedAt": "2026-08-19T02:20:08",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-08-12 至 2026-08-18",
+      "period": "2026-08-13 至 2026-08-19",
       "metrics": {
-        "calls": 71,
+        "calls": 58,
         "reviewed": 1,
         "pending": 12,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
-        "executionTrades": 7,
+        "executionTrades": 6,
         "executionWins": 2,
-        "executionLosses": 5,
-        "executionWinRate": "28.6%",
-        "executionRealizedPnl": "-530.17",
+        "executionLosses": 4,
+        "executionWinRate": "33.3%",
+        "executionRealizedPnl": "-288.11",
         "avgStockReturn": "-9.60%",
         "avgOvernightReturn": "-11.16%",
         "avgRelativeReturn": "-9.38%",
         "bestStrategy": "盘中：强势观察 0.0%/1笔",
-        "signals": 78,
-        "buys": 5,
-        "exits": 5,
+        "signals": 62,
+        "buys": 4,
+        "exits": 4,
         "holding": 0,
-        "waiting": 29
+        "waiting": 27
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 35,
+          "calls": 29,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 36,
+          "calls": 29,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -51,7 +51,7 @@
           "market": "美股",
           "symbol": "AMAT",
           "name": "Applied Materials, Inc.",
-          "calls": 3,
+          "calls": 2,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -64,7 +64,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 7,
+          "calls": 6,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-9.60%",
@@ -75,7 +75,7 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-08-01 至 2026-08-18",
+      "period": "2026-08-01 至 2026-08-19",
       "metrics": {
         "calls": 121,
         "reviewed": 5,
