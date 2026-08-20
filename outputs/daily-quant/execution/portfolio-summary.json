@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T19:05:41",
+  "updatedAt": "2026-08-20T19:48:03",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,361.12",
+    "totalAssets": "97,280.96",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,638.88",
-    "cumulativePnlPct": "-2.64%",
+    "cumulativePnl": "-2,719.04",
+    "cumulativePnlPct": "-2.72%",
     "realizedPnl": "-2,860.36",
-    "floatingPnl": "221.48",
+    "floatingPnl": "141.32",
     "availableCash": "61,920.56",
-    "cashRatio": "+63.60%",
+    "cashRatio": "+63.65%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "61,920.56",
-    "fundingStatus": "现金占比 +63.60%",
-    "marketValue": "35,440.56",
-    "positionRatio": "+36.40%",
+    "fundingStatus": "现金占比 +63.65%",
+    "marketValue": "35,360.40",
+    "positionRatio": "+36.35%",
     "holdings": 4,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -38,20 +38,6 @@
   },
   "positions": [
     {
-      "market": "美股",
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "entryPrice": "310.69",
-      "currentPrice": "315.08",
-      "quantity": 32,
-      "availableQuantity": 32,
-      "notional": "9,942.08",
-      "marketValue": "10,082.56",
-      "pnl": "140.48",
-      "pnlPct": "+1.41%",
-      "status": "模拟持有"
-    },
-    {
       "market": "A股",
       "symbol": "000333",
       "name": "美的集团",
@@ -63,6 +49,20 @@
       "marketValue": "8,538.00",
       "pnl": "87.00",
       "pnlPct": "+1.03%",
+      "status": "模拟持有"
+    },
+    {
+      "market": "美股",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "entryPrice": "310.69",
+      "currentPrice": "312.57",
+      "quantity": 32,
+      "availableQuantity": 32,
+      "notional": "9,942.08",
+      "marketValue": "10,002.40",
+      "pnl": "60.32",
+      "pnlPct": "+0.61%",
       "status": "模拟持有"
     },
     {
