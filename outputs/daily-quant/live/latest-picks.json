@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T13:52:21",
+  "updatedAt": "2026-08-20T14:44:50",
   "status": "开盘后可核验行情候选",
   "note": "已用美股开盘后行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
@@ -121,6 +121,152 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "MU",
+        "name": "Micron Technology",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-08-20T14:44:46+00:00",
+        "rank": 1,
+        "action": "盘中：高风险强势观察",
+        "currentPrice": "当前 960.54",
+        "buyZone": "952.86-966.31",
+        "takeProfit": "994.16-1022.98",
+        "stopLoss": "926.93",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 82,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "存储芯片；相对基准 1.6848%。",
+        "risk": "高风险；周期波动;财报跳空;库存周期",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 1.6848,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 13,
+          "total_score": 82
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "KLAC",
+        "name": "KLA Corporation",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-08-20T14:44:47+00:00",
+        "rank": 2,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 189.23",
+        "buyZone": "187.72-190.37",
+        "takeProfit": "195.85-198.69",
+        "stopLoss": "184.50",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 79,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备/检测；相对基准 0.2301%。",
+        "risk": "中风险；估值;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 11,
+          "relative_strength_score": 14,
+          "relative_return": 0.2301,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 79
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AVGO",
+        "name": "Broadcom Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-08-20T14:44:45+00:00",
+        "rank": 3,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 366.09",
+        "buyZone": "363.16-368.29",
+        "takeProfit": "378.90-384.39",
+        "stopLoss": "356.94",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 77,
+        "overnightScore": 85,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI芯片/网络；相对基准 0.1794%。",
+        "risk": "中高风险；大客户预期;财报跳空;估值波动",
+        "scoreBreakdown": {
+          "trend_score": 13,
+          "volume_price_score": 15,
+          "relative_strength_score": 14,
+          "relative_return": 0.1794,
+          "sector_sync_score": 12,
+          "event_risk_score": 6,
+          "overnight_fit_score": 17,
+          "total_score": 77
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "TSM",
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-08-20T14:44:46+00:00",
+        "rank": 4,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 417.25",
+        "buyZone": "413.92-419.76",
+        "takeProfit": "431.86-438.12",
+        "stopLoss": "406.82",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 76,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体制造；相对基准 0.4369%。",
+        "risk": "中风险；地缘风险;ADR汇率;客户集中",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 14,
+          "relative_return": 0.4369,
+          "sector_sync_score": 8,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 76
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "ASML",
+        "name": "ASML Holding N.V.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-08-20T14:44:42+00:00",
+        "rank": 5,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 1770.55",
+        "buyZone": "1756.38-1781.17",
+        "takeProfit": "1832.51-1859.07",
+        "stopLoss": "1726.28",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 76,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 0.2576%。",
+        "risk": "中风险；出口限制;订单周期;欧洲ADR波动",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 11,
+          "relative_strength_score": 14,
+          "relative_return": 0.2576,
+          "sector_sync_score": 12,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 76
+        }
+      }
+    ]
   }
 }
