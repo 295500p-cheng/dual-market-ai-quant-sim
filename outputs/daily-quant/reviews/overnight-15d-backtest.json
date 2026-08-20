@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T16:01:22",
+  "updatedAt": "2026-08-20T16:47:39",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-06 至 2026-08-20",
@@ -2988,16 +2988,16 @@
       "callRows": [
         {
           "date": "2026-08-20",
-          "time": "16:01:22",
+          "time": "16:47:39",
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "action": "盘中：边缘观察",
+          "action": "盘中：候选观察",
           "overnightScore": "85",
-          "recommendedPrice": "363.84",
-          "buyZone": "360.93-366.02",
-          "takeProfit": "376.57-382.03",
-          "stopLoss": "354.74",
+          "recommendedPrice": "363.98",
+          "buyZone": "361.07-366.17",
+          "takeProfit": "376.72-382.18",
+          "stopLoss": "354.88",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -3226,11 +3226,11 @@
           "open": "364.23",
           "high": "367.12",
           "low": "362.25",
-          "close": "363.84",
+          "close": "363.98",
           "previousClose": "362.48",
-          "changePct": "+0.38%",
-          "volume": "6913814.0",
-          "quoteTime": "2026-08-20T16:01:17+00:00",
+          "changePct": "+0.41%",
+          "volume": "7838636.0",
+          "quoteTime": "2026-08-20T16:47:34+00:00",
           "source": "yahoo_chart"
         }
       ]
