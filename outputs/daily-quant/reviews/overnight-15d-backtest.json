@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T04:09:07",
+  "updatedAt": "2026-08-20T05:35:21",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-06 至 2026-08-20",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 12,
+        "calls": 13,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -370,28 +370,35 @@
         {
           "date": "2026-08-20",
           "stocks": {
-            "total": 2,
+            "total": 3,
             "more": 0,
             "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "待复盘"
-              },
               {
                 "market": "A股",
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
                 "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "002594",
+                "name": "比亚迪",
+                "overnightScore": "75",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "75",
+                "result": "待复盘"
               }
             ]
           },
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 3,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -499,6 +506,20 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|002594",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         }
       ]
     },
@@ -506,9 +527,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 9,
+        "calls": 10,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -828,28 +849,35 @@
         {
           "date": "2026-08-20",
           "stocks": {
-            "total": 2,
+            "total": 3,
             "more": 0,
             "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "待复盘"
-              },
               {
                 "market": "A股",
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
                 "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "002594",
+                "name": "比亚迪",
+                "overnightScore": "75",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "75",
+                "result": "待复盘"
               }
             ]
           },
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 3,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -935,6 +963,20 @@
           "market": "A股",
           "symbol": "000977",
           "name": "浪潮信息",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|002594",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
           "calls": 1,
           "reviewed": 0,
           "pending": 1,
@@ -1280,9 +1322,9 @@
       "key": "high_score",
       "label": "高隔夜评分",
       "metrics": {
-        "calls": 6,
+        "calls": 5,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1588,21 +1630,13 @@
         {
           "date": "2026-08-20",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1618,14 +1652,14 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 3,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "美股|AVGO",
@@ -2095,11 +2129,11 @@
           "open": "391.51",
           "high": "392.09",
           "low": "384.18",
-          "close": "385.31",
+          "close": "385.69",
           "previousClose": "389.00",
-          "changePct": "-0.95%",
-          "volume": "11929021.0",
-          "quoteTime": "2026-08-20 11:30:00",
+          "changePct": "-0.85%",
+          "volume": "13094899.0",
+          "quoteTime": "2026-08-20 13:35:18",
           "source": "sina"
         }
       ]
@@ -2410,7 +2444,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "75",
                 "result": "待复盘"
               }
             ]
@@ -2430,16 +2464,16 @@
       "callRows": [
         {
           "date": "2026-08-20",
-          "time": "04:09:06",
+          "time": "05:35:21",
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "action": "盘中：强势观察",
-          "overnightScore": "100",
-          "recommendedPrice": "62.60",
-          "buyZone": "62.10-62.98",
-          "takeProfit": "64.79-65.73",
-          "stopLoss": "61.03",
+          "action": "盘中：边缘观察",
+          "overnightScore": "75",
+          "recommendedPrice": "62.25",
+          "buyZone": "61.75-62.62",
+          "takeProfit": "64.43-65.36",
+          "stopLoss": "60.69",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -2638,11 +2672,11 @@
           "open": "62.50",
           "high": "62.95",
           "low": "62.01",
-          "close": "62.60",
+          "close": "62.25",
           "previousClose": "61.83",
-          "changePct": "+1.25%",
-          "volume": "48901460.0",
-          "quoteTime": "2026-08-20 11:30:00",
+          "changePct": "+0.68%",
+          "volume": "54623317.0",
+          "quoteTime": "2026-08-20 13:35:19",
           "source": "sina"
         }
       ]
@@ -3627,11 +3661,11 @@
           "open": "87.00",
           "high": "87.35",
           "low": "86.56",
-          "close": "87.09",
+          "close": "86.81",
           "previousClose": "86.90",
-          "changePct": "+0.22%",
-          "volume": "6437060.0",
-          "quoteTime": "2026-08-20 11:30:00",
+          "changePct": "-0.10%",
+          "volume": "7336960.0",
+          "quoteTime": "2026-08-20 13:35:16",
           "source": "sina"
         }
       ]
@@ -4085,12 +4119,12 @@
           "name": "阳光电源",
           "open": "112.96",
           "high": "113.20",
-          "low": "110.86",
-          "close": "111.49",
+          "low": "110.66",
+          "close": "110.75",
           "previousClose": "111.49",
-          "changePct": "0.00%",
-          "volume": "13858307.0",
-          "quoteTime": "2026-08-20 11:30:00",
+          "changePct": "-0.66%",
+          "volume": "15951820.0",
+          "quoteTime": "2026-08-20 13:35:18",
           "source": "sina"
         }
       ]
@@ -4544,12 +4578,12 @@
           "name": "北方华创",
           "open": "726.01",
           "high": "739.15",
-          "low": "715.55",
-          "close": "718.73",
+          "low": "714.00",
+          "close": "714.82",
           "previousClose": "712.95",
-          "changePct": "+0.81%",
-          "volume": "5462392.0",
-          "quoteTime": "2026-08-20 11:30:00",
+          "changePct": "+0.26%",
+          "volume": "6045892.0",
+          "quoteTime": "2026-08-20 13:35:18",
           "source": "sina"
         }
       ]
@@ -4856,16 +4890,16 @@
       "callRows": [
         {
           "date": "2026-08-20",
-          "time": "04:09:06",
+          "time": "05:35:21",
           "market": "A股",
           "symbol": "000977",
           "name": "浪潮信息",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "74.98",
-          "buyZone": "74.38-75.43",
-          "takeProfit": "77.60-78.73",
-          "stopLoss": "73.11",
+          "recommendedPrice": "74.63",
+          "buyZone": "74.03-75.08",
+          "takeProfit": "77.24-78.36",
+          "stopLoss": "72.76",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5002,13 +5036,472 @@
           "symbol": "000977",
           "name": "浪潮信息",
           "open": "73.51",
-          "high": "75.55",
+          "high": "75.63",
           "low": "72.50",
-          "close": "74.98",
+          "close": "74.63",
           "previousClose": "72.87",
-          "changePct": "+2.90%",
-          "volume": "45668414.0",
-          "quoteTime": "2026-08-20 11:30:00",
+          "changePct": "+2.42%",
+          "volume": "51579129.0",
+          "quoteTime": "2026-08-20 13:35:18",
+          "source": "sina"
+        }
+      ]
+    },
+    "A股|002594": {
+      "key": "A股|002594",
+      "market": "A股",
+      "symbol": "002594",
+      "name": "比亚迪",
+      "metrics": {
+        "calls": 1,
+        "reviewed": 0,
+        "pending": 1,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-08-06",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-08",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-09",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-10",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-11",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-12",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-13",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-14",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-15",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-16",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-17",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-18",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-19",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-20",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "002594",
+                "name": "比亚迪",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "callRows": [
+        {
+          "date": "2026-08-20",
+          "time": "05:35:21",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "action": "盘中：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "90.53",
+          "buyZone": "89.81-91.07",
+          "takeProfit": "93.70-95.06",
+          "stopLoss": "88.27",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        }
+      ],
+      "priceRows": [
+        {
+          "date": "2026-08-10",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "90.04",
+          "high": "91.80",
+          "low": "89.40",
+          "close": "91.15",
+          "previousClose": "90.04",
+          "changePct": "+1.23%",
+          "volume": "38573716.0",
+          "quoteTime": "2026-08-10 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-11",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "91.18",
+          "high": "91.66",
+          "low": "89.93",
+          "close": "90.12",
+          "previousClose": "91.15",
+          "changePct": "-1.13%",
+          "volume": "24222760.0",
+          "quoteTime": "2026-08-11 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-12",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "90.00",
+          "high": "91.14",
+          "low": "89.40",
+          "close": "90.41",
+          "previousClose": "90.12",
+          "changePct": "+0.32%",
+          "volume": "20818762.0",
+          "quoteTime": "2026-08-12 15:36:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-13",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "90.37",
+          "high": "90.70",
+          "low": "89.70",
+          "close": "89.71",
+          "previousClose": "90.41",
+          "changePct": "-0.77%",
+          "volume": "22665355.0",
+          "quoteTime": "2026-08-13 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-14",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "89.30",
+          "high": "89.68",
+          "low": "88.69",
+          "close": "88.90",
+          "previousClose": "89.71",
+          "changePct": "-0.90%",
+          "volume": "20585614.0",
+          "quoteTime": "2026-08-14 15:45:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-17",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "88.90",
+          "high": "90.44",
+          "low": "88.61",
+          "close": "89.88",
+          "previousClose": "88.90",
+          "changePct": "+1.10%",
+          "volume": "24625494.0",
+          "quoteTime": "2026-08-17 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-18",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "89.88",
+          "high": "90.38",
+          "low": "89.23",
+          "close": "89.53",
+          "previousClose": "89.88",
+          "changePct": "-0.39%",
+          "volume": "20636902.0",
+          "quoteTime": "2026-08-18 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-19",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "89.53",
+          "high": "89.53",
+          "low": "88.44",
+          "close": "88.66",
+          "previousClose": "89.53",
+          "changePct": "-0.97%",
+          "volume": "21960557.0",
+          "quoteTime": "2026-08-19 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-20",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "89.05",
+          "high": "91.00",
+          "low": "88.89",
+          "close": "90.53",
+          "previousClose": "88.66",
+          "changePct": "+2.11%",
+          "volume": "28782507.0",
+          "quoteTime": "2026-08-20 13:35:18",
           "source": "sina"
         }
       ]
