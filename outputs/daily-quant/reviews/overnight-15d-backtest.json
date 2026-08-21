@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T06:17:19",
+  "updatedAt": "2026-08-21T07:24:38",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-07 至 2026-08-21",
@@ -399,7 +399,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "85",
+                "overnightScore": "100",
                 "result": "待复盘"
               },
               {
@@ -907,7 +907,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "85",
+                "overnightScore": "100",
                 "result": "待复盘"
               },
               {
@@ -1718,7 +1718,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "85",
+                "overnightScore": "100",
                 "result": "待复盘"
               }
             ]
@@ -2233,11 +2233,11 @@
           "open": "386.00",
           "high": "397.83",
           "low": "383.05",
-          "close": "392.07",
+          "close": "391.15",
           "previousClose": "385.00",
-          "changePct": "+1.84%",
-          "volume": "18208142.0",
-          "quoteTime": "2026-08-21 14:17:15",
+          "changePct": "+1.60%",
+          "volume": "20449615.0",
+          "quoteTime": "2026-08-21 15:24:15",
           "source": "sina"
         }
       ]
@@ -2556,7 +2556,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "85",
+                "overnightScore": "100",
                 "result": "待复盘"
               }
             ]
@@ -2576,16 +2576,16 @@
       "callRows": [
         {
           "date": "2026-08-21",
-          "time": "06:17:18",
+          "time": "07:24:37",
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "action": "盘中：候选观察",
-          "overnightScore": "85",
-          "recommendedPrice": "62.53",
-          "buyZone": "62.03-62.91",
-          "takeProfit": "64.72-65.66",
-          "stopLoss": "60.97",
+          "action": "盘中：强势观察",
+          "overnightScore": "100",
+          "recommendedPrice": "62.84",
+          "buyZone": "62.34-63.22",
+          "takeProfit": "65.04-65.98",
+          "stopLoss": "61.27",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -2817,13 +2817,13 @@
           "symbol": "601138",
           "name": "工业富联",
           "open": "61.65",
-          "high": "62.88",
+          "high": "63.38",
           "low": "61.38",
-          "close": "62.53",
+          "close": "62.84",
           "previousClose": "62.13",
-          "changePct": "+0.64%",
-          "volume": "56771367.0",
-          "quoteTime": "2026-08-21 14:17:17",
+          "changePct": "+1.14%",
+          "volume": "79434785.0",
+          "quoteTime": "2026-08-21 15:24:36",
           "source": "sina"
         }
       ]
@@ -3851,11 +3851,11 @@
           "open": "85.44",
           "high": "86.61",
           "low": "85.01",
-          "close": "85.69",
+          "close": "85.82",
           "previousClose": "85.99",
-          "changePct": "-0.35%",
-          "volume": "8311753.0",
-          "quoteTime": "2026-08-21 14:17:17",
+          "changePct": "-0.20%",
+          "volume": "10579596.0",
+          "quoteTime": "2026-08-21 15:24:36",
           "source": "sina"
         }
       ]
@@ -4325,11 +4325,11 @@
           "open": "109.93",
           "high": "114.59",
           "low": "109.71",
-          "close": "112.73",
+          "close": "113.08",
           "previousClose": "110.89",
-          "changePct": "+1.66%",
-          "volume": "26106589.0",
-          "quoteTime": "2026-08-21 14:17:15",
+          "changePct": "+1.97%",
+          "volume": "30231867.0",
+          "quoteTime": "2026-08-21 15:24:30",
           "source": "sina"
         }
       ]
@@ -4799,11 +4799,11 @@
           "open": "712.00",
           "high": "725.68",
           "low": "709.00",
-          "close": "713.07",
+          "close": "714.43",
           "previousClose": "712.55",
-          "changePct": "+0.07%",
-          "volume": "4771735.0",
-          "quoteTime": "2026-08-21 14:17:15",
+          "changePct": "+0.26%",
+          "volume": "5798436.0",
+          "quoteTime": "2026-08-21 15:24:15",
           "source": "sina"
         }
       ]
@@ -5271,13 +5271,13 @@
           "symbol": "000977",
           "name": "浪潮信息",
           "open": "75.49",
-          "high": "76.59",
+          "high": "76.69",
           "low": "74.25",
-          "close": "76.40",
+          "close": "76.35",
           "previousClose": "75.08",
-          "changePct": "+1.76%",
-          "volume": "42986627.0",
-          "quoteTime": "2026-08-21 14:17:15",
+          "changePct": "+1.69%",
+          "volume": "52176188.0",
+          "quoteTime": "2026-08-21 15:24:30",
           "source": "sina"
         }
       ]
@@ -5584,16 +5584,16 @@
       "callRows": [
         {
           "date": "2026-08-21",
-          "time": "06:17:18",
+          "time": "07:24:37",
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "121.10",
-          "buyZone": "120.13-121.83",
-          "takeProfit": "125.34-127.16",
-          "stopLoss": "118.07",
+          "recommendedPrice": "121.21",
+          "buyZone": "120.24-121.94",
+          "takeProfit": "125.45-127.27",
+          "stopLoss": "118.18",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5747,11 +5747,11 @@
           "open": "113.67",
           "high": "122.51",
           "low": "113.39",
-          "close": "121.10",
+          "close": "121.21",
           "previousClose": "114.32",
-          "changePct": "+5.93%",
-          "volume": "43775247.0",
-          "quoteTime": "2026-08-21 14:17:15",
+          "changePct": "+6.03%",
+          "volume": "49927178.0",
+          "quoteTime": "2026-08-21 15:24:30",
           "source": "sina"
         }
       ]
@@ -6058,16 +6058,16 @@
       "callRows": [
         {
           "date": "2026-08-21",
-          "time": "06:17:18",
+          "time": "07:24:37",
           "market": "A股",
           "symbol": "601899",
           "name": "XD紫金矿",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "34.83",
-          "buyZone": "34.55-35.04",
-          "takeProfit": "36.05-36.57",
-          "stopLoss": "33.96",
+          "recommendedPrice": "34.74",
+          "buyZone": "34.46-34.95",
+          "takeProfit": "35.96-36.48",
+          "stopLoss": "33.87",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -6221,11 +6221,11 @@
           "open": "34.25",
           "high": "34.87",
           "low": "33.60",
-          "close": "34.83",
+          "close": "34.74",
           "previousClose": "33.83",
-          "changePct": "+2.96%",
-          "volume": "247658790.0",
-          "quoteTime": "2026-08-21 14:17:16",
+          "changePct": "+2.69%",
+          "volume": "300701690.0",
+          "quoteTime": "2026-08-21 15:24:36",
           "source": "sina"
         }
       ]
