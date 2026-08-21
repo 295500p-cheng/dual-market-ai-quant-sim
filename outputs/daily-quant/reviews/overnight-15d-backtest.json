@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T05:36:51",
+  "updatedAt": "2026-08-21T06:17:19",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-07 至 2026-08-21",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 15,
+        "calls": 16,
         "reviewed": 0,
-        "pending": 5,
+        "pending": 6,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -392,14 +392,14 @@
         {
           "date": "2026-08-21",
           "stocks": {
-            "total": 2,
+            "total": 3,
             "more": 0,
             "items": [
               {
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "85",
                 "result": "待复盘"
               },
               {
@@ -408,12 +408,19 @@
                 "name": "沪电股份",
                 "overnightScore": "75",
                 "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "601899",
+                "name": "XD紫金矿",
+                "overnightScore": "75",
+                "result": "待复盘"
               }
             ]
           },
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 3,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -535,6 +542,20 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|601899",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "XD紫金矿",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         }
       ]
     },
@@ -542,9 +563,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 11,
+        "calls": 12,
         "reviewed": 0,
-        "pending": 4,
+        "pending": 5,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -879,14 +900,14 @@
         {
           "date": "2026-08-21",
           "stocks": {
-            "total": 2,
+            "total": 3,
             "more": 0,
             "items": [
               {
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "85",
                 "result": "待复盘"
               },
               {
@@ -895,12 +916,19 @@
                 "name": "沪电股份",
                 "overnightScore": "75",
                 "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "601899",
+                "name": "XD紫金矿",
+                "overnightScore": "75",
+                "result": "待复盘"
               }
             ]
           },
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 3,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1000,6 +1028,20 @@
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|601899",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "XD紫金矿",
           "calls": 1,
           "reviewed": 0,
           "pending": 1,
@@ -1676,7 +1718,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "85",
                 "result": "待复盘"
               }
             ]
@@ -2191,11 +2233,11 @@
           "open": "386.00",
           "high": "397.83",
           "low": "383.05",
-          "close": "392.83",
+          "close": "392.07",
           "previousClose": "385.00",
-          "changePct": "+2.03%",
-          "volume": "16712442.0",
-          "quoteTime": "2026-08-21 13:36:48",
+          "changePct": "+1.84%",
+          "volume": "18208142.0",
+          "quoteTime": "2026-08-21 14:17:15",
           "source": "sina"
         }
       ]
@@ -2514,7 +2556,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "85",
                 "result": "待复盘"
               }
             ]
@@ -2534,16 +2576,16 @@
       "callRows": [
         {
           "date": "2026-08-21",
-          "time": "05:36:50",
+          "time": "06:17:18",
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "action": "盘中：强势观察",
-          "overnightScore": "100",
-          "recommendedPrice": "62.63",
-          "buyZone": "62.13-63.01",
-          "takeProfit": "64.82-65.76",
-          "stopLoss": "61.06",
+          "action": "盘中：候选观察",
+          "overnightScore": "85",
+          "recommendedPrice": "62.53",
+          "buyZone": "62.03-62.91",
+          "takeProfit": "64.72-65.66",
+          "stopLoss": "60.97",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -2777,11 +2819,11 @@
           "open": "61.65",
           "high": "62.88",
           "low": "61.38",
-          "close": "62.63",
+          "close": "62.53",
           "previousClose": "62.13",
-          "changePct": "+0.80%",
-          "volume": "48857910.0",
-          "quoteTime": "2026-08-21 13:36:47",
+          "changePct": "+0.64%",
+          "volume": "56771367.0",
+          "quoteTime": "2026-08-21 14:17:17",
           "source": "sina"
         }
       ]
@@ -3809,11 +3851,11 @@
           "open": "85.44",
           "high": "86.61",
           "low": "85.01",
-          "close": "86.25",
+          "close": "85.69",
           "previousClose": "85.99",
-          "changePct": "+0.30%",
-          "volume": "6715013.0",
-          "quoteTime": "2026-08-21 13:36:47",
+          "changePct": "-0.35%",
+          "volume": "8311753.0",
+          "quoteTime": "2026-08-21 14:17:17",
           "source": "sina"
         }
       ]
@@ -4283,11 +4325,11 @@
           "open": "109.93",
           "high": "114.59",
           "low": "109.71",
-          "close": "112.56",
+          "close": "112.73",
           "previousClose": "110.89",
-          "changePct": "+1.51%",
-          "volume": "24240526.0",
-          "quoteTime": "2026-08-21 13:36:48",
+          "changePct": "+1.66%",
+          "volume": "26106589.0",
+          "quoteTime": "2026-08-21 14:17:15",
           "source": "sina"
         }
       ]
@@ -4756,12 +4798,12 @@
           "name": "北方华创",
           "open": "712.00",
           "high": "725.68",
-          "low": "710.01",
-          "close": "713.58",
+          "low": "709.00",
+          "close": "713.07",
           "previousClose": "712.55",
-          "changePct": "+0.14%",
-          "volume": "3727035.0",
-          "quoteTime": "2026-08-21 13:36:48",
+          "changePct": "+0.07%",
+          "volume": "4771735.0",
+          "quoteTime": "2026-08-21 14:17:15",
           "source": "sina"
         }
       ]
@@ -5231,11 +5273,11 @@
           "open": "75.49",
           "high": "76.59",
           "low": "74.25",
-          "close": "76.18",
+          "close": "76.40",
           "previousClose": "75.08",
-          "changePct": "+1.47%",
-          "volume": "38346523.0",
-          "quoteTime": "2026-08-21 13:36:48",
+          "changePct": "+1.76%",
+          "volume": "42986627.0",
+          "quoteTime": "2026-08-21 14:17:15",
           "source": "sina"
         }
       ]
@@ -5542,16 +5584,16 @@
       "callRows": [
         {
           "date": "2026-08-21",
-          "time": "05:36:50",
+          "time": "06:17:18",
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "121.31",
-          "buyZone": "120.34-122.04",
-          "takeProfit": "125.56-127.38",
-          "stopLoss": "118.28",
+          "recommendedPrice": "121.10",
+          "buyZone": "120.13-121.83",
+          "takeProfit": "125.34-127.16",
+          "stopLoss": "118.07",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5705,11 +5747,485 @@
           "open": "113.67",
           "high": "122.51",
           "low": "113.39",
-          "close": "121.31",
+          "close": "121.10",
           "previousClose": "114.32",
-          "changePct": "+6.11%",
-          "volume": "40020883.0",
-          "quoteTime": "2026-08-21 13:36:48",
+          "changePct": "+5.93%",
+          "volume": "43775247.0",
+          "quoteTime": "2026-08-21 14:17:15",
+          "source": "sina"
+        }
+      ]
+    },
+    "A股|601899": {
+      "key": "A股|601899",
+      "market": "A股",
+      "symbol": "601899",
+      "name": "XD紫金矿",
+      "metrics": {
+        "calls": 1,
+        "reviewed": 0,
+        "pending": 1,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-08-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-08",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-09",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-10",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-11",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-12",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-13",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-14",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-15",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-16",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-17",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-18",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-19",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-20",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-21",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601899",
+                "name": "XD紫金矿",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "callRows": [
+        {
+          "date": "2026-08-21",
+          "time": "06:17:18",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "XD紫金矿",
+          "action": "盘中：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "34.83",
+          "buyZone": "34.55-35.04",
+          "takeProfit": "36.05-36.57",
+          "stopLoss": "33.96",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        }
+      ],
+      "priceRows": [
+        {
+          "date": "2026-08-10",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "35.18",
+          "high": "35.60",
+          "low": "34.71",
+          "close": "35.45",
+          "previousClose": "35.15",
+          "changePct": "+0.85%",
+          "volume": "273650525.0",
+          "quoteTime": "2026-08-10 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-11",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "35.66",
+          "high": "35.77",
+          "low": "33.11",
+          "close": "33.18",
+          "previousClose": "35.45",
+          "changePct": "-6.40%",
+          "volume": "447541472.0",
+          "quoteTime": "2026-08-11 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-12",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "33.19",
+          "high": "34.08",
+          "low": "33.18",
+          "close": "33.58",
+          "previousClose": "33.18",
+          "changePct": "+1.21%",
+          "volume": "204484205.0",
+          "quoteTime": "2026-08-12 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-13",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "33.58",
+          "high": "33.84",
+          "low": "32.11",
+          "close": "32.21",
+          "previousClose": "33.58",
+          "changePct": "-4.08%",
+          "volume": "330907033.0",
+          "quoteTime": "2026-08-13 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-14",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "31.80",
+          "high": "32.66",
+          "low": "31.75",
+          "close": "32.53",
+          "previousClose": "32.21",
+          "changePct": "+0.99%",
+          "volume": "194376501.0",
+          "quoteTime": "2026-08-14 15:34:56",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-17",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "33.33",
+          "high": "33.65",
+          "low": "33.01",
+          "close": "33.36",
+          "previousClose": "32.53",
+          "changePct": "+2.55%",
+          "volume": "197196754.0",
+          "quoteTime": "2026-08-17 15:34:58",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-18",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "33.36",
+          "high": "33.58",
+          "low": "32.87",
+          "close": "33.56",
+          "previousClose": "33.36",
+          "changePct": "+0.60%",
+          "volume": "184521427.0",
+          "quoteTime": "2026-08-18 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-19",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "32.50",
+          "high": "33.28",
+          "low": "32.35",
+          "close": "32.76",
+          "previousClose": "33.56",
+          "changePct": "-2.38%",
+          "volume": "189857553.0",
+          "quoteTime": "2026-08-19 15:34:58",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-20",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "紫金矿业",
+          "open": "34.00",
+          "high": "35.08",
+          "low": "33.87",
+          "close": "34.25",
+          "previousClose": "32.76",
+          "changePct": "+4.55%",
+          "volume": "411578689.0",
+          "quoteTime": "2026-08-20 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-21",
+          "market": "A股",
+          "symbol": "601899",
+          "name": "XD紫金矿",
+          "open": "34.25",
+          "high": "34.87",
+          "low": "33.60",
+          "close": "34.83",
+          "previousClose": "33.83",
+          "changePct": "+2.96%",
+          "volume": "247658790.0",
+          "quoteTime": "2026-08-21 14:17:16",
           "source": "sina"
         }
       ]
