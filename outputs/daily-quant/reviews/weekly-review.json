@@ -1,36 +1,36 @@
 {
-  "updatedAt": "2026-08-20T20:32:11",
+  "updatedAt": "2026-08-21T07:52:29",
   "status": "本周实际模拟平仓已更新",
-  "period": "2026-08-14 至 2026-08-20",
-  "summary": "本周实际模拟平仓 3 笔，0 胜 3 负，胜率 0.0%。",
+  "period": "2026-08-15 至 2026-08-21",
+  "summary": "本周实际模拟平仓 2 笔，0 胜 2 负，胜率 0.0%。",
   "metrics": {
-    "reviewedTrades": 3,
-    "pendingTrades": 13,
+    "reviewedTrades": 2,
+    "pendingTrades": 17,
     "weeklyWinRate": "0.0%",
-    "overnightTrades": 3,
+    "overnightTrades": 2,
     "overnightWinRate": "-2.50%",
-    "aShareWinRate": "0.0%",
+    "aShareWinRate": "暂无",
     "usStockWinRate": "0.0%",
-    "avgRelativeReturn": "-699.85",
+    "avgRelativeReturn": "-486.85",
     "executionAvgReturn": "-2.50%",
     "executionProfitFactor": "0.00",
-    "executionRealizedPnl": "-699.85",
-    "bestBucket": "盘中：强势观察 50.0%/2笔",
-    "weakBucket": "盘中：强势观察 50.0%/2笔",
+    "executionRealizedPnl": "-486.85",
+    "bestBucket": "盘中：强势观察 33.3%/3笔",
+    "weakBucket": "盘中：边缘观察 0.0%/1笔",
     "executionSignals": 73,
     "executionBuys": 6,
-    "executionExits": 3,
-    "executionHolding": 6,
+    "executionExits": 2,
+    "executionHolding": 8,
     "executionWaiting": 37
   },
   "marketRows": [
     {
       "market": "A股",
-      "reviewed": 1,
-      "winRate": "0.0%",
-      "overnightAvg": "-2.50%",
-      "relativeAvg": "-213.00",
-      "lesson": "按实际模拟平仓持续跟踪"
+      "reviewed": 0,
+      "winRate": "暂无",
+      "overnightAvg": "暂无",
+      "relativeAvg": "暂无",
+      "lesson": "等待实际模拟平仓样本"
     },
     {
       "market": "美股",
@@ -44,9 +44,15 @@
   "actionRows": [
     {
       "action": "盘中：强势观察",
-      "reviewed": 2,
-      "winRate": "50.0%",
-      "relativeAvg": "-0.07%"
+      "reviewed": 3,
+      "winRate": "33.3%",
+      "relativeAvg": "-0.24%"
+    },
+    {
+      "action": "盘中：边缘观察",
+      "reviewed": 1,
+      "winRate": "0.0%",
+      "relativeAvg": "-1.78%"
     }
   ],
   "nextWeekFocus": [

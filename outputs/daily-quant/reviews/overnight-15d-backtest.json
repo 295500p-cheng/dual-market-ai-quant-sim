@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T07:24:38",
+  "updatedAt": "2026-08-21T07:52:29",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-07 至 2026-08-21",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 16,
         "reviewed": 0,
-        "pending": 6,
+        "pending": 4,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -367,20 +367,20 @@
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 3,
           "reviewed": 0,
-          "pending": 3,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -452,7 +452,7 @@
           "name": "工业富联",
           "calls": 5,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -522,12 +522,12 @@
           "name": "浪潮信息",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|002463",
@@ -565,7 +565,7 @@
       "metrics": {
         "calls": 12,
         "reviewed": 0,
-        "pending": 5,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -875,20 +875,20 @@
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -960,7 +960,7 @@
           "name": "工业富联",
           "calls": 5,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -1016,12 +1016,12 @@
           "name": "浪潮信息",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|002463",
@@ -2237,7 +2237,7 @@
           "previousClose": "385.00",
           "changePct": "+1.60%",
           "volume": "20449615.0",
-          "quoteTime": "2026-08-21 15:24:15",
+          "quoteTime": "2026-08-21 15:35:00",
           "source": "sina"
         }
       ]
@@ -2250,7 +2250,7 @@
       "metrics": {
         "calls": 5,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -2531,13 +2531,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -2606,13 +2606,13 @@
           "buyZone": "61.63-62.50",
           "takeProfit": "64.30-65.24",
           "stopLoss": "60.58",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "61.65",
+          "nextClose": "62.84",
+          "overnightReturn": "-0.77%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.10%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-08-17",
@@ -2823,7 +2823,7 @@
           "previousClose": "62.13",
           "changePct": "+1.14%",
           "volume": "79434785.0",
-          "quoteTime": "2026-08-21 15:24:36",
+          "quoteTime": "2026-08-21 15:34:58",
           "source": "sina"
         }
       ]
@@ -3855,7 +3855,7 @@
           "previousClose": "85.99",
           "changePct": "-0.20%",
           "volume": "10579596.0",
-          "quoteTime": "2026-08-21 15:24:36",
+          "quoteTime": "2026-08-21 15:34:58",
           "source": "sina"
         }
       ]
@@ -4329,7 +4329,7 @@
           "previousClose": "110.89",
           "changePct": "+1.97%",
           "volume": "30231867.0",
-          "quoteTime": "2026-08-21 15:24:30",
+          "quoteTime": "2026-08-21 15:35:45",
           "source": "sina"
         }
       ]
@@ -4803,7 +4803,7 @@
           "previousClose": "712.55",
           "changePct": "+0.26%",
           "volume": "5798436.0",
-          "quoteTime": "2026-08-21 15:24:15",
+          "quoteTime": "2026-08-21 15:35:15",
           "source": "sina"
         }
       ]
@@ -4816,7 +4816,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -5073,13 +5073,13 @@
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -5120,13 +5120,13 @@
           "buyZone": "74.48-75.53",
           "takeProfit": "77.71-78.83",
           "stopLoss": "73.20",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "75.49",
+          "nextClose": "76.35",
+          "overnightReturn": "+0.55%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.12%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
@@ -5277,7 +5277,7 @@
           "previousClose": "75.08",
           "changePct": "+1.69%",
           "volume": "52176188.0",
-          "quoteTime": "2026-08-21 15:24:30",
+          "quoteTime": "2026-08-21 15:35:15",
           "source": "sina"
         }
       ]
@@ -5751,7 +5751,7 @@
           "previousClose": "114.32",
           "changePct": "+6.03%",
           "volume": "49927178.0",
-          "quoteTime": "2026-08-21 15:24:30",
+          "quoteTime": "2026-08-21 15:35:45",
           "source": "sina"
         }
       ]
@@ -6225,7 +6225,7 @@
           "previousClose": "33.83",
           "changePct": "+2.69%",
           "volume": "300701690.0",
-          "quoteTime": "2026-08-21 15:24:36",
+          "quoteTime": "2026-08-21 15:34:58",
           "source": "sina"
         }
       ]
