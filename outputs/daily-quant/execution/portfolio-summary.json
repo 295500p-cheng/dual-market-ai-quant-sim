@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T16:43:38",
+  "updatedAt": "2026-08-21T17:14:27",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,125.08",
+    "totalAssets": "97,148.44",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,874.92",
-    "cumulativePnlPct": "-2.87%",
+    "cumulativePnl": "-2,851.56",
+    "cumulativePnlPct": "-2.85%",
     "realizedPnl": "-2,860.36",
-    "floatingPnl": "-14.56",
+    "floatingPnl": "8.80",
     "availableCash": "61,920.56",
-    "cashRatio": "+63.75%",
+    "cashRatio": "+63.74%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "61,920.56",
-    "fundingStatus": "现金占比 +63.75%",
-    "marketValue": "35,204.52",
-    "positionRatio": "+36.25%",
+    "fundingStatus": "现金占比 +63.74%",
+    "marketValue": "35,227.88",
+    "positionRatio": "+36.26%",
     "holdings": 4,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -38,6 +38,20 @@
   },
   "positions": [
     {
+      "market": "美股",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "entryPrice": "310.69",
+      "currentPrice": "311.59",
+      "quantity": 32,
+      "availableQuantity": 32,
+      "notional": "9,942.08",
+      "marketValue": "9,970.88",
+      "pnl": "28.80",
+      "pnlPct": "+0.29%",
+      "status": "模拟持有"
+    },
+    {
       "market": "A股",
       "symbol": "002594",
       "name": "比亚迪",
@@ -49,20 +63,6 @@
       "marketValue": "9,047.00",
       "pnl": "7.00",
       "pnlPct": "+0.08%",
-      "status": "模拟持有"
-    },
-    {
-      "market": "美股",
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "entryPrice": "310.69",
-      "currentPrice": "310.86",
-      "quantity": 32,
-      "availableQuantity": 32,
-      "notional": "9,942.08",
-      "marketValue": "9,947.52",
-      "pnl": "5.44",
-      "pnlPct": "+0.05%",
       "status": "模拟持有"
     },
     {
