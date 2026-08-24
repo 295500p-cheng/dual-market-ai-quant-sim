@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-24T07:39:08",
+  "updatedAt": "2026-08-24T08:02:04",
   "status": "自动记录，不用手记",
   "summary": "每次推荐会自动进入台账；第二天复盘面板会显示涨跌、隔夜收益、是否命中和优化结论。",
   "metrics": {
     "tracked": 30,
-    "pending": 30,
+    "pending": 20,
     "holding": 6,
     "reviewed": 0
   },
@@ -125,7 +125,7 @@
       "stopLoss": "53.56",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -145,7 +145,7 @@
       "stopLoss": "95.44",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -165,7 +165,7 @@
       "stopLoss": "38.61",
       "execution": "已持仓",
       "executionExit": "模拟持有",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "模拟持有，等待复盘",
       "nextAction": "继续按止盈止损跟踪，次日收盘后复盘。"
     },
@@ -185,7 +185,7 @@
       "stopLoss": "83.95",
       "execution": "已持仓",
       "executionExit": "模拟持有",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "模拟持有，等待复盘",
       "nextAction": "继续按止盈止损跟踪，次日收盘后复盘。"
     },
@@ -205,7 +205,7 @@
       "stopLoss": "1273.86",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -225,7 +225,7 @@
       "stopLoss": "95.34",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -245,7 +245,7 @@
       "stopLoss": "53.62",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -265,7 +265,7 @@
       "stopLoss": "38.60",
       "execution": "已持仓",
       "executionExit": "模拟持有",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "模拟持有，等待复盘",
       "nextAction": "继续按止盈止损跟踪，次日收盘后复盘。"
     },
@@ -285,7 +285,7 @@
       "stopLoss": "83.75",
       "execution": "已持仓",
       "executionExit": "模拟持有",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "模拟持有，等待复盘",
       "nextAction": "继续按止盈止损跟踪，次日收盘后复盘。"
     },
@@ -305,7 +305,7 @@
       "stopLoss": "1277.25",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
