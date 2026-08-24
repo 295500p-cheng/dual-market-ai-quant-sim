@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T03:32:11",
+  "updatedAt": "2026-08-24T04:24:44",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -23,9 +23,9 @@
         "avgRelativeReturn": "-0.62%",
         "bestStrategy": "盘中：强势观察 33.3%/3笔",
         "signals": 73,
-        "buys": 13,
+        "buys": 10,
         "exits": 2,
-        "holding": 11,
+        "holding": 8,
         "waiting": 38
       },
       "marketRows": [
@@ -126,9 +126,9 @@
         "avgRelativeReturn": "-2.35%",
         "bestStrategy": "盘中：强势观察 28.6%/7笔",
         "signals": 205,
-        "buys": 30,
+        "buys": 27,
         "exits": 10,
-        "holding": 20,
+        "holding": 17,
         "waiting": 84
       },
       "marketRows": [
