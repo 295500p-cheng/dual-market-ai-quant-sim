@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-24T20:40:04",
-  "status": "开盘后可核验行情候选",
-  "note": "已用美股开盘后行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-08-24T21:13:13",
+  "status": "美股收盘快照候选",
+  "note": "已用 Yahoo Finance 美股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -158,7 +158,7 @@
         "benchmark": "QQQ",
         "sourceTimestamp": "2026-08-24T20:00:01+00:00",
         "rank": 1,
-        "action": "盘中：强势观察",
+        "action": "收盘：强势观察",
         "currentPrice": "当前 559.02",
         "buyZone": "554.55-562.37",
         "takeProfit": "578.59-586.97",
@@ -187,7 +187,7 @@
         "benchmark": "QQQ",
         "sourceTimestamp": "2026-08-24T20:00:01+00:00",
         "rank": 2,
-        "action": "盘中：强势观察",
+        "action": "收盘：强势观察",
         "currentPrice": "当前 262.07",
         "buyZone": "259.97-263.64",
         "takeProfit": "271.24-275.17",
@@ -216,7 +216,7 @@
         "benchmark": "QQQ",
         "sourceTimestamp": "2026-08-24T20:00:01+00:00",
         "rank": 3,
-        "action": "盘中：候选观察",
+        "action": "收盘：候选观察",
         "currentPrice": "当前 348.06",
         "buyZone": "345.28-350.15",
         "takeProfit": "360.24-365.46",
@@ -245,7 +245,7 @@
         "benchmark": "QQQ",
         "sourceTimestamp": "2026-08-24T20:00:01+00:00",
         "rank": 4,
-        "action": "盘中：候选观察",
+        "action": "收盘：候选观察",
         "currentPrice": "当前 487.31",
         "buyZone": "483.41-490.23",
         "takeProfit": "504.37-511.68",
