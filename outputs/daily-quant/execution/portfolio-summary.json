@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T19:48:05",
+  "updatedAt": "2026-08-25T20:32:53",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,18 +9,18 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,411.76",
+    "totalAssets": "97,417.54",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,588.24",
-    "cumulativePnlPct": "-2.59%",
+    "cumulativePnl": "-2,582.46",
+    "cumulativePnlPct": "-2.58%",
     "realizedPnl": "-2,849.80",
-    "floatingPnl": "261.56",
+    "floatingPnl": "267.34",
     "availableCash": "52,077.38",
     "cashRatio": "+53.46%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "52,077.38",
     "fundingStatus": "现金占比 +53.46%",
-    "marketValue": "45,334.38",
+    "marketValue": "45,340.16",
     "positionRatio": "+46.54%",
     "holdings": 5,
     "maxHoldings": 6,
@@ -84,13 +84,13 @@
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
       "entryPrice": "262.23",
-      "currentPrice": "260.79",
+      "currentPrice": "261.06",
       "quantity": 38,
       "availableQuantity": 38,
       "notional": "9,964.74",
-      "marketValue": "9,910.02",
-      "pnl": "-54.72",
-      "pnlPct": "-0.55%",
+      "marketValue": "9,920.28",
+      "pnl": "-44.46",
+      "pnlPct": "-0.45%",
       "status": "模拟持有"
     },
     {
@@ -98,13 +98,13 @@
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
       "entryPrice": "351.11",
-      "currentPrice": "347.12",
+      "currentPrice": "346.96",
       "quantity": 28,
       "availableQuantity": 28,
       "notional": "9,831.08",
-      "marketValue": "9,719.36",
-      "pnl": "-111.72",
-      "pnlPct": "-1.14%",
+      "marketValue": "9,714.88",
+      "pnl": "-116.20",
+      "pnlPct": "-1.18%",
       "status": "模拟持有"
     }
   ]
