@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T05:36:00",
+  "updatedAt": "2026-08-25T06:04:35",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-11 至 2026-08-25",
@@ -2028,16 +2028,16 @@
       "callRows": [
         {
           "date": "2026-08-25",
-          "time": "05:36:00",
+          "time": "06:04:34",
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
           "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "85.41",
-          "buyZone": "84.73-85.92",
-          "takeProfit": "88.40-89.68",
-          "stopLoss": "83.27",
+          "recommendedPrice": "85.46",
+          "buyZone": "84.78-85.97",
+          "takeProfit": "88.45-89.73",
+          "stopLoss": "83.32",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -2226,11 +2226,11 @@
           "open": "80.90",
           "high": "85.60",
           "low": "80.10",
-          "close": "85.41",
+          "close": "85.46",
           "previousClose": "82.50",
-          "changePct": "+3.53%",
-          "volume": "16410099.0",
-          "quoteTime": "2026-08-25 13:35:55",
+          "changePct": "+3.59%",
+          "volume": "18322354.0",
+          "quoteTime": "2026-08-25 14:04:32",
           "source": "sina"
         }
       ]
@@ -2715,11 +2715,11 @@
           "open": "111.00",
           "high": "111.00",
           "low": "108.38",
-          "close": "110.16",
+          "close": "110.03",
           "previousClose": "111.50",
-          "changePct": "-1.20%",
-          "volume": "18422586.0",
-          "quoteTime": "2026-08-25 13:35:57",
+          "changePct": "-1.32%",
+          "volume": "19674926.0",
+          "quoteTime": "2026-08-25 14:04:30",
           "source": "sina"
         }
       ]
@@ -3846,11 +3846,11 @@
           "open": "58.75",
           "high": "60.85",
           "low": "58.75",
-          "close": "60.45",
+          "close": "60.41",
           "previousClose": "60.40",
-          "changePct": "+0.08%",
-          "volume": "56616165.0",
-          "quoteTime": "2026-08-25 13:35:56",
+          "changePct": "+0.02%",
+          "volume": "61071212.0",
+          "quoteTime": "2026-08-25 14:04:32",
           "source": "sina"
         }
       ]
@@ -4335,11 +4335,11 @@
           "open": "707.50",
           "high": "707.50",
           "low": "676.66",
-          "close": "701.00",
+          "close": "697.96",
           "previousClose": "707.90",
-          "changePct": "-0.97%",
-          "volume": "6001479.0",
-          "quoteTime": "2026-08-25 13:35:57",
+          "changePct": "-1.40%",
+          "volume": "6535084.0",
+          "quoteTime": "2026-08-25 14:04:30",
           "source": "sina"
         }
       ]
@@ -4824,11 +4824,11 @@
           "open": "71.43",
           "high": "74.99",
           "low": "71.42",
-          "close": "74.50",
+          "close": "74.11",
           "previousClose": "73.22",
-          "changePct": "+1.75%",
-          "volume": "31136645.0",
-          "quoteTime": "2026-08-25 13:35:57",
+          "changePct": "+1.22%",
+          "volume": "34375845.0",
+          "quoteTime": "2026-08-25 14:04:33",
           "source": "sina"
         }
       ]
@@ -5313,11 +5313,11 @@
           "open": "113.08",
           "high": "118.12",
           "low": "112.22",
-          "close": "116.01",
+          "close": "114.56",
           "previousClose": "115.57",
-          "changePct": "+0.38%",
-          "volume": "27512654.0",
-          "quoteTime": "2026-08-25 13:35:57",
+          "changePct": "-0.87%",
+          "volume": "32487054.0",
+          "quoteTime": "2026-08-25 14:04:30",
           "source": "sina"
         }
       ]
@@ -5802,11 +5802,11 @@
           "open": "34.70",
           "high": "34.70",
           "low": "33.40",
-          "close": "33.61",
+          "close": "33.54",
           "previousClose": "34.54",
-          "changePct": "-2.69%",
-          "volume": "203121465.0",
-          "quoteTime": "2026-08-25 13:35:57",
+          "changePct": "-2.90%",
+          "volume": "217579865.0",
+          "quoteTime": "2026-08-25 14:04:33",
           "source": "sina"
         }
       ]
