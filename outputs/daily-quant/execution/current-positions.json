@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T07:09:59",
+  "updatedAt": "2026-08-25T07:53:33",
   "status": "当前模拟持仓，不是真实账户",
   "summary": "按交易软件口径展示模拟股数、可用数量、持仓成本、持仓市值、浮动盈亏和风控线；A股按100股一手并执行T+1可用规则。",
   "metrics": {
@@ -50,7 +50,7 @@
       "symbol": "600036",
       "name": "招商银行",
       "entryTime": "2026-08-19T05:35:14",
-      "quoteTime": "2026-08-25 15:09:57",
+      "quoteTime": "2026-08-25 15:34:59",
       "currentPrice": "39.50",
       "previousClose": "39.58",
       "dayReturn": "-0.20%",
@@ -77,7 +77,7 @@
       "symbol": "000333",
       "name": "美的集团",
       "entryTime": "2026-08-19T06:03:55",
-      "quoteTime": "2026-08-25 15:09:30",
+      "quoteTime": "2026-08-25 15:35:30",
       "currentPrice": "86.69",
       "previousClose": "85.99",
       "dayReturn": "+0.81%",
@@ -104,7 +104,7 @@
       "symbol": "002594",
       "name": "比亚迪",
       "entryTime": "2026-08-20T03:25:02",
-      "quoteTime": "2026-08-25 15:09:45",
+      "quoteTime": "2026-08-25 15:35:00",
       "currentPrice": "91.36",
       "previousClose": "90.66",
       "dayReturn": "+0.77%",

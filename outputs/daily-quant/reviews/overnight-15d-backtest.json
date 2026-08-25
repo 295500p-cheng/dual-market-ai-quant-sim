@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T07:09:59",
+  "updatedAt": "2026-08-25T07:53:33",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-11 至 2026-08-25",
@@ -2230,7 +2230,7 @@
           "previousClose": "82.50",
           "changePct": "+3.70%",
           "volume": "22667130.0",
-          "quoteTime": "2026-08-25 15:09:57",
+          "quoteTime": "2026-08-25 15:34:59",
           "source": "sina"
         }
       ]
@@ -2719,7 +2719,7 @@
           "previousClose": "111.50",
           "changePct": "-1.71%",
           "volume": "23807031.0",
-          "quoteTime": "2026-08-25 15:09:30",
+          "quoteTime": "2026-08-25 15:35:15",
           "source": "sina"
         }
       ]
@@ -3850,7 +3850,7 @@
           "previousClose": "60.40",
           "changePct": "-0.41%",
           "volume": "75599449.0",
-          "quoteTime": "2026-08-25 15:09:57",
+          "quoteTime": "2026-08-25 15:34:59",
           "source": "sina"
         }
       ]
@@ -4339,7 +4339,7 @@
           "previousClose": "707.90",
           "changePct": "-1.06%",
           "volume": "7521665.0",
-          "quoteTime": "2026-08-25 15:09:00",
+          "quoteTime": "2026-08-25 15:35:15",
           "source": "sina"
         }
       ]
@@ -4828,7 +4828,7 @@
           "previousClose": "73.22",
           "changePct": "+1.22%",
           "volume": "40085390.0",
-          "quoteTime": "2026-08-25 15:09:45",
+          "quoteTime": "2026-08-25 15:35:15",
           "source": "sina"
         }
       ]
@@ -5317,7 +5317,7 @@
           "previousClose": "115.57",
           "changePct": "-1.11%",
           "volume": "41105433.0",
-          "quoteTime": "2026-08-25 15:09:45",
+          "quoteTime": "2026-08-25 15:35:45",
           "source": "sina"
         }
       ]
@@ -5806,7 +5806,7 @@
           "previousClose": "34.54",
           "changePct": "-2.49%",
           "volume": "251565413.0",
-          "quoteTime": "2026-08-25 15:09:57",
+          "quoteTime": "2026-08-25 15:34:59",
           "source": "sina"
         }
       ]
