@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T14:54:54",
+  "updatedAt": "2026-08-26T16:24:56",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,25 +8,25 @@
       "label": "近7天",
       "period": "2026-08-20 至 2026-08-26",
       "metrics": {
-        "calls": 73,
+        "calls": 74,
         "reviewed": 3,
-        "pending": 21,
+        "pending": 22,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
-        "executionTrades": 3,
+        "executionTrades": 4,
         "executionWins": 3,
-        "executionLosses": 0,
-        "executionWinRate": "100.0%",
-        "executionRealizedPnl": "+426.56",
+        "executionLosses": 1,
+        "executionWinRate": "75.0%",
+        "executionRealizedPnl": "+180.72",
         "avgStockReturn": "-0.65%",
         "avgOvernightReturn": "-0.41%",
         "avgRelativeReturn": "-1.32%",
         "bestStrategy": "盘中：强势观察 0.0%/1笔",
-        "signals": 90,
+        "signals": 91,
         "buys": 15,
-        "exits": 3,
-        "holding": 12,
-        "waiting": 44
+        "exits": 4,
+        "holding": 11,
+        "waiting": 45
       },
       "marketRows": [
         {
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 38,
+          "calls": 39,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -85,7 +85,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 26,
+          "calls": 27,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.75%",
@@ -106,25 +106,25 @@
       "label": "本月",
       "period": "2026-08-01 至 2026-08-26",
       "metrics": {
-        "calls": 208,
+        "calls": 209,
         "reviewed": 10,
-        "pending": 21,
+        "pending": 22,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
-        "executionTrades": 18,
+        "executionTrades": 19,
         "executionWins": 10,
-        "executionLosses": 8,
-        "executionWinRate": "55.6%",
-        "executionRealizedPnl": "+824.86",
+        "executionLosses": 9,
+        "executionWinRate": "52.6%",
+        "executionRealizedPnl": "+579.02",
         "avgStockReturn": "-1.29%",
         "avgOvernightReturn": "-1.55%",
         "avgRelativeReturn": "-2.24%",
         "bestStrategy": "盘中：强势观察 28.6%/7笔",
-        "signals": 250,
+        "signals": 251,
         "buys": 36,
-        "exits": 13,
-        "holding": 23,
-        "waiting": 105
+        "exits": 14,
+        "holding": 22,
+        "waiting": 106
       },
       "marketRows": [
         {
@@ -137,7 +137,7 @@
         },
         {
           "market": "美股",
-          "calls": 119,
+          "calls": 120,
           "reviewed": 5,
           "winRate": "20.0%",
           "avgStockReturn": "-2.20%",
@@ -248,7 +248,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 60,
+          "calls": 61,
           "reviewed": 2,
           "winRate": "0.0%",
           "avgStockReturn": "-0.49%",

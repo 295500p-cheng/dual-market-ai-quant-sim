@@ -1,58 +1,67 @@
 {
-  "updatedAt": "2026-08-26T14:54:54",
+  "updatedAt": "2026-08-26T16:24:56",
   "status": "现行自动模拟规则胜率",
-  "summary": "现行规则已平仓 19 笔，11 胜 8 负，胜率 57.9%；近7天 3 笔，胜率 100.0%。",
+  "summary": "现行规则已平仓 20 笔，11 胜 9 负，胜率 55.0%；近7天 4 笔，胜率 75.0%。",
   "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
-  "optimization": "现行规则样本不足20笔，暂不继续调参；优先恢复A股轮次并积累独立样本。",
+  "optimization": "现行规则样本和收益为正，继续保持阈值并按市场分别监控。",
   "metrics": {
-    "totalTrades": 19,
+    "totalTrades": 20,
     "totalWins": 11,
-    "totalLosses": 8,
-    "totalWinRate": "57.9%",
-    "recentTrades": 3,
+    "totalLosses": 9,
+    "totalWinRate": "55.0%",
+    "recentTrades": 4,
     "recentWins": 3,
-    "recentLosses": 0,
-    "recentWinRate": "100.0%",
+    "recentLosses": 1,
+    "recentWinRate": "75.0%",
     "aShareTrades": 3,
     "aShareWinRate": "66.7%",
-    "usStockTrades": 16,
-    "usStockWinRate": "56.2%",
-    "avgReturn": "+0.67%",
-    "profitFactor": "1.60",
-    "realizedPnl": "+1,162.11",
-    "allLiveTrades": 55,
-    "allLiveWinRate": "41.8%",
+    "usStockTrades": 17,
+    "usStockWinRate": "52.9%",
+    "avgReturn": "+0.51%",
+    "profitFactor": "1.42",
+    "realizedPnl": "+916.27",
+    "allLiveTrades": 56,
+    "allLiveWinRate": "41.1%",
     "currentRuleSince": "2026-07-21T18:40"
   },
   "diagnostics": {
-    "decision": "保持参数",
-    "rationale": "现行规则只有 19 笔独立平仓，距离调参门槛还差 1 笔；继续积累样本，暂不因短期胜率放宽或收紧阈值。",
+    "decision": "保持并分市场验证",
+    "rationale": "样本达到门槛且高于盈亏平衡线，保持规则并继续分别观察A股与美股。",
     "sampleTarget": 20,
-    "samples": 19,
-    "remainingSamples": 1,
-    "observedWinRate": "57.9%",
-    "confidence95Low": "+36.28%",
-    "confidence95High": "+76.86%",
+    "samples": 20,
+    "remainingSamples": 0,
+    "observedWinRate": "55.0%",
+    "confidence95Low": "+34.21%",
+    "confidence95High": "+74.18%",
     "breakEvenWinRate": "+41.67%",
-    "edgeOverBreakEven": "+16.23%",
+    "edgeOverBreakEven": "+13.33%",
     "avgWin": "+2.98%",
     "avgLoss": "-2.50%",
     "candidateTrades": 24,
     "candidateWinRate": "+37.50%",
     "strongCandidateTrades": 16,
     "strongCandidateWinRate": "+43.75%",
-    "filterLift": "+20.39%",
+    "filterLift": "+17.50%",
     "aShareClosedTrades": 3,
-    "usStockClosedTrades": 16
+    "usStockClosedTrades": 17
   },
   "strategyBreakdown": [
     {
       "name": "盘中：强势观察",
-      "trades": 19,
-      "winRate": "57.9%"
+      "trades": 20,
+      "winRate": "55.0%"
     }
   ],
   "recentClosedTrades": [
+    {
+      "updatedAt": "2026-08-26T16:24:56",
+      "market": "美股",
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟止损",
+      "returnPct": "-2.50%"
+    },
     {
       "updatedAt": "2026-08-26T02:26:20",
       "market": "A股",
@@ -151,15 +160,6 @@
       "entryAction": "盘中：强势观察",
       "exitStatus": "模拟到期卖出",
       "returnPct": "+3.06%"
-    },
-    {
-      "updatedAt": "2026-08-10T15:31:52",
-      "market": "美股",
-      "symbol": "LRCX",
-      "name": "Lam Research Corporation",
-      "entryAction": "盘中：强势观察",
-      "exitStatus": "模拟止损",
-      "returnPct": "-2.50%"
     }
   ]
 }
