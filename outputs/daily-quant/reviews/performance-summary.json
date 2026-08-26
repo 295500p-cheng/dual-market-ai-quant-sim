@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T05:38:45",
+  "updatedAt": "2026-08-26T06:19:21",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -77,7 +77,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 14,
+          "calls": 13,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.01%",
@@ -232,7 +232,7 @@
       "strategyRows": [
         {
           "strategy": "盘中：强势观察",
-          "calls": 46,
+          "calls": 45,
           "reviewed": 7,
           "winRate": "28.6%",
           "avgStockReturn": "-1.53%",
@@ -248,7 +248,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 54,
+          "calls": 55,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.24%",

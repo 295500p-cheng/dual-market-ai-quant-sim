@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T05:38:46",
+  "updatedAt": "2026-08-26T06:19:21",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-12 至 2026-08-26",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 13,
+        "calls": 15,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -392,13 +392,28 @@
         {
           "date": "2026-08-26",
           "stocks": {
-            "total": 0,
+            "total": 2,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "300274",
+                "name": "阳光电源",
+                "overnightScore": "75",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "688981",
+                "name": "中芯国际",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 2,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -506,6 +521,34 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|300274",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|688981",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         }
       ]
     },
@@ -513,9 +556,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 9,
+        "calls": 11,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -850,13 +893,28 @@
         {
           "date": "2026-08-26",
           "stocks": {
-            "total": 0,
+            "total": 2,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "300274",
+                "name": "阳光电源",
+                "overnightScore": "75",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "688981",
+                "name": "中芯国际",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 2,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -942,6 +1000,34 @@
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|300274",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|688981",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
           "calls": 1,
           "reviewed": 0,
           "pending": 1,
@@ -2782,11 +2868,11 @@
           "open": "60.20",
           "high": "60.58",
           "low": "59.38",
-          "close": "60.16",
+          "close": "60.28",
           "previousClose": "60.15",
-          "changePct": "+0.02%",
-          "volume": "50459034.0",
-          "quoteTime": "2026-08-26 13:38:42",
+          "changePct": "+0.22%",
+          "volume": "56826045.0",
+          "quoteTime": "2026-08-26 14:19:18",
           "source": "sina"
         }
       ]
@@ -3271,11 +3357,11 @@
           "open": "671.30",
           "high": "717.88",
           "low": "669.01",
-          "close": "704.55",
+          "close": "701.22",
           "previousClose": "700.40",
-          "changePct": "+0.59%",
-          "volume": "7592248.0",
-          "quoteTime": "2026-08-26 13:38:42",
+          "changePct": "+0.12%",
+          "volume": "8693626.0",
+          "quoteTime": "2026-08-26 14:19:18",
           "source": "sina"
         }
       ]
@@ -3760,11 +3846,11 @@
           "open": "74.25",
           "high": "75.12",
           "low": "73.40",
-          "close": "73.71",
+          "close": "73.67",
           "previousClose": "74.11",
-          "changePct": "-0.54%",
-          "volume": "26184591.0",
-          "quoteTime": "2026-08-26 13:38:42",
+          "changePct": "-0.59%",
+          "volume": "29712840.0",
+          "quoteTime": "2026-08-26 14:19:18",
           "source": "sina"
         }
       ]
@@ -4249,11 +4335,11 @@
           "open": "116.42",
           "high": "121.99",
           "low": "115.63",
-          "close": "119.08",
+          "close": "118.83",
           "previousClose": "114.29",
-          "changePct": "+4.19%",
-          "volume": "49078493.0",
-          "quoteTime": "2026-08-26 13:38:42",
+          "changePct": "+3.97%",
+          "volume": "52471418.0",
+          "quoteTime": "2026-08-26 14:19:18",
           "source": "sina"
         }
       ]
@@ -4738,11 +4824,11 @@
           "open": "33.70",
           "high": "35.35",
           "low": "33.70",
-          "close": "34.71",
+          "close": "34.58",
           "previousClose": "33.68",
-          "changePct": "+3.06%",
-          "volume": "256540136.0",
-          "quoteTime": "2026-08-26 13:38:43",
+          "changePct": "+2.67%",
+          "volume": "278172760.0",
+          "quoteTime": "2026-08-26 14:19:16",
           "source": "sina"
         }
       ]
@@ -5227,11 +5313,989 @@
           "open": "85.02",
           "high": "85.45",
           "low": "83.93",
-          "close": "84.18",
+          "close": "84.47",
           "previousClose": "85.55",
-          "changePct": "-1.60%",
-          "volume": "8126993.0",
-          "quoteTime": "2026-08-26 13:38:42",
+          "changePct": "-1.26%",
+          "volume": "9017893.0",
+          "quoteTime": "2026-08-26 14:19:18",
+          "source": "sina"
+        }
+      ]
+    },
+    "A股|300274": {
+      "key": "A股|300274",
+      "market": "A股",
+      "symbol": "300274",
+      "name": "阳光电源",
+      "metrics": {
+        "calls": 1,
+        "reviewed": 0,
+        "pending": 1,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-08-12",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-13",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-14",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-15",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-16",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-17",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-18",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-19",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-20",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-21",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-22",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-24",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-25",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-26",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "300274",
+                "name": "阳光电源",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "callRows": [
+        {
+          "date": "2026-08-26",
+          "time": "06:19:21",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "action": "盘中：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "112.54",
+          "buyZone": "111.64-113.22",
+          "takeProfit": "116.48-118.17",
+          "stopLoss": "109.73",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        }
+      ],
+      "priceRows": [
+        {
+          "date": "2026-08-12",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "120.90",
+          "high": "122.06",
+          "low": "116.04",
+          "close": "117.53",
+          "previousClose": "120.07",
+          "changePct": "-2.12%",
+          "volume": "54452403.0",
+          "quoteTime": "2026-08-12 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-13",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "116.60",
+          "high": "122.08",
+          "low": "116.20",
+          "close": "118.13",
+          "previousClose": "117.53",
+          "changePct": "+0.51%",
+          "volume": "69669856.0",
+          "quoteTime": "2026-08-13 15:35:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-14",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "118.47",
+          "high": "120.77",
+          "low": "116.33",
+          "close": "116.72",
+          "previousClose": "118.13",
+          "changePct": "-1.19%",
+          "volume": "42758447.0",
+          "quoteTime": "2026-08-14 15:45:30",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-17",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "117.11",
+          "high": "118.98",
+          "low": "115.30",
+          "close": "118.80",
+          "previousClose": "116.72",
+          "changePct": "+1.78%",
+          "volume": "40786820.0",
+          "quoteTime": "2026-08-17 15:35:30",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-18",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "118.00",
+          "high": "121.39",
+          "low": "116.54",
+          "close": "118.04",
+          "previousClose": "118.80",
+          "changePct": "-0.64%",
+          "volume": "44137690.0",
+          "quoteTime": "2026-08-18 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-19",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "116.15",
+          "high": "116.64",
+          "low": "111.23",
+          "close": "111.49",
+          "previousClose": "118.04",
+          "changePct": "-5.55%",
+          "volume": "52541944.0",
+          "quoteTime": "2026-08-19 15:35:00",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-20",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "112.96",
+          "high": "113.20",
+          "low": "109.75",
+          "close": "110.89",
+          "previousClose": "111.49",
+          "changePct": "-0.54%",
+          "volume": "25014180.0",
+          "quoteTime": "2026-08-20 15:35:30",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-21",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "109.93",
+          "high": "114.59",
+          "low": "109.71",
+          "close": "113.08",
+          "previousClose": "110.89",
+          "changePct": "+1.97%",
+          "volume": "30231867.0",
+          "quoteTime": "2026-08-21 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-24",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "116.00",
+          "high": "117.23",
+          "low": "109.82",
+          "close": "111.50",
+          "previousClose": "113.08",
+          "changePct": "-1.40%",
+          "volume": "41631405.0",
+          "quoteTime": "2026-08-24 15:35:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-25",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "111.00",
+          "high": "111.00",
+          "low": "108.38",
+          "close": "109.59",
+          "previousClose": "111.50",
+          "changePct": "-1.71%",
+          "volume": "23807031.0",
+          "quoteTime": "2026-08-25 15:35:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-26",
+          "market": "A股",
+          "symbol": "300274",
+          "name": "阳光电源",
+          "open": "109.00",
+          "high": "113.90",
+          "low": "108.77",
+          "close": "112.54",
+          "previousClose": "109.59",
+          "changePct": "+2.69%",
+          "volume": "25869604.0",
+          "quoteTime": "2026-08-26 14:19:18",
+          "source": "sina"
+        }
+      ]
+    },
+    "A股|688981": {
+      "key": "A股|688981",
+      "market": "A股",
+      "symbol": "688981",
+      "name": "中芯国际",
+      "metrics": {
+        "calls": 1,
+        "reviewed": 0,
+        "pending": 1,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-08-12",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-13",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-14",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-15",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-16",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-17",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-18",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-19",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-20",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-21",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-22",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-24",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-25",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-08-26",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "688981",
+                "name": "中芯国际",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "callRows": [
+        {
+          "date": "2026-08-26",
+          "time": "06:19:21",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "action": "盘中：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "124.39",
+          "buyZone": "123.39-125.14",
+          "takeProfit": "128.74-130.61",
+          "stopLoss": "121.28",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        }
+      ],
+      "priceRows": [
+        {
+          "date": "2026-08-12",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "126.00",
+          "high": "128.50",
+          "low": "124.51",
+          "close": "127.96",
+          "previousClose": "125.41",
+          "changePct": "+2.03%",
+          "volume": "43837992.0",
+          "quoteTime": "2026-08-12 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-13",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "129.00",
+          "high": "134.50",
+          "low": "129.00",
+          "close": "129.44",
+          "previousClose": "127.96",
+          "changePct": "+1.16%",
+          "volume": "66629356.0",
+          "quoteTime": "2026-08-13 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-14",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "133.99",
+          "high": "135.36",
+          "low": "129.67",
+          "close": "132.87",
+          "previousClose": "129.44",
+          "changePct": "+2.65%",
+          "volume": "77449709.0",
+          "quoteTime": "2026-08-14 15:34:56",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-17",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "132.00",
+          "high": "137.42",
+          "low": "130.80",
+          "close": "136.76",
+          "previousClose": "132.87",
+          "changePct": "+2.93%",
+          "volume": "68011300.0",
+          "quoteTime": "2026-08-17 15:34:58",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-18",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "136.00",
+          "high": "137.48",
+          "low": "132.47",
+          "close": "134.98",
+          "previousClose": "136.76",
+          "changePct": "-1.30%",
+          "volume": "57424091.0",
+          "quoteTime": "2026-08-18 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-19",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "130.87",
+          "high": "131.56",
+          "low": "126.01",
+          "close": "128.01",
+          "previousClose": "134.98",
+          "changePct": "-5.16%",
+          "volume": "66595440.0",
+          "quoteTime": "2026-08-19 15:34:58",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-20",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "128.80",
+          "high": "129.28",
+          "low": "124.79",
+          "close": "125.50",
+          "previousClose": "128.01",
+          "changePct": "-1.96%",
+          "volume": "40127002.0",
+          "quoteTime": "2026-08-20 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-21",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "124.32",
+          "high": "126.86",
+          "low": "124.20",
+          "close": "124.80",
+          "previousClose": "125.50",
+          "changePct": "-0.56%",
+          "volume": "30566366.0",
+          "quoteTime": "2026-08-21 15:34:58",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-24",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "124.50",
+          "high": "124.78",
+          "low": "118.30",
+          "close": "120.58",
+          "previousClose": "124.80",
+          "changePct": "-3.38%",
+          "volume": "47671749.0",
+          "quoteTime": "2026-08-24 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-25",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "118.58",
+          "high": "121.64",
+          "low": "117.88",
+          "close": "120.00",
+          "previousClose": "120.58",
+          "changePct": "-0.48%",
+          "volume": "31064342.0",
+          "quoteTime": "2026-08-25 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-08-26",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "open": "120.50",
+          "high": "124.46",
+          "low": "120.22",
+          "close": "124.39",
+          "previousClose": "120.00",
+          "changePct": "+3.66%",
+          "volume": "33331107.0",
+          "quoteTime": "2026-08-26 14:19:18",
           "source": "sina"
         }
       ]
