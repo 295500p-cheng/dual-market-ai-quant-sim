@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-26T03:33:25",
+  "updatedAt": "2026-08-26T04:25:04",
   "marketUpdatedAt": {
     "us_stock": "2026-08-25T21:10:50",
-    "a_share": "2026-08-26T03:33:25"
+    "a_share": "2026-08-26T04:25:04"
   },
   "fetchStatus": "success",
   "sources": {
@@ -1215,9 +1215,9 @@
       "change_pct": 1.0706,
       "volume": 120701270.0,
       "turnover": 325539620697.0,
-      "timestamp": "2026-08-26 11:33:24",
+      "timestamp": "2026-08-26 11:36:00",
       "raw_date": "2026-08-26",
-      "raw_time": "11:33:24"
+      "raw_time": "11:36:00"
     },
     {
       "market": "A股",
@@ -1239,9 +1239,9 @@
       "change_pct": 1.3696,
       "volume": 11276090799.0,
       "turnover": 305908979568.94,
-      "timestamp": "2026-08-26 11:32:42",
+      "timestamp": "2026-08-26 11:35:42",
       "raw_date": "2026-08-26",
-      "raw_time": "11:32:42"
+      "raw_time": "11:35:42"
     },
     {
       "market": "A股",
@@ -1263,9 +1263,9 @@
       "change_pct": 2.1806,
       "volume": 4674489.0,
       "turnover": 50555477282.0,
-      "timestamp": "2026-08-26 11:33:24",
+      "timestamp": "2026-08-26 11:36:00",
       "raw_date": "2026-08-26",
-      "raw_time": "11:33:24"
+      "raw_time": "11:36:00"
     },
     {
       "market": "A股",
@@ -1287,9 +1287,9 @@
       "change_pct": 1.2706,
       "volume": 114071738.0,
       "turnover": 222211469790.0,
-      "timestamp": "2026-08-26 11:33:24",
+      "timestamp": "2026-08-26 11:36:00",
       "raw_date": "2026-08-26",
-      "raw_time": "11:33:24"
+      "raw_time": "11:36:00"
     },
     {
       "market": "A股",
