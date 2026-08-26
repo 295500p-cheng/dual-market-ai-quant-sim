@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T18:18:58",
+  "updatedAt": "2026-08-26T21:01:29",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-08-20 至 2026-08-26",
       "metrics": {
-        "calls": 74,
+        "calls": 75,
         "reviewed": 3,
-        "pending": 22,
+        "pending": 23,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
         "executionTrades": 4,
@@ -22,11 +22,11 @@
         "avgOvernightReturn": "-0.41%",
         "avgRelativeReturn": "-1.32%",
         "bestStrategy": "盘中：强势观察 0.0%/1笔",
-        "signals": 91,
-        "buys": 15,
+        "signals": 92,
+        "buys": 14,
         "exits": 4,
-        "holding": 11,
-        "waiting": 45
+        "holding": 10,
+        "waiting": 41
       },
       "marketRows": [
         {
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 39,
+          "calls": 40,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -85,7 +85,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 27,
+          "calls": 23,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.75%",
@@ -106,9 +106,9 @@
       "label": "本月",
       "period": "2026-08-01 至 2026-08-26",
       "metrics": {
-        "calls": 209,
+        "calls": 210,
         "reviewed": 10,
-        "pending": 22,
+        "pending": 23,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
         "executionTrades": 19,
@@ -120,11 +120,11 @@
         "avgOvernightReturn": "-1.55%",
         "avgRelativeReturn": "-2.24%",
         "bestStrategy": "盘中：强势观察 28.6%/7笔",
-        "signals": 251,
-        "buys": 36,
+        "signals": 252,
+        "buys": 35,
         "exits": 14,
-        "holding": 22,
-        "waiting": 106
+        "holding": 21,
+        "waiting": 102
       },
       "marketRows": [
         {
@@ -137,7 +137,7 @@
         },
         {
           "market": "美股",
-          "calls": 120,
+          "calls": 121,
           "reviewed": 5,
           "winRate": "20.0%",
           "avgStockReturn": "-2.20%",
@@ -227,7 +227,7 @@
           "market": "美股",
           "symbol": "KLAC",
           "name": "KLA Corporation",
-          "calls": 5,
+          "calls": 6,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-1.32%",
@@ -248,7 +248,7 @@
         },
         {
           "strategy": "盘中：候选观察",
-          "calls": 61,
+          "calls": 57,
           "reviewed": 2,
           "winRate": "0.0%",
           "avgStockReturn": "-0.49%",
