@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T04:25:04",
+  "updatedAt": "2026-08-26T05:38:46",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-12 至 2026-08-26",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 15,
+        "calls": 13,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -392,28 +392,13 @@
         {
           "date": "2026-08-26",
           "stocks": {
-            "total": 2,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "002463",
-                "name": "沪电股份",
-                "overnightScore": "75",
-                "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 2,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -485,28 +470,28 @@
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
-          "calls": 2,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|601899",
           "market": "A股",
           "symbol": "601899",
-          "name": "紫金矿业",
-          "calls": 2,
+          "name": "XD紫金矿",
+          "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|603501",
@@ -528,9 +513,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 11,
+        "calls": 9,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -865,28 +850,13 @@
         {
           "date": "2026-08-26",
           "stocks": {
-            "total": 2,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "002463",
-                "name": "沪电股份",
-                "overnightScore": "75",
-                "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 2,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -944,28 +914,28 @@
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
-          "calls": 2,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|601899",
           "market": "A股",
           "symbol": "601899",
-          "name": "紫金矿业",
-          "calls": 2,
+          "name": "XD紫金矿",
+          "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|603501",
@@ -2812,11 +2782,11 @@
           "open": "60.20",
           "high": "60.58",
           "low": "59.38",
-          "close": "60.33",
+          "close": "60.16",
           "previousClose": "60.15",
-          "changePct": "+0.30%",
-          "volume": "43674300.0",
-          "quoteTime": "2026-08-26 11:30:00",
+          "changePct": "+0.02%",
+          "volume": "50459034.0",
+          "quoteTime": "2026-08-26 13:38:42",
           "source": "sina"
         }
       ]
@@ -3301,11 +3271,11 @@
           "open": "671.30",
           "high": "717.88",
           "low": "669.01",
-          "close": "709.96",
+          "close": "704.55",
           "previousClose": "700.40",
-          "changePct": "+1.36%",
-          "volume": "6652034.0",
-          "quoteTime": "2026-08-26 11:30:00",
+          "changePct": "+0.59%",
+          "volume": "7592248.0",
+          "quoteTime": "2026-08-26 13:38:42",
           "source": "sina"
         }
       ]
@@ -3790,11 +3760,11 @@
           "open": "74.25",
           "high": "75.12",
           "low": "73.40",
-          "close": "74.74",
+          "close": "73.71",
           "previousClose": "74.11",
-          "changePct": "+0.85%",
-          "volume": "21404291.0",
-          "quoteTime": "2026-08-26 11:30:00",
+          "changePct": "-0.54%",
+          "volume": "26184591.0",
+          "quoteTime": "2026-08-26 13:38:42",
           "source": "sina"
         }
       ]
@@ -3805,9 +3775,9 @@
       "symbol": "002463",
       "name": "沪电股份",
       "metrics": {
-        "calls": 2,
+        "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -4082,21 +4052,13 @@
         {
           "date": "2026-08-26",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "002463",
-                "name": "沪电股份",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -4107,26 +4069,6 @@
         }
       ],
       "callRows": [
-        {
-          "date": "2026-08-26",
-          "time": "03:33:25",
-          "market": "A股",
-          "symbol": "002463",
-          "name": "沪电股份",
-          "action": "盘中：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "120.30",
-          "buyZone": "119.34-121.02",
-          "takeProfit": "124.51-126.31",
-          "stopLoss": "117.29",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
-          "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
-        },
         {
           "date": "2026-08-21",
           "time": "08:06:59",
@@ -4307,11 +4249,11 @@
           "open": "116.42",
           "high": "121.99",
           "low": "115.63",
-          "close": "120.30",
+          "close": "119.08",
           "previousClose": "114.29",
-          "changePct": "+5.26%",
-          "volume": "45607440.0",
-          "quoteTime": "2026-08-26 11:30:00",
+          "changePct": "+4.19%",
+          "volume": "49078493.0",
+          "quoteTime": "2026-08-26 13:38:42",
           "source": "sina"
         }
       ]
@@ -4320,11 +4262,11 @@
       "key": "A股|601899",
       "market": "A股",
       "symbol": "601899",
-      "name": "紫金矿业",
+      "name": "XD紫金矿",
       "metrics": {
-        "calls": 2,
+        "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -4599,21 +4541,13 @@
         {
           "date": "2026-08-26",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -4624,26 +4558,6 @@
         }
       ],
       "callRows": [
-        {
-          "date": "2026-08-26",
-          "time": "03:33:25",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "action": "盘中：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "34.98",
-          "buyZone": "34.70-35.19",
-          "takeProfit": "36.20-36.73",
-          "stopLoss": "34.11",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
-          "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
-        },
         {
           "date": "2026-08-21",
           "time": "08:06:59",
@@ -4824,11 +4738,11 @@
           "open": "33.70",
           "high": "35.35",
           "low": "33.70",
-          "close": "34.98",
+          "close": "34.71",
           "previousClose": "33.68",
-          "changePct": "+3.86%",
-          "volume": "224341716.0",
-          "quoteTime": "2026-08-26 11:30:00",
+          "changePct": "+3.06%",
+          "volume": "256540136.0",
+          "quoteTime": "2026-08-26 13:38:43",
           "source": "sina"
         }
       ]
@@ -5313,11 +5227,11 @@
           "open": "85.02",
           "high": "85.45",
           "low": "83.93",
-          "close": "84.54",
+          "close": "84.18",
           "previousClose": "85.55",
-          "changePct": "-1.18%",
-          "volume": "7056423.0",
-          "quoteTime": "2026-08-26 11:30:00",
+          "changePct": "-1.60%",
+          "volume": "8126993.0",
+          "quoteTime": "2026-08-26 13:38:42",
           "source": "sina"
         }
       ]
