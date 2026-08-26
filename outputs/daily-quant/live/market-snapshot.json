@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-26T07:26:59",
+  "updatedAt": "2026-08-26T07:54:52",
   "marketUpdatedAt": {
     "us_stock": "2026-08-25T21:10:50",
-    "a_share": "2026-08-26T07:26:59"
+    "a_share": "2026-08-26T07:54:52"
   },
   "fetchStatus": "success",
   "sources": {
@@ -643,9 +643,9 @@
       "change_pct": 0.6983,
       "volume": 73340525.0,
       "turnover": 4413181464.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 1.7093,
       "sector_change_pct": 0.6983
     },
@@ -669,9 +669,9 @@
       "change_pct": 0.5792,
       "volume": 21810959.0,
       "turnover": 18603935438.04,
-      "timestamp": "2026-08-26 15:26:45",
+      "timestamp": "2026-08-26 15:35:15",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:45",
+      "raw_time": "15:35:15",
       "benchmark_change_pct": 0.5112,
       "sector_change_pct": 0.0289
     },
@@ -695,9 +695,9 @@
       "change_pct": -0.5214,
       "volume": 34226645.0,
       "turnover": 13639965066.77,
-      "timestamp": "2026-08-26 15:26:45",
+      "timestamp": "2026-08-26 15:35:45",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:45",
+      "raw_time": "15:35:45",
       "benchmark_change_pct": 0.5112,
       "sector_change_pct": 0.0289
     },
@@ -721,9 +721,9 @@
       "change_pct": 4.3136,
       "volume": 59517170.0,
       "turnover": 7090402473.37,
-      "timestamp": "2026-08-26 15:26:45",
+      "timestamp": "2026-08-26 15:35:45",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:45",
+      "raw_time": "15:35:45",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 4.3136
     },
@@ -747,9 +747,9 @@
       "change_pct": -0.4318,
       "volume": 33837182.0,
       "turnover": 2508231468.93,
-      "timestamp": "2026-08-26 15:26:45",
+      "timestamp": "2026-08-26 15:35:15",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:45",
+      "raw_time": "15:35:15",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": -0.4318
     },
@@ -773,9 +773,9 @@
       "change_pct": 1.2742,
       "volume": 22081797.0,
       "turnover": 1845181363.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 1.2742
     },
@@ -799,9 +799,9 @@
       "change_pct": 0.9421,
       "volume": 9728315.0,
       "turnover": 9952518620.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 1.7093,
       "sector_change_pct": 0.9421
     },
@@ -825,9 +825,9 @@
       "change_pct": -0.474,
       "volume": 19881188.0,
       "turnover": 4582156466.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 1.7093,
       "sector_change_pct": -0.474
     },
@@ -851,9 +851,9 @@
       "change_pct": 3.4583,
       "volume": 40108093.0,
       "turnover": 4931938236.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 1.7093,
       "sector_change_pct": 3.4583
     },
@@ -877,9 +877,9 @@
       "change_pct": 0.0428,
       "volume": 9796253.0,
       "turnover": 6824428489.53,
-      "timestamp": "2026-08-26 15:26:45",
+      "timestamp": "2026-08-26 15:35:15",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:45",
+      "raw_time": "15:35:15",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 0.0428
     },
@@ -903,9 +903,9 @@
       "change_pct": -1.8118,
       "volume": 12214158.0,
       "turnover": 1030617424.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": -1.8118
     },
@@ -929,9 +929,9 @@
       "change_pct": 0.6026,
       "volume": 20716240.0,
       "turnover": 7909044893.82,
-      "timestamp": "2026-08-26 15:26:00",
+      "timestamp": "2026-08-26 15:35:45",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:00",
+      "raw_time": "15:35:45",
       "benchmark_change_pct": 0.5112,
       "sector_change_pct": 0.6026
     },
@@ -955,9 +955,9 @@
       "change_pct": 0.799,
       "volume": 28282255.0,
       "turnover": 2607485071.43,
-      "timestamp": "2026-08-26 15:26:45",
+      "timestamp": "2026-08-26 15:35:00",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:45",
+      "raw_time": "15:35:00",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 0.799
     },
@@ -981,9 +981,9 @@
       "change_pct": 2.7649,
       "volume": 29784508.0,
       "turnover": 3337653470.96,
-      "timestamp": "2026-08-26 15:25:45",
+      "timestamp": "2026-08-26 15:35:30",
       "raw_date": "2026-08-26",
-      "raw_time": "15:25:45",
+      "raw_time": "15:35:30",
       "benchmark_change_pct": 0.5112,
       "sector_change_pct": 2.7649
     },
@@ -1007,9 +1007,9 @@
       "change_pct": 2.2715,
       "volume": 330666122.0,
       "turnover": 6397844278.87,
-      "timestamp": "2026-08-26 15:26:15",
+      "timestamp": "2026-08-26 15:35:00",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:15",
+      "raw_time": "15:35:00",
       "benchmark_change_pct": 0.5112,
       "sector_change_pct": 2.2715
     },
@@ -1033,9 +1033,9 @@
       "change_pct": 2.2836,
       "volume": 172626933.0,
       "turnover": 4769448349.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 2.2836
     },
@@ -1059,9 +1059,9 @@
       "change_pct": -0.092,
       "volume": 2173083.0,
       "turnover": 2838763999.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": -0.092
     },
@@ -1085,9 +1085,9 @@
       "change_pct": -0.3461,
       "volume": 16637658.0,
       "turnover": 1440578173.52,
-      "timestamp": "2026-08-26 15:25:45",
+      "timestamp": "2026-08-26 15:35:30",
       "raw_date": "2026-08-26",
-      "raw_time": "15:25:45",
+      "raw_time": "15:35:30",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": -0.3461
     },
@@ -1111,9 +1111,9 @@
       "change_pct": 0.7595,
       "volume": 64645543.0,
       "turnover": 2574006915.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 0.7595
     },
@@ -1137,9 +1137,9 @@
       "change_pct": 2.036,
       "volume": 105343675.0,
       "turnover": 5886018865.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 2.036
     },
@@ -1163,9 +1163,9 @@
       "change_pct": 2.3456,
       "volume": 314235193.0,
       "turnover": 10924145121.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": 2.3456
     },
@@ -1189,9 +1189,9 @@
       "change_pct": -0.4147,
       "volume": 6286893.0,
       "turnover": 618962793.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58",
+      "raw_time": "15:34:59",
       "benchmark_change_pct": 0.8515,
       "sector_change_pct": -0.4147
     },
@@ -1215,9 +1215,9 @@
       "change_pct": 0.8515,
       "volume": 184578169.0,
       "turnover": 489057278410.0,
-      "timestamp": "2026-08-26 15:26:57",
+      "timestamp": "2026-08-26 15:35:44",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:57"
+      "raw_time": "15:35:44"
     },
     {
       "market": "A股",
@@ -1263,9 +1263,9 @@
       "change_pct": 1.7093,
       "volume": 7430315.0,
       "turnover": 79356925304.0,
-      "timestamp": "2026-08-26 15:26:57",
+      "timestamp": "2026-08-26 15:35:44",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:57"
+      "raw_time": "15:35:44"
     },
     {
       "market": "A股",
@@ -1287,9 +1287,9 @@
       "change_pct": 0.7729,
       "volume": 166303916.0,
       "turnover": 325261411043.0,
-      "timestamp": "2026-08-26 15:26:57",
+      "timestamp": "2026-08-26 15:35:44",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:57"
+      "raw_time": "15:35:44"
     },
     {
       "market": "A股",
@@ -1311,9 +1311,9 @@
       "change_pct": 0.7799,
       "volume": 846320851.0,
       "turnover": 3935828217.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58"
+      "raw_time": "15:34:59"
     },
     {
       "market": "A股",
@@ -1335,9 +1335,9 @@
       "change_pct": 0.3802,
       "volume": 1768846732.0,
       "turnover": 6081866089.979,
-      "timestamp": "2026-08-26 15:26:30",
+      "timestamp": "2026-08-26 15:35:45",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:30"
+      "raw_time": "15:35:45"
     },
     {
       "market": "A股",
@@ -1359,9 +1359,9 @@
       "change_pct": 1.6539,
       "volume": 3434862147.0,
       "turnover": 5888654230.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58"
+      "raw_time": "15:34:59"
     },
     {
       "market": "A股",
@@ -1383,9 +1383,9 @@
       "change_pct": 1.3133,
       "volume": 363957734.0,
       "turnover": 391564007.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58"
+      "raw_time": "15:34:59"
     },
     {
       "market": "A股",
@@ -1407,9 +1407,9 @@
       "change_pct": 2.7179,
       "volume": 2998729418.0,
       "turnover": 3263379118.0,
-      "timestamp": "2026-08-26 15:26:58",
+      "timestamp": "2026-08-26 15:34:59",
       "raw_date": "2026-08-26",
-      "raw_time": "15:26:58"
+      "raw_time": "15:34:59"
     }
   ],
   "errors": []
