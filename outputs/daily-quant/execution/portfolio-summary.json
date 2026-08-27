@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T18:14:59",
+  "updatedAt": "2026-08-27T22:54:56",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -9,19 +9,19 @@
     "maxPositionsPerMarket": 3
   },
   "metrics": {
-    "totalAssets": "97,355.26",
+    "totalAssets": "97,202.50",
     "initialCapital": "100,000.00",
-    "cumulativePnl": "-2,644.74",
-    "cumulativePnlPct": "-2.64%",
+    "cumulativePnl": "-2,797.50",
+    "cumulativePnlPct": "-2.80%",
     "realizedPnl": "-2,679.64",
-    "floatingPnl": "34.90",
+    "floatingPnl": "-117.86",
     "availableCash": "78,315.62",
-    "cashRatio": "+80.44%",
+    "cashRatio": "+80.57%",
     "simulatedFundingGap": "0.00",
     "rawSimulatedCash": "78,315.62",
-    "fundingStatus": "现金占比 +80.44%",
-    "marketValue": "19,039.64",
-    "positionRatio": "+19.56%",
+    "fundingStatus": "现金占比 +80.57%",
+    "marketValue": "18,886.88",
+    "positionRatio": "+19.43%",
     "holdings": 2,
     "maxHoldings": 6,
     "overLimit": 0,
@@ -56,13 +56,13 @@
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
       "entryPrice": "262.23",
-      "currentPrice": "260.28",
+      "currentPrice": "256.26",
       "quantity": 38,
       "availableQuantity": 38,
       "notional": "9,964.74",
-      "marketValue": "9,890.64",
-      "pnl": "-74.10",
-      "pnlPct": "-0.74%",
+      "marketValue": "9,737.88",
+      "pnl": "-226.86",
+      "pnlPct": "-2.28%",
       "status": "模拟持有"
     }
   ]
