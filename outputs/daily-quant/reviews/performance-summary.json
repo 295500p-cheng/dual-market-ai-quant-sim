@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T04:06:04",
+  "updatedAt": "2026-08-28T12:36:48",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-08-22 至 2026-08-28",
       "metrics": {
-        "calls": 53,
+        "calls": 56,
         "reviewed": 1,
-        "pending": 10,
+        "pending": 13,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
         "executionTrades": 4,
@@ -22,7 +22,7 @@
         "avgOvernightReturn": "-1.16%",
         "avgRelativeReturn": "-1.60%",
         "bestStrategy": "盘中：候选观察 0.0%/1笔",
-        "signals": 72,
+        "signals": 75,
         "buys": 8,
         "exits": 4,
         "holding": 4,
@@ -31,7 +31,7 @@
       "marketRows": [
         {
           "market": "A股",
-          "calls": 25,
+          "calls": 28,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.75%",
@@ -77,9 +77,9 @@
       "label": "本月",
       "period": "2026-08-01 至 2026-08-28",
       "metrics": {
-        "calls": 220,
+        "calls": 223,
         "reviewed": 10,
-        "pending": 10,
+        "pending": 13,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
         "executionTrades": 19,
@@ -91,7 +91,7 @@
         "avgOvernightReturn": "-1.55%",
         "avgRelativeReturn": "-2.24%",
         "bestStrategy": "盘中：强势观察 28.6%/7笔",
-        "signals": 270,
+        "signals": 273,
         "buys": 35,
         "exits": 14,
         "holding": 21,
@@ -100,7 +100,7 @@
       "marketRows": [
         {
           "market": "A股",
-          "calls": 94,
+          "calls": 97,
           "reviewed": 5,
           "winRate": "20.0%",
           "avgStockReturn": "-0.39%",
@@ -159,7 +159,7 @@
           "market": "A股",
           "symbol": "002594",
           "name": "比亚迪",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 1,
           "winRate": "0.0%",
           "avgStockReturn": "-0.01%",
