@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T22:54:56",
+  "updatedAt": "2026-08-28T04:06:03",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-27T22:54:56|美股|AVGO",
-      "updated_at": "2026-08-27T22:54:56",
+      "signal_id": "2026-08-28T04:06:03|美股|AVGO",
+      "updated_at": "2026-08-28T04:06:03",
       "market": "美股",
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-27T22:54:56|美股|NVDA",
-      "updated_at": "2026-08-27T22:54:56",
+      "signal_id": "2026-08-28T04:06:03|美股|NVDA",
+      "updated_at": "2026-08-28T04:06:03",
       "market": "美股",
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-27T22:54:56|美股|CRM",
-      "updated_at": "2026-08-27T22:54:56",
+      "signal_id": "2026-08-28T04:06:03|美股|CRM",
+      "updated_at": "2026-08-28T04:06:03",
       "market": "美股",
       "symbol": "CRM",
       "name": "Salesforce, Inc.",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-27T22:54:56|美股|MSFT",
-      "updated_at": "2026-08-27T22:54:56",
+      "signal_id": "2026-08-28T04:06:03|美股|MSFT",
+      "updated_at": "2026-08-28T04:06:03",
       "market": "美股",
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
@@ -211,8 +211,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-27T22:54:56|美股|PLTR",
-      "updated_at": "2026-08-27T22:54:56",
+      "signal_id": "2026-08-28T04:06:03|美股|PLTR",
+      "updated_at": "2026-08-28T04:06:03",
       "market": "美股",
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
@@ -231,8 +231,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-27T22:54:56|美股|AMZN",
-      "updated_at": "2026-08-27T22:54:56",
+      "signal_id": "2026-08-28T04:06:03|美股|AMZN",
+      "updated_at": "2026-08-28T04:06:03",
       "market": "美股",
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
