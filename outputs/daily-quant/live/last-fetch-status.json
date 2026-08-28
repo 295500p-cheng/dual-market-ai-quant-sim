@@ -1,10 +1,10 @@
 {
-  "attemptedAt": "2026-08-28T19:23:40",
+  "attemptedAt": "2026-08-28T22:59:37",
   "status": "success",
-  "target": "a_share",
+  "target": "us_stock",
   "counts": {
-    "a_share": 31,
-    "us_stock": 0
+    "a_share": 0,
+    "us_stock": 25
   },
   "expectedCounts": {
     "a_share": 31,
@@ -16,6 +16,6 @@
   },
   "usingCachedData": false,
   "preservedRecords": 56,
-  "message": "A股行情刷新成功。",
+  "message": "美股行情刷新成功。",
   "errors": []
 }
