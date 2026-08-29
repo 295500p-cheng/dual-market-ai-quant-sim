@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-28T22:59:38",
+  "updatedAt": "2026-08-29T02:45:51",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-08-22 至 2026-08-28",
+      "period": "2026-08-23 至 2026-08-29",
       "metrics": {
         "calls": 61,
         "reviewed": 1,
-        "pending": 13,
+        "pending": 8,
         "winRate": "0.0%",
         "candidateWinRate": "0.0%",
         "executionTrades": 4,
@@ -22,7 +22,7 @@
         "avgOvernightReturn": "-1.16%",
         "avgRelativeReturn": "-1.60%",
         "bestStrategy": "盘中：候选观察 0.0%/1笔",
-        "signals": 77,
+        "signals": 82,
         "buys": 8,
         "exits": 4,
         "holding": 4,
@@ -75,11 +75,11 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-08-01 至 2026-08-28",
+      "period": "2026-08-01 至 2026-08-29",
       "metrics": {
         "calls": 228,
         "reviewed": 10,
-        "pending": 13,
+        "pending": 8,
         "winRate": "20.0%",
         "candidateWinRate": "20.0%",
         "executionTrades": 19,
@@ -91,7 +91,7 @@
         "avgOvernightReturn": "-1.55%",
         "avgRelativeReturn": "-2.24%",
         "bestStrategy": "盘中：强势观察 28.6%/7笔",
-        "signals": 275,
+        "signals": 280,
         "buys": 35,
         "exits": 14,
         "holding": 21,
