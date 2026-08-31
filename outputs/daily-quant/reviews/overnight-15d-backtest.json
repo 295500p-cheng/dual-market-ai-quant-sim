@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T14:57:46",
+  "updatedAt": "2026-08-31T15:02:05",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-17 至 2026-08-31",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 20,
         "reviewed": 0,
-        "pending": 5,
+        "pending": 4,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -360,13 +360,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -481,7 +481,7 @@
           "name": "工业富联",
           "calls": 6,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -594,7 +594,7 @@
       "metrics": {
         "calls": 16,
         "reviewed": 0,
-        "pending": 5,
+        "pending": 4,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -898,13 +898,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1019,7 +1019,7 @@
           "name": "工业富联",
           "calls": 6,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -2315,7 +2315,7 @@
       "metrics": {
         "calls": 6,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -2568,13 +2568,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -2679,13 +2679,13 @@
           "buyZone": "63.53-64.42",
           "takeProfit": "66.28-67.24",
           "stopLoss": "62.44",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "63.15",
+          "nextClose": "64.84",
+          "overnightReturn": "-1.39%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-0.09%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-08-27",
