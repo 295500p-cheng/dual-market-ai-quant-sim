@@ -1,58 +1,67 @@
 {
-  "updatedAt": "2026-08-29T02:45:51",
+  "updatedAt": "2026-08-31T06:50:45",
   "status": "现行自动模拟规则胜率",
-  "summary": "现行规则已平仓 20 笔，11 胜 9 负，胜率 55.0%；近7天 4 笔，胜率 75.0%。",
+  "summary": "现行规则已平仓 21 笔，11 胜 10 负，胜率 52.4%；近7天 5 笔，胜率 60.0%。",
   "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
   "optimization": "现行规则样本和收益为正，继续保持阈值并按市场分别监控。",
   "metrics": {
-    "totalTrades": 20,
+    "totalTrades": 21,
     "totalWins": 11,
-    "totalLosses": 9,
-    "totalWinRate": "55.0%",
-    "recentTrades": 4,
+    "totalLosses": 10,
+    "totalWinRate": "52.4%",
+    "recentTrades": 5,
     "recentWins": 3,
-    "recentLosses": 1,
-    "recentWinRate": "75.0%",
-    "aShareTrades": 3,
-    "aShareWinRate": "66.7%",
+    "recentLosses": 2,
+    "recentWinRate": "60.0%",
+    "aShareTrades": 4,
+    "aShareWinRate": "50.0%",
     "usStockTrades": 17,
     "usStockWinRate": "52.9%",
-    "avgReturn": "+0.51%",
-    "profitFactor": "1.42",
-    "realizedPnl": "+916.27",
-    "allLiveTrades": 56,
-    "allLiveWinRate": "41.1%",
+    "avgReturn": "+0.38%",
+    "profitFactor": "1.30",
+    "realizedPnl": "+713.27",
+    "allLiveTrades": 57,
+    "allLiveWinRate": "40.4%",
     "currentRuleSince": "2026-07-21T18:40"
   },
   "diagnostics": {
     "decision": "保持并分市场验证",
     "rationale": "样本达到门槛且高于盈亏平衡线，保持规则并继续分别观察A股与美股。",
     "sampleTarget": 20,
-    "samples": 20,
+    "samples": 21,
     "remainingSamples": 0,
-    "observedWinRate": "55.0%",
-    "confidence95Low": "+34.21%",
-    "confidence95High": "+74.18%",
+    "observedWinRate": "52.4%",
+    "confidence95Low": "+32.37%",
+    "confidence95High": "+71.66%",
     "breakEvenWinRate": "+41.67%",
-    "edgeOverBreakEven": "+13.33%",
+    "edgeOverBreakEven": "+10.71%",
     "avgWin": "+2.98%",
-    "avgLoss": "-2.50%",
+    "avgLoss": "-2.47%",
     "candidateTrades": 24,
     "candidateWinRate": "+37.50%",
     "strongCandidateTrades": 16,
     "strongCandidateWinRate": "+43.75%",
-    "filterLift": "+17.50%",
-    "aShareClosedTrades": 3,
+    "filterLift": "+14.88%",
+    "aShareClosedTrades": 4,
     "usStockClosedTrades": 17
   },
   "strategyBreakdown": [
     {
       "name": "盘中：强势观察",
-      "trades": 20,
-      "winRate": "55.0%"
+      "trades": 21,
+      "winRate": "52.4%"
     }
   ],
   "recentClosedTrades": [
+    {
+      "updatedAt": "2026-08-31T06:50:45",
+      "market": "A股",
+      "symbol": "002594",
+      "name": "比亚迪",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟到期卖出",
+      "returnPct": "-2.25%"
+    },
     {
       "updatedAt": "2026-08-26T16:24:56",
       "market": "美股",
@@ -151,15 +160,6 @@
       "entryAction": "盘中：强势观察",
       "exitStatus": "模拟止损",
       "returnPct": "-2.50%"
-    },
-    {
-      "updatedAt": "2026-08-11T14:23:06",
-      "market": "美股",
-      "symbol": "KLAC",
-      "name": "KLA Corporation",
-      "entryAction": "盘中：强势观察",
-      "exitStatus": "模拟到期卖出",
-      "returnPct": "+3.06%"
     }
   ]
 }
