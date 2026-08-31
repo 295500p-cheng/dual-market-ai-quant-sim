@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T23:19:03",
+  "updatedAt": "2026-08-31T23:39:58",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-31T23:19:03|美股|MU",
-      "updated_at": "2026-08-31T23:19:03",
+      "signal_id": "2026-08-31T23:39:58|美股|MU",
+      "updated_at": "2026-08-31T23:39:58",
       "market": "美股",
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-31T23:19:03|美股|TSLA",
-      "updated_at": "2026-08-31T23:19:03",
+      "signal_id": "2026-08-31T23:39:58|美股|TSLA",
+      "updated_at": "2026-08-31T23:39:58",
       "market": "美股",
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-31T23:19:03|美股|NVDA",
-      "updated_at": "2026-08-31T23:19:03",
+      "signal_id": "2026-08-31T23:39:58|美股|NVDA",
+      "updated_at": "2026-08-31T23:39:58",
       "market": "美股",
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-31T23:19:03|美股|AMD",
-      "updated_at": "2026-08-31T23:19:03",
+      "signal_id": "2026-08-31T23:39:58|美股|AMD",
+      "updated_at": "2026-08-31T23:39:58",
       "market": "美股",
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-08-31T23:19:03|美股|AVGO",
-      "updated_at": "2026-08-31T23:19:03",
+      "signal_id": "2026-08-31T23:39:58|美股|AVGO",
+      "updated_at": "2026-08-31T23:39:58",
       "market": "美股",
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
