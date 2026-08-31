@@ -1,58 +1,67 @@
 {
-  "updatedAt": "2026-08-31T15:02:05",
+  "updatedAt": "2026-08-31T19:28:43",
   "status": "现行自动模拟规则胜率",
-  "summary": "现行规则已平仓 21 笔，11 胜 10 负，胜率 52.4%；近7天 5 笔，胜率 60.0%。",
+  "summary": "现行规则已平仓 22 笔，11 胜 11 负，胜率 50.0%；近7天 6 笔，胜率 50.0%。",
   "note": "只统计正式行情下实际模拟买入并已平仓的交易；排除早期测试快照和未触发候选。",
   "optimization": "现行规则样本和收益为正，继续保持阈值并按市场分别监控。",
   "metrics": {
-    "totalTrades": 21,
+    "totalTrades": 22,
     "totalWins": 11,
-    "totalLosses": 10,
-    "totalWinRate": "52.4%",
-    "recentTrades": 5,
+    "totalLosses": 11,
+    "totalWinRate": "50.0%",
+    "recentTrades": 6,
     "recentWins": 3,
-    "recentLosses": 2,
-    "recentWinRate": "60.0%",
+    "recentLosses": 3,
+    "recentWinRate": "50.0%",
     "aShareTrades": 4,
     "aShareWinRate": "50.0%",
-    "usStockTrades": 17,
-    "usStockWinRate": "52.9%",
-    "avgReturn": "+0.38%",
-    "profitFactor": "1.30",
-    "realizedPnl": "+713.27",
-    "allLiveTrades": 57,
-    "allLiveWinRate": "40.4%",
+    "usStockTrades": 18,
+    "usStockWinRate": "50.0%",
+    "avgReturn": "+0.31%",
+    "profitFactor": "1.23",
+    "realizedPnl": "+584.45",
+    "allLiveTrades": 58,
+    "allLiveWinRate": "39.7%",
     "currentRuleSince": "2026-07-21T18:40"
   },
   "diagnostics": {
     "decision": "保持并分市场验证",
     "rationale": "样本达到门槛且高于盈亏平衡线，保持规则并继续分别观察A股与美股。",
     "sampleTarget": 20,
-    "samples": 21,
+    "samples": 22,
     "remainingSamples": 0,
-    "observedWinRate": "52.4%",
-    "confidence95Low": "+32.37%",
-    "confidence95High": "+71.66%",
+    "observedWinRate": "50.0%",
+    "confidence95Low": "+30.72%",
+    "confidence95High": "+69.28%",
     "breakEvenWinRate": "+41.67%",
-    "edgeOverBreakEven": "+10.71%",
+    "edgeOverBreakEven": "+8.33%",
     "avgWin": "+2.98%",
-    "avgLoss": "-2.47%",
+    "avgLoss": "-2.37%",
     "candidateTrades": 24,
     "candidateWinRate": "+37.50%",
     "strongCandidateTrades": 16,
     "strongCandidateWinRate": "+43.75%",
-    "filterLift": "+14.88%",
+    "filterLift": "+12.50%",
     "aShareClosedTrades": 4,
-    "usStockClosedTrades": 17
+    "usStockClosedTrades": 18
   },
   "strategyBreakdown": [
     {
       "name": "盘中：强势观察",
-      "trades": 21,
-      "winRate": "52.4%"
+      "trades": 22,
+      "winRate": "50.0%"
     }
   ],
   "recentClosedTrades": [
+    {
+      "updatedAt": "2026-08-31T19:28:42",
+      "market": "美股",
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "entryAction": "盘中：强势观察",
+      "exitStatus": "模拟到期卖出",
+      "returnPct": "-1.29%"
+    },
     {
       "updatedAt": "2026-08-31T06:50:45",
       "market": "A股",
@@ -151,15 +160,6 @@
       "entryAction": "盘中：强势观察",
       "exitStatus": "模拟止盈",
       "returnPct": "+3.50%"
-    },
-    {
-      "updatedAt": "2026-08-12T14:23:18",
-      "market": "美股",
-      "symbol": "MSFT",
-      "name": "Microsoft Corporation",
-      "entryAction": "盘中：强势观察",
-      "exitStatus": "模拟止损",
-      "returnPct": "-2.50%"
     }
   ]
 }
