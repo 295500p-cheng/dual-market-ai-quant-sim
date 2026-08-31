@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T06:50:45",
+  "updatedAt": "2026-08-31T14:57:46",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-17 至 2026-08-31",
@@ -2296,13 +2296,13 @@
           "symbol": "002371",
           "name": "北方华创",
           "open": "683.56",
-          "high": "699.00",
+          "high": "699.79",
           "low": "672.18",
-          "close": "697.69",
+          "close": "699.79",
           "previousClose": "697.51",
-          "changePct": "+0.03%",
-          "volume": "6246610.0",
-          "quoteTime": "2026-08-31 14:50:42",
+          "changePct": "+0.33%",
+          "volume": "6729010.0",
+          "quoteTime": "2026-08-31 15:35:15",
           "source": "sina"
         }
       ]
@@ -2927,11 +2927,11 @@
           "open": "63.15",
           "high": "65.00",
           "low": "62.50",
-          "close": "64.87",
+          "close": "64.84",
           "previousClose": "64.04",
-          "changePct": "+1.30%",
-          "volume": "102044800.0",
-          "quoteTime": "2026-08-31 14:50:43",
+          "changePct": "+1.25%",
+          "volume": "108990366.0",
+          "quoteTime": "2026-08-31 15:34:59",
           "source": "sina"
         }
       ]
@@ -3812,11 +3812,11 @@
       "callRows": [
         {
           "date": "2026-08-31",
-          "time": "06:50:44",
+          "time": "14:57:45",
           "market": "A股",
           "symbol": "000977",
           "name": "浪潮信息",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
           "recommendedPrice": "85.18",
           "buyZone": "84.50-85.69",
@@ -4033,8 +4033,8 @@
           "close": "85.18",
           "previousClose": "77.44",
           "changePct": "+9.99%",
-          "volume": "115367799.0",
-          "quoteTime": "2026-08-31 14:50:42",
+          "volume": "116668510.0",
+          "quoteTime": "2026-08-31 15:35:15",
           "source": "sina"
         }
       ]
@@ -4349,16 +4349,16 @@
       "callRows": [
         {
           "date": "2026-08-31",
-          "time": "06:50:44",
+          "time": "14:57:45",
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "124.45",
-          "buyZone": "123.45-125.20",
-          "takeProfit": "128.81-130.67",
-          "stopLoss": "121.34",
+          "recommendedPrice": "124.91",
+          "buyZone": "123.91-125.66",
+          "takeProfit": "129.28-131.16",
+          "stopLoss": "121.79",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -4547,11 +4547,11 @@
           "open": "118.19",
           "high": "125.00",
           "low": "118.00",
-          "close": "124.45",
+          "close": "124.91",
           "previousClose": "121.70",
-          "changePct": "+2.26%",
-          "volume": "47350052.0",
-          "quoteTime": "2026-08-31 14:50:42",
+          "changePct": "+2.64%",
+          "volume": "49635805.0",
+          "quoteTime": "2026-08-31 15:35:45",
           "source": "sina"
         }
       ]
@@ -5036,11 +5036,11 @@
           "open": "33.00",
           "high": "33.75",
           "low": "32.60",
-          "close": "33.69",
+          "close": "33.67",
           "previousClose": "34.65",
-          "changePct": "-2.77%",
-          "volume": "285993885.0",
-          "quoteTime": "2026-08-31 14:50:41",
+          "changePct": "-2.83%",
+          "volume": "296639927.0",
+          "quoteTime": "2026-08-31 15:34:59",
           "source": "sina"
         }
       ]
@@ -5523,13 +5523,13 @@
           "symbol": "603501",
           "name": "豪威集团",
           "open": "81.00",
-          "high": "83.11",
+          "high": "83.27",
           "low": "80.71",
-          "close": "82.98",
+          "close": "83.27",
           "previousClose": "82.00",
-          "changePct": "+1.20%",
-          "volume": "10176766.0",
-          "quoteTime": "2026-08-31 14:50:41",
+          "changePct": "+1.55%",
+          "volume": "11046595.0",
+          "quoteTime": "2026-08-31 15:34:59",
           "source": "sina"
         }
       ]
@@ -6014,11 +6014,11 @@
           "open": "97.37",
           "high": "97.68",
           "low": "89.50",
-          "close": "91.38",
+          "close": "91.50",
           "previousClose": "97.69",
-          "changePct": "-6.46%",
-          "volume": "106101306.0",
-          "quoteTime": "2026-08-31 14:50:42",
+          "changePct": "-6.34%",
+          "volume": "110258414.0",
+          "quoteTime": "2026-08-31 15:35:00",
           "source": "sina"
         }
       ]
@@ -6325,16 +6325,16 @@
       "callRows": [
         {
           "date": "2026-08-31",
-          "time": "06:50:44",
+          "time": "14:57:45",
           "market": "A股",
           "symbol": "603019",
           "name": "中科曙光",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "88.17",
-          "buyZone": "87.46-88.70",
-          "takeProfit": "91.26-92.58",
-          "stopLoss": "85.97",
+          "recommendedPrice": "88.27",
+          "buyZone": "87.56-88.80",
+          "takeProfit": "91.36-92.68",
+          "stopLoss": "86.06",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -6503,11 +6503,11 @@
           "open": "84.51",
           "high": "88.69",
           "low": "84.28",
-          "close": "88.17",
+          "close": "88.27",
           "previousClose": "85.82",
-          "changePct": "+2.74%",
-          "volume": "40446524.0",
-          "quoteTime": "2026-08-31 14:50:43",
+          "changePct": "+2.85%",
+          "volume": "42315120.0",
+          "quoteTime": "2026-08-31 15:34:59",
           "source": "sina"
         }
       ]
