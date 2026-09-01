@@ -1,239 +1,99 @@
 {
-  "updatedAt": "2026-08-31T23:39:59",
+  "updatedAt": "2026-09-01T06:09:09",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-08-25 至 2026-08-31",
+      "period": "2026-08-26 至 2026-09-01",
       "metrics": {
-        "calls": 60,
-        "reviewed": 1,
-        "pending": 12,
-        "winRate": "0.0%",
-        "candidateWinRate": "0.0%",
-        "executionTrades": 6,
-        "executionWins": 3,
+        "calls": 49,
+        "reviewed": 0,
+        "pending": 16,
+        "winRate": "暂无",
+        "candidateWinRate": "暂无",
+        "executionTrades": 5,
+        "executionWins": 2,
         "executionLosses": 3,
-        "executionWinRate": "50.0%",
-        "executionRealizedPnl": "-151.10",
-        "avgStockReturn": "-0.75%",
-        "avgOvernightReturn": "-1.16%",
-        "avgRelativeReturn": "-1.60%",
-        "bestStrategy": "盘中：候选观察 0.0%/1笔",
-        "signals": 82,
-        "buys": 10,
-        "exits": 6,
-        "holding": 4,
-        "waiting": 21
+        "executionWinRate": "40.0%",
+        "executionRealizedPnl": "-161.66",
+        "avgStockReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "bestStrategy": "暂无",
+        "signals": 66,
+        "buys": 6,
+        "exits": 5,
+        "holding": 1,
+        "waiting": 16
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 28,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.75%",
-          "avgRelativeReturn": "-1.60%"
+          "calls": 25,
+          "reviewed": 0,
+          "winRate": "暂无",
+          "avgStockReturn": "暂无",
+          "avgRelativeReturn": "暂无"
         },
         {
           "market": "美股",
-          "calls": 32,
+          "calls": 24,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
           "avgRelativeReturn": "暂无"
         }
       ],
-      "stockRows": [
-        {
-          "market": "A股",
-          "symbol": "000333",
-          "name": "美的集团",
-          "calls": 2,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.75%",
-          "avgOvernightReturn": "-1.16%",
-          "avgIntradayReturn": "-0.75%",
-          "avgRelativeReturn": "-1.60%",
-          "latestResult": "失败"
-        }
-      ],
-      "strategyRows": [
-        {
-          "strategy": "盘中：候选观察",
-          "calls": 11,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.75%",
-          "avgRelativeReturn": "-1.60%"
-        }
-      ]
+      "stockRows": [],
+      "strategyRows": []
     },
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-08-01 至 2026-08-31",
+      "period": "2026-09-01 至 2026-09-01",
       "metrics": {
-        "calls": 240,
-        "reviewed": 10,
-        "pending": 12,
-        "winRate": "20.0%",
-        "candidateWinRate": "20.0%",
-        "executionTrades": 21,
-        "executionWins": 10,
-        "executionLosses": 11,
-        "executionWinRate": "47.6%",
-        "executionRealizedPnl": "+247.20",
-        "avgStockReturn": "-1.29%",
-        "avgOvernightReturn": "-1.55%",
-        "avgRelativeReturn": "-2.24%",
-        "bestStrategy": "盘中：强势观察 28.6%/7笔",
-        "signals": 294,
-        "buys": 37,
-        "exits": 16,
-        "holding": 21,
-        "waiting": 104
+        "calls": 4,
+        "reviewed": 0,
+        "pending": 4,
+        "winRate": "暂无",
+        "candidateWinRate": "暂无",
+        "executionTrades": 0,
+        "executionWins": 0,
+        "executionLosses": 0,
+        "executionWinRate": "暂无",
+        "executionRealizedPnl": "暂无",
+        "avgStockReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "bestStrategy": "暂无",
+        "signals": 4,
+        "buys": 0,
+        "exits": 0,
+        "holding": 0,
+        "waiting": 4
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 103,
-          "reviewed": 5,
-          "winRate": "20.0%",
-          "avgStockReturn": "-0.39%",
-          "avgRelativeReturn": "-0.82%"
-        },
-        {
-          "market": "美股",
-          "calls": 137,
-          "reviewed": 5,
-          "winRate": "20.0%",
-          "avgStockReturn": "-2.20%",
-          "avgRelativeReturn": "-5.79%"
-        }
-      ],
-      "stockRows": [
-        {
-          "market": "美股",
-          "symbol": "GOOGL",
-          "name": "Alphabet Inc.",
-          "calls": 8,
-          "reviewed": 1,
-          "winRate": "100.0%",
-          "avgStockReturn": "+1.53%",
-          "avgOvernightReturn": "-1.64%",
-          "avgIntradayReturn": "+1.53%",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "命中"
-        },
-        {
-          "market": "A股",
-          "symbol": "000333",
-          "name": "美的集团",
-          "calls": 8,
-          "reviewed": 3,
-          "winRate": "33.3%",
-          "avgStockReturn": "-0.39%",
-          "avgOvernightReturn": "-0.34%",
-          "avgIntradayReturn": "-0.39%",
-          "avgRelativeReturn": "-0.90%",
-          "latestResult": "失败"
-        },
-        {
-          "market": "美股",
-          "symbol": "LRCX",
-          "name": "Lam Research Corporation",
-          "calls": 7,
-          "reviewed": 2,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.81%",
-          "avgOvernightReturn": "-0.25%",
-          "avgIntradayReturn": "-0.81%",
-          "avgRelativeReturn": "-2.20%",
-          "latestResult": "失败"
-        },
-        {
-          "market": "A股",
-          "symbol": "002594",
-          "name": "比亚迪",
-          "calls": 3,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.01%",
-          "avgOvernightReturn": "-0.14%",
-          "avgIntradayReturn": "-0.01%",
-          "avgRelativeReturn": "-0.58%",
-          "latestResult": "失败"
-        },
-        {
-          "market": "A股",
-          "symbol": "600036",
-          "name": "招商银行",
-          "calls": 3,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.74%",
-          "avgOvernightReturn": "-0.89%",
-          "avgIntradayReturn": "-0.74%",
-          "avgRelativeReturn": "-0.83%",
-          "latestResult": "失败"
-        },
-        {
-          "market": "美股",
-          "symbol": "AMAT",
-          "name": "Applied Materials, Inc.",
           "calls": 4,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-9.60%",
-          "avgOvernightReturn": "-11.16%",
-          "avgIntradayReturn": "-9.60%",
-          "avgRelativeReturn": "-9.38%",
-          "latestResult": "失败"
+          "reviewed": 0,
+          "winRate": "暂无",
+          "avgStockReturn": "暂无",
+          "avgRelativeReturn": "暂无"
         },
         {
           "market": "美股",
-          "symbol": "KLAC",
-          "name": "KLA Corporation",
-          "calls": 6,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-1.32%",
-          "avgOvernightReturn": "-0.17%",
-          "avgIntradayReturn": "-1.32%",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "失败"
+          "calls": 0,
+          "reviewed": 0,
+          "winRate": "暂无",
+          "avgStockReturn": "暂无",
+          "avgRelativeReturn": "暂无"
         }
       ],
-      "strategyRows": [
-        {
-          "strategy": "盘中：强势观察",
-          "calls": 46,
-          "reviewed": 7,
-          "winRate": "28.6%",
-          "avgStockReturn": "-1.53%",
-          "avgRelativeReturn": "-2.53%"
-        },
-        {
-          "strategy": "盘中：候选观察",
-          "calls": 58,
-          "reviewed": 2,
-          "winRate": "0.0%",
-          "avgStockReturn": "-0.49%",
-          "avgRelativeReturn": "-1.90%"
-        },
-        {
-          "strategy": "盘中：边缘观察",
-          "calls": 25,
-          "reviewed": 1,
-          "winRate": "0.0%",
-          "avgStockReturn": "-1.21%",
-          "avgRelativeReturn": "-1.78%"
-        }
-      ]
+      "stockRows": [],
+      "strategyRows": []
     }
   ]
 }
