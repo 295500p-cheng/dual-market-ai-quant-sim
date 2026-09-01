@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-01T20:07:23",
+  "updatedAt": "2026-09-01T22:28:31",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
     "signals": 8,
     "triggered": 0,
     "exited": 0,
-    "waiting": 4,
-    "dataMissing": 4
+    "waiting": 0,
+    "dataMissing": 8
   },
   "rows": [
     {
@@ -91,84 +91,84 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-01T20:07:23|美股|META",
-      "updated_at": "2026-09-01T20:07:23",
+      "signal_id": "2026-09-01T22:28:31|美股|META",
+      "updated_at": "2026-09-01T22:28:31",
       "market": "美股",
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
       "action": "盘中：强势观察",
       "source_status": "开盘后可核验行情候选",
       "quote_time": "2026-09-01T20:00:01+00:00",
-      "current_price": "578.54",
+      "current_price": "",
       "buy_zone": "573.91-582.01",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "598.79-607.47",
       "stop_loss": "564.08",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "高风险强势信号只保留观察，不自动模拟买入。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-01T20:07:23|美股|AAPL",
-      "updated_at": "2026-09-01T20:07:23",
+      "signal_id": "2026-09-01T22:28:31|美股|AAPL",
+      "updated_at": "2026-09-01T22:28:31",
       "market": "美股",
       "symbol": "AAPL",
       "name": "Apple Inc.",
       "action": "盘中：强势观察",
       "source_status": "开盘后可核验行情候选",
       "quote_time": "2026-09-01T20:00:01+00:00",
-      "current_price": "325.13",
+      "current_price": "",
       "buy_zone": "322.53-327.08",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "336.51-341.39",
       "stop_loss": "317.00",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "当前不在美股自动买入时间窗；仍会继续检查已有持仓的止盈、止损和到期退出。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-01T20:07:23|美股|AVGO",
-      "updated_at": "2026-09-01T20:07:23",
+      "signal_id": "2026-09-01T22:28:31|美股|AVGO",
+      "updated_at": "2026-09-01T22:28:31",
       "market": "美股",
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
       "action": "盘中：边缘观察",
       "source_status": "开盘后可核验行情候选",
       "quote_time": "2026-09-01T20:00:01+00:00",
-      "current_price": "369.68",
+      "current_price": "",
       "buy_zone": "366.72-371.90",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "382.62-388.16",
       "stop_loss": "360.44",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-01T20:07:23|美股|CRM",
-      "updated_at": "2026-09-01T20:07:23",
+      "signal_id": "2026-09-01T22:28:31|美股|CRM",
+      "updated_at": "2026-09-01T22:28:31",
       "market": "美股",
       "symbol": "CRM",
       "name": "Salesforce, Inc.",
       "action": "盘中：边缘观察",
       "source_status": "开盘后可核验行情候选",
-      "quote_time": "2026-09-01T19:59:59+00:00",
-      "current_price": "258.16",
+      "quote_time": "2026-09-01T20:00:02+00:00",
+      "current_price": "",
       "buy_zone": "256.09-259.71",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "267.20-271.07",
       "stop_loss": "251.71",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     }
   ]
 }
