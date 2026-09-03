@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T19:45:21",
+  "updatedAt": "2026-09-03T21:55:24",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -26,7 +26,7 @@
         "buys": 2,
         "exits": 2,
         "holding": 0,
-        "waiting": 12
+        "waiting": 7
       },
       "marketRows": [
         {
@@ -72,7 +72,7 @@
         "buys": 0,
         "exits": 0,
         "holding": 0,
-        "waiting": 10
+        "waiting": 5
       },
       "marketRows": [
         {
