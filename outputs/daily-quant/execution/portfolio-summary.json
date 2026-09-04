@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T05:40:49",
+  "updatedAt": "2026-09-04T09:57:29",
   "status": "模拟账户总览，不是真实账户",
   "note": "按默认初始模拟资金100000和单票目标资金10000计算实际模拟股数；新开仓不得超过单票资金上限，A股按100股一手、美股按整股。账户累计盈亏保留全部历史，现行策略已实现盈亏只统计新规则下的正式平仓；双市场金额暂按模拟资金单位汇总，不做真实汇率折算，也不会真实下单。",
   "assumptions": {
@@ -30,7 +30,7 @@
     "todayBuys": 0,
     "todayExits": 0,
     "signals": 10,
-    "waiting": 5,
+    "waiting": 0,
     "currentRuleRealizedPnl": "584.45",
     "currentRuleClosedTrades": 22,
     "currentRuleWinRate": "50.0%",

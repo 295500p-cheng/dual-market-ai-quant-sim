@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T05:40:49",
+  "updatedAt": "2026-09-04T09:57:29",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-21 至 2026-09-04",
@@ -429,7 +429,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "75",
                 "result": "待复盘"
               }
             ]
@@ -939,7 +939,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "75",
                 "result": "待复盘"
               }
             ]
@@ -1399,9 +1399,9 @@
       "key": "high_score",
       "label": "高隔夜评分",
       "metrics": {
-        "calls": 8,
+        "calls": 7,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1722,21 +1722,13 @@
         {
           "date": "2026-09-04",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1752,9 +1744,9 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 4,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -2286,12 +2278,12 @@
           "name": "沪电股份",
           "open": "118.00",
           "high": "119.20",
-          "low": "112.50",
-          "close": "112.55",
+          "low": "110.59",
+          "close": "111.50",
           "previousClose": "116.42",
-          "changePct": "-3.32%",
-          "volume": "35185529.0",
-          "quoteTime": "2026-09-04 13:40:45",
+          "changePct": "-4.23%",
+          "volume": "49341674.0",
+          "quoteTime": "2026-09-04 15:35:45",
           "source": "sina"
         }
       ]
@@ -2775,12 +2767,12 @@
           "name": "紫金矿业",
           "open": "33.85",
           "high": "34.05",
-          "low": "33.26",
-          "close": "33.41",
+          "low": "33.07",
+          "close": "33.35",
           "previousClose": "33.31",
-          "changePct": "+0.30%",
-          "volume": "130172833.0",
-          "quoteTime": "2026-09-04 13:40:46",
+          "changePct": "+0.12%",
+          "volume": "176934067.0",
+          "quoteTime": "2026-09-04 15:34:59",
           "source": "sina"
         }
       ]
@@ -3107,7 +3099,7 @@
                 "market": "A股",
                 "symbol": "601138",
                 "name": "工业富联",
-                "overnightScore": "100",
+                "overnightScore": "75",
                 "result": "待复盘"
               }
             ]
@@ -3127,16 +3119,16 @@
       "callRows": [
         {
           "date": "2026-09-04",
-          "time": "05:40:48",
+          "time": "09:57:29",
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "action": "盘中：强势观察",
-          "overnightScore": "100",
-          "recommendedPrice": "64.80",
-          "buyZone": "64.28-65.19",
-          "takeProfit": "67.07-68.04",
-          "stopLoss": "63.18",
+          "action": "收盘：边缘观察",
+          "overnightScore": "75",
+          "recommendedPrice": "63.69",
+          "buyZone": "63.18-64.07",
+          "takeProfit": "65.92-66.87",
+          "stopLoss": "62.10",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -3405,11 +3397,11 @@
           "open": "63.84",
           "high": "65.30",
           "low": "63.30",
-          "close": "64.80",
+          "close": "63.69",
           "previousClose": "63.20",
-          "changePct": "+2.53%",
-          "volume": "96195855.0",
-          "quoteTime": "2026-09-04 13:40:45",
+          "changePct": "+0.78%",
+          "volume": "129549838.0",
+          "quoteTime": "2026-09-04 15:34:59",
           "source": "sina"
         }
       ]
@@ -4452,11 +4444,11 @@
           "open": "79.89",
           "high": "82.25",
           "low": "79.85",
-          "close": "81.13",
+          "close": "80.25",
           "previousClose": "79.30",
-          "changePct": "+2.31%",
-          "volume": "13519250.0",
-          "quoteTime": "2026-09-04 13:40:47",
+          "changePct": "+1.20%",
+          "volume": "18533253.0",
+          "quoteTime": "2026-09-04 15:34:59",
           "source": "sina"
         }
       ]
@@ -4941,11 +4933,11 @@
           "open": "87.58",
           "high": "89.86",
           "low": "87.18",
-          "close": "88.67",
+          "close": "88.43",
           "previousClose": "87.08",
-          "changePct": "+1.83%",
-          "volume": "39288294.0",
-          "quoteTime": "2026-09-04 13:40:45",
+          "changePct": "+1.55%",
+          "volume": "53615716.0",
+          "quoteTime": "2026-09-04 15:35:30",
           "source": "sina"
         }
       ]
@@ -5458,11 +5450,11 @@
           "open": "87.25",
           "high": "87.47",
           "low": "77.72",
-          "close": "77.78",
+          "close": "77.72",
           "previousClose": "86.35",
-          "changePct": "-9.92%",
-          "volume": "153440736.0",
-          "quoteTime": "2026-09-04 13:40:45",
+          "changePct": "-9.99%",
+          "volume": "170889255.0",
+          "quoteTime": "2026-09-04 15:35:15",
           "source": "sina"
         }
       ]
@@ -5946,12 +5938,12 @@
           "name": "中科曙光",
           "open": "85.16",
           "high": "85.35",
-          "low": "83.35",
-          "close": "83.36",
+          "low": "82.14",
+          "close": "82.69",
           "previousClose": "84.35",
-          "changePct": "-1.17%",
-          "volume": "19851303.0",
-          "quoteTime": "2026-09-04 13:40:46",
+          "changePct": "-1.97%",
+          "volume": "33647741.0",
+          "quoteTime": "2026-09-04 15:34:59",
           "source": "sina"
         }
       ]
