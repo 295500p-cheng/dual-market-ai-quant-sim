@@ -40,6 +40,7 @@
     "close:us_stock:2026-09-02",
     "close:a_share:2026-09-03",
     "close:us_stock:2026-09-03",
-    "close:a_share:2026-09-04"
+    "close:a_share:2026-09-04",
+    "close:us_stock:2026-09-04"
   ]
 }
