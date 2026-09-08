@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-08T10:06:21",
-  "status": "A股收盘快照候选",
-  "note": "已用新浪财经A股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-09-08T17:12:53",
+  "status": "开盘后可核验行情候选",
+  "note": "已用美股开盘后行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -63,6 +63,152 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "AMAT",
+        "name": "Applied Materials, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-08T17:12:46+00:00",
+        "rank": 1,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 470.68",
+        "buyZone": "466.91-473.50",
+        "takeProfit": "487.15-494.21",
+        "stopLoss": "458.91",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 88,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 1.8657%。",
+        "risk": "中风险；订单周期;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 1.8657,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 88
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "LRCX",
+        "name": "Lam Research Corporation",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-08T17:12:25+00:00",
+        "rank": 2,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 320.73",
+        "buyZone": "318.16-322.65",
+        "takeProfit": "331.95-336.77",
+        "stopLoss": "312.71",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 88,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 2.6049%。",
+        "risk": "中风险；订单周期;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 2.6049,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 88
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-08T17:12:45+00:00",
+        "rank": 3,
+        "action": "盘中：高风险强势观察",
+        "currentPrice": "当前 509.97",
+        "buyZone": "505.89-513.03",
+        "takeProfit": "527.82-543.12",
+        "stopLoss": "492.12",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 87,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI GPU/半导体；相对基准 5.1379%。",
+        "risk": "高风险；高波动;产品预期;相对弱势风险",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 5.1379,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 13,
+          "total_score": 87
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "ASML",
+        "name": "ASML Holding N.V.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-08T17:12:33+00:00",
+        "rank": 4,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 1766.79",
+        "buyZone": "1752.66-1777.39",
+        "takeProfit": "1828.63-1855.13",
+        "stopLoss": "1722.62",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 83,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 1.3806%。",
+        "risk": "中风险；出口限制;订单周期;欧洲ADR波动",
+        "scoreBreakdown": {
+          "trend_score": 16,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 1.3806,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 83
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AVGO",
+        "name": "Broadcom Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-08T17:12:46+00:00",
+        "rank": 5,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 366.82",
+        "buyZone": "363.89-369.03",
+        "takeProfit": "379.66-385.17",
+        "stopLoss": "357.65",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 82,
+        "overnightScore": 85,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI芯片/网络；相对基准 0.8487%。",
+        "risk": "中高风险；大客户预期;财报跳空;估值波动",
+        "scoreBreakdown": {
+          "trend_score": 16,
+          "volume_price_score": 14,
+          "relative_strength_score": 14,
+          "relative_return": 0.8487,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 17,
+          "total_score": 82
+        }
+      }
+    ]
   }
 }
