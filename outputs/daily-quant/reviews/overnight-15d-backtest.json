@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T05:45:26",
+  "updatedAt": "2026-09-08T10:06:22",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-08-25 至 2026-09-08",
@@ -2231,11 +2231,11 @@
           "open": "81.00",
           "high": "81.70",
           "low": "79.39",
-          "close": "81.17",
+          "close": "80.47",
           "previousClose": "81.08",
-          "changePct": "+0.11%",
-          "volume": "12704156.0",
-          "quoteTime": "2026-09-08 13:45:24",
+          "changePct": "-0.75%",
+          "volume": "16615176.0",
+          "quoteTime": "2026-09-08 15:34:59",
           "source": "sina"
         }
       ]
@@ -2719,12 +2719,12 @@
           "name": "阳光电源",
           "open": "88.50",
           "high": "88.78",
-          "low": "87.67",
-          "close": "88.35",
+          "low": "87.50",
+          "close": "87.85",
           "previousClose": "88.75",
-          "changePct": "-0.45%",
-          "volume": "27987906.0",
-          "quoteTime": "2026-09-08 13:45:21",
+          "changePct": "-1.01%",
+          "volume": "40576987.0",
+          "quoteTime": "2026-09-08 15:35:00",
           "source": "sina"
         }
       ]
@@ -3348,12 +3348,12 @@
           "name": "工业富联",
           "open": "66.30",
           "high": "66.70",
-          "low": "65.11",
-          "close": "65.18",
+          "low": "64.55",
+          "close": "64.75",
           "previousClose": "66.57",
-          "changePct": "-2.09%",
-          "volume": "80195493.0",
-          "quoteTime": "2026-09-08 13:45:23",
+          "changePct": "-2.73%",
+          "volume": "107603573.0",
+          "quoteTime": "2026-09-08 15:34:59",
           "source": "sina"
         }
       ]
@@ -3865,12 +3865,12 @@
           "name": "浪潮信息",
           "open": "74.88",
           "high": "74.89",
-          "low": "72.44",
-          "close": "72.59",
+          "low": "72.16",
+          "close": "72.32",
           "previousClose": "74.74",
-          "changePct": "-2.88%",
-          "volume": "82844104.0",
-          "quoteTime": "2026-09-08 13:45:24",
+          "changePct": "-3.24%",
+          "volume": "105931980.0",
+          "quoteTime": "2026-09-08 15:35:15",
           "source": "sina"
         }
       ]
@@ -4898,11 +4898,11 @@
           "open": "126.00",
           "high": "129.25",
           "low": "124.00",
-          "close": "125.23",
+          "close": "124.90",
           "previousClose": "122.65",
-          "changePct": "+2.10%",
-          "volume": "57470695.0",
-          "quoteTime": "2026-09-08 13:45:24",
+          "changePct": "+1.83%",
+          "volume": "69084883.0",
+          "quoteTime": "2026-09-08 15:35:45",
           "source": "sina"
         }
       ]
@@ -5386,12 +5386,12 @@
           "name": "中科曙光",
           "open": "83.50",
           "high": "83.78",
-          "low": "82.70",
-          "close": "82.85",
+          "low": "82.28",
+          "close": "82.54",
           "previousClose": "83.38",
-          "changePct": "-0.64%",
-          "volume": "13398529.0",
-          "quoteTime": "2026-09-08 13:45:21",
+          "changePct": "-1.01%",
+          "volume": "18837940.0",
+          "quoteTime": "2026-09-08 15:34:59",
           "source": "sina"
         }
       ]
@@ -5698,16 +5698,16 @@
       "callRows": [
         {
           "date": "2026-09-08",
-          "time": "05:45:25",
+          "time": "10:06:21",
           "market": "A股",
           "symbol": "601899",
           "name": "紫金矿业",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "33.96",
-          "buyZone": "33.69-34.16",
-          "takeProfit": "35.15-35.66",
-          "stopLoss": "33.11",
+          "recommendedPrice": "33.86",
+          "buyZone": "33.59-34.06",
+          "takeProfit": "35.05-35.55",
+          "stopLoss": "33.01",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5876,11 +5876,11 @@
           "open": "33.44",
           "high": "34.14",
           "low": "33.24",
-          "close": "33.96",
+          "close": "33.86",
           "previousClose": "32.87",
-          "changePct": "+3.32%",
-          "volume": "204130931.0",
-          "quoteTime": "2026-09-08 13:45:24",
+          "changePct": "+3.01%",
+          "volume": "250241523.0",
+          "quoteTime": "2026-09-08 15:34:59",
           "source": "sina"
         }
       ]

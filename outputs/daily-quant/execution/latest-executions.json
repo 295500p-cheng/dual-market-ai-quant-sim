@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-08T05:45:25",
+  "updatedAt": "2026-09-08T10:06:22",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
     "signals": 7,
     "triggered": 0,
     "exited": 0,
-    "waiting": 2,
-    "dataMissing": 5
+    "waiting": 0,
+    "dataMissing": 7
   },
   "rows": [
     {
@@ -111,44 +111,44 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-08T05:45:25|A股|601899",
-      "updated_at": "2026-09-08T05:45:25",
+      "signal_id": "2026-09-08T10:06:22|A股|601899",
+      "updated_at": "2026-09-08T10:06:22",
       "market": "A股",
       "symbol": "601899",
       "name": "紫金矿业",
-      "action": "盘中：强势观察",
-      "source_status": "盘中可核验行情候选",
-      "quote_time": "2026-09-08 13:45:24",
-      "current_price": "33.96",
-      "buy_zone": "33.69-34.16",
-      "entry_status": "等待触发",
+      "action": "收盘：强势观察",
+      "source_status": "A股收盘快照候选",
+      "quote_time": "2026-09-08 15:34:59",
+      "current_price": "",
+      "buy_zone": "33.59-34.06",
+      "entry_status": "数据不足",
       "entry_price": "",
-      "take_profit": "35.15-35.66",
-      "stop_loss": "33.11",
+      "take_profit": "35.05-35.55",
+      "stop_loss": "33.01",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "高风险强势信号只保留观察，不自动模拟买入。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-08T05:45:25|A股|002463",
-      "updated_at": "2026-09-08T05:45:25",
+      "signal_id": "2026-09-08T10:06:22|A股|002463",
+      "updated_at": "2026-09-08T10:06:22",
       "market": "A股",
       "symbol": "002463",
       "name": "沪电股份",
-      "action": "盘中：边缘观察",
-      "source_status": "盘中可核验行情候选",
-      "quote_time": "2026-09-08 13:45:24",
-      "current_price": "125.23",
-      "buy_zone": "124.23-125.98",
-      "entry_status": "等待触发",
+      "action": "收盘：边缘观察",
+      "source_status": "A股收盘快照候选",
+      "quote_time": "2026-09-08 15:35:45",
+      "current_price": "",
+      "buy_zone": "123.90-125.65",
+      "entry_status": "数据不足",
       "entry_price": "",
-      "take_profit": "129.61-131.49",
-      "stop_loss": "122.10",
+      "take_profit": "129.27-131.15",
+      "stop_loss": "121.78",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "A股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     }
   ]
 }
