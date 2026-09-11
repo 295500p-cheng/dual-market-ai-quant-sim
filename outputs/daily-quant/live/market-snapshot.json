@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-11T21:59:29",
+  "updatedAt": "2026-09-11T22:20:46",
   "marketUpdatedAt": {
-    "us_stock": "2026-09-11T21:59:29",
+    "us_stock": "2026-09-11T22:20:46",
     "a_share": "2026-09-11T12:10:01"
   },
   "fetchStatus": "success",
@@ -1212,7 +1212,7 @@
       "risk_flags": "财报跳空;订单预期",
       "current_price": 150.28,
       "previous_close": 152.94,
-      "open_price": 165.0,
+      "open_price": 164.42999267578125,
       "high_price": 165.99,
       "low_price": 149.84,
       "change_pct": -1.7392,
@@ -1401,11 +1401,11 @@
       "overnight_fit": "",
       "risk_flags": "",
       "current_price": 15.84,
-      "previous_close": 17.84,
+      "previous_close": 16.46,
       "open_price": 17.510000228881836,
       "high_price": 17.71,
       "low_price": 15.59,
-      "change_pct": -11.2108,
+      "change_pct": -3.7667,
       "volume": 0.0,
       "turnover": 0.0,
       "timestamp": "2026-09-11T20:15:01+00:00",
