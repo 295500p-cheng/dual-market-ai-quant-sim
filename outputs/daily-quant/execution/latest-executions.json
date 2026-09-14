@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T22:00:30",
+  "updatedAt": "2026-09-14T23:00:35",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-14T22:00:30|美股|GOOGL",
-      "updated_at": "2026-09-14T22:00:30",
+      "signal_id": "2026-09-14T23:00:35|美股|GOOGL",
+      "updated_at": "2026-09-14T23:00:35",
       "market": "美股",
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-14T22:00:30|美股|META",
-      "updated_at": "2026-09-14T22:00:30",
+      "signal_id": "2026-09-14T23:00:35|美股|META",
+      "updated_at": "2026-09-14T23:00:35",
       "market": "美股",
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-14T22:00:30|美股|MSFT",
-      "updated_at": "2026-09-14T22:00:30",
+      "signal_id": "2026-09-14T23:00:35|美股|MSFT",
+      "updated_at": "2026-09-14T23:00:35",
       "market": "美股",
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-14T22:00:30|美股|CRM",
-      "updated_at": "2026-09-14T22:00:30",
+      "signal_id": "2026-09-14T23:00:35|美股|CRM",
+      "updated_at": "2026-09-14T23:00:35",
       "market": "美股",
       "symbol": "CRM",
       "name": "Salesforce, Inc.",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-14T22:00:30|美股|PLTR",
-      "updated_at": "2026-09-14T22:00:30",
+      "signal_id": "2026-09-14T23:00:35|美股|PLTR",
+      "updated_at": "2026-09-14T23:00:35",
       "market": "美股",
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
