@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-15T20:28:32",
+  "updatedAt": "2026-09-15T22:46:05",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
     "signals": 6,
     "triggered": 0,
     "exited": 0,
-    "waiting": 3,
-    "dataMissing": 3
+    "waiting": 0,
+    "dataMissing": 6
   },
   "rows": [
     {
@@ -71,64 +71,64 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-15T20:28:32|美股|AMD",
-      "updated_at": "2026-09-15T20:28:32",
+      "signal_id": "2026-09-15T22:46:05|美股|AMD",
+      "updated_at": "2026-09-15T22:46:05",
       "market": "美股",
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "action": "盘中：候选观察",
       "source_status": "开盘后可核验行情候选",
       "quote_time": "2026-09-15T20:00:01+00:00",
-      "current_price": "504.20",
+      "current_price": "",
       "buy_zone": "500.17-507.23",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "521.85-536.97",
       "stop_loss": "486.55",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-15T20:28:32|美股|META",
-      "updated_at": "2026-09-15T20:28:32",
+      "signal_id": "2026-09-15T22:46:05|美股|META",
+      "updated_at": "2026-09-15T22:46:05",
       "market": "美股",
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
       "action": "盘中：候选观察",
       "source_status": "开盘后可核验行情候选",
       "quote_time": "2026-09-15T20:00:01+00:00",
-      "current_price": "670.24",
+      "current_price": "",
       "buy_zone": "664.88-674.26",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "693.70-703.75",
       "stop_loss": "653.48",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-15T20:28:32|美股|ASML",
-      "updated_at": "2026-09-15T20:28:32",
+      "signal_id": "2026-09-15T22:46:05|美股|ASML",
+      "updated_at": "2026-09-15T22:46:05",
       "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
       "action": "盘中：边缘观察",
       "source_status": "开盘后可核验行情候选",
       "quote_time": "2026-09-15T20:00:01+00:00",
-      "current_price": "1591.48",
+      "current_price": "",
       "buy_zone": "1578.75-1601.03",
-      "entry_status": "等待触发",
+      "entry_status": "数据不足",
       "entry_price": "",
       "take_profit": "1647.18-1671.05",
       "stop_loss": "1551.69",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "美股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     }
   ]
 }
