@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-16T20:27:06",
+  "updatedAt": "2026-09-16T22:45:01",
   "status": "自动记录，不用手记",
   "summary": "每次推荐会自动进入台账；第二天复盘面板会显示涨跌、隔夜收益、是否命中和优化结论。",
   "metrics": {
     "tracked": 30,
-    "pending": 19,
+    "pending": 12,
     "holding": 0,
-    "reviewed": 4
+    "reviewed": 8
   },
   "rows": [
     {
@@ -23,7 +23,7 @@
       "buyZone": "100.24-101.66",
       "takeProfit": "104.59-107.62",
       "stopLoss": "97.51",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -43,7 +43,7 @@
       "buyZone": "414.38-420.23",
       "takeProfit": "432.34-438.61",
       "stopLoss": "407.28",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -63,7 +63,7 @@
       "buyZone": "508.40-515.58",
       "takeProfit": "530.44-545.81",
       "stopLoss": "494.56",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -83,7 +83,7 @@
       "buyZone": "172.95-175.39",
       "takeProfit": "180.44-185.67",
       "stopLoss": "168.24",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -103,7 +103,7 @@
       "buyZone": "142.01-144.02",
       "takeProfit": "148.17-150.32",
       "stopLoss": "139.58",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -123,9 +123,9 @@
       "buyZone": "100.65-102.07",
       "takeProfit": "105.01-108.06",
       "stopLoss": "97.91",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -163,9 +163,9 @@
       "buyZone": "517.96-525.27",
       "takeProfit": "540.41-556.08",
       "stopLoss": "503.87",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -183,9 +183,9 @@
       "buyZone": "141.96-143.96",
       "takeProfit": "148.11-150.25",
       "stopLoss": "139.52",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
+      "reviewStatus": "已跳过",
       "status": "等待次日行情",
       "nextAction": "不用手记，等待下一交易日行情覆盖。"
     },
@@ -405,9 +405,9 @@
       "stopLoss": "1551.69",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-09-15",
@@ -425,9 +425,9 @@
       "stopLoss": "653.48",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-09-15",
@@ -445,9 +445,9 @@
       "stopLoss": "486.55",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-09-15",
@@ -485,9 +485,9 @@
       "stopLoss": "169.44",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-09-15",
