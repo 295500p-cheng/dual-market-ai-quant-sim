@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T05:49:24",
+  "updatedAt": "2026-09-16T11:14:13",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-02 至 2026-09-16",
@@ -2285,11 +2285,11 @@
           "open": "60.79",
           "high": "62.98",
           "low": "60.40",
-          "close": "62.48",
+          "close": "62.33",
           "previousClose": "60.80",
-          "changePct": "+2.76%",
-          "volume": "54598490.0",
-          "quoteTime": "2026-09-16 13:49:21",
+          "changePct": "+2.52%",
+          "volume": "69668519.0",
+          "quoteTime": "2026-09-16 15:34:59",
           "source": "sina"
         }
       ]
@@ -2774,11 +2774,11 @@
           "open": "126.49",
           "high": "129.90",
           "low": "124.06",
-          "close": "127.72",
+          "close": "127.80",
           "previousClose": "125.82",
-          "changePct": "+1.51%",
-          "volume": "35720062.0",
-          "quoteTime": "2026-09-16 13:49:21",
+          "changePct": "+1.57%",
+          "volume": "43541332.0",
+          "quoteTime": "2026-09-16 15:35:45",
           "source": "sina"
         }
       ]
@@ -3261,13 +3261,13 @@
           "symbol": "601899",
           "name": "紫金矿业",
           "open": "31.77",
-          "high": "32.28",
+          "high": "32.47",
           "low": "31.16",
-          "close": "32.20",
+          "close": "32.17",
           "previousClose": "31.68",
-          "changePct": "+1.64%",
-          "volume": "137236788.0",
-          "quoteTime": "2026-09-16 13:49:22",
+          "changePct": "+1.55%",
+          "volume": "189636832.0",
+          "quoteTime": "2026-09-16 15:34:59",
           "source": "sina"
         }
       ]
@@ -4239,11 +4239,11 @@
           "open": "84.11",
           "high": "84.55",
           "low": "83.45",
-          "close": "84.20",
+          "close": "83.96",
           "previousClose": "84.30",
-          "changePct": "-0.12%",
-          "volume": "13110374.0",
-          "quoteTime": "2026-09-16 13:49:21",
+          "changePct": "-0.40%",
+          "volume": "17642347.0",
+          "quoteTime": "2026-09-16 15:36:00",
           "source": "sina"
         }
       ]
@@ -4731,8 +4731,8 @@
           "close": "78.40",
           "previousClose": "77.52",
           "changePct": "+1.14%",
-          "volume": "7382426.0",
-          "quoteTime": "2026-09-16 13:49:21",
+          "volume": "9384137.0",
+          "quoteTime": "2026-09-16 15:34:59",
           "source": "sina"
         }
       ]
@@ -5039,16 +5039,16 @@
       "callRows": [
         {
           "date": "2026-09-16",
-          "time": "05:49:24",
+          "time": "11:14:13",
           "market": "A股",
           "symbol": "000977",
           "name": "浪潮信息",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "71.18",
-          "buyZone": "70.61-71.61",
-          "takeProfit": "73.67-74.74",
-          "stopLoss": "69.40",
+          "recommendedPrice": "71.15",
+          "buyZone": "70.58-71.58",
+          "takeProfit": "73.64-74.71",
+          "stopLoss": "69.37",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5217,11 +5217,11 @@
           "open": "68.76",
           "high": "72.00",
           "low": "68.65",
-          "close": "71.18",
+          "close": "71.15",
           "previousClose": "68.76",
-          "changePct": "+3.52%",
-          "volume": "57142107.0",
-          "quoteTime": "2026-09-16 13:49:21",
+          "changePct": "+3.48%",
+          "volume": "70013714.0",
+          "quoteTime": "2026-09-16 15:35:15",
           "source": "sina"
         }
       ]
@@ -5528,16 +5528,16 @@
       "callRows": [
         {
           "date": "2026-09-16",
-          "time": "05:49:24",
+          "time": "11:14:13",
           "market": "A股",
           "symbol": "002371",
           "name": "北方华创",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "661.95",
-          "buyZone": "656.65-665.92",
-          "takeProfit": "685.12-695.05",
-          "stopLoss": "645.40",
+          "recommendedPrice": "662.89",
+          "buyZone": "657.59-666.87",
+          "takeProfit": "686.09-696.03",
+          "stopLoss": "646.32",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5706,11 +5706,11 @@
           "open": "638.20",
           "high": "673.33",
           "low": "635.01",
-          "close": "661.95",
+          "close": "662.89",
           "previousClose": "638.16",
-          "changePct": "+3.73%",
-          "volume": "7997135.0",
-          "quoteTime": "2026-09-16 13:49:21",
+          "changePct": "+3.88%",
+          "volume": "9836425.0",
+          "quoteTime": "2026-09-16 15:35:15",
           "source": "sina"
         }
       ]
