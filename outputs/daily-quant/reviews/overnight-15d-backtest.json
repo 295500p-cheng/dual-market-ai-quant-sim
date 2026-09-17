@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T11:22:19",
+  "updatedAt": "2026-09-17T12:33:41",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-03 至 2026-09-17",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 13,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -370,20 +370,20 @@
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "002371",
                 "name": "北方华创",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -503,12 +503,12 @@
           "name": "浪潮信息",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|002371",
@@ -517,12 +517,12 @@
           "name": "北方华创",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -532,7 +532,7 @@
       "metrics": {
         "calls": 11,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -859,20 +859,20 @@
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "002371",
                 "name": "北方华创",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -978,12 +978,12 @@
           "name": "浪潮信息",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|002371",
@@ -992,12 +992,12 @@
           "name": "北方华创",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -4745,7 +4745,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -5002,13 +5002,13 @@
                 "symbol": "000977",
                 "name": "浪潮信息",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -5049,13 +5049,13 @@
           "buyZone": "70.58-71.58",
           "takeProfit": "73.64-74.71",
           "stopLoss": "69.37",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "70.46",
+          "nextClose": "69.81",
+          "overnightReturn": "-0.97%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-1.43%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
@@ -5234,7 +5234,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -5491,13 +5491,13 @@
                 "symbol": "002371",
                 "name": "北方华创",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -5538,13 +5538,13 @@
           "buyZone": "657.59-666.87",
           "takeProfit": "686.09-696.03",
           "stopLoss": "646.32",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "662.00",
+          "nextClose": "665.50",
+          "overnightReturn": "-0.13%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+0.84%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
