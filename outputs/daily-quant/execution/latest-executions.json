@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-17T05:55:32",
+  "updatedAt": "2026-09-17T11:22:18",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
-    "signals": 6,
+    "signals": 7,
     "triggered": 0,
     "exited": 0,
-    "waiting": 1,
-    "dataMissing": 5
+    "waiting": 0,
+    "dataMissing": 7
   },
   "rows": [
     {
@@ -111,24 +111,44 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-17T05:55:32|A股|002371",
-      "updated_at": "2026-09-17T05:55:32",
+      "signal_id": "2026-09-17T11:22:18|A股|002594",
+      "updated_at": "2026-09-17T11:22:18",
       "market": "A股",
-      "symbol": "002371",
-      "name": "北方华创",
-      "action": "盘中：候选观察",
-      "source_status": "盘中可核验行情候选",
-      "quote_time": "2026-09-17 13:55:30",
-      "current_price": "671.77",
-      "buy_zone": "666.40-675.80",
-      "entry_status": "等待触发",
+      "symbol": "002594",
+      "name": "比亚迪",
+      "action": "收盘：强势观察",
+      "source_status": "A股收盘快照候选",
+      "quote_time": "2026-09-17 15:36:00",
+      "current_price": "",
+      "buy_zone": "84.29-85.48",
+      "entry_status": "数据不足",
       "entry_price": "",
-      "take_profit": "695.28-705.36",
-      "stop_loss": "654.98",
+      "take_profit": "87.94-89.22",
+      "stop_loss": "82.85",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "A股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
+    },
+    {
+      "signal_id": "2026-09-17T11:22:18|A股|600519",
+      "updated_at": "2026-09-17T11:22:18",
+      "market": "A股",
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "action": "收盘：边缘观察",
+      "source_status": "A股收盘快照候选",
+      "quote_time": "2026-09-17 15:34:58",
+      "current_price": "",
+      "buy_zone": "1256.84-1274.58",
+      "entry_status": "数据不足",
+      "entry_price": "",
+      "take_profit": "1311.32-1330.33",
+      "stop_loss": "1235.31",
+      "exit_status": "未执行",
+      "exit_price": "",
+      "result_return": "",
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     }
   ]
 }
