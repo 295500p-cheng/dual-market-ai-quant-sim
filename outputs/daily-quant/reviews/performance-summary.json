@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-09-17T23:07:44",
+  "updatedAt": "2026-09-18T05:42:38",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-09-11 至 2026-09-17",
+      "period": "2026-09-12 至 2026-09-18",
       "metrics": {
-        "calls": 52,
+        "calls": 44,
         "reviewed": 0,
-        "pending": 9,
+        "pending": 14,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 0,
@@ -22,16 +22,16 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 52,
+        "signals": 44,
         "buys": 0,
         "exits": 0,
         "holding": 0,
-        "waiting": 9
+        "waiting": 11
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 24,
+          "calls": 23,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 28,
+          "calls": 21,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -52,11 +52,11 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-09-01 至 2026-09-17",
+      "period": "2026-09-01 至 2026-09-18",
       "metrics": {
-        "calls": 125,
+        "calls": 130,
         "reviewed": 0,
-        "pending": 9,
+        "pending": 14,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 0,
@@ -68,16 +68,16 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 125,
+        "signals": 130,
         "buys": 0,
         "exits": 0,
         "holding": 0,
-        "waiting": 19
+        "waiting": 24
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 61,
+          "calls": 66,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
