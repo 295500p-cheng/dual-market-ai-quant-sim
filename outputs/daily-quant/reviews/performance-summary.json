@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T06:01:48",
+  "updatedAt": "2026-09-21T12:40:20",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
@@ -8,9 +8,9 @@
       "label": "近7天",
       "period": "2026-09-15 至 2026-09-21",
       "metrics": {
-        "calls": 43,
+        "calls": 45,
         "reviewed": 0,
-        "pending": 14,
+        "pending": 16,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 0,
@@ -22,16 +22,16 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 43,
+        "signals": 45,
         "buys": 0,
         "exits": 0,
         "holding": 0,
-        "waiting": 10
+        "waiting": 7
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 22,
+          "calls": 24,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -54,9 +54,9 @@
       "label": "本月",
       "period": "2026-09-01 至 2026-09-21",
       "metrics": {
-        "calls": 139,
+        "calls": 141,
         "reviewed": 0,
-        "pending": 14,
+        "pending": 16,
         "winRate": "暂无",
         "candidateWinRate": "暂无",
         "executionTrades": 0,
@@ -68,16 +68,16 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 139,
+        "signals": 141,
         "buys": 0,
         "exits": 0,
         "holding": 0,
-        "waiting": 23
+        "waiting": 20
       },
       "marketRows": [
         {
           "market": "A股",
-          "calls": 70,
+          "calls": 72,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",

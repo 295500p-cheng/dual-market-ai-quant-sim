@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T06:01:48",
+  "updatedAt": "2026-09-21T12:40:20",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-07 至 2026-09-21",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 14,
+        "calls": 15,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 4,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -401,13 +401,21 @@
         {
           "date": "2026-09-21",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -423,14 +431,14 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 3,
+          "calls": 4,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "A股|002463",
@@ -536,9 +544,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 11,
+        "calls": 12,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -889,13 +897,21 @@
         {
           "date": "2026-09-21",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -911,14 +927,14 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 3,
+          "calls": 4,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "A股|002463",
@@ -1340,9 +1356,9 @@
       "key": "high_score",
       "label": "高隔夜评分",
       "metrics": {
-        "calls": 6,
+        "calls": 7,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1657,13 +1673,21 @@
         {
           "date": "2026-09-21",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1679,14 +1703,14 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 3,
+          "calls": 4,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "美股|AVGO",
@@ -1712,9 +1736,9 @@
       "symbol": "601138",
       "name": "工业富联",
       "metrics": {
-        "calls": 3,
+        "calls": 4,
         "reviewed": 0,
-        "pending": 0,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -2005,13 +2029,21 @@
         {
           "date": "2026-09-21",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -2022,6 +2054,26 @@
         }
       ],
       "callRows": [
+        {
+          "date": "2026-09-21",
+          "time": "12:40:19",
+          "market": "A股",
+          "symbol": "601138",
+          "name": "工业富联",
+          "action": "收盘：强势观察",
+          "overnightScore": "85",
+          "recommendedPrice": "63.60",
+          "buyZone": "63.09-63.98",
+          "takeProfit": "65.83-66.78",
+          "stopLoss": "62.01",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        },
         {
           "date": "2026-09-11",
           "time": "10:01:40",
@@ -2242,11 +2294,11 @@
           "open": "63.99",
           "high": "64.70",
           "low": "62.52",
-          "close": "62.84",
+          "close": "63.60",
           "previousClose": "62.71",
-          "changePct": "+0.21%",
-          "volume": "76585123.0",
-          "quoteTime": "2026-09-21 14:01:45",
+          "changePct": "+1.42%",
+          "volume": "95258202.0",
+          "quoteTime": "2026-09-21 15:34:59",
           "source": "sina"
         }
       ]
@@ -2731,11 +2783,11 @@
           "open": "125.72",
           "high": "127.60",
           "low": "123.70",
-          "close": "125.80",
+          "close": "126.00",
           "previousClose": "123.50",
-          "changePct": "+1.86%",
-          "volume": "33716046.0",
-          "quoteTime": "2026-09-21 14:01:45",
+          "changePct": "+2.02%",
+          "volume": "44334597.0",
+          "quoteTime": "2026-09-21 16:29:45",
           "source": "sina"
         }
       ]
@@ -3220,11 +3272,11 @@
           "open": "31.48",
           "high": "31.70",
           "low": "31.07",
-          "close": "31.19",
+          "close": "31.30",
           "previousClose": "31.41",
-          "changePct": "-0.70%",
-          "volume": "87445624.0",
-          "quoteTime": "2026-09-21 14:01:43",
+          "changePct": "-0.35%",
+          "volume": "113246626.0",
+          "quoteTime": "2026-09-21 15:34:59",
           "source": "sina"
         }
       ]
@@ -4222,13 +4274,13 @@
           "symbol": "002594",
           "name": "比亚迪",
           "open": "84.27",
-          "high": "85.21",
+          "high": "85.29",
           "low": "84.11",
-          "close": "85.14",
+          "close": "85.22",
           "previousClose": "84.30",
-          "changePct": "+1.00%",
-          "volume": "19791119.0",
-          "quoteTime": "2026-09-21 14:01:45",
+          "changePct": "+1.09%",
+          "volume": "24832164.0",
+          "quoteTime": "2026-09-21 16:29:00",
           "source": "sina"
         }
       ]
@@ -4740,12 +4792,12 @@
           "name": "豪威集团",
           "open": "81.36",
           "high": "82.25",
-          "low": "80.50",
-          "close": "80.53",
+          "low": "80.38",
+          "close": "80.78",
           "previousClose": "81.27",
-          "changePct": "-0.91%",
-          "volume": "8654694.0",
-          "quoteTime": "2026-09-21 14:01:43",
+          "changePct": "-0.60%",
+          "volume": "10744999.0",
+          "quoteTime": "2026-09-21 15:34:59",
           "source": "sina"
         }
       ]
@@ -5229,12 +5281,12 @@
           "name": "浪潮信息",
           "open": "72.01",
           "high": "72.49",
-          "low": "71.27",
-          "close": "71.33",
+          "low": "71.25",
+          "close": "71.85",
           "previousClose": "71.88",
-          "changePct": "-0.77%",
-          "volume": "36859684.0",
-          "quoteTime": "2026-09-21 14:01:45",
+          "changePct": "-0.04%",
+          "volume": "46514141.0",
+          "quoteTime": "2026-09-21 16:29:15",
           "source": "sina"
         }
       ]
@@ -5747,11 +5799,11 @@
           "open": "688.00",
           "high": "691.00",
           "low": "670.00",
-          "close": "676.83",
+          "close": "676.61",
           "previousClose": "686.51",
-          "changePct": "-1.41%",
-          "volume": "4886863.0",
-          "quoteTime": "2026-09-21 14:01:45",
+          "changePct": "-1.44%",
+          "volume": "5922398.0",
+          "quoteTime": "2026-09-21 16:29:15",
           "source": "sina"
         }
       ]
