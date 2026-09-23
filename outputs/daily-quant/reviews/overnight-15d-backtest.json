@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T05:42:54",
+  "updatedAt": "2026-09-23T10:17:47",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-09 至 2026-09-23",
@@ -2201,11 +2201,11 @@
           "open": "63.49",
           "high": "63.78",
           "low": "62.85",
-          "close": "62.93",
+          "close": "62.98",
           "previousClose": "63.30",
-          "changePct": "-0.58%",
-          "volume": "31070550.0",
-          "quoteTime": "2026-09-23 13:42:50",
+          "changePct": "-0.51%",
+          "volume": "42412179.0",
+          "quoteTime": "2026-09-23 15:34:59",
           "source": "sina"
         }
       ]
@@ -3220,11 +3220,11 @@
           "open": "86.00",
           "high": "86.55",
           "low": "85.66",
-          "close": "85.90",
+          "close": "85.85",
           "previousClose": "86.58",
-          "changePct": "-0.79%",
-          "volume": "13569030.0",
-          "quoteTime": "2026-09-23 13:42:51",
+          "changePct": "-0.84%",
+          "volume": "17315474.0",
+          "quoteTime": "2026-09-23 15:36:00",
           "source": "sina"
         }
       ]
@@ -3737,11 +3737,11 @@
           "open": "82.89",
           "high": "83.22",
           "low": "82.05",
-          "close": "82.65",
+          "close": "82.77",
           "previousClose": "82.88",
-          "changePct": "-0.28%",
-          "volume": "5892172.0",
-          "quoteTime": "2026-09-23 13:42:50",
+          "changePct": "-0.13%",
+          "volume": "7891466.0",
+          "quoteTime": "2026-09-23 15:34:59",
           "source": "sina"
         }
       ]
@@ -4226,11 +4226,11 @@
           "open": "71.86",
           "high": "72.19",
           "low": "70.90",
-          "close": "71.60",
+          "close": "71.27",
           "previousClose": "72.15",
-          "changePct": "-0.76%",
-          "volume": "30345159.0",
-          "quoteTime": "2026-09-23 13:42:51",
+          "changePct": "-1.22%",
+          "volume": "38142759.0",
+          "quoteTime": "2026-09-23 15:35:15",
           "source": "sina"
         }
       ]
@@ -4742,12 +4742,12 @@
           "name": "北方华创",
           "open": "675.01",
           "high": "677.00",
-          "low": "667.01",
-          "close": "668.31",
+          "low": "666.12",
+          "close": "668.15",
           "previousClose": "672.92",
-          "changePct": "-0.69%",
-          "volume": "2522293.0",
-          "quoteTime": "2026-09-23 13:42:51",
+          "changePct": "-0.71%",
+          "volume": "3663621.0",
+          "quoteTime": "2026-09-23 15:35:15",
           "source": "sina"
         }
       ]
@@ -5054,16 +5054,16 @@
       "callRows": [
         {
           "date": "2026-09-23",
-          "time": "05:42:53",
+          "time": "10:17:46",
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "128.22",
-          "buyZone": "127.19-128.99",
-          "takeProfit": "132.71-134.63",
-          "stopLoss": "125.01",
+          "recommendedPrice": "128.10",
+          "buyZone": "127.08-128.87",
+          "takeProfit": "132.58-134.50",
+          "stopLoss": "124.90",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5232,11 +5232,11 @@
           "open": "124.66",
           "high": "129.67",
           "low": "124.11",
-          "close": "128.22",
+          "close": "128.10",
           "previousClose": "125.14",
-          "changePct": "+2.46%",
-          "volume": "47030193.0",
-          "quoteTime": "2026-09-23 13:42:51",
+          "changePct": "+2.37%",
+          "volume": "61943825.0",
+          "quoteTime": "2026-09-23 15:35:45",
           "source": "sina"
         }
       ]

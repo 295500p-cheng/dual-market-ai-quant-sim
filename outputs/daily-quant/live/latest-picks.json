@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-23T05:42:53",
-  "status": "盘中可核验行情候选",
-  "note": "已用新浪财经A股盘中行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-09-23T10:17:46",
+  "status": "A股收盘快照候选",
+  "note": "已用新浪财经A股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -9,28 +9,28 @@
         "symbol": "002463",
         "name": "沪电股份",
         "benchmark": "沪深300",
-        "sourceTimestamp": "2026-09-23 13:42:51",
+        "sourceTimestamp": "2026-09-23 15:35:45",
         "rank": 1,
-        "action": "盘中：强势观察",
-        "currentPrice": "当前 128.22",
-        "buyZone": "127.19-128.99",
-        "takeProfit": "132.71-134.63",
-        "stopLoss": "125.01",
+        "action": "收盘：强势观察",
+        "currentPrice": "当前 128.10",
+        "buyZone": "127.08-128.87",
+        "takeProfit": "132.58-134.50",
+        "stopLoss": "124.90",
         "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 89,
+        "dayScore": 86,
         "overnightScore": 75,
         "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI PCB/服务器链；相对基准 3.0949%。",
+        "logic": "AI PCB/服务器链；相对基准 2.9663%。",
         "risk": "中高风险；题材轮动;业绩预期波动",
         "scoreBreakdown": {
           "trend_score": 18,
           "volume_price_score": 15,
-          "relative_strength_score": 20,
-          "relative_return": 3.0949,
+          "relative_strength_score": 17,
+          "relative_return": 2.9663,
           "sector_sync_score": 15,
           "event_risk_score": 6,
           "overnight_fit_score": 15,
-          "total_score": 89
+          "total_score": 86
         }
       }
     ],
