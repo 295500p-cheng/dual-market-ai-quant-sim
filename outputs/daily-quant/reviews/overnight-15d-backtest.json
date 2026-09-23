@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-22T23:13:44",
+  "updatedAt": "2026-09-23T05:42:54",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
-  "window": "2026-09-08 至 2026-09-22",
+  "window": "2026-09-09 至 2026-09-23",
   "filters": [
     {
       "key": "all",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 14,
+        "calls": 13,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -40,39 +40,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -416,37 +383,35 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "002463",
+                "name": "沪电股份",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "stockRows": [
-        {
-          "key": "A股|601899",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
-        {
-          "key": "美股|AVGO",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "calls": 4,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        },
         {
           "key": "A股|601138",
           "market": "A股",
@@ -460,6 +425,20 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "未触发"
+        },
+        {
+          "key": "美股|AVGO",
+          "market": "美股",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         },
         {
           "key": "A股|002594",
@@ -516,6 +495,20 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "未触发"
+        },
+        {
+          "key": "A股|002463",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         }
       ]
     },
@@ -525,7 +518,7 @@
       "metrics": {
         "calls": 10,
         "reviewed": 0,
-        "pending": 0,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -537,32 +530,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -883,23 +850,35 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
-        }
-      ],
-      "stockRows": [
+        },
         {
-          "key": "A股|601899",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "002463",
+                "name": "沪电股份",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
           "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
+          "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "stockRows": [
         {
           "key": "A股|601138",
           "market": "A股",
@@ -969,6 +948,20 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "未触发"
+        },
+        {
+          "key": "A股|002463",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         }
       ]
     },
@@ -976,7 +969,7 @@
       "key": "us_stock",
       "label": "美股隔夜候选",
       "metrics": {
-        "calls": 4,
+        "calls": 3,
         "reviewed": 0,
         "pending": 1,
         "wins": 0,
@@ -990,32 +983,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -1291,6 +1258,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "stockRows": [
@@ -1299,7 +1284,7 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 4,
+          "calls": 3,
           "reviewed": 0,
           "pending": 1,
           "winRate": "暂无",
@@ -1314,7 +1299,7 @@
       "key": "high_score",
       "label": "高隔夜评分",
       "metrics": {
-        "calls": 7,
+        "calls": 6,
         "reviewed": 0,
         "pending": 1,
         "wins": 0,
@@ -1328,32 +1313,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -1653,23 +1612,27 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
-        }
-      ],
-      "stockRows": [
+        },
         {
-          "key": "美股|AVGO",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "calls": 4,
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
+          "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        },
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "stockRows": [
         {
           "key": "A股|601138",
           "market": "A股",
@@ -1683,18 +1646,32 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "未触发"
+        },
+        {
+          "key": "美股|AVGO",
+          "market": "美股",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
         }
       ]
     }
   },
   "stocks": {
-    "A股|601899": {
-      "key": "A股|601899",
+    "A股|601138": {
+      "key": "A股|601138",
       "market": "A股",
-      "symbol": "601899",
-      "name": "紫金矿业",
+      "symbol": "601138",
+      "name": "工业富联",
       "metrics": {
-        "calls": 1,
+        "calls": 3,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -1709,39 +1686,21 @@
       },
       "dailyRows": [
         {
-          "date": "2026-09-08",
+          "date": "2026-09-09",
           "stocks": {
             "total": 1,
             "more": 0,
             "items": [
               {
                 "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
                 "result": "未触发"
               }
             ]
           },
           "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-09",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -1773,11 +1732,19 @@
         {
           "date": "2026-09-11",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "100",
+                "result": "未触发"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -1953,6 +1920,32 @@
         {
           "date": "2026-09-21",
           "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-22",
+          "stocks": {
             "total": 0,
             "more": 0,
             "items": []
@@ -1969,7 +1962,7 @@
           "equityValue": 100.0
         },
         {
-          "date": "2026-09-22",
+          "date": "2026-09-23",
           "stocks": {
             "total": 0,
             "more": 0,
@@ -1989,190 +1982,230 @@
       ],
       "callRows": [
         {
-          "date": "2026-09-08",
-          "time": "10:06:21",
+          "date": "2026-09-21",
+          "time": "12:40:19",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
+          "symbol": "601138",
+          "name": "工业富联",
           "action": "收盘：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "33.86",
-          "buyZone": "33.59-34.06",
-          "takeProfit": "35.05-35.55",
-          "stopLoss": "33.01",
-          "nextOpen": "33.87",
-          "nextClose": "34.40",
-          "overnightReturn": "+0.03%",
+          "overnightScore": "85",
+          "recommendedPrice": "63.60",
+          "buyZone": "63.09-63.98",
+          "takeProfit": "65.83-66.78",
+          "stopLoss": "62.01",
+          "nextOpen": "64.50",
+          "nextClose": "63.30",
+          "overnightReturn": "+1.42%",
           "closeReturn": "待复盘",
-          "relativeReturn": "+1.29%",
+          "relativeReturn": "-0.93%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
+        },
+        {
+          "date": "2026-09-11",
+          "time": "10:01:40",
+          "market": "A股",
+          "symbol": "601138",
+          "name": "工业富联",
+          "action": "收盘：强势观察",
+          "overnightScore": "100",
+          "recommendedPrice": "64.07",
+          "buyZone": "63.56-64.45",
+          "takeProfit": "66.31-67.27",
+          "stopLoss": "62.47",
+          "nextOpen": "62.99",
+          "nextClose": "61.57",
+          "overnightReturn": "-1.69%",
+          "closeReturn": "待复盘",
+          "relativeReturn": "-2.28%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
+        },
+        {
+          "date": "2026-09-09",
+          "time": "11:03:09",
+          "market": "A股",
+          "symbol": "601138",
+          "name": "工业富联",
+          "action": "收盘：候选观察",
+          "overnightScore": "85",
+          "recommendedPrice": "65.24",
+          "buyZone": "64.72-65.63",
+          "takeProfit": "67.52-68.50",
+          "stopLoss": "63.61",
+          "nextOpen": "64.50",
+          "nextClose": "63.91",
+          "overnightReturn": "-1.13%",
+          "closeReturn": "待复盘",
+          "relativeReturn": "-1.35%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
         {
-          "date": "2026-09-08",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "33.44",
-          "high": "34.14",
-          "low": "33.24",
-          "close": "33.86",
-          "previousClose": "32.87",
-          "changePct": "+3.01%",
-          "volume": "250241523.0",
-          "quoteTime": "2026-09-08 15:34:59",
-          "source": "sina"
-        },
-        {
           "date": "2026-09-09",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "33.87",
-          "high": "34.53",
-          "low": "33.49",
-          "close": "34.40",
-          "previousClose": "33.86",
-          "changePct": "+1.59%",
-          "volume": "199093490.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "64.90",
+          "high": "66.08",
+          "low": "64.47",
+          "close": "65.24",
+          "previousClose": "64.75",
+          "changePct": "+0.76%",
+          "volume": "76150565.0",
           "quoteTime": "2026-09-09 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-10",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "34.08",
-          "high": "34.39",
-          "low": "33.97",
-          "close": "34.11",
-          "previousClose": "34.40",
-          "changePct": "-0.84%",
-          "volume": "99820005.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "64.50",
+          "high": "64.66",
+          "low": "63.79",
+          "close": "63.91",
+          "previousClose": "65.24",
+          "changePct": "-2.04%",
+          "volume": "56759477.0",
           "quoteTime": "2026-09-10 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-11",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "32.50",
-          "high": "32.68",
-          "low": "31.45",
-          "close": "32.26",
-          "previousClose": "34.11",
-          "changePct": "-5.42%",
-          "volume": "379901716.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "62.66",
+          "high": "64.49",
+          "low": "62.50",
+          "close": "64.07",
+          "previousClose": "63.91",
+          "changePct": "+0.25%",
+          "volume": "75898326.0",
           "quoteTime": "2026-09-11 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-14",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "31.78",
-          "high": "32.49",
-          "low": "31.70",
-          "close": "32.25",
-          "previousClose": "32.26",
-          "changePct": "-0.03%",
-          "volume": "154805285.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "62.99",
+          "high": "63.01",
+          "low": "61.37",
+          "close": "61.57",
+          "previousClose": "64.07",
+          "changePct": "-3.90%",
+          "volume": "79543954.0",
           "quoteTime": "2026-09-14 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-15",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "32.06",
-          "high": "32.20",
-          "low": "31.53",
-          "close": "31.68",
-          "previousClose": "32.25",
-          "changePct": "-1.77%",
-          "volume": "130203267.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "61.25",
+          "high": "62.49",
+          "low": "60.58",
+          "close": "60.80",
+          "previousClose": "61.57",
+          "changePct": "-1.25%",
+          "volume": "61420947.0",
           "quoteTime": "2026-09-15 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-16",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "31.77",
-          "high": "32.47",
-          "low": "31.16",
-          "close": "32.17",
-          "previousClose": "31.68",
-          "changePct": "+1.55%",
-          "volume": "189636832.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "60.79",
+          "high": "62.98",
+          "low": "60.40",
+          "close": "62.33",
+          "previousClose": "60.80",
+          "changePct": "+2.52%",
+          "volume": "69668519.0",
           "quoteTime": "2026-09-16 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-17",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "31.80",
-          "high": "32.00",
-          "low": "30.51",
-          "close": "30.90",
-          "previousClose": "32.17",
-          "changePct": "-3.95%",
-          "volume": "307590534.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "61.90",
+          "high": "62.78",
+          "low": "61.10",
+          "close": "61.27",
+          "previousClose": "62.33",
+          "changePct": "-1.70%",
+          "volume": "58256515.0",
           "quoteTime": "2026-09-17 15:34:58",
           "source": "sina"
         },
         {
           "date": "2026-09-18",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "31.50",
-          "high": "31.72",
-          "low": "31.16",
-          "close": "31.41",
-          "previousClose": "30.90",
-          "changePct": "+1.65%",
-          "volume": "177097517.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "62.98",
+          "high": "63.95",
+          "low": "62.00",
+          "close": "62.71",
+          "previousClose": "61.27",
+          "changePct": "+2.35%",
+          "volume": "111207545.0",
           "quoteTime": "2026-09-18 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-21",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "31.48",
-          "high": "31.70",
-          "low": "31.07",
-          "close": "31.30",
-          "previousClose": "31.41",
-          "changePct": "-0.35%",
-          "volume": "113246626.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "63.99",
+          "high": "64.70",
+          "low": "62.52",
+          "close": "63.60",
+          "previousClose": "62.71",
+          "changePct": "+1.42%",
+          "volume": "95258202.0",
           "quoteTime": "2026-09-21 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-09-22",
           "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "31.39",
-          "high": "31.75",
-          "low": "31.18",
-          "close": "31.41",
-          "previousClose": "31.30",
-          "changePct": "+0.35%",
-          "volume": "132699925.0",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "64.50",
+          "high": "64.94",
+          "low": "63.11",
+          "close": "63.30",
+          "previousClose": "63.60",
+          "changePct": "-0.47%",
+          "volume": "75244335.0",
           "quoteTime": "2026-09-22 15:34:59",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-23",
+          "market": "A股",
+          "symbol": "601138",
+          "name": "工业富联",
+          "open": "63.49",
+          "high": "63.78",
+          "low": "62.85",
+          "close": "62.93",
+          "previousClose": "63.30",
+          "changePct": "-0.58%",
+          "volume": "31070550.0",
+          "quoteTime": "2026-09-23 13:42:50",
           "source": "sina"
         }
       ]
@@ -2183,7 +2216,7 @@
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
       "metrics": {
-        "calls": 4,
+        "calls": 3,
         "reviewed": 0,
         "pending": 1,
         "wins": 0,
@@ -2197,32 +2230,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -2498,6 +2505,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -2560,44 +2585,9 @@
           "relativeReturn": "-1.96%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-09-08",
-          "time": "22:32:51",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "action": "收盘：强势观察",
-          "overnightScore": "85",
-          "recommendedPrice": "368.56",
-          "buyZone": "365.61-370.77",
-          "takeProfit": "381.46-386.99",
-          "stopLoss": "359.35",
-          "nextOpen": "366.47",
-          "nextClose": "364.38",
-          "overnightReturn": "-0.57%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "-1.23%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-09-08",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "open": "363.73",
-          "high": "372.70",
-          "low": "362.74",
-          "close": "368.56",
-          "previousClose": "357.89",
-          "changePct": "+2.98%",
-          "volume": "29871614.0",
-          "quoteTime": "2026-09-08T20:00:01+00:00",
-          "source": "yahoo_chart"
-        },
         {
           "date": "2026-09-09",
           "market": "美股",
@@ -2750,551 +2740,6 @@
         }
       ]
     },
-    "A股|601138": {
-      "key": "A股|601138",
-      "market": "A股",
-      "symbol": "601138",
-      "name": "工业富联",
-      "metrics": {
-        "calls": 3,
-        "reviewed": 0,
-        "pending": 0,
-        "wins": 0,
-        "winRate": "暂无",
-        "avgCloseReturn": "暂无",
-        "avgOvernightReturn": "暂无",
-        "avgRelativeReturn": "暂无",
-        "equity": "100.00",
-        "maxDrawdown": "0.00%",
-        "bestStock": "暂无",
-        "weakStock": "暂无"
-      },
-      "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-09",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-10",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-11",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-12",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-13",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-14",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-15",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-16",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-17",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-18",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-20",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-21",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-09-22",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        }
-      ],
-      "callRows": [
-        {
-          "date": "2026-09-21",
-          "time": "12:40:19",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "action": "收盘：强势观察",
-          "overnightScore": "85",
-          "recommendedPrice": "63.60",
-          "buyZone": "63.09-63.98",
-          "takeProfit": "65.83-66.78",
-          "stopLoss": "62.01",
-          "nextOpen": "64.50",
-          "nextClose": "63.30",
-          "overnightReturn": "+1.42%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "-0.93%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-09-11",
-          "time": "10:01:40",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "action": "收盘：强势观察",
-          "overnightScore": "100",
-          "recommendedPrice": "64.07",
-          "buyZone": "63.56-64.45",
-          "takeProfit": "66.31-67.27",
-          "stopLoss": "62.47",
-          "nextOpen": "62.99",
-          "nextClose": "61.57",
-          "overnightReturn": "-1.69%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "-2.28%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-09-09",
-          "time": "11:03:09",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "action": "收盘：候选观察",
-          "overnightScore": "85",
-          "recommendedPrice": "65.24",
-          "buyZone": "64.72-65.63",
-          "takeProfit": "67.52-68.50",
-          "stopLoss": "63.61",
-          "nextOpen": "64.50",
-          "nextClose": "63.91",
-          "overnightReturn": "-1.13%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "-1.35%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        }
-      ],
-      "priceRows": [
-        {
-          "date": "2026-09-08",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "66.30",
-          "high": "66.70",
-          "low": "64.55",
-          "close": "64.75",
-          "previousClose": "66.57",
-          "changePct": "-2.73%",
-          "volume": "107603573.0",
-          "quoteTime": "2026-09-08 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-09",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "64.90",
-          "high": "66.08",
-          "low": "64.47",
-          "close": "65.24",
-          "previousClose": "64.75",
-          "changePct": "+0.76%",
-          "volume": "76150565.0",
-          "quoteTime": "2026-09-09 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-10",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "64.50",
-          "high": "64.66",
-          "low": "63.79",
-          "close": "63.91",
-          "previousClose": "65.24",
-          "changePct": "-2.04%",
-          "volume": "56759477.0",
-          "quoteTime": "2026-09-10 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-11",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "62.66",
-          "high": "64.49",
-          "low": "62.50",
-          "close": "64.07",
-          "previousClose": "63.91",
-          "changePct": "+0.25%",
-          "volume": "75898326.0",
-          "quoteTime": "2026-09-11 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-14",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "62.99",
-          "high": "63.01",
-          "low": "61.37",
-          "close": "61.57",
-          "previousClose": "64.07",
-          "changePct": "-3.90%",
-          "volume": "79543954.0",
-          "quoteTime": "2026-09-14 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-15",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "61.25",
-          "high": "62.49",
-          "low": "60.58",
-          "close": "60.80",
-          "previousClose": "61.57",
-          "changePct": "-1.25%",
-          "volume": "61420947.0",
-          "quoteTime": "2026-09-15 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-16",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "60.79",
-          "high": "62.98",
-          "low": "60.40",
-          "close": "62.33",
-          "previousClose": "60.80",
-          "changePct": "+2.52%",
-          "volume": "69668519.0",
-          "quoteTime": "2026-09-16 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-17",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "61.90",
-          "high": "62.78",
-          "low": "61.10",
-          "close": "61.27",
-          "previousClose": "62.33",
-          "changePct": "-1.70%",
-          "volume": "58256515.0",
-          "quoteTime": "2026-09-17 15:34:58",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-18",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "62.98",
-          "high": "63.95",
-          "low": "62.00",
-          "close": "62.71",
-          "previousClose": "61.27",
-          "changePct": "+2.35%",
-          "volume": "111207545.0",
-          "quoteTime": "2026-09-18 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-21",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "63.99",
-          "high": "64.70",
-          "low": "62.52",
-          "close": "63.60",
-          "previousClose": "62.71",
-          "changePct": "+1.42%",
-          "volume": "95258202.0",
-          "quoteTime": "2026-09-21 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-09-22",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "64.50",
-          "high": "64.94",
-          "low": "63.11",
-          "close": "63.30",
-          "previousClose": "63.60",
-          "changePct": "-0.47%",
-          "volume": "75244335.0",
-          "quoteTime": "2026-09-22 15:34:59",
-          "source": "sina"
-        }
-      ]
-    },
     "A股|002594": {
       "key": "A股|002594",
       "market": "A股",
@@ -3315,24 +2760,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -3592,6 +3019,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -3617,21 +3062,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-09-08",
-          "market": "A股",
-          "symbol": "002594",
-          "name": "比亚迪",
-          "open": "86.39",
-          "high": "86.70",
-          "low": "85.43",
-          "close": "86.57",
-          "previousClose": "86.51",
-          "changePct": "+0.07%",
-          "volume": "19726735.0",
-          "quoteTime": "2026-09-08 15:35:00",
-          "source": "sina"
-        },
         {
           "date": "2026-09-09",
           "market": "A股",
@@ -3781,6 +3211,21 @@
           "volume": "33684722.0",
           "quoteTime": "2026-09-22 16:29:00",
           "source": "sina"
+        },
+        {
+          "date": "2026-09-23",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "open": "86.00",
+          "high": "86.55",
+          "low": "85.66",
+          "close": "85.90",
+          "previousClose": "86.58",
+          "changePct": "-0.79%",
+          "volume": "13569030.0",
+          "quoteTime": "2026-09-23 13:42:51",
+          "source": "sina"
         }
       ]
     },
@@ -3804,24 +3249,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -4089,6 +3516,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -4134,21 +3579,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-09-08",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "81.00",
-          "high": "81.70",
-          "low": "79.39",
-          "close": "80.47",
-          "previousClose": "81.08",
-          "changePct": "-0.75%",
-          "volume": "16615176.0",
-          "quoteTime": "2026-09-08 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-09-09",
           "market": "A股",
@@ -4298,6 +3728,21 @@
           "volume": "21490385.0",
           "quoteTime": "2026-09-22 15:34:59",
           "source": "sina"
+        },
+        {
+          "date": "2026-09-23",
+          "market": "A股",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "82.89",
+          "high": "83.22",
+          "low": "82.05",
+          "close": "82.65",
+          "previousClose": "82.88",
+          "changePct": "-0.28%",
+          "volume": "5892172.0",
+          "quoteTime": "2026-09-23 13:42:50",
+          "source": "sina"
         }
       ]
     },
@@ -4321,24 +3766,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -4598,6 +4025,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -4623,21 +4068,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-09-08",
-          "market": "A股",
-          "symbol": "000977",
-          "name": "浪潮信息",
-          "open": "74.88",
-          "high": "74.89",
-          "low": "72.16",
-          "close": "72.32",
-          "previousClose": "74.74",
-          "changePct": "-3.24%",
-          "volume": "105931980.0",
-          "quoteTime": "2026-09-08 15:35:15",
-          "source": "sina"
-        },
         {
           "date": "2026-09-09",
           "market": "A股",
@@ -4787,6 +4217,21 @@
           "volume": "56682629.0",
           "quoteTime": "2026-09-22 16:29:15",
           "source": "sina"
+        },
+        {
+          "date": "2026-09-23",
+          "market": "A股",
+          "symbol": "000977",
+          "name": "浪潮信息",
+          "open": "71.86",
+          "high": "72.19",
+          "low": "70.90",
+          "close": "71.60",
+          "previousClose": "72.15",
+          "changePct": "-0.76%",
+          "volume": "30345159.0",
+          "quoteTime": "2026-09-23 13:42:51",
+          "source": "sina"
         }
       ]
     },
@@ -4810,24 +4255,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-09-08",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-09-09",
           "stocks": {
@@ -5095,6 +4522,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -5140,21 +4585,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-09-08",
-          "market": "A股",
-          "symbol": "002371",
-          "name": "北方华创",
-          "open": "660.60",
-          "high": "664.13",
-          "low": "643.90",
-          "close": "647.87",
-          "previousClose": "660.65",
-          "changePct": "-1.93%",
-          "volume": "5810758.0",
-          "quoteTime": "2026-09-08 15:35:15",
-          "source": "sina"
-        },
         {
           "date": "2026-09-09",
           "market": "A股",
@@ -5303,6 +4733,510 @@
           "changePct": "-0.55%",
           "volume": "4756304.0",
           "quoteTime": "2026-09-22 16:29:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-23",
+          "market": "A股",
+          "symbol": "002371",
+          "name": "北方华创",
+          "open": "675.01",
+          "high": "677.00",
+          "low": "667.01",
+          "close": "668.31",
+          "previousClose": "672.92",
+          "changePct": "-0.69%",
+          "volume": "2522293.0",
+          "quoteTime": "2026-09-23 13:42:51",
+          "source": "sina"
+        }
+      ]
+    },
+    "A股|002463": {
+      "key": "A股|002463",
+      "market": "A股",
+      "symbol": "002463",
+      "name": "沪电股份",
+      "metrics": {
+        "calls": 1,
+        "reviewed": 0,
+        "pending": 1,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-09-09",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-10",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-11",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-12",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-13",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-14",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-15",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-16",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-17",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-18",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-19",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-20",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-21",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-22",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-09-23",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "002463",
+                "name": "沪电股份",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "callRows": [
+        {
+          "date": "2026-09-23",
+          "time": "05:42:53",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "action": "盘中：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "128.22",
+          "buyZone": "127.19-128.99",
+          "takeProfit": "132.71-134.63",
+          "stopLoss": "125.01",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        }
+      ],
+      "priceRows": [
+        {
+          "date": "2026-09-09",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "127.40",
+          "high": "130.86",
+          "low": "125.60",
+          "close": "127.55",
+          "previousClose": "124.90",
+          "changePct": "+2.12%",
+          "volume": "47584683.0",
+          "quoteTime": "2026-09-09 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-10",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "126.06",
+          "high": "131.25",
+          "low": "126.06",
+          "close": "127.92",
+          "previousClose": "127.55",
+          "changePct": "+0.29%",
+          "volume": "35384517.0",
+          "quoteTime": "2026-09-10 15:39:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-11",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "126.05",
+          "high": "129.06",
+          "low": "123.61",
+          "close": "128.25",
+          "previousClose": "127.92",
+          "changePct": "+0.26%",
+          "volume": "43949659.0",
+          "quoteTime": "2026-09-11 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-14",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "122.28",
+          "high": "128.49",
+          "low": "122.25",
+          "close": "125.70",
+          "previousClose": "128.25",
+          "changePct": "-1.99%",
+          "volume": "35180629.0",
+          "quoteTime": "2026-09-14 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-15",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "125.70",
+          "high": "130.60",
+          "low": "125.10",
+          "close": "125.82",
+          "previousClose": "125.70",
+          "changePct": "+0.10%",
+          "volume": "40896881.0",
+          "quoteTime": "2026-09-15 16:29:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-16",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "126.49",
+          "high": "129.90",
+          "low": "124.06",
+          "close": "127.80",
+          "previousClose": "125.82",
+          "changePct": "+1.57%",
+          "volume": "43541332.0",
+          "quoteTime": "2026-09-16 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-17",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "127.80",
+          "high": "129.36",
+          "low": "123.29",
+          "close": "123.48",
+          "previousClose": "127.80",
+          "changePct": "-3.38%",
+          "volume": "44446488.0",
+          "quoteTime": "2026-09-17 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-18",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "126.20",
+          "high": "126.66",
+          "low": "119.30",
+          "close": "123.50",
+          "previousClose": "123.48",
+          "changePct": "+0.02%",
+          "volume": "58958166.0",
+          "quoteTime": "2026-09-18 16:29:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-21",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "125.72",
+          "high": "127.60",
+          "low": "123.70",
+          "close": "126.00",
+          "previousClose": "123.50",
+          "changePct": "+2.02%",
+          "volume": "44334597.0",
+          "quoteTime": "2026-09-21 16:29:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-22",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "128.00",
+          "high": "129.94",
+          "low": "124.66",
+          "close": "125.14",
+          "previousClose": "126.00",
+          "changePct": "-0.68%",
+          "volume": "44009422.0",
+          "quoteTime": "2026-09-22 16:29:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-09-23",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "open": "124.66",
+          "high": "129.67",
+          "low": "124.11",
+          "close": "128.22",
+          "previousClose": "125.14",
+          "changePct": "+2.46%",
+          "volume": "47030193.0",
+          "quoteTime": "2026-09-23 13:42:51",
           "source": "sina"
         }
       ]
