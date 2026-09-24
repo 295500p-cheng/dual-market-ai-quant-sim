@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T21:26:09",
+  "updatedAt": "2026-09-24T23:05:49",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -51,8 +51,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-24T21:26:09|美股|META",
-      "updated_at": "2026-09-24T21:26:09",
+      "signal_id": "2026-09-24T23:05:49|美股|META",
+      "updated_at": "2026-09-24T23:05:49",
       "market": "美股",
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
@@ -71,8 +71,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-24T21:26:09|美股|GOOGL",
-      "updated_at": "2026-09-24T21:26:09",
+      "signal_id": "2026-09-24T23:05:49|美股|GOOGL",
+      "updated_at": "2026-09-24T23:05:49",
       "market": "美股",
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
@@ -91,8 +91,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-24T21:26:09|美股|AMD",
-      "updated_at": "2026-09-24T21:26:09",
+      "signal_id": "2026-09-24T23:05:49|美股|AMD",
+      "updated_at": "2026-09-24T23:05:49",
       "market": "美股",
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-24T21:26:09|美股|INTC",
-      "updated_at": "2026-09-24T21:26:09",
+      "signal_id": "2026-09-24T23:05:49|美股|INTC",
+      "updated_at": "2026-09-24T23:05:49",
       "market": "美股",
       "symbol": "INTC",
       "name": "Intel Corporation",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-24T21:26:09|美股|TSM",
-      "updated_at": "2026-09-24T21:26:09",
+      "signal_id": "2026-09-24T23:05:49|美股|TSM",
+      "updated_at": "2026-09-24T23:05:49",
       "market": "美股",
       "symbol": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
