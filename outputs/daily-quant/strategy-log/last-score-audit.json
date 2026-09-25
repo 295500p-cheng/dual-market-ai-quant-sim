@@ -1,70 +1,12 @@
 {
-  "updatedAt": "2026-09-24T21:26:09",
+  "updatedAt": "2026-09-25T05:59:49",
   "scoredCount": 41,
-  "target": "us_stock",
-  "aShareCandidates": 2,
+  "target": "a_share",
+  "status": "A股数据不足/本轮跳过",
+  "aShareCandidates": 0,
   "usStockCandidates": 5,
   "top": {
-    "a_share": [
-      {
-        "market": "A股",
-        "symbol": "600941",
-        "name": "中国移动",
-        "benchmark": "沪深300",
-        "sourceTimestamp": "2026-09-24 15:34:59",
-        "rank": 1,
-        "action": "收盘：候选观察",
-        "currentPrice": "当前 97.45",
-        "buyZone": "96.67-98.03",
-        "takeProfit": "100.86-102.32",
-        "stopLoss": "95.01",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 77,
-        "overnightScore": 40,
-        "overnightView": "隔夜降权：只做观察，不作为自动模拟买入；需次日重新确认强于基准和尾盘承接。",
-        "logic": "通信/高股息；相对基准 2.8189%。",
-        "risk": "低风险；政策/估值;低弹性",
-        "scoreBreakdown": {
-          "trend_score": 16,
-          "volume_price_score": 11,
-          "relative_strength_score": 17,
-          "relative_return": 2.8189,
-          "sector_sync_score": 15,
-          "event_risk_score": 10,
-          "overnight_fit_score": 8,
-          "total_score": 77
-        }
-      },
-      {
-        "market": "A股",
-        "symbol": "000333",
-        "name": "美的集团",
-        "benchmark": "沪深300",
-        "sourceTimestamp": "2026-09-24 15:35:30",
-        "rank": 2,
-        "action": "收盘：边缘观察",
-        "currentPrice": "当前 82.65",
-        "buyZone": "81.99-83.15",
-        "takeProfit": "85.54-86.78",
-        "stopLoss": "80.58",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 72,
-        "overnightScore": 30,
-        "overnightView": "隔夜降权：只做观察，不作为自动模拟买入；需次日重新确认强于基准和尾盘承接。",
-        "logic": "家电/消费；相对基准 1.948%。",
-        "risk": "低风险；消费周期;汇率/出口",
-        "scoreBreakdown": {
-          "trend_score": 13,
-          "volume_price_score": 14,
-          "relative_strength_score": 17,
-          "relative_return": 1.948,
-          "sector_sync_score": 12,
-          "event_risk_score": 10,
-          "overnight_fit_score": 6,
-          "total_score": 72
-        }
-      }
-    ],
+    "a_share": [],
     "us_stock": [
       {
         "market": "美股",
