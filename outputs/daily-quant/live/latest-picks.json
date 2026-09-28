@@ -1,9 +1,68 @@
 {
-  "updatedAt": "2026-09-25T21:27:20",
-  "status": "美股收盘快照候选",
-  "note": "已用 Yahoo Finance 美股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-09-28T06:32:56",
+  "status": "盘中可核验行情候选",
+  "note": "已用新浪财经A股盘中行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
-    "a_share": [],
+    "a_share": [
+      {
+        "market": "A股",
+        "symbol": "600519",
+        "name": "贵州茅台",
+        "benchmark": "沪深300",
+        "sourceTimestamp": "2026-09-28 14:32:55",
+        "rank": 1,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 1239.99",
+        "buyZone": "1230.07-1247.43",
+        "takeProfit": "1283.39-1301.99",
+        "stopLoss": "1208.99",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 75,
+        "overnightScore": 40,
+        "overnightView": "隔夜降权：只做观察，不作为自动模拟买入；需次日重新确认强于基准和尾盘承接。",
+        "logic": "消费/白酒；相对基准 2.4243%。",
+        "risk": "低风险；消费预期;外资权重波动",
+        "scoreBreakdown": {
+          "trend_score": 13,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 2.4243,
+          "sector_sync_score": 12,
+          "event_risk_score": 10,
+          "overnight_fit_score": 8,
+          "total_score": 75
+        }
+      },
+      {
+        "market": "A股",
+        "symbol": "300750",
+        "name": "宁德时代",
+        "benchmark": "创业板指",
+        "sourceTimestamp": "2026-09-28 14:32:54",
+        "rank": 2,
+        "action": "盘中：边缘观察",
+        "currentPrice": "当前 291.20",
+        "buyZone": "288.87-292.95",
+        "takeProfit": "301.39-305.76",
+        "stopLoss": "283.92",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 73,
+        "overnightScore": 75,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "新能源电池；相对基准 3.6653%。",
+        "risk": "中风险；行业价格战;政策/销量预期",
+        "scoreBreakdown": {
+          "trend_score": 10,
+          "volume_price_score": 12,
+          "relative_strength_score": 20,
+          "relative_return": 3.6653,
+          "sector_sync_score": 8,
+          "event_risk_score": 8,
+          "overnight_fit_score": 15,
+          "total_score": 73
+        }
+      }
+    ],
     "us_stock": [
       {
         "market": "美股",
