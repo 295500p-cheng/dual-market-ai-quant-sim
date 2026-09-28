@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-28T06:32:56",
+  "updatedAt": "2026-09-28T14:31:48",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
     "signals": 7,
     "triggered": 0,
     "exited": 0,
-    "waiting": 2,
-    "dataMissing": 5
+    "waiting": 0,
+    "dataMissing": 7
   },
   "rows": [
     {
@@ -111,44 +111,44 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-28T06:32:56|A股|600519",
-      "updated_at": "2026-09-28T06:32:56",
-      "market": "A股",
-      "symbol": "600519",
-      "name": "贵州茅台",
-      "action": "盘中：候选观察",
-      "source_status": "盘中可核验行情候选",
-      "quote_time": "2026-09-28 14:32:55",
-      "current_price": "1239.99",
-      "buy_zone": "1230.07-1247.43",
-      "entry_status": "等待触发",
-      "entry_price": "",
-      "take_profit": "1283.39-1301.99",
-      "stop_loss": "1208.99",
-      "exit_status": "未执行",
-      "exit_price": "",
-      "result_return": "",
-      "risk_note": "A股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
-    },
-    {
-      "signal_id": "2026-09-28T06:32:56|A股|300750",
-      "updated_at": "2026-09-28T06:32:56",
+      "signal_id": "2026-09-28T14:31:48|A股|300750",
+      "updated_at": "2026-09-28T14:31:48",
       "market": "A股",
       "symbol": "300750",
       "name": "宁德时代",
-      "action": "盘中：边缘观察",
-      "source_status": "盘中可核验行情候选",
-      "quote_time": "2026-09-28 14:32:54",
-      "current_price": "291.20",
-      "buy_zone": "288.87-292.95",
-      "entry_status": "等待触发",
+      "action": "收盘：候选观察",
+      "source_status": "A股收盘快照候选",
+      "quote_time": "2026-09-28 16:29:30",
+      "current_price": "",
+      "buy_zone": "289.65-293.74",
+      "entry_status": "数据不足",
       "entry_price": "",
-      "take_profit": "301.39-305.76",
-      "stop_loss": "283.92",
+      "take_profit": "302.21-306.59",
+      "stop_loss": "284.69",
       "exit_status": "未执行",
       "exit_price": "",
       "result_return": "",
-      "risk_note": "A股仅允许强势观察信号自动模拟买入，普通候选和边缘候选只跟踪。"
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
+    },
+    {
+      "signal_id": "2026-09-28T14:31:48|A股|600519",
+      "updated_at": "2026-09-28T14:31:48",
+      "market": "A股",
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "action": "收盘：候选观察",
+      "source_status": "A股收盘快照候选",
+      "quote_time": "2026-09-28 15:34:59",
+      "current_price": "",
+      "buy_zone": "1233.93-1251.34",
+      "entry_status": "数据不足",
+      "entry_price": "",
+      "take_profit": "1287.42-1306.07",
+      "stop_loss": "1212.78",
+      "exit_status": "未执行",
+      "exit_price": "",
+      "result_return": "",
+      "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     }
   ]
 }
