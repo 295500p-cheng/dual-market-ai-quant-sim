@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T22:40:28",
+  "updatedAt": "2026-09-29T23:32:44",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -71,8 +71,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-29T22:40:28|美股|AMAT",
-      "updated_at": "2026-09-29T22:40:28",
+      "signal_id": "2026-09-29T23:32:44|美股|AMAT",
+      "updated_at": "2026-09-29T23:32:44",
       "market": "美股",
       "symbol": "AMAT",
       "name": "Applied Materials, Inc.",
@@ -91,8 +91,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-29T22:40:28|美股|META",
-      "updated_at": "2026-09-29T22:40:28",
+      "signal_id": "2026-09-29T23:32:44|美股|META",
+      "updated_at": "2026-09-29T23:32:44",
       "market": "美股",
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-29T22:40:28|美股|ASML",
-      "updated_at": "2026-09-29T22:40:28",
+      "signal_id": "2026-09-29T23:32:44|美股|ASML",
+      "updated_at": "2026-09-29T23:32:44",
       "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-29T22:40:28|美股|ORCL",
-      "updated_at": "2026-09-29T22:40:28",
+      "signal_id": "2026-09-29T23:32:44|美股|ORCL",
+      "updated_at": "2026-09-29T23:32:44",
       "market": "美股",
       "symbol": "ORCL",
       "name": "Oracle Corporation",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-09-29T22:40:28|美股|KLAC",
-      "updated_at": "2026-09-29T22:40:28",
+      "signal_id": "2026-09-29T23:32:44|美股|KLAC",
+      "updated_at": "2026-09-29T23:32:44",
       "market": "美股",
       "symbol": "KLAC",
       "name": "KLA Corporation",
