@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-29T13:21:24",
-  "status": "A股收盘快照候选",
-  "note": "已用新浪财经A股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-09-29T18:33:55",
+  "status": "开盘后可核验行情候选",
+  "note": "已用美股开盘后行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -92,6 +92,152 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-09-29T18:33:50+00:00",
+        "rank": 1,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 137.70",
+        "buyZone": "136.60-138.53",
+        "takeProfit": "142.52-144.59",
+        "stopLoss": "134.26",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 88,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "云/数据库；相对基准 3.7518%。",
+        "risk": "中高风险；财报跳空;订单预期",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 14,
+          "relative_strength_score": 20,
+          "relative_return": 3.7518,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 13,
+          "total_score": 88
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "ASML",
+        "name": "ASML Holding N.V.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-29T18:33:45+00:00",
+        "rank": 2,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 1827.36",
+        "buyZone": "1812.74-1838.32",
+        "takeProfit": "1891.31-1918.72",
+        "stopLoss": "1781.67",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 85,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 1.9474%。",
+        "risk": "中风险；出口限制;订单周期;欧洲ADR波动",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 1.9474,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 85
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AMAT",
+        "name": "Applied Materials, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-29T18:33:51+00:00",
+        "rank": 3,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 506.16",
+        "buyZone": "502.11-509.20",
+        "takeProfit": "523.88-531.47",
+        "stopLoss": "493.51",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 85,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 2.7747%。",
+        "risk": "中风险；订单周期;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 2.7747,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 85
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "META",
+        "name": "Meta Platforms, Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-09-29T18:33:52+00:00",
+        "rank": 4,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 731.53",
+        "buyZone": "725.68-735.92",
+        "takeProfit": "757.14-768.11",
+        "stopLoss": "713.25",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 84,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI应用/社交广告；相对基准 2.1295%。",
+        "risk": "中高风险；监管;广告周期;资本开支",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 2.1295,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 13,
+          "total_score": 84
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "KLAC",
+        "name": "KLA Corporation",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-09-29T18:33:51+00:00",
+        "rank": 5,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 195.26",
+        "buyZone": "193.70-196.43",
+        "takeProfit": "202.09-205.02",
+        "stopLoss": "190.38",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 81,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备/检测；相对基准 2.0085%。",
+        "risk": "中风险；估值;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 10,
+          "relative_strength_score": 17,
+          "relative_return": 2.0085,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 81
+        }
+      }
+    ]
   }
 }
