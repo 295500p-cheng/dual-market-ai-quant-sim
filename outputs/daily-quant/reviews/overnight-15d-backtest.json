@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T06:42:25",
+  "updatedAt": "2026-09-29T13:21:24",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-15 至 2026-09-29",
@@ -2112,11 +2112,11 @@
           "open": "66.92",
           "high": "68.10",
           "low": "66.66",
-          "close": "67.21",
+          "close": "67.18",
           "previousClose": "67.05",
-          "changePct": "+0.24%",
-          "volume": "25980502.0",
-          "quoteTime": "2026-09-29 14:42:21",
+          "changePct": "+0.19%",
+          "volume": "28167215.0",
+          "quoteTime": "2026-09-29 15:35:15",
           "source": "sina"
         }
       ]
@@ -2614,11 +2614,11 @@
           "open": "633.94",
           "high": "640.80",
           "low": "623.04",
-          "close": "630.64",
+          "close": "628.96",
           "previousClose": "633.93",
-          "changePct": "-0.52%",
-          "volume": "3745808.0",
-          "quoteTime": "2026-09-29 14:42:21",
+          "changePct": "-0.78%",
+          "volume": "4212613.0",
+          "quoteTime": "2026-09-29 15:35:15",
           "source": "sina"
         }
       ]
@@ -3088,11 +3088,11 @@
           "open": "80.50",
           "high": "81.39",
           "low": "79.85",
-          "close": "80.47",
+          "close": "80.36",
           "previousClose": "80.75",
-          "changePct": "-0.35%",
-          "volume": "6483991.0",
-          "quoteTime": "2026-09-29 14:42:22",
+          "changePct": "-0.48%",
+          "volume": "7162591.0",
+          "quoteTime": "2026-09-29 15:34:59",
           "source": "sina"
         }
       ]
@@ -4092,11 +4092,11 @@
           "open": "58.42",
           "high": "59.15",
           "low": "57.86",
-          "close": "58.43",
+          "close": "58.42",
           "previousClose": "58.92",
-          "changePct": "-0.83%",
-          "volume": "45772973.0",
-          "quoteTime": "2026-09-29 14:42:23",
+          "changePct": "-0.85%",
+          "volume": "51010358.0",
+          "quoteTime": "2026-09-29 15:34:59",
           "source": "sina"
         }
       ]
@@ -4566,11 +4566,11 @@
           "open": "117.30",
           "high": "120.18",
           "low": "115.69",
-          "close": "119.15",
+          "close": "119.07",
           "previousClose": "117.20",
-          "changePct": "+1.66%",
-          "volume": "23399244.0",
-          "quoteTime": "2026-09-29 14:42:21",
+          "changePct": "+1.60%",
+          "volume": "25770498.0",
+          "quoteTime": "2026-09-29 15:35:45",
           "source": "sina"
         }
       ]
@@ -5040,11 +5040,11 @@
           "open": "291.00",
           "high": "293.19",
           "low": "285.74",
-          "close": "287.10",
+          "close": "286.80",
           "previousClose": "291.99",
-          "changePct": "-1.67%",
-          "volume": "26672762.0",
-          "quoteTime": "2026-09-29 14:42:21",
+          "changePct": "-1.78%",
+          "volume": "29875746.0",
+          "quoteTime": "2026-09-29 15:35:45",
           "source": "sina"
         }
       ]
@@ -5351,16 +5351,16 @@
       "callRows": [
         {
           "date": "2026-09-29",
-          "time": "06:42:24",
+          "time": "13:21:24",
           "market": "A股",
           "symbol": "300274",
           "name": "阳光电源",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "82.92",
-          "buyZone": "82.26-83.42",
-          "takeProfit": "85.82-87.07",
-          "stopLoss": "80.85",
+          "recommendedPrice": "82.81",
+          "buyZone": "82.15-83.31",
+          "takeProfit": "85.71-86.95",
+          "stopLoss": "80.74",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5514,11 +5514,11 @@
           "open": "80.81",
           "high": "83.75",
           "low": "80.81",
-          "close": "82.92",
+          "close": "82.81",
           "previousClose": "81.06",
-          "changePct": "+2.29%",
-          "volume": "32182074.0",
-          "quoteTime": "2026-09-29 14:42:21",
+          "changePct": "+2.16%",
+          "volume": "35438157.0",
+          "quoteTime": "2026-09-29 15:35:30",
           "source": "sina"
         }
       ]
