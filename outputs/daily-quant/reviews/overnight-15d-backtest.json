@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T06:29:37",
+  "updatedAt": "2026-09-30T12:56:20",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-16 至 2026-09-30",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 11,
+        "calls": 12,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -380,13 +380,21 @@
         {
           "date": "2026-09-30",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -430,14 +438,14 @@
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
-          "calls": 1,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "美股|AVGO",
@@ -515,9 +523,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 8,
+        "calls": 9,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -846,13 +854,21 @@
         {
           "date": "2026-09-30",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -896,14 +912,14 @@
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
-          "calls": 1,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "A股|601138",
@@ -2112,11 +2128,11 @@
           "open": "67.53",
           "high": "67.89",
           "low": "65.90",
-          "close": "66.08",
+          "close": "65.93",
           "previousClose": "67.18",
-          "changePct": "-1.64%",
-          "volume": "27924592.0",
-          "quoteTime": "2026-09-30 14:29:33",
+          "changePct": "-1.86%",
+          "volume": "33177233.0",
+          "quoteTime": "2026-09-30 15:35:15",
           "source": "sina"
         }
       ]
@@ -2614,11 +2630,11 @@
           "open": "635.01",
           "high": "641.68",
           "low": "614.26",
-          "close": "617.17",
+          "close": "615.97",
           "previousClose": "628.96",
-          "changePct": "-1.87%",
-          "volume": "4800557.0",
-          "quoteTime": "2026-09-30 14:29:33",
+          "changePct": "-2.07%",
+          "volume": "5607417.0",
+          "quoteTime": "2026-09-30 15:35:30",
           "source": "sina"
         }
       ]
@@ -2629,9 +2645,9 @@
       "symbol": "603501",
       "name": "豪威集团",
       "metrics": {
-        "calls": 1,
+        "calls": 2,
         "reviewed": 0,
-        "pending": 0,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -2906,13 +2922,21 @@
         {
           "date": "2026-09-30",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -2923,6 +2947,26 @@
         }
       ],
       "callRows": [
+        {
+          "date": "2026-09-30",
+          "time": "12:56:20",
+          "market": "A股",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "action": "收盘：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "82.21",
+          "buyZone": "81.55-82.70",
+          "takeProfit": "85.09-86.32",
+          "stopLoss": "80.15",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        },
         {
           "date": "2026-09-18",
           "time": "10:03:30",
@@ -3088,11 +3132,11 @@
           "open": "80.90",
           "high": "82.74",
           "low": "80.46",
-          "close": "82.26",
+          "close": "82.21",
           "previousClose": "80.36",
-          "changePct": "+2.36%",
-          "volume": "11367935.0",
-          "quoteTime": "2026-09-30 14:29:32",
+          "changePct": "+2.30%",
+          "volume": "12892957.0",
+          "quoteTime": "2026-09-30 15:34:59",
           "source": "sina"
         }
       ]
@@ -4092,11 +4136,11 @@
           "open": "58.81",
           "high": "59.48",
           "low": "57.90",
-          "close": "58.04",
+          "close": "58.20",
           "previousClose": "58.42",
-          "changePct": "-0.65%",
-          "volume": "45536652.0",
-          "quoteTime": "2026-09-30 14:29:34",
+          "changePct": "-0.38%",
+          "volume": "51810612.0",
+          "quoteTime": "2026-09-30 15:34:59",
           "source": "sina"
         }
       ]
@@ -4566,11 +4610,11 @@
           "open": "119.66",
           "high": "120.08",
           "low": "114.50",
-          "close": "115.64",
+          "close": "115.93",
           "previousClose": "119.07",
-          "changePct": "-2.88%",
-          "volume": "26338361.0",
-          "quoteTime": "2026-09-30 14:29:33",
+          "changePct": "-2.64%",
+          "volume": "30382816.0",
+          "quoteTime": "2026-09-30 15:36:00",
           "source": "sina"
         }
       ]
@@ -5040,11 +5084,11 @@
           "open": "290.00",
           "high": "292.70",
           "low": "285.80",
-          "close": "290.77",
+          "close": "291.11",
           "previousClose": "286.80",
-          "changePct": "+1.38%",
-          "volume": "25276785.0",
-          "quoteTime": "2026-09-30 14:29:33",
+          "changePct": "+1.50%",
+          "volume": "29699471.0",
+          "quoteTime": "2026-09-30 15:35:15",
           "source": "sina"
         }
       ]
@@ -5514,11 +5558,11 @@
           "open": "82.41",
           "high": "83.10",
           "low": "81.51",
-          "close": "82.51",
+          "close": "82.49",
           "previousClose": "82.81",
-          "changePct": "-0.36%",
-          "volume": "23047503.0",
-          "quoteTime": "2026-09-30 14:29:33",
+          "changePct": "-0.39%",
+          "volume": "27448018.0",
+          "quoteTime": "2026-09-30 15:35:00",
           "source": "sina"
         }
       ]
