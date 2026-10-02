@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T22:29:19",
+  "updatedAt": "2026-10-02T23:37:35",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-02T22:29:19|美股|AVGO",
-      "updated_at": "2026-10-02T22:29:19",
+      "signal_id": "2026-10-02T23:37:35|美股|AVGO",
+      "updated_at": "2026-10-02T23:37:35",
       "market": "美股",
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-02T22:29:19|美股|ASML",
-      "updated_at": "2026-10-02T22:29:19",
+      "signal_id": "2026-10-02T23:37:35|美股|ASML",
+      "updated_at": "2026-10-02T23:37:35",
       "market": "美股",
       "symbol": "ASML",
       "name": "ASML Holding N.V.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-02T22:29:19|美股|KLAC",
-      "updated_at": "2026-10-02T22:29:19",
+      "signal_id": "2026-10-02T23:37:35|美股|KLAC",
+      "updated_at": "2026-10-02T23:37:35",
       "market": "美股",
       "symbol": "KLAC",
       "name": "KLA Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-02T22:29:19|美股|ORCL",
-      "updated_at": "2026-10-02T22:29:19",
+      "signal_id": "2026-10-02T23:37:35|美股|ORCL",
+      "updated_at": "2026-10-02T23:37:35",
       "market": "美股",
       "symbol": "ORCL",
       "name": "Oracle Corporation",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-02T22:29:19|美股|GOOGL",
-      "updated_at": "2026-10-02T22:29:19",
+      "signal_id": "2026-10-02T23:37:35|美股|GOOGL",
+      "updated_at": "2026-10-02T23:37:35",
       "market": "美股",
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
