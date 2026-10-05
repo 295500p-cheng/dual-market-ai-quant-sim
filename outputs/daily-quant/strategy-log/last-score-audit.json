@@ -1,7 +1,8 @@
 {
-  "updatedAt": "2026-10-02T22:29:19",
+  "updatedAt": "2026-10-05T06:43:37",
   "scoredCount": 41,
-  "target": "us_stock",
+  "target": "a_share",
+  "status": "A股数据不足/本轮跳过",
   "aShareCandidates": 0,
   "usStockCandidates": 5,
   "top": {
