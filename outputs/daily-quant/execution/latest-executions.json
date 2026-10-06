@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T21:14:12",
+  "updatedAt": "2026-10-06T01:12:45",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-05T21:14:12|美股|AVGO",
-      "updated_at": "2026-10-05T21:14:12",
+      "signal_id": "2026-10-06T01:12:45|美股|AVGO",
+      "updated_at": "2026-10-06T01:12:45",
       "market": "美股",
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-05T21:14:12|美股|META",
-      "updated_at": "2026-10-05T21:14:12",
+      "signal_id": "2026-10-06T01:12:45|美股|META",
+      "updated_at": "2026-10-06T01:12:45",
       "market": "美股",
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-05T21:14:12|美股|NVDA",
-      "updated_at": "2026-10-05T21:14:12",
+      "signal_id": "2026-10-06T01:12:45|美股|NVDA",
+      "updated_at": "2026-10-06T01:12:45",
       "market": "美股",
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-05T21:14:12|美股|TSM",
-      "updated_at": "2026-10-05T21:14:12",
+      "signal_id": "2026-10-06T01:12:45|美股|TSM",
+      "updated_at": "2026-10-06T01:12:45",
       "market": "美股",
       "symbol": "TSM",
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-05T21:14:12|美股|MSFT",
-      "updated_at": "2026-10-05T21:14:12",
+      "signal_id": "2026-10-06T01:12:45|美股|MSFT",
+      "updated_at": "2026-10-06T01:12:45",
       "market": "美股",
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
