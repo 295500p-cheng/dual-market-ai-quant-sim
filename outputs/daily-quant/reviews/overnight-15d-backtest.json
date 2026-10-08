@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T07:10:42",
+  "updatedAt": "2026-10-08T14:31:48",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-09-24 至 2026-10-08",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 8,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -183,13 +183,13 @@
                 "symbol": "603501",
                 "name": "豪威集团",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -425,12 +425,12 @@
           "name": "豪威集团",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -440,7 +440,7 @@
       "metrics": {
         "calls": 3,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -587,13 +587,13 @@
                 "symbol": "603501",
                 "name": "豪威集团",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -783,12 +783,12 @@
           "name": "豪威集团",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -2466,7 +2466,7 @@
           "previousClose": "291.11",
           "changePct": "-1.50%",
           "volume": "36682465.0",
-          "quoteTime": "2026-10-08 15:10:30",
+          "quoteTime": "2026-10-08 16:29:15",
           "source": "sina"
         }
       ]
@@ -2865,7 +2865,7 @@
           "previousClose": "82.49",
           "changePct": "-2.42%",
           "volume": "35735311.0",
-          "quoteTime": "2026-10-08 15:10:30",
+          "quoteTime": "2026-10-08 16:29:00",
           "source": "sina"
         }
       ]
@@ -2878,7 +2878,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -3009,13 +3009,13 @@
                 "symbol": "603501",
                 "name": "豪威集团",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -3182,13 +3182,13 @@
           "buyZone": "81.55-82.70",
           "takeProfit": "85.09-86.32",
           "stopLoss": "80.15",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "81.62",
+          "nextClose": "78.96",
+          "overnightReturn": "-0.72%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-2.86%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
@@ -3264,7 +3264,7 @@
           "previousClose": "82.21",
           "changePct": "-3.95%",
           "volume": "13894911.0",
-          "quoteTime": "2026-10-08 15:10:39",
+          "quoteTime": "2026-10-08 15:34:59",
           "source": "sina"
         }
       ]
