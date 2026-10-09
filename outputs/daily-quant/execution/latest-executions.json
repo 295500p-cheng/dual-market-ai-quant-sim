@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T22:55:51",
+  "updatedAt": "2026-10-09T23:53:11",
   "status": "自动执行模拟，不是真实交易",
   "note": "仅按策略信号生成模拟买入、止盈、止损和持有记录；未连接券商，不会真实下单。",
   "metrics": {
@@ -111,8 +111,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-09T22:55:51|美股|ORCL",
-      "updated_at": "2026-10-09T22:55:51",
+      "signal_id": "2026-10-09T23:53:11|美股|ORCL",
+      "updated_at": "2026-10-09T23:53:11",
       "market": "美股",
       "symbol": "ORCL",
       "name": "Oracle Corporation",
@@ -131,8 +131,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-09T22:55:51|美股|AMZN",
-      "updated_at": "2026-10-09T22:55:51",
+      "signal_id": "2026-10-09T23:53:11|美股|AMZN",
+      "updated_at": "2026-10-09T23:53:11",
       "market": "美股",
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
@@ -151,8 +151,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-09T22:55:51|美股|MSFT",
-      "updated_at": "2026-10-09T22:55:51",
+      "signal_id": "2026-10-09T23:53:11|美股|MSFT",
+      "updated_at": "2026-10-09T23:53:11",
       "market": "美股",
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
@@ -171,8 +171,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-09T22:55:51|美股|PLTR",
-      "updated_at": "2026-10-09T22:55:51",
+      "signal_id": "2026-10-09T23:53:11|美股|PLTR",
+      "updated_at": "2026-10-09T23:53:11",
       "market": "美股",
       "symbol": "PLTR",
       "name": "Palantir Technologies Inc.",
@@ -191,8 +191,8 @@
       "risk_note": "缺少当日可核验行情或买入区，不能模拟成交；不会使用旧推荐价格推算成交。"
     },
     {
-      "signal_id": "2026-10-09T22:55:51|美股|AVGO",
-      "updated_at": "2026-10-09T22:55:51",
+      "signal_id": "2026-10-09T23:53:11|美股|AVGO",
+      "updated_at": "2026-10-09T23:53:11",
       "market": "美股",
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
