@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-14T11:35:07",
+  "updatedAt": "2026-10-14T17:56:17",
   "scoredCount": 41,
-  "target": "a_share",
+  "target": "us_stock",
   "aShareCandidates": 3,
-  "usStockCandidates": 5,
+  "usStockCandidates": 0,
   "top": {
     "a_share": [
       {
@@ -94,152 +94,6 @@
         }
       }
     ],
-    "us_stock": [
-      {
-        "market": "美股",
-        "symbol": "ORCL",
-        "name": "Oracle Corporation",
-        "benchmark": "QQQ",
-        "sourceTimestamp": "2026-10-13T20:04:40+00:00",
-        "rank": 1,
-        "action": "收盘：强势观察",
-        "currentPrice": "当前 143.20",
-        "buyZone": "142.05-144.06",
-        "takeProfit": "148.21-150.36",
-        "stopLoss": "139.62",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 89,
-        "overnightScore": 65,
-        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "云/数据库；相对基准 4.5599%。",
-        "risk": "中高风险；财报跳空;订单预期",
-        "scoreBreakdown": {
-          "trend_score": 20,
-          "volume_price_score": 15,
-          "relative_strength_score": 20,
-          "relative_return": 4.5599,
-          "sector_sync_score": 15,
-          "event_risk_score": 6,
-          "overnight_fit_score": 13,
-          "total_score": 89
-        }
-      },
-      {
-        "market": "美股",
-        "symbol": "META",
-        "name": "Meta Platforms, Inc.",
-        "benchmark": "QQQ",
-        "sourceTimestamp": "2026-10-13T20:00:01+00:00",
-        "rank": 2,
-        "action": "收盘：强势观察",
-        "currentPrice": "当前 762.50",
-        "buyZone": "756.40-767.08",
-        "takeProfit": "789.19-800.62",
-        "stopLoss": "743.44",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 84,
-        "overnightScore": 65,
-        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI应用/社交广告；相对基准 2.9611%。",
-        "risk": "中高风险；监管;广告周期;资本开支",
-        "scoreBreakdown": {
-          "trend_score": 18,
-          "volume_price_score": 15,
-          "relative_strength_score": 17,
-          "relative_return": 2.9611,
-          "sector_sync_score": 15,
-          "event_risk_score": 6,
-          "overnight_fit_score": 13,
-          "total_score": 84
-        }
-      },
-      {
-        "market": "美股",
-        "symbol": "AVGO",
-        "name": "Broadcom Inc.",
-        "benchmark": "SMH",
-        "sourceTimestamp": "2026-10-13T20:00:01+00:00",
-        "rank": 3,
-        "action": "收盘：强势观察",
-        "currentPrice": "当前 357.31",
-        "buyZone": "354.45-359.45",
-        "takeProfit": "369.82-375.18",
-        "stopLoss": "348.38",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 82,
-        "overnightScore": 85,
-        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI芯片/网络；相对基准 1.2129%。",
-        "risk": "中高风险；大客户预期;财报跳空;估值波动",
-        "scoreBreakdown": {
-          "trend_score": 15,
-          "volume_price_score": 15,
-          "relative_strength_score": 17,
-          "relative_return": 1.2129,
-          "sector_sync_score": 12,
-          "event_risk_score": 6,
-          "overnight_fit_score": 17,
-          "total_score": 82
-        }
-      },
-      {
-        "market": "美股",
-        "symbol": "AMD",
-        "name": "Advanced Micro Devices, Inc.",
-        "benchmark": "SMH",
-        "sourceTimestamp": "2026-10-13T20:00:01+00:00",
-        "rank": 4,
-        "action": "收盘：高风险强势观察",
-        "currentPrice": "当前 605.53",
-        "buyZone": "600.69-609.16",
-        "takeProfit": "626.72-644.89",
-        "stopLoss": "584.34",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 82,
-        "overnightScore": 65,
-        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI GPU/半导体；相对基准 2.3855%。",
-        "risk": "高风险；高波动;产品预期;相对弱势风险",
-        "scoreBreakdown": {
-          "trend_score": 18,
-          "volume_price_score": 15,
-          "relative_strength_score": 17,
-          "relative_return": 2.3855,
-          "sector_sync_score": 15,
-          "event_risk_score": 4,
-          "overnight_fit_score": 13,
-          "total_score": 82
-        }
-      },
-      {
-        "market": "美股",
-        "symbol": "NVDA",
-        "name": "NVIDIA Corporation",
-        "benchmark": "SMH",
-        "sourceTimestamp": "2026-10-13T20:00:00+00:00",
-        "rank": 5,
-        "action": "收盘：候选观察",
-        "currentPrice": "当前 228.52",
-        "buyZone": "226.69-229.89",
-        "takeProfit": "236.52-243.37",
-        "stopLoss": "220.52",
-        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
-        "dayScore": 76,
-        "overnightScore": 65,
-        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
-        "logic": "AI芯片/加速器；相对基准 1.4577%。",
-        "risk": "高风险；高估值;新闻/财报跳空;高波动",
-        "scoreBreakdown": {
-          "trend_score": 15,
-          "volume_price_score": 15,
-          "relative_strength_score": 17,
-          "relative_return": 1.4577,
-          "sector_sync_score": 12,
-          "event_risk_score": 4,
-          "overnight_fit_score": 13,
-          "total_score": 76
-        }
-      }
-    ]
+    "us_stock": []
   }
 }
