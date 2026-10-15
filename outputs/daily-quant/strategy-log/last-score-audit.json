@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-15T10:21:22",
+  "updatedAt": "2026-10-15T17:42:50",
   "scoredCount": 41,
-  "target": "a_share",
+  "target": "us_stock",
   "aShareCandidates": 5,
-  "usStockCandidates": 0,
+  "usStockCandidates": 5,
   "top": {
     "a_share": [
       {
@@ -152,6 +152,152 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-10-15T17:42:48+00:00",
+        "rank": 1,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 134.67",
+        "buyZone": "133.59-135.48",
+        "takeProfit": "139.38-141.40",
+        "stopLoss": "131.30",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 89,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "云/数据库；相对基准 3.455%。",
+        "risk": "中高风险；财报跳空;订单预期",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 3.455,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 13,
+          "total_score": 89
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-10-15T17:42:46+00:00",
+        "rank": 2,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 540.25",
+        "buyZone": "535.92-543.49",
+        "takeProfit": "559.15-567.26",
+        "stopLoss": "526.74",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 86,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI云/软件；相对基准 1.5273%。",
+        "risk": "中风险；监管;财报;AI资本开支担忧",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 1.5273,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 86
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "CRM",
+        "name": "Salesforce, Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-10-15T17:42:48+00:00",
+        "rank": 3,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 244.52",
+        "buyZone": "242.56-245.99",
+        "takeProfit": "253.08-256.75",
+        "stopLoss": "238.41",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 84,
+        "overnightScore": 30,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "企业软件；相对基准 3.9312%。",
+        "risk": "中风险；业绩指引;估值",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 3.9312,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 6,
+          "total_score": 84
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "GOOGL",
+        "name": "Alphabet Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-10-15T17:42:48+00:00",
+        "rank": 4,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 350.52",
+        "buyZone": "347.72-352.62",
+        "takeProfit": "362.79-368.05",
+        "stopLoss": "341.76",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 80,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI应用/广告/云；相对基准 1.1275%。",
+        "risk": "中风险；监管;广告周期;财报跳空",
+        "scoreBreakdown": {
+          "trend_score": 15,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 1.1275,
+          "sector_sync_score": 12,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 80
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "META",
+        "name": "Meta Platforms, Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-10-15T17:42:47+00:00",
+        "rank": 5,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 742.72",
+        "buyZone": "736.78-747.18",
+        "takeProfit": "768.72-779.86",
+        "stopLoss": "724.15",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 78,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI应用/社交广告；相对基准 1.0018%。",
+        "risk": "中高风险；监管;广告周期;资本开支",
+        "scoreBreakdown": {
+          "trend_score": 15,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 1.0018,
+          "sector_sync_score": 12,
+          "event_risk_score": 6,
+          "overnight_fit_score": 13,
+          "total_score": 78
+        }
+      }
+    ]
   }
 }
