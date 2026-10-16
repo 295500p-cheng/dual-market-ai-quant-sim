@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T05:39:49",
+  "updatedAt": "2026-10-16T10:07:55",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-02 至 2026-10-16",
@@ -2784,12 +2784,12 @@
           "name": "宁德时代",
           "open": "281.79",
           "high": "282.00",
-          "low": "274.73",
-          "close": "275.58",
+          "low": "273.29",
+          "close": "277.00",
           "previousClose": "278.50",
-          "changePct": "-1.05%",
-          "volume": "19997837.0",
-          "quoteTime": "2026-10-16 13:39:45",
+          "changePct": "-0.54%",
+          "volume": "29742445.0",
+          "quoteTime": "2026-10-16 15:35:30",
           "source": "sina"
         }
       ]
@@ -3241,12 +3241,12 @@
           "name": "比亚迪",
           "open": "82.24",
           "high": "83.39",
-          "low": "82.20",
-          "close": "82.36",
+          "low": "81.85",
+          "close": "82.72",
           "previousClose": "82.24",
-          "changePct": "+0.15%",
-          "volume": "14939262.0",
-          "quoteTime": "2026-10-16 13:39:45",
+          "changePct": "+0.58%",
+          "volume": "20968562.0",
+          "quoteTime": "2026-10-16 15:35:15",
           "source": "sina"
         }
       ]
@@ -3671,11 +3671,11 @@
           "open": "29.70",
           "high": "30.29",
           "low": "29.15",
-          "close": "29.76",
+          "close": "29.92",
           "previousClose": "29.38",
-          "changePct": "+1.29%",
-          "volume": "120807875.0",
-          "quoteTime": "2026-10-16 13:39:45",
+          "changePct": "+1.84%",
+          "volume": "184729737.0",
+          "quoteTime": "2026-10-16 15:34:59",
           "source": "sina"
         }
       ]
@@ -3998,16 +3998,16 @@
       "callRows": [
         {
           "date": "2026-10-16",
-          "time": "05:39:49",
+          "time": "10:07:54",
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "85",
-          "recommendedPrice": "47.97",
-          "buyZone": "47.59-48.26",
-          "takeProfit": "49.65-50.37",
-          "stopLoss": "46.77",
+          "recommendedPrice": "47.78",
+          "buyZone": "47.40-48.07",
+          "takeProfit": "49.45-50.17",
+          "stopLoss": "46.59",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -4156,11 +4156,11 @@
           "open": "47.80",
           "high": "48.91",
           "low": "46.81",
-          "close": "47.97",
+          "close": "47.78",
           "previousClose": "46.90",
-          "changePct": "+2.28%",
-          "volume": "75989981.0",
-          "quoteTime": "2026-10-16 13:39:45",
+          "changePct": "+1.88%",
+          "volume": "98698744.0",
+          "quoteTime": "2026-10-16 15:34:59",
           "source": "sina"
         }
       ]
@@ -4584,12 +4584,12 @@
           "name": "阳光电源",
           "open": "78.10",
           "high": "79.46",
-          "low": "77.07",
-          "close": "77.51",
+          "low": "76.42",
+          "close": "76.86",
           "previousClose": "76.10",
-          "changePct": "+1.85%",
-          "volume": "23479369.0",
-          "quoteTime": "2026-10-16 13:39:45",
+          "changePct": "+1.00%",
+          "volume": "36678623.0",
+          "quoteTime": "2026-10-16 15:35:15",
           "source": "sina"
         }
       ]
@@ -5014,11 +5014,11 @@
           "open": "117.00",
           "high": "117.77",
           "low": "110.10",
-          "close": "114.00",
+          "close": "113.38",
           "previousClose": "116.18",
-          "changePct": "-1.88%",
-          "volume": "44585876.0",
-          "quoteTime": "2026-10-16 13:39:45",
+          "changePct": "-2.41%",
+          "volume": "54204398.0",
+          "quoteTime": "2026-10-16 15:35:00",
           "source": "sina"
         }
       ]
@@ -5442,12 +5442,12 @@
           "name": "中芯国际",
           "open": "105.00",
           "high": "105.00",
-          "low": "101.07",
-          "close": "101.16",
+          "low": "100.52",
+          "close": "102.66",
           "previousClose": "104.44",
-          "changePct": "-3.14%",
-          "volume": "26879348.0",
-          "quoteTime": "2026-10-16 13:39:44",
+          "changePct": "-1.70%",
+          "volume": "37855220.0",
+          "quoteTime": "2026-10-16 15:34:59",
           "source": "sina"
         }
       ]
