@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-19T22:55:28",
+  "updatedAt": "2026-10-19T23:27:34",
   "marketUpdatedAt": {
-    "us_stock": "2026-10-19T22:55:28",
+    "us_stock": "2026-10-19T23:27:34",
     "a_share": "2026-10-19T14:36:31"
   },
   "fetchStatus": "success",
@@ -989,7 +989,7 @@
       "previous_close": 409.29,
       "open_price": 425.5950012207031,
       "high_price": 427.66,
-      "low_price": 412.75,
+      "low_price": 412.69,
       "change_pct": 0.9333,
       "volume": 6740301.0,
       "turnover": 2784485746.11,
@@ -1039,7 +1039,7 @@
       "previous_close": 165.74,
       "open_price": 172.66000366210938,
       "high_price": 173.05,
-      "low_price": 166.12,
+      "low_price": 166.15,
       "change_pct": 0.3982,
       "volume": 11495312.0,
       "turnover": 1912819916.8,
@@ -1162,7 +1162,7 @@
       "risk_flags": "产品周期;中国市场;监管",
       "current_price": 342.94,
       "previous_close": 343.46,
-      "open_price": 341.3299865722656,
+      "open_price": 340.9750061035156,
       "high_price": 345.99,
       "low_price": 340.115,
       "change_pct": -0.1514,
