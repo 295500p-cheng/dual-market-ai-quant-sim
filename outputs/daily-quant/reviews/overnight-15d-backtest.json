@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T05:55:03",
+  "updatedAt": "2026-10-19T12:43:25",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-05 至 2026-10-19",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 18,
+        "calls": 17,
         "reviewed": 0,
-        "pending": 4,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -408,7 +408,7 @@
         {
           "date": "2026-10-19",
           "stocks": {
-            "total": 3,
+            "total": 2,
             "more": 0,
             "items": [
               {
@@ -424,19 +424,12 @@
                 "name": "中科曙光",
                 "overnightScore": "75",
                 "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "300274",
-                "name": "阳光电源",
-                "overnightScore": "75",
-                "result": "待复盘"
               }
             ]
           },
-          "calls": 3,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 3,
+          "pending": 2,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -522,14 +515,14 @@
           "market": "A股",
           "symbol": "300274",
           "name": "阳光电源",
-          "calls": 2,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|002463",
@@ -579,9 +572,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 13,
+        "calls": 12,
         "reviewed": 0,
-        "pending": 4,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -923,7 +916,7 @@
         {
           "date": "2026-10-19",
           "stocks": {
-            "total": 3,
+            "total": 2,
             "more": 0,
             "items": [
               {
@@ -939,19 +932,12 @@
                 "name": "中科曙光",
                 "overnightScore": "75",
                 "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "300274",
-                "name": "阳光电源",
-                "overnightScore": "75",
-                "result": "待复盘"
               }
             ]
           },
-          "calls": 3,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 3,
+          "pending": 2,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1023,14 +1009,14 @@
           "market": "A股",
           "symbol": "300274",
           "name": "阳光电源",
-          "calls": 2,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|002463",
@@ -2827,12 +2813,12 @@
           "name": "宁德时代",
           "open": "275.00",
           "high": "275.00",
-          "low": "268.01",
-          "close": "269.43",
+          "low": "267.02",
+          "close": "267.02",
           "previousClose": "277.00",
-          "changePct": "-2.73%",
-          "volume": "23231695.0",
-          "quoteTime": "2026-10-19 13:55:00",
+          "changePct": "-3.60%",
+          "volume": "31146043.0",
+          "quoteTime": "2026-10-19 15:35:15",
           "source": "sina"
         }
       ]
@@ -3300,11 +3286,11 @@
           "open": "82.50",
           "high": "84.15",
           "low": "82.30",
-          "close": "83.57",
+          "close": "83.50",
           "previousClose": "82.72",
-          "changePct": "+1.03%",
-          "volume": "18559149.0",
-          "quoteTime": "2026-10-19 13:55:00",
+          "changePct": "+0.94%",
+          "volume": "21901095.0",
+          "quoteTime": "2026-10-19 15:35:15",
           "source": "sina"
         }
       ]
@@ -3742,13 +3728,13 @@
           "symbol": "601899",
           "name": "紫金矿业",
           "open": "29.78",
-          "high": "30.00",
+          "high": "30.10",
           "low": "29.57",
-          "close": "29.95",
+          "close": "29.79",
           "previousClose": "29.92",
-          "changePct": "+0.10%",
-          "volume": "78559874.0",
-          "quoteTime": "2026-10-19 13:54:59",
+          "changePct": "-0.43%",
+          "volume": "111297063.0",
+          "quoteTime": "2026-10-19 15:34:59",
           "source": "sina"
         }
       ]
@@ -4272,11 +4258,11 @@
           "open": "47.10",
           "high": "48.25",
           "low": "46.65",
-          "close": "47.81",
+          "close": "47.71",
           "previousClose": "47.78",
-          "changePct": "+0.06%",
-          "volume": "58494202.0",
-          "quoteTime": "2026-10-19 13:55:00",
+          "changePct": "-0.15%",
+          "volume": "69636264.0",
+          "quoteTime": "2026-10-19 15:34:59",
           "source": "sina"
         }
       ]
@@ -4287,9 +4273,9 @@
       "symbol": "300274",
       "name": "阳光电源",
       "metrics": {
-        "calls": 2,
+        "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -4564,21 +4550,13 @@
         {
           "date": "2026-10-19",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300274",
-                "name": "阳光电源",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -4589,26 +4567,6 @@
         }
       ],
       "callRows": [
-        {
-          "date": "2026-10-19",
-          "time": "05:55:03",
-          "market": "A股",
-          "symbol": "300274",
-          "name": "阳光电源",
-          "action": "盘中：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "78.11",
-          "buyZone": "77.49-78.58",
-          "takeProfit": "80.84-82.02",
-          "stopLoss": "76.16",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
-          "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
-        },
         {
           "date": "2026-10-12",
           "time": "07:09:10",
@@ -4744,11 +4702,11 @@
           "open": "76.76",
           "high": "78.40",
           "low": "76.42",
-          "close": "78.11",
+          "close": "77.68",
           "previousClose": "76.86",
-          "changePct": "+1.63%",
-          "volume": "21476627.0",
-          "quoteTime": "2026-10-19 13:55:00",
+          "changePct": "+1.07%",
+          "volume": "26587887.0",
+          "quoteTime": "2026-10-19 15:35:00",
           "source": "sina"
         }
       ]
@@ -5186,13 +5144,13 @@
           "symbol": "002463",
           "name": "沪电股份",
           "open": "112.20",
-          "high": "113.99",
+          "high": "114.20",
           "low": "106.06",
-          "close": "113.52",
+          "close": "111.75",
           "previousClose": "113.38",
-          "changePct": "+0.12%",
-          "volume": "37578396.0",
-          "quoteTime": "2026-10-19 13:55:00",
+          "changePct": "-1.44%",
+          "volume": "45352305.0",
+          "quoteTime": "2026-10-19 15:36:00",
           "source": "sina"
         }
       ]
@@ -5632,11 +5590,11 @@
           "open": "100.87",
           "high": "101.49",
           "low": "97.71",
-          "close": "100.60",
+          "close": "99.70",
           "previousClose": "102.66",
-          "changePct": "-2.01%",
-          "volume": "26099188.0",
-          "quoteTime": "2026-10-19 13:54:59",
+          "changePct": "-2.88%",
+          "volume": "31711334.0",
+          "quoteTime": "2026-10-19 15:34:59",
           "source": "sina"
         }
       ]
@@ -5943,16 +5901,16 @@
       "callRows": [
         {
           "date": "2026-10-19",
-          "time": "05:55:03",
+          "time": "12:43:24",
           "market": "A股",
           "symbol": "603019",
           "name": "中科曙光",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "73.57",
-          "buyZone": "72.98-74.01",
-          "takeProfit": "76.14-77.25",
-          "stopLoss": "71.73",
+          "recommendedPrice": "73.96",
+          "buyZone": "73.37-74.40",
+          "takeProfit": "76.55-77.66",
+          "stopLoss": "72.11",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -6074,13 +6032,13 @@
           "symbol": "603019",
           "name": "中科曙光",
           "open": "70.38",
-          "high": "73.59",
+          "high": "74.19",
           "low": "69.87",
-          "close": "73.57",
+          "close": "73.96",
           "previousClose": "70.48",
-          "changePct": "+4.38%",
-          "volume": "31653363.0",
-          "quoteTime": "2026-10-19 13:55:00",
+          "changePct": "+4.94%",
+          "volume": "41164035.0",
+          "quoteTime": "2026-10-19 15:34:59",
           "source": "sina"
         }
       ]
