@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T10:27:27",
+  "updatedAt": "2026-10-20T12:40:11",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-06 至 2026-10-20",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 19,
         "reviewed": 0,
-        "pending": 5,
+        "pending": 3,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -390,7 +390,7 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "美股",
@@ -404,13 +404,13 @@
                 "symbol": "603019",
                 "name": "中科曙光",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 3,
           "reviewed": 0,
-          "pending": 3,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -517,7 +517,7 @@
           "name": "工业富联",
           "calls": 5,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -573,12 +573,12 @@
           "name": "中科曙光",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|603501",
@@ -602,7 +602,7 @@
       "metrics": {
         "calls": 14,
         "reviewed": 0,
-        "pending": 4,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -934,20 +934,20 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "603019",
                 "name": "中科曙光",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1040,7 +1040,7 @@
           "name": "工业富联",
           "calls": 5,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -1096,12 +1096,12 @@
           "name": "中科曙光",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|603501",
@@ -1471,7 +1471,7 @@
       "metrics": {
         "calls": 9,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1775,7 +1775,7 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "美股",
@@ -1788,7 +1788,7 @@
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1846,7 +1846,7 @@
           "name": "工业富联",
           "calls": 4,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -3856,7 +3856,7 @@
       "metrics": {
         "calls": 5,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -4137,13 +4137,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -4212,13 +4212,13 @@
           "buyZone": "47.43-48.10",
           "takeProfit": "49.48-50.20",
           "stopLoss": "46.61",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "47.24",
+          "nextClose": "48.77",
+          "overnightReturn": "-1.19%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.01%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-10-16",
@@ -5804,7 +5804,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -6061,13 +6061,13 @@
                 "symbol": "603019",
                 "name": "中科曙光",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -6108,13 +6108,13 @@
           "buyZone": "73.37-74.40",
           "takeProfit": "76.55-77.66",
           "stopLoss": "72.11",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "73.39",
+          "nextClose": "74.86",
+          "overnightReturn": "-0.77%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.76%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
