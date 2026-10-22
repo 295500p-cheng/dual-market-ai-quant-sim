@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T21:27:13",
+  "updatedAt": "2026-10-22T23:04:17",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-08 至 2026-10-22",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 21,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -418,7 +418,7 @@
                 "symbol": "AVGO",
                 "name": "Broadcom Inc.",
                 "overnightScore": "85",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
@@ -438,7 +438,7 @@
           },
           "calls": 3,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -530,12 +530,12 @@
           "name": "Broadcom Inc.",
           "calls": 5,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|300274",
@@ -1153,7 +1153,7 @@
       "metrics": {
         "calls": 5,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1442,13 +1442,13 @@
                 "symbol": "AVGO",
                 "name": "Broadcom Inc.",
                 "overnightScore": "85",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1484,12 +1484,12 @@
           "name": "Broadcom Inc.",
           "calls": 5,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     },
@@ -1499,7 +1499,7 @@
       "metrics": {
         "calls": 9,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1817,13 +1817,13 @@
                 "symbol": "AVGO",
                 "name": "Broadcom Inc.",
                 "overnightScore": "85",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1873,12 +1873,12 @@
           "name": "Broadcom Inc.",
           "calls": 5,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         }
       ]
     }
@@ -4016,7 +4016,7 @@
       "metrics": {
         "calls": 5,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -4305,13 +4305,13 @@
                 "symbol": "AVGO",
                 "name": "Broadcom Inc.",
                 "overnightScore": "85",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -4352,13 +4352,13 @@
           "buyZone": "335.47-340.21",
           "takeProfit": "350.02-355.09",
           "stopLoss": "329.73",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "326.53",
+          "nextClose": "323.24",
+          "overnightReturn": "-3.44%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.57%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-10-20",
@@ -4603,7 +4603,7 @@
           "close": "323.24",
           "previousClose": "337.80",
           "changePct": "-4.31%",
-          "volume": "27774499.0",
+          "volume": "28083824.0",
           "quoteTime": "2026-10-22T20:00:01+00:00",
           "source": "yahoo_chart"
         }
