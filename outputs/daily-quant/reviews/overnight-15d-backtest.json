@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T05:53:17",
+  "updatedAt": "2026-10-26T12:36:50",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-12 至 2026-10-26",
@@ -2294,11 +2294,11 @@
           "open": "71.26",
           "high": "71.60",
           "low": "69.67",
-          "close": "70.46",
+          "close": "70.23",
           "previousClose": "72.20",
-          "changePct": "-2.41%",
-          "volume": "34882641.0",
-          "quoteTime": "2026-10-26 13:53:12",
+          "changePct": "-2.73%",
+          "volume": "45890479.0",
+          "quoteTime": "2026-10-26 16:29:00",
           "source": "sina"
         }
       ]
@@ -2782,12 +2782,12 @@
           "name": "沪电股份",
           "open": "104.00",
           "high": "104.94",
-          "low": "98.46",
-          "close": "99.02",
+          "low": "97.84",
+          "close": "98.90",
           "previousClose": "107.06",
-          "changePct": "-7.51%",
-          "volume": "42735881.0",
-          "quoteTime": "2026-10-26 13:53:15",
+          "changePct": "-7.62%",
+          "volume": "56187492.0",
+          "quoteTime": "2026-10-26 16:29:45",
           "source": "sina"
         }
       ]
@@ -3383,12 +3383,12 @@
           "name": "工业富联",
           "open": "48.00",
           "high": "48.21",
-          "low": "46.80",
-          "close": "46.92",
+          "low": "46.50",
+          "close": "46.73",
           "previousClose": "48.85",
-          "changePct": "-3.95%",
-          "volume": "51592212.0",
-          "quoteTime": "2026-10-26 13:53:13",
+          "changePct": "-4.34%",
+          "volume": "75945229.0",
+          "quoteTime": "2026-10-26 15:34:59",
           "source": "sina"
         }
       ]
@@ -4429,13 +4429,13 @@
           "symbol": "002594",
           "name": "比亚迪",
           "open": "80.97",
-          "high": "82.57",
+          "high": "82.62",
           "low": "80.97",
-          "close": "82.19",
+          "close": "82.40",
           "previousClose": "81.42",
-          "changePct": "+0.95%",
-          "volume": "20340604.0",
-          "quoteTime": "2026-10-26 13:53:15",
+          "changePct": "+1.20%",
+          "volume": "27332182.0",
+          "quoteTime": "2026-10-26 16:29:00",
           "source": "sina"
         }
       ]
@@ -4919,12 +4919,12 @@
           "name": "中芯国际",
           "open": "103.13",
           "high": "103.33",
-          "low": "101.21",
-          "close": "102.18",
+          "low": "100.98",
+          "close": "102.77",
           "previousClose": "104.10",
-          "changePct": "-1.84%",
-          "volume": "19937279.0",
-          "quoteTime": "2026-10-26 13:53:12",
+          "changePct": "-1.28%",
+          "volume": "31278556.0",
+          "quoteTime": "2026-10-26 15:34:59",
           "source": "sina"
         }
       ]
@@ -5436,12 +5436,12 @@
           "name": "中科曙光",
           "open": "78.32",
           "high": "78.86",
-          "low": "77.38",
-          "close": "77.62",
+          "low": "76.96",
+          "close": "77.85",
           "previousClose": "78.11",
-          "changePct": "-0.63%",
-          "volume": "16921672.0",
-          "quoteTime": "2026-10-26 13:53:14",
+          "changePct": "-0.33%",
+          "volume": "24454396.0",
+          "quoteTime": "2026-10-26 15:34:59",
           "source": "sina"
         }
       ]
@@ -5764,16 +5764,16 @@
       "callRows": [
         {
           "date": "2026-10-26",
-          "time": "05:53:16",
+          "time": "12:36:50",
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "84.85",
-          "buyZone": "84.17-85.36",
-          "takeProfit": "87.82-89.09",
-          "stopLoss": "82.73",
+          "recommendedPrice": "84.65",
+          "buyZone": "83.97-85.16",
+          "takeProfit": "87.61-88.88",
+          "stopLoss": "82.53",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -5982,11 +5982,11 @@
           "open": "81.50",
           "high": "85.62",
           "low": "81.31",
-          "close": "84.85",
+          "close": "84.65",
           "previousClose": "82.20",
-          "changePct": "+3.22%",
-          "volume": "18073999.0",
-          "quoteTime": "2026-10-26 13:53:12",
+          "changePct": "+2.98%",
+          "volume": "23281212.0",
+          "quoteTime": "2026-10-26 15:34:59",
           "source": "sina"
         }
       ]
@@ -6471,11 +6471,11 @@
           "open": "234.95",
           "high": "241.60",
           "low": "229.60",
-          "close": "238.20",
+          "close": "238.00",
           "previousClose": "237.60",
-          "changePct": "+0.25%",
-          "volume": "48327824.0",
-          "quoteTime": "2026-10-26 13:53:12",
+          "changePct": "+0.17%",
+          "volume": "61920704.0",
+          "quoteTime": "2026-10-26 16:29:15",
           "source": "sina"
         }
       ]
