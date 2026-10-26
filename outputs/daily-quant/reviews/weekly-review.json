@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T14:08:48",
+  "updatedAt": "2026-10-26T23:38:44",
   "status": "等待本周模拟平仓",
   "period": "2026-10-20 至 2026-10-26",
   "summary": "本周暂无实际模拟平仓，已有 13 条候选等待复盘。",
@@ -17,11 +17,11 @@
     "executionRealizedPnl": "暂无",
     "bestBucket": "暂无",
     "weakBucket": "暂无",
-    "executionSignals": 49,
+    "executionSignals": 55,
     "executionBuys": 0,
     "executionExits": 0,
     "executionHolding": 0,
-    "executionWaiting": 9
+    "executionWaiting": 10
   },
   "marketRows": [
     {
