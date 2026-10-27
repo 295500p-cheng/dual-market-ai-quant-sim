@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T06:06:13",
+  "updatedAt": "2026-10-27T12:16:32",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-13 至 2026-10-27",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 20,
+        "calls": 19,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -429,16 +429,9 @@
         {
           "date": "2026-10-27",
           "stocks": {
-            "total": 2,
+            "total": 1,
             "more": 0,
             "items": [
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "待复盘"
-              },
               {
                 "market": "A股",
                 "symbol": "601138",
@@ -448,9 +441,9 @@
               }
             ]
           },
-          "calls": 2,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -572,20 +565,6 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "未触发"
-        },
-        {
-          "key": "A股|601899",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
         }
       ]
     },
@@ -593,9 +572,9 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 16,
+        "calls": 15,
         "reviewed": 0,
-        "pending": 3,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -968,16 +947,9 @@
         {
           "date": "2026-10-27",
           "stocks": {
-            "total": 2,
+            "total": 1,
             "more": 0,
             "items": [
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "待复盘"
-              },
               {
                 "market": "A股",
                 "symbol": "601138",
@@ -987,9 +959,9 @@
               }
             ]
           },
-          "calls": 2,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1097,20 +1069,6 @@
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
           "latestResult": "未触发"
-        },
-        {
-          "key": "A股|601899",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
         }
       ]
     },
@@ -2307,12 +2265,12 @@
           "name": "沪电股份",
           "open": "100.90",
           "high": "102.89",
-          "low": "100.42",
-          "close": "101.12",
+          "low": "99.17",
+          "close": "99.20",
           "previousClose": "98.90",
-          "changePct": "+2.24%",
-          "volume": "35838599.0",
-          "quoteTime": "2026-10-27 14:06:09",
+          "changePct": "+0.30%",
+          "volume": "45134240.0",
+          "quoteTime": "2026-10-27 16:29:45",
           "source": "sina"
         }
       ]
@@ -2936,12 +2894,12 @@
           "name": "工业富联",
           "open": "47.40",
           "high": "47.75",
-          "low": "46.71",
-          "close": "46.95",
+          "low": "45.91",
+          "close": "45.92",
           "previousClose": "46.73",
-          "changePct": "+0.47%",
-          "volume": "38852465.0",
-          "quoteTime": "2026-10-27 14:06:09",
+          "changePct": "-1.73%",
+          "volume": "55847560.0",
+          "quoteTime": "2026-10-27 15:34:59",
           "source": "sina"
         }
       ]
@@ -3983,12 +3941,12 @@
           "name": "比亚迪",
           "open": "82.45",
           "high": "83.30",
-          "low": "82.45",
-          "close": "82.89",
+          "low": "82.01",
+          "close": "82.01",
           "previousClose": "82.40",
-          "changePct": "+0.59%",
-          "volume": "15705393.0",
-          "quoteTime": "2026-10-27 14:06:09",
+          "changePct": "-0.47%",
+          "volume": "20207986.0",
+          "quoteTime": "2026-10-27 16:29:00",
           "source": "sina"
         }
       ]
@@ -4472,12 +4430,12 @@
           "name": "中芯国际",
           "open": "102.77",
           "high": "103.87",
-          "low": "102.19",
-          "close": "102.60",
+          "low": "99.91",
+          "close": "100.00",
           "previousClose": "102.77",
-          "changePct": "-0.17%",
-          "volume": "17026645.0",
-          "quoteTime": "2026-10-27 14:06:09",
+          "changePct": "-2.70%",
+          "volume": "24807797.0",
+          "quoteTime": "2026-10-27 15:34:59",
           "source": "sina"
         }
       ]
@@ -4989,12 +4947,12 @@
           "name": "中科曙光",
           "open": "77.80",
           "high": "77.99",
-          "low": "75.63",
-          "close": "75.68",
+          "low": "73.88",
+          "close": "73.89",
           "previousClose": "77.85",
-          "changePct": "-2.79%",
-          "volume": "17223325.0",
-          "quoteTime": "2026-10-27 14:06:08",
+          "changePct": "-5.09%",
+          "volume": "26196435.0",
+          "quoteTime": "2026-10-27 15:34:59",
           "source": "sina"
         }
       ]
@@ -5534,12 +5492,12 @@
           "name": "豪威集团",
           "open": "84.26",
           "high": "84.75",
-          "low": "83.41",
-          "close": "83.68",
+          "low": "82.21",
+          "close": "82.29",
           "previousClose": "84.65",
-          "changePct": "-1.15%",
-          "volume": "10005347.0",
-          "quoteTime": "2026-10-27 14:06:08",
+          "changePct": "-2.79%",
+          "volume": "14527480.0",
+          "quoteTime": "2026-10-27 15:34:59",
           "source": "sina"
         }
       ]
@@ -6024,500 +5982,11 @@
           "open": "238.80",
           "high": "238.80",
           "low": "232.67",
-          "close": "236.23",
+          "close": "233.00",
           "previousClose": "238.00",
-          "changePct": "-0.74%",
-          "volume": "30004553.0",
-          "quoteTime": "2026-10-27 14:06:09",
-          "source": "sina"
-        }
-      ]
-    },
-    "A股|601899": {
-      "key": "A股|601899",
-      "market": "A股",
-      "symbol": "601899",
-      "name": "紫金矿业",
-      "metrics": {
-        "calls": 1,
-        "reviewed": 0,
-        "pending": 1,
-        "wins": 0,
-        "winRate": "暂无",
-        "avgCloseReturn": "暂无",
-        "avgOvernightReturn": "暂无",
-        "avgRelativeReturn": "暂无",
-        "equity": "100.00",
-        "maxDrawdown": "0.00%",
-        "bestStock": "暂无",
-        "weakStock": "暂无"
-      },
-      "dailyRows": [
-        {
-          "date": "2026-10-13",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-14",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-15",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-16",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-17",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-18",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-20",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-21",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-22",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-24",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-25",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-26",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-27",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601899",
-                "name": "紫金矿业",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 1,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        }
-      ],
-      "callRows": [
-        {
-          "date": "2026-10-27",
-          "time": "06:06:12",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "action": "盘中：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "28.09",
-          "buyZone": "27.87-28.26",
-          "takeProfit": "29.07-29.49",
-          "stopLoss": "27.39",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
-          "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
-        }
-      ],
-      "priceRows": [
-        {
-          "date": "2026-10-13",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.84",
-          "high": "30.64",
-          "low": "29.51",
-          "close": "30.40",
-          "previousClose": "30.22",
-          "changePct": "+0.60%",
-          "volume": "126511202.0",
-          "quoteTime": "2026-10-13 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-14",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "30.01",
-          "high": "30.49",
-          "low": "29.87",
-          "close": "29.98",
-          "previousClose": "30.40",
-          "changePct": "-1.38%",
-          "volume": "114546774.0",
-          "quoteTime": "2026-10-14 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-15",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.51",
-          "high": "29.90",
-          "low": "29.03",
-          "close": "29.38",
-          "previousClose": "29.98",
-          "changePct": "-2.00%",
-          "volume": "197079282.0",
-          "quoteTime": "2026-10-15 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-16",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.70",
-          "high": "30.29",
-          "low": "29.15",
-          "close": "29.92",
-          "previousClose": "29.38",
-          "changePct": "+1.84%",
-          "volume": "184729737.0",
-          "quoteTime": "2026-10-16 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.78",
-          "high": "30.10",
-          "low": "29.57",
-          "close": "29.79",
-          "previousClose": "29.92",
-          "changePct": "-0.43%",
-          "volume": "111297063.0",
-          "quoteTime": "2026-10-19 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-20",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.30",
-          "high": "29.39",
-          "low": "28.55",
-          "close": "29.06",
-          "previousClose": "29.79",
-          "changePct": "-2.45%",
-          "volume": "209303512.0",
-          "quoteTime": "2026-10-20 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-21",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.02",
-          "high": "29.18",
-          "low": "28.73",
-          "close": "28.87",
-          "previousClose": "29.06",
-          "changePct": "-0.65%",
-          "volume": "151595072.0",
-          "quoteTime": "2026-10-21 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-22",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "29.00",
-          "high": "29.00",
-          "low": "27.50",
-          "close": "27.84",
-          "previousClose": "28.87",
-          "changePct": "-3.57%",
-          "volume": "244798270.0",
-          "quoteTime": "2026-10-22 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "26.99",
-          "high": "28.79",
-          "low": "26.60",
-          "close": "28.79",
-          "previousClose": "27.84",
-          "changePct": "+3.41%",
-          "volume": "267089553.0",
-          "quoteTime": "2026-10-23 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-26",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "28.28",
-          "high": "28.28",
-          "low": "26.71",
-          "close": "27.47",
-          "previousClose": "28.79",
-          "changePct": "-4.58%",
-          "volume": "303206582.0",
-          "quoteTime": "2026-10-26 15:34:59",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-27",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "27.20",
-          "high": "28.24",
-          "low": "27.19",
-          "close": "28.09",
-          "previousClose": "27.47",
-          "changePct": "+2.26%",
-          "volume": "150304372.0",
-          "quoteTime": "2026-10-27 14:06:09",
+          "changePct": "-2.10%",
+          "volume": "37504953.0",
+          "quoteTime": "2026-10-27 16:29:15",
           "source": "sina"
         }
       ]
