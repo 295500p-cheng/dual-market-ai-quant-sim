@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T13:34:25",
+  "updatedAt": "2026-10-28T13:57:29",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-14 至 2026-10-28",
@@ -27,580 +27,6 @@
       "label": "全部隔夜候选",
       "metrics": {
         "calls": 21,
-        "reviewed": 0,
-        "pending": 6,
-        "wins": 0,
-        "winRate": "暂无",
-        "avgCloseReturn": "暂无",
-        "avgOvernightReturn": "暂无",
-        "avgRelativeReturn": "暂无",
-        "equity": "100.00",
-        "maxDrawdown": "0.00%",
-        "bestStock": "暂无",
-        "weakStock": "暂无"
-      },
-      "dailyRows": [
-        {
-          "date": "2026-10-14",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-15",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "002594",
-                "name": "比亚迪",
-                "overnightScore": "75",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "688981",
-                "name": "中芯国际",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-16",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-17",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-18",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 3,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              },
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 3,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-20",
-          "stocks": {
-            "total": 3,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              },
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 3,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-21",
-          "stocks": {
-            "total": 3,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "75",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 3,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-22",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300750",
-                "name": "宁德时代",
-                "overnightScore": "75",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-24",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-25",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-26",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-27",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 2,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-28",
-          "stocks": {
-            "total": 4,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "002371",
-                "name": "北方华创",
-                "overnightScore": "75",
-                "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "002463",
-                "name": "沪电股份",
-                "overnightScore": "75",
-                "result": "待复盘"
-              },
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "待复盘"
-              }
-            ]
-          },
-          "calls": 4,
-          "reviewed": 0,
-          "pending": 4,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        }
-      ],
-      "stockRows": [
-        {
-          "key": "A股|002594",
-          "market": "A股",
-          "symbol": "002594",
-          "name": "比亚迪",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
-        {
-          "key": "A股|688981",
-          "market": "A股",
-          "symbol": "688981",
-          "name": "中芯国际",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
-        {
-          "key": "A股|601138",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "calls": 6,
-          "reviewed": 0,
-          "pending": 2,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        },
-        {
-          "key": "A股|603019",
-          "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "calls": 3,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        },
-        {
-          "key": "美股|AVGO",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "calls": 4,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        },
-        {
-          "key": "A股|603501",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "calls": 3,
-          "reviewed": 0,
-          "pending": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
-        {
-          "key": "A股|300750",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
-        {
-          "key": "A股|002371",
-          "market": "A股",
-          "symbol": "002371",
-          "name": "北方华创",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        },
-        {
-          "key": "A股|002463",
-          "market": "A股",
-          "symbol": "002463",
-          "name": "沪电股份",
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 1,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
-        }
-      ]
-    },
-    "a_share": {
-      "key": "a_share",
-      "label": "A股隔夜候选",
-      "metrics": {
-        "calls": 17,
         "reviewed": 0,
         "pending": 5,
         "wins": 0,
@@ -730,6 +156,580 @@
         {
           "date": "2026-10-19",
           "stocks": {
+            "total": 3,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "100",
+                "result": "未触发"
+              },
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "未触发"
+              },
+              {
+                "market": "A股",
+                "symbol": "603019",
+                "name": "中科曙光",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-20",
+          "stocks": {
+            "total": 3,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "100",
+                "result": "未触发"
+              },
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "未触发"
+              },
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-21",
+          "stocks": {
+            "total": 3,
+            "more": 0,
+            "items": [
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "未触发"
+              },
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "75",
+                "result": "未触发"
+              },
+              {
+                "market": "A股",
+                "symbol": "603019",
+                "name": "中科曙光",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-22",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-23",
+          "stocks": {
+            "total": 2,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "300750",
+                "name": "宁德时代",
+                "overnightScore": "75",
+                "result": "未触发"
+              },
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 2,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-24",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-25",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-26",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-27",
+          "stocks": {
+            "total": 2,
+            "more": 0,
+            "items": [
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 2,
+          "reviewed": 0,
+          "pending": 1,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-28",
+          "stocks": {
+            "total": 4,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "100",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "002371",
+                "name": "北方华创",
+                "overnightScore": "75",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "002463",
+                "name": "沪电股份",
+                "overnightScore": "75",
+                "result": "待复盘"
+              },
+              {
+                "market": "A股",
+                "symbol": "603019",
+                "name": "中科曙光",
+                "overnightScore": "75",
+                "result": "待复盘"
+              }
+            ]
+          },
+          "calls": 4,
+          "reviewed": 0,
+          "pending": 4,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "stockRows": [
+        {
+          "key": "A股|002594",
+          "market": "A股",
+          "symbol": "002594",
+          "name": "比亚迪",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "未触发"
+        },
+        {
+          "key": "A股|688981",
+          "market": "A股",
+          "symbol": "688981",
+          "name": "中芯国际",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "未触发"
+        },
+        {
+          "key": "A股|601138",
+          "market": "A股",
+          "symbol": "601138",
+          "name": "工业富联",
+          "calls": 6,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|603019",
+          "market": "A股",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "美股|AVGO",
+          "market": "美股",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "calls": 4,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|603501",
+          "market": "A股",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "calls": 3,
+          "reviewed": 0,
+          "pending": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "未触发"
+        },
+        {
+          "key": "A股|300750",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "未触发"
+        },
+        {
+          "key": "A股|002371",
+          "market": "A股",
+          "symbol": "002371",
+          "name": "北方华创",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        },
+        {
+          "key": "A股|002463",
+          "market": "A股",
+          "symbol": "002463",
+          "name": "沪电股份",
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 1,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "待复盘"
+        }
+      ]
+    },
+    "a_share": {
+      "key": "a_share",
+      "label": "A股隔夜候选",
+      "metrics": {
+        "calls": 17,
+        "reviewed": 0,
+        "pending": 4,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-10-14",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-15",
+          "stocks": {
+            "total": 2,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "002594",
+                "name": "比亚迪",
+                "overnightScore": "75",
+                "result": "未触发"
+              },
+              {
+                "market": "A股",
+                "symbol": "688981",
+                "name": "中芯国际",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 2,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-16",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "601138",
+                "name": "工业富联",
+                "overnightScore": "85",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-17",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-18",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-19",
+          "stocks": {
             "total": 2,
             "more": 0,
             "items": [
@@ -950,13 +950,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1049,7 +1049,7 @@
           "name": "工业富联",
           "calls": 6,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -2836,7 +2836,7 @@
       "metrics": {
         "calls": 6,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -3125,13 +3125,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -3200,13 +3200,13 @@
           "buyZone": "46.57-47.23",
           "takeProfit": "48.59-49.30",
           "stopLoss": "45.78",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "46.82",
+          "nextClose": "48.64",
+          "overnightReturn": "-0.28%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.15%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-10-21",
