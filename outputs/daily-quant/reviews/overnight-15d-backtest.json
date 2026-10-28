@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T06:44:06",
+  "updatedAt": "2026-10-28T13:34:25",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-14 至 2026-10-28",
@@ -2330,11 +2330,11 @@
           "open": "81.94",
           "high": "83.17",
           "low": "81.94",
-          "close": "82.79",
+          "close": "82.74",
           "previousClose": "82.01",
-          "changePct": "+0.95%",
-          "volume": "17849548.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "+0.89%",
+          "volume": "20059681.0",
+          "quoteTime": "2026-10-28 15:36:00",
           "source": "sina"
         }
       ]
@@ -2819,11 +2819,11 @@
           "open": "103.42",
           "high": "103.50",
           "low": "99.90",
-          "close": "101.13",
+          "close": "102.00",
           "previousClose": "100.00",
-          "changePct": "+1.13%",
-          "volume": "26022949.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "+2.00%",
+          "volume": "28098839.0",
+          "quoteTime": "2026-10-28 15:34:59",
           "source": "sina"
         }
       ]
@@ -3170,16 +3170,16 @@
       "callRows": [
         {
           "date": "2026-10-28",
-          "time": "06:44:06",
+          "time": "13:34:24",
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "100",
-          "recommendedPrice": "48.41",
-          "buyZone": "48.02-48.70",
-          "takeProfit": "50.10-50.83",
-          "stopLoss": "47.20",
+          "recommendedPrice": "48.64",
+          "buyZone": "48.25-48.93",
+          "takeProfit": "50.34-51.07",
+          "stopLoss": "47.42",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -3448,11 +3448,11 @@
           "open": "46.82",
           "high": "48.70",
           "low": "46.31",
-          "close": "48.41",
+          "close": "48.64",
           "previousClose": "45.92",
-          "changePct": "+5.42%",
-          "volume": "102721476.0",
-          "quoteTime": "2026-10-28 14:44:04",
+          "changePct": "+5.92%",
+          "volume": "115313224.0",
+          "quoteTime": "2026-10-28 15:34:59",
           "source": "sina"
         }
       ]
@@ -3775,16 +3775,16 @@
       "callRows": [
         {
           "date": "2026-10-28",
-          "time": "06:44:06",
+          "time": "13:34:24",
           "market": "A股",
           "symbol": "603019",
           "name": "中科曙光",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "77.35",
-          "buyZone": "76.73-77.81",
-          "takeProfit": "80.06-81.22",
-          "stopLoss": "75.42",
+          "recommendedPrice": "77.20",
+          "buyZone": "76.58-77.66",
+          "takeProfit": "79.90-81.06",
+          "stopLoss": "75.27",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -3993,11 +3993,11 @@
           "open": "77.54",
           "high": "77.54",
           "low": "74.82",
-          "close": "77.35",
+          "close": "77.20",
           "previousClose": "73.89",
-          "changePct": "+4.68%",
-          "volume": "25800887.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "+4.48%",
+          "volume": "27776687.0",
+          "quoteTime": "2026-10-28 15:34:59",
           "source": "sina"
         }
       ]
@@ -5096,11 +5096,11 @@
           "open": "84.40",
           "high": "86.50",
           "low": "82.78",
-          "close": "84.93",
+          "close": "85.20",
           "previousClose": "82.29",
-          "changePct": "+3.21%",
-          "volume": "18326056.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "+3.54%",
+          "volume": "19649326.0",
+          "quoteTime": "2026-10-28 15:34:59",
           "source": "sina"
         }
       ]
@@ -5585,11 +5585,11 @@
           "open": "233.34",
           "high": "234.00",
           "low": "228.60",
-          "close": "229.42",
+          "close": "229.14",
           "previousClose": "233.00",
-          "changePct": "-1.54%",
-          "volume": "39302721.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "-1.66%",
+          "volume": "44387920.0",
+          "quoteTime": "2026-10-28 15:35:30",
           "source": "sina"
         }
       ]
@@ -5896,16 +5896,16 @@
       "callRows": [
         {
           "date": "2026-10-28",
-          "time": "06:44:06",
+          "time": "13:34:24",
           "market": "A股",
           "symbol": "002371",
           "name": "北方华创",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "512.00",
-          "buyZone": "507.90-515.07",
-          "takeProfit": "529.92-537.60",
-          "stopLoss": "499.20",
+          "recommendedPrice": "511.68",
+          "buyZone": "507.59-514.75",
+          "takeProfit": "529.59-537.26",
+          "stopLoss": "498.89",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -6074,11 +6074,11 @@
           "open": "495.73",
           "high": "517.32",
           "low": "491.42",
-          "close": "512.00",
+          "close": "511.68",
           "previousClose": "488.50",
-          "changePct": "+4.81%",
-          "volume": "9704438.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "+4.75%",
+          "volume": "10235659.0",
+          "quoteTime": "2026-10-28 15:35:15",
           "source": "sina"
         }
       ]
@@ -6385,16 +6385,16 @@
       "callRows": [
         {
           "date": "2026-10-28",
-          "time": "06:44:06",
+          "time": "13:34:24",
           "market": "A股",
           "symbol": "002463",
           "name": "沪电股份",
-          "action": "盘中：强势观察",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "104.49",
-          "buyZone": "103.65-105.12",
-          "takeProfit": "108.15-109.71",
-          "stopLoss": "101.88",
+          "recommendedPrice": "104.57",
+          "buyZone": "103.73-105.20",
+          "takeProfit": "108.23-109.80",
+          "stopLoss": "101.96",
           "nextOpen": "暂无",
           "nextClose": "暂无",
           "overnightReturn": "待复盘",
@@ -6563,11 +6563,11 @@
           "open": "102.00",
           "high": "105.90",
           "low": "101.70",
-          "close": "104.49",
+          "close": "104.57",
           "previousClose": "99.20",
-          "changePct": "+5.33%",
-          "volume": "50576962.0",
-          "quoteTime": "2026-10-28 14:44:03",
+          "changePct": "+5.41%",
+          "volume": "53995124.0",
+          "quoteTime": "2026-10-28 15:35:45",
           "source": "sina"
         }
       ]
