@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-30T14:01:39",
+  "updatedAt": "2026-10-30T23:31:09",
   "status": "等待本周模拟平仓",
   "period": "2026-10-24 至 2026-10-30",
-  "summary": "本周暂无实际模拟平仓，已有 10 条候选等待复盘。",
+  "summary": "本周暂无实际模拟平仓，已有 5 条候选等待复盘。",
   "metrics": {
     "reviewedTrades": 0,
-    "pendingTrades": 10,
+    "pendingTrades": 5,
     "weeklyWinRate": "暂无",
     "overnightTrades": 0,
     "overnightWinRate": "暂无",
