@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T07:44:31",
+  "updatedAt": "2026-11-03T15:00:34",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-20 至 2026-11-03",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 24,
         "reviewed": 0,
-        "pending": 6,
+        "pending": 4,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -419,20 +419,20 @@
                 "symbol": "300274",
                 "name": "阳光电源",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "002594",
                 "name": "比亚迪",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -595,7 +595,7 @@
           "name": "阳光电源",
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -609,12 +609,12 @@
           "name": "比亚迪",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|688981",
@@ -652,7 +652,7 @@
       "metrics": {
         "calls": 21,
         "reviewed": 0,
-        "pending": 6,
+        "pending": 4,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1022,20 +1022,20 @@
                 "symbol": "300274",
                 "name": "阳光电源",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "002594",
                 "name": "比亚迪",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1184,7 +1184,7 @@
           "name": "阳光电源",
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
@@ -1198,12 +1198,12 @@
           "name": "比亚迪",
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|688981",
@@ -5686,7 +5686,7 @@
       "metrics": {
         "calls": 2,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -5943,13 +5943,13 @@
                 "symbol": "300274",
                 "name": "阳光电源",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -6018,13 +6018,13 @@
           "buyZone": "70.97-71.97",
           "takeProfit": "74.04-75.12",
           "stopLoss": "69.75",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "72.03",
+          "nextClose": "75.72",
+          "overnightReturn": "+0.68%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+8.57%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
@@ -6203,7 +6203,7 @@
       "metrics": {
         "calls": 1,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -6460,13 +6460,13 @@
                 "symbol": "002594",
                 "name": "比亚迪",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -6507,13 +6507,13 @@
           "buyZone": "83.48-84.65",
           "takeProfit": "87.10-88.36",
           "stopLoss": "82.05",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "84.60",
+          "nextClose": "84.95",
+          "overnightReturn": "+0.53%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+1.15%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
