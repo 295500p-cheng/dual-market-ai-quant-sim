@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-02T22:41:27",
+  "updatedAt": "2026-11-03T02:48:01",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
-  "window": "2026-10-19 至 2026-11-02",
+  "window": "2026-10-20 至 2026-11-03",
   "filters": [
     {
       "key": "all",
@@ -26,7 +26,7 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 23,
+        "calls": 20,
         "reviewed": 0,
         "pending": 2,
         "wins": 0,
@@ -40,46 +40,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 3,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              },
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 3,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -480,15 +440,33 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "stockRows": [
         {
-          "key": "A股|603019",
+          "key": "A股|603501",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "calls": 3,
+          "symbol": "603501",
+          "name": "豪威集团",
+          "calls": 4,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -502,7 +480,7 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 6,
+          "calls": 5,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -516,7 +494,7 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 4,
+          "calls": 3,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -526,11 +504,11 @@
           "latestResult": "未触发"
         },
         {
-          "key": "A股|603501",
+          "key": "A股|603019",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "calls": 4,
+          "symbol": "603019",
+          "name": "中科曙光",
+          "calls": 2,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -615,7 +593,7 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 19,
+        "calls": 17,
         "reviewed": 0,
         "pending": 2,
         "wins": 0,
@@ -629,39 +607,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -1041,15 +986,33 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "stockRows": [
         {
-          "key": "A股|603019",
+          "key": "A股|603501",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "calls": 3,
+          "symbol": "603501",
+          "name": "豪威集团",
+          "calls": 4,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1063,7 +1026,7 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 6,
+          "calls": 5,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1073,11 +1036,11 @@
           "latestResult": "未触发"
         },
         {
-          "key": "A股|603501",
+          "key": "A股|603019",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "calls": 4,
+          "symbol": "603019",
+          "name": "中科曙光",
+          "calls": 2,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1162,7 +1125,7 @@
       "key": "us_stock",
       "label": "美股隔夜候选",
       "metrics": {
-        "calls": 4,
+        "calls": 3,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -1176,32 +1139,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -1462,6 +1399,24 @@
         },
         {
           "date": "2026-11-02",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
           "stocks": {
             "total": 0,
             "more": 0,
@@ -1485,7 +1440,7 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 4,
+          "calls": 3,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1500,7 +1455,7 @@
       "key": "high_score",
       "label": "高隔夜评分",
       "metrics": {
-        "calls": 8,
+        "calls": 6,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -1514,39 +1469,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              },
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -1830,6 +1752,24 @@
         },
         {
           "date": "2026-11-02",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
           "stocks": {
             "total": 0,
             "more": 0,
@@ -1853,7 +1793,7 @@
           "market": "A股",
           "symbol": "601138",
           "name": "工业富联",
-          "calls": 4,
+          "calls": 3,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1867,7 +1807,7 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 4,
+          "calls": 3,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1880,13 +1820,13 @@
     }
   },
   "stocks": {
-    "A股|603019": {
-      "key": "A股|603019",
+    "A股|603501": {
+      "key": "A股|603501",
       "market": "A股",
-      "symbol": "603019",
-      "name": "中科曙光",
+      "symbol": "603501",
+      "name": "豪威集团",
       "metrics": {
-        "calls": 3,
+        "calls": 4,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -1901,39 +1841,21 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-19",
+          "date": "2026-10-20",
           "stocks": {
             "total": 1,
             "more": 0,
             "items": [
               {
                 "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
+                "symbol": "603501",
+                "name": "豪威集团",
                 "overnightScore": "75",
                 "result": "未触发"
               }
             ]
           },
           "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-20",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -1947,19 +1869,11 @@
         {
           "date": "2026-10-21",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -1991,11 +1905,19 @@
         {
           "date": "2026-10-23",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -2045,11 +1967,19 @@
         {
           "date": "2026-10-26",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -2081,19 +2011,11 @@
         {
           "date": "2026-10-28",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603019",
-                "name": "中科曙光",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -2107,11 +2029,19 @@
         {
           "date": "2026-10-29",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603501",
+                "name": "豪威集团",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -2193,233 +2123,256 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
         {
-          "date": "2026-10-28",
-          "time": "13:34:24",
+          "date": "2026-10-29",
+          "time": "06:51:45",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "action": "收盘：强势观察",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "action": "盘中：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "77.20",
-          "buyZone": "76.58-77.66",
-          "takeProfit": "79.90-81.06",
-          "stopLoss": "75.27",
-          "nextOpen": "77.77",
-          "nextClose": "75.36",
-          "overnightReturn": "+0.74%",
+          "recommendedPrice": "86.22",
+          "buyZone": "85.53-86.74",
+          "takeProfit": "89.24-90.53",
+          "stopLoss": "84.06",
+          "nextOpen": "86.59",
+          "nextClose": "82.45",
+          "overnightReturn": "+0.43%",
           "closeReturn": "待复盘",
-          "relativeReturn": "-1.35%",
+          "relativeReturn": "-2.98%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
-          "date": "2026-10-21",
-          "time": "11:30:32",
+          "date": "2026-10-26",
+          "time": "12:36:50",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
+          "symbol": "603501",
+          "name": "豪威集团",
           "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "75.98",
-          "buyZone": "75.37-76.44",
-          "takeProfit": "78.64-79.78",
-          "stopLoss": "74.08",
-          "nextOpen": "75.85",
-          "nextClose": "76.20",
-          "overnightReturn": "-0.17%",
+          "recommendedPrice": "84.65",
+          "buyZone": "83.97-85.16",
+          "takeProfit": "87.61-88.88",
+          "stopLoss": "82.53",
+          "nextOpen": "84.26",
+          "nextClose": "82.29",
+          "overnightReturn": "-0.46%",
           "closeReturn": "待复盘",
-          "relativeReturn": "+2.13%",
+          "relativeReturn": "-1.47%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
-          "date": "2026-10-19",
-          "time": "12:43:24",
+          "date": "2026-10-23",
+          "time": "11:19:51",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
+          "symbol": "603501",
+          "name": "豪威集团",
           "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "73.96",
-          "buyZone": "73.37-74.40",
-          "takeProfit": "76.55-77.66",
-          "stopLoss": "72.11",
-          "nextOpen": "73.39",
-          "nextClose": "74.86",
-          "overnightReturn": "-0.77%",
+          "recommendedPrice": "82.20",
+          "buyZone": "81.54-82.69",
+          "takeProfit": "85.08-86.31",
+          "stopLoss": "80.14",
+          "nextOpen": "81.50",
+          "nextClose": "84.65",
+          "overnightReturn": "-0.85%",
           "closeReturn": "待复盘",
-          "relativeReturn": "+1.76%",
+          "relativeReturn": "+3.02%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
+        },
+        {
+          "date": "2026-10-20",
+          "time": "10:27:26",
+          "market": "A股",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "action": "收盘：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "76.91",
+          "buyZone": "76.29-77.37",
+          "takeProfit": "79.60-80.76",
+          "stopLoss": "74.99",
+          "nextOpen": "78.03",
+          "nextClose": "77.48",
+          "overnightReturn": "+1.46%",
+          "closeReturn": "待复盘",
+          "relativeReturn": "+1.71%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
         {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "70.38",
-          "high": "74.19",
-          "low": "69.87",
-          "close": "73.96",
-          "previousClose": "70.48",
-          "changePct": "+4.94%",
-          "volume": "41164035.0",
-          "quoteTime": "2026-10-19 15:34:59",
-          "source": "sina"
-        },
-        {
           "date": "2026-10-20",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "73.39",
-          "high": "75.80",
-          "low": "73.12",
-          "close": "74.86",
-          "previousClose": "73.96",
-          "changePct": "+1.22%",
-          "volume": "29275779.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "72.50",
+          "high": "77.00",
+          "low": "72.41",
+          "close": "76.91",
+          "previousClose": "72.74",
+          "changePct": "+5.73%",
+          "volume": "14909841.0",
           "quoteTime": "2026-10-20 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-21",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "75.72",
-          "high": "76.50",
-          "low": "74.37",
-          "close": "75.98",
-          "previousClose": "74.86",
-          "changePct": "+1.50%",
-          "volume": "25464502.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "78.03",
+          "high": "78.07",
+          "low": "76.90",
+          "close": "77.48",
+          "previousClose": "76.91",
+          "changePct": "+0.74%",
+          "volume": "8948728.0",
           "quoteTime": "2026-10-21 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-22",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "75.85",
-          "high": "76.87",
-          "low": "75.30",
-          "close": "76.20",
-          "previousClose": "75.98",
-          "changePct": "+0.29%",
-          "volume": "28788510.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "77.88",
+          "high": "79.15",
+          "low": "77.40",
+          "close": "78.40",
+          "previousClose": "77.48",
+          "changePct": "+1.19%",
+          "volume": "12558148.0",
           "quoteTime": "2026-10-22 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-23",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "75.00",
-          "high": "78.48",
-          "low": "73.29",
-          "close": "78.11",
-          "previousClose": "76.20",
-          "changePct": "+2.51%",
-          "volume": "39357572.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "78.00",
+          "high": "82.49",
+          "low": "77.23",
+          "close": "82.20",
+          "previousClose": "78.40",
+          "changePct": "+4.85%",
+          "volume": "20348368.0",
           "quoteTime": "2026-10-23 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-26",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "78.32",
-          "high": "78.86",
-          "low": "76.96",
-          "close": "77.85",
-          "previousClose": "78.11",
-          "changePct": "-0.33%",
-          "volume": "24454396.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "81.50",
+          "high": "85.62",
+          "low": "81.31",
+          "close": "84.65",
+          "previousClose": "82.20",
+          "changePct": "+2.98%",
+          "volume": "23281212.0",
           "quoteTime": "2026-10-26 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-27",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "77.80",
-          "high": "77.99",
-          "low": "73.88",
-          "close": "73.89",
-          "previousClose": "77.85",
-          "changePct": "-5.09%",
-          "volume": "26196435.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "84.26",
+          "high": "84.75",
+          "low": "82.21",
+          "close": "82.29",
+          "previousClose": "84.65",
+          "changePct": "-2.79%",
+          "volume": "14527480.0",
           "quoteTime": "2026-10-27 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-28",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "77.54",
-          "high": "77.54",
-          "low": "74.82",
-          "close": "77.20",
-          "previousClose": "73.89",
-          "changePct": "+4.48%",
-          "volume": "27776687.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "84.40",
+          "high": "86.50",
+          "low": "82.78",
+          "close": "85.20",
+          "previousClose": "82.29",
+          "changePct": "+3.54%",
+          "volume": "19649326.0",
           "quoteTime": "2026-10-28 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-29",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "77.77",
-          "high": "77.92",
-          "low": "74.80",
-          "close": "75.36",
-          "previousClose": "77.20",
-          "changePct": "-2.38%",
-          "volume": "21719031.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "86.39",
+          "high": "86.93",
+          "low": "82.71",
+          "close": "85.79",
+          "previousClose": "85.20",
+          "changePct": "+0.69%",
+          "volume": "20101507.0",
           "quoteTime": "2026-10-29 15:34:58",
           "source": "sina"
         },
         {
           "date": "2026-10-30",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "74.61",
-          "high": "75.53",
-          "low": "71.18",
-          "close": "71.29",
-          "previousClose": "75.36",
-          "changePct": "-5.40%",
-          "volume": "29694974.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "86.59",
+          "high": "86.59",
+          "low": "82.15",
+          "close": "82.45",
+          "previousClose": "85.79",
+          "changePct": "-3.89%",
+          "volume": "16385897.0",
           "quoteTime": "2026-10-30 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-11-02",
           "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "72.80",
-          "high": "73.97",
-          "low": "71.42",
-          "close": "73.18",
-          "previousClose": "71.29",
-          "changePct": "+2.65%",
-          "volume": "24384714.0",
+          "symbol": "603501",
+          "name": "豪威集团",
+          "open": "84.20",
+          "high": "84.20",
+          "low": "81.46",
+          "close": "83.15",
+          "previousClose": "82.45",
+          "changePct": "+0.85%",
+          "volume": "12257930.0",
           "quoteTime": "2026-11-02 15:34:59",
           "source": "sina"
         }
@@ -2431,7 +2384,7 @@
       "symbol": "601138",
       "name": "工业富联",
       "metrics": {
-        "calls": 6,
+        "calls": 5,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -2445,32 +2398,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "601138",
-                "name": "工业富联",
-                "overnightScore": "100",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -2747,6 +2674,24 @@
         },
         {
           "date": "2026-11-02",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
           "stocks": {
             "total": 0,
             "more": 0,
@@ -2864,44 +2809,9 @@
           "relativeReturn": "+1.85%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-19",
-          "time": "05:55:03",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "action": "盘中：强势观察",
-          "overnightScore": "100",
-          "recommendedPrice": "47.81",
-          "buyZone": "47.43-48.10",
-          "takeProfit": "49.48-50.20",
-          "stopLoss": "46.61",
-          "nextOpen": "47.24",
-          "nextClose": "48.77",
-          "overnightReturn": "-1.19%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+1.01%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "47.10",
-          "high": "48.25",
-          "low": "46.65",
-          "close": "47.71",
-          "previousClose": "47.78",
-          "changePct": "-0.15%",
-          "volume": "69636264.0",
-          "quoteTime": "2026-10-19 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-10-20",
           "market": "A股",
@@ -3060,7 +2970,7 @@
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
       "metrics": {
-        "calls": 4,
+        "calls": 3,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -3074,32 +2984,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "美股",
-                "symbol": "AVGO",
-                "name": "Broadcom Inc.",
-                "overnightScore": "85",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -3375,6 +3259,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -3437,44 +3339,9 @@
           "relativeReturn": "-1.26%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-19",
-          "time": "22:55:28",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "action": "收盘：候选观察",
-          "overnightScore": "85",
-          "recommendedPrice": "334.59",
-          "buyZone": "331.91-336.60",
-          "takeProfit": "346.30-351.32",
-          "stopLoss": "326.23",
-          "nextOpen": "334.28",
-          "nextClose": "334.37",
-          "overnightReturn": "-0.09%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+0.31%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "open": "338.77",
-          "high": "340.20",
-          "low": "333.82",
-          "close": "334.59",
-          "previousClose": "328.75",
-          "changePct": "+1.78%",
-          "volume": "17120557.0",
-          "quoteTime": "2026-10-19T20:00:01+00:00",
-          "source": "yahoo_chart"
-        },
         {
           "date": "2026-10-20",
           "market": "美股",
@@ -3621,19 +3488,19 @@
           "close": "322.23",
           "previousClose": "326.08",
           "changePct": "-1.18%",
-          "volume": "19795387.0",
+          "volume": "20318871.0",
           "quoteTime": "2026-11-02T21:00:01+00:00",
           "source": "yahoo_chart"
         }
       ]
     },
-    "A股|603501": {
-      "key": "A股|603501",
+    "A股|603019": {
+      "key": "A股|603019",
       "market": "A股",
-      "symbol": "603501",
-      "name": "豪威集团",
+      "symbol": "603019",
+      "name": "中科曙光",
       "metrics": {
-        "calls": 4,
+        "calls": 2,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -3648,39 +3515,13 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-19",
+          "date": "2026-10-20",
           "stocks": {
             "total": 0,
             "more": 0,
             "items": []
           },
           "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-20",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -3694,11 +3535,19 @@
         {
           "date": "2026-10-21",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603019",
+                "name": "中科曙光",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -3730,19 +3579,11 @@
         {
           "date": "2026-10-23",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -3792,19 +3633,11 @@
         {
           "date": "2026-10-26",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -3836,11 +3669,19 @@
         {
           "date": "2026-10-28",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "603019",
+                "name": "中科曙光",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -3854,19 +3695,11 @@
         {
           "date": "2026-10-29",
           "stocks": {
-            "total": 1,
+            "total": 0,
             "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
+            "items": []
           },
-          "calls": 1,
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
           "wins": 0,
@@ -3948,253 +3781,216 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
         {
-          "date": "2026-10-29",
-          "time": "06:51:45",
+          "date": "2026-10-28",
+          "time": "13:34:24",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "action": "盘中：强势观察",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "86.22",
-          "buyZone": "85.53-86.74",
-          "takeProfit": "89.24-90.53",
-          "stopLoss": "84.06",
-          "nextOpen": "86.59",
-          "nextClose": "82.45",
-          "overnightReturn": "+0.43%",
+          "recommendedPrice": "77.20",
+          "buyZone": "76.58-77.66",
+          "takeProfit": "79.90-81.06",
+          "stopLoss": "75.27",
+          "nextOpen": "77.77",
+          "nextClose": "75.36",
+          "overnightReturn": "+0.74%",
           "closeReturn": "待复盘",
-          "relativeReturn": "-2.98%",
+          "relativeReturn": "-1.35%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
-          "date": "2026-10-26",
-          "time": "12:36:50",
+          "date": "2026-10-21",
+          "time": "11:30:32",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
+          "symbol": "603019",
+          "name": "中科曙光",
           "action": "收盘：强势观察",
           "overnightScore": "75",
-          "recommendedPrice": "84.65",
-          "buyZone": "83.97-85.16",
-          "takeProfit": "87.61-88.88",
-          "stopLoss": "82.53",
-          "nextOpen": "84.26",
-          "nextClose": "82.29",
-          "overnightReturn": "-0.46%",
+          "recommendedPrice": "75.98",
+          "buyZone": "75.37-76.44",
+          "takeProfit": "78.64-79.78",
+          "stopLoss": "74.08",
+          "nextOpen": "75.85",
+          "nextClose": "76.20",
+          "overnightReturn": "-0.17%",
           "closeReturn": "待复盘",
-          "relativeReturn": "-1.47%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-23",
-          "time": "11:19:51",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "action": "收盘：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "82.20",
-          "buyZone": "81.54-82.69",
-          "takeProfit": "85.08-86.31",
-          "stopLoss": "80.14",
-          "nextOpen": "81.50",
-          "nextClose": "84.65",
-          "overnightReturn": "-0.85%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+3.02%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-20",
-          "time": "10:27:26",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "action": "收盘：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "76.91",
-          "buyZone": "76.29-77.37",
-          "takeProfit": "79.60-80.76",
-          "stopLoss": "74.99",
-          "nextOpen": "78.03",
-          "nextClose": "77.48",
-          "overnightReturn": "+1.46%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+1.71%",
+          "relativeReturn": "+2.13%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
         {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "71.30",
-          "high": "73.16",
-          "low": "71.07",
-          "close": "72.74",
-          "previousClose": "71.53",
-          "changePct": "+1.69%",
-          "volume": "8449248.0",
-          "quoteTime": "2026-10-19 15:34:59",
-          "source": "sina"
-        },
-        {
           "date": "2026-10-20",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "72.50",
-          "high": "77.00",
-          "low": "72.41",
-          "close": "76.91",
-          "previousClose": "72.74",
-          "changePct": "+5.73%",
-          "volume": "14909841.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "73.39",
+          "high": "75.80",
+          "low": "73.12",
+          "close": "74.86",
+          "previousClose": "73.96",
+          "changePct": "+1.22%",
+          "volume": "29275779.0",
           "quoteTime": "2026-10-20 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-21",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "78.03",
-          "high": "78.07",
-          "low": "76.90",
-          "close": "77.48",
-          "previousClose": "76.91",
-          "changePct": "+0.74%",
-          "volume": "8948728.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "75.72",
+          "high": "76.50",
+          "low": "74.37",
+          "close": "75.98",
+          "previousClose": "74.86",
+          "changePct": "+1.50%",
+          "volume": "25464502.0",
           "quoteTime": "2026-10-21 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-22",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "77.88",
-          "high": "79.15",
-          "low": "77.40",
-          "close": "78.40",
-          "previousClose": "77.48",
-          "changePct": "+1.19%",
-          "volume": "12558148.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "75.85",
+          "high": "76.87",
+          "low": "75.30",
+          "close": "76.20",
+          "previousClose": "75.98",
+          "changePct": "+0.29%",
+          "volume": "28788510.0",
           "quoteTime": "2026-10-22 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-23",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "78.00",
-          "high": "82.49",
-          "low": "77.23",
-          "close": "82.20",
-          "previousClose": "78.40",
-          "changePct": "+4.85%",
-          "volume": "20348368.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "75.00",
+          "high": "78.48",
+          "low": "73.29",
+          "close": "78.11",
+          "previousClose": "76.20",
+          "changePct": "+2.51%",
+          "volume": "39357572.0",
           "quoteTime": "2026-10-23 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-26",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "81.50",
-          "high": "85.62",
-          "low": "81.31",
-          "close": "84.65",
-          "previousClose": "82.20",
-          "changePct": "+2.98%",
-          "volume": "23281212.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "78.32",
+          "high": "78.86",
+          "low": "76.96",
+          "close": "77.85",
+          "previousClose": "78.11",
+          "changePct": "-0.33%",
+          "volume": "24454396.0",
           "quoteTime": "2026-10-26 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-27",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "84.26",
-          "high": "84.75",
-          "low": "82.21",
-          "close": "82.29",
-          "previousClose": "84.65",
-          "changePct": "-2.79%",
-          "volume": "14527480.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "77.80",
+          "high": "77.99",
+          "low": "73.88",
+          "close": "73.89",
+          "previousClose": "77.85",
+          "changePct": "-5.09%",
+          "volume": "26196435.0",
           "quoteTime": "2026-10-27 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-28",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "84.40",
-          "high": "86.50",
-          "low": "82.78",
-          "close": "85.20",
-          "previousClose": "82.29",
-          "changePct": "+3.54%",
-          "volume": "19649326.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "77.54",
+          "high": "77.54",
+          "low": "74.82",
+          "close": "77.20",
+          "previousClose": "73.89",
+          "changePct": "+4.48%",
+          "volume": "27776687.0",
           "quoteTime": "2026-10-28 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-10-29",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "86.39",
-          "high": "86.93",
-          "low": "82.71",
-          "close": "85.79",
-          "previousClose": "85.20",
-          "changePct": "+0.69%",
-          "volume": "20101507.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "77.77",
+          "high": "77.92",
+          "low": "74.80",
+          "close": "75.36",
+          "previousClose": "77.20",
+          "changePct": "-2.38%",
+          "volume": "21719031.0",
           "quoteTime": "2026-10-29 15:34:58",
           "source": "sina"
         },
         {
           "date": "2026-10-30",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "86.59",
-          "high": "86.59",
-          "low": "82.15",
-          "close": "82.45",
-          "previousClose": "85.79",
-          "changePct": "-3.89%",
-          "volume": "16385897.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "74.61",
+          "high": "75.53",
+          "low": "71.18",
+          "close": "71.29",
+          "previousClose": "75.36",
+          "changePct": "-5.40%",
+          "volume": "29694974.0",
           "quoteTime": "2026-10-30 15:34:59",
           "source": "sina"
         },
         {
           "date": "2026-11-02",
           "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "84.20",
-          "high": "84.20",
-          "low": "81.46",
-          "close": "83.15",
-          "previousClose": "82.45",
-          "changePct": "+0.85%",
-          "volume": "12257930.0",
+          "symbol": "603019",
+          "name": "中科曙光",
+          "open": "72.80",
+          "high": "73.97",
+          "low": "71.42",
+          "close": "73.18",
+          "previousClose": "71.29",
+          "changePct": "+2.65%",
+          "volume": "24384714.0",
           "quoteTime": "2026-11-02 15:34:59",
           "source": "sina"
         }
@@ -4221,24 +4017,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-20",
           "stocks": {
             "total": 0,
@@ -4490,6 +4268,24 @@
         },
         {
           "date": "2026-11-02",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
           "stocks": {
             "total": 0,
             "more": 0,
@@ -4550,21 +4346,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "275.00",
-          "high": "275.00",
-          "low": "267.02",
-          "close": "267.02",
-          "previousClose": "277.00",
-          "changePct": "-3.60%",
-          "volume": "31146043.0",
-          "quoteTime": "2026-10-19 15:35:15",
-          "source": "sina"
-        },
         {
           "date": "2026-10-20",
           "market": "A股",
@@ -4738,24 +4519,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-20",
           "stocks": {
             "total": 0,
@@ -5014,6 +4777,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -5039,21 +4820,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "002371",
-          "name": "北方华创",
-          "open": "589.00",
-          "high": "595.48",
-          "low": "571.01",
-          "close": "573.10",
-          "previousClose": "593.63",
-          "changePct": "-3.46%",
-          "volume": "6847054.0",
-          "quoteTime": "2026-10-19 15:35:30",
-          "source": "sina"
-        },
         {
           "date": "2026-10-20",
           "market": "A股",
@@ -5226,24 +4992,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -5503,6 +5251,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -5528,21 +5294,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "002463",
-          "name": "沪电股份",
-          "open": "112.20",
-          "high": "114.20",
-          "low": "106.06",
-          "close": "111.75",
-          "previousClose": "113.38",
-          "changePct": "-1.44%",
-          "volume": "45352305.0",
-          "quoteTime": "2026-10-19 15:36:00",
-          "source": "sina"
-        },
         {
           "date": "2026-10-20",
           "market": "A股",
@@ -5715,24 +5466,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -5992,6 +5725,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -6017,21 +5768,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "300274",
-          "name": "阳光电源",
-          "open": "76.76",
-          "high": "78.40",
-          "low": "76.42",
-          "close": "77.68",
-          "previousClose": "76.86",
-          "changePct": "+1.07%",
-          "volume": "26587887.0",
-          "quoteTime": "2026-10-19 15:35:00",
-          "source": "sina"
-        },
         {
           "date": "2026-10-20",
           "market": "A股",
@@ -6204,24 +5940,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-19",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-20",
           "stocks": {
@@ -6481,6 +6199,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -6506,21 +6242,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-19",
-          "market": "A股",
-          "symbol": "002594",
-          "name": "比亚迪",
-          "open": "82.50",
-          "high": "84.15",
-          "low": "82.30",
-          "close": "83.50",
-          "previousClose": "82.72",
-          "changePct": "+0.94%",
-          "volume": "21901095.0",
-          "quoteTime": "2026-10-19 15:35:15",
-          "source": "sina"
-        },
         {
           "date": "2026-10-20",
           "market": "A股",
