@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-03T20:28:09",
+  "updatedAt": "2026-11-04T00:49:51",
   "status": "模拟交易汇总，不是真实账户报表",
   "summary": "成交胜率按实际模拟平仓逐笔计算；候选复盘按交易日、市场和股票去重，同一股票的15分钟重复观察不重复计数。",
   "periods": [
     {
       "key": "weekly",
       "label": "近7天",
-      "period": "2026-10-28 至 2026-11-03",
+      "period": "2026-10-29 至 2026-11-04",
       "metrics": {
-        "calls": 44,
+        "calls": 34,
         "reviewed": 0,
         "pending": 12,
         "winRate": "暂无",
@@ -22,7 +22,7 @@
         "avgOvernightReturn": "暂无",
         "avgRelativeReturn": "暂无",
         "bestStrategy": "暂无",
-        "signals": 45,
+        "signals": 35,
         "buys": 0,
         "exits": 0,
         "holding": 0,
@@ -31,7 +31,7 @@
       "marketRows": [
         {
           "market": "A股",
-          "calls": 27,
+          "calls": 22,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -39,7 +39,7 @@
         },
         {
           "market": "美股",
-          "calls": 17,
+          "calls": 12,
           "reviewed": 0,
           "winRate": "暂无",
           "avgStockReturn": "暂无",
@@ -52,7 +52,7 @@
     {
       "key": "monthly",
       "label": "本月",
-      "period": "2026-11-01 至 2026-11-03",
+      "period": "2026-11-01 至 2026-11-04",
       "metrics": {
         "calls": 17,
         "reviewed": 0,
