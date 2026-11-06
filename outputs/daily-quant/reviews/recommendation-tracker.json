@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-06T07:49:09",
+  "updatedAt": "2026-11-06T14:57:21",
   "status": "自动记录，不用手记",
   "summary": "每次推荐会自动进入台账；第二天复盘面板会显示涨跌、隔夜收益、是否命中和优化结论。",
   "metrics": {
     "tracked": 30,
-    "pending": 10,
+    "pending": 5,
     "holding": 0,
-    "reviewed": 20
+    "reviewed": 25
   },
   "rows": [
     {
@@ -23,7 +23,7 @@
       "buyZone": "110.01-111.57",
       "takeProfit": "114.78-116.45",
       "stopLoss": "108.13",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -43,7 +43,7 @@
       "buyZone": "42.54-43.14",
       "takeProfit": "44.38-45.02",
       "stopLoss": "41.81",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -63,7 +63,7 @@
       "buyZone": "1441.38-1461.72",
       "takeProfit": "1503.85-1525.65",
       "stopLoss": "1416.67",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -83,7 +83,7 @@
       "buyZone": "88.88-90.14",
       "takeProfit": "92.74-94.08",
       "stopLoss": "87.36",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -103,7 +103,7 @@
       "buyZone": "102.66-104.11",
       "takeProfit": "107.11-108.66",
       "stopLoss": "100.90",
-      "execution": "等待触发",
+      "execution": "数据不足",
       "executionExit": "未执行",
       "reviewStatus": "待复盘",
       "status": "等待次日行情",
@@ -125,9 +125,9 @@
       "stopLoss": "84.09",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-05",
@@ -145,9 +145,9 @@
       "stopLoss": "55.00",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-05",
@@ -165,9 +165,9 @@
       "stopLoss": "83.01",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-05",
@@ -185,9 +185,9 @@
       "stopLoss": "85.78",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-05",
@@ -205,9 +205,9 @@
       "stopLoss": "257.46",
       "execution": "数据不足",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-04",
