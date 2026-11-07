@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-06T20:21:32",
+  "updatedAt": "2026-11-07T00:15:02",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
-  "window": "2026-10-23 至 2026-11-06",
+  "window": "2026-10-24 至 2026-11-07",
   "filters": [
     {
       "key": "all",
@@ -26,7 +26,7 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 25,
+        "calls": 23,
         "reviewed": 0,
         "pending": 1,
         "wins": 0,
@@ -40,39 +40,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300750",
-                "name": "宁德时代",
-                "overnightScore": "75",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -494,29 +461,33 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
-        }
-      ],
-      "stockRows": [
+        },
         {
-          "key": "A股|300750",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "calls": 3,
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
+          "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "stockRows": [
         {
           "key": "A股|603501",
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
-          "calls": 3,
+          "calls": 2,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -586,6 +557,20 @@
           "market": "A股",
           "symbol": "603019",
           "name": "中科曙光",
+          "calls": 2,
+          "reviewed": 0,
+          "pending": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "未触发"
+        },
+        {
+          "key": "A股|300750",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
           "calls": 2,
           "reviewed": 0,
           "pending": 0,
@@ -671,7 +656,7 @@
       "key": "a_share",
       "label": "A股隔夜候选",
       "metrics": {
-        "calls": 23,
+        "calls": 21,
         "reviewed": 0,
         "pending": 1,
         "wins": 0,
@@ -685,39 +670,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 2,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300750",
-                "name": "宁德时代",
-                "overnightScore": "75",
-                "result": "未触发"
-              },
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 2,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -1125,29 +1077,33 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
-        }
-      ],
-      "stockRows": [
+        },
         {
-          "key": "A股|300750",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "calls": 3,
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
           "reviewed": 0,
           "pending": 0,
+          "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
-        },
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "stockRows": [
         {
           "key": "A股|603501",
           "market": "A股",
           "symbol": "603501",
           "name": "豪威集团",
-          "calls": 3,
+          "calls": 2,
           "reviewed": 0,
           "pending": 0,
           "winRate": "暂无",
@@ -1203,6 +1159,20 @@
           "market": "A股",
           "symbol": "603019",
           "name": "中科曙光",
+          "calls": 2,
+          "reviewed": 0,
+          "pending": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "latestResult": "未触发"
+        },
+        {
+          "key": "A股|300750",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
           "calls": 2,
           "reviewed": 0,
           "pending": 0,
@@ -1303,24 +1273,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-24",
           "stocks": {
             "total": 0,
@@ -1587,6 +1539,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "stockRows": [
@@ -1624,24 +1594,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -1925,6 +1877,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "stockRows": [
@@ -1960,558 +1930,13 @@
     }
   },
   "stocks": {
-    "A股|300750": {
-      "key": "A股|300750",
-      "market": "A股",
-      "symbol": "300750",
-      "name": "宁德时代",
-      "metrics": {
-        "calls": 3,
-        "reviewed": 0,
-        "pending": 0,
-        "wins": 0,
-        "winRate": "暂无",
-        "avgCloseReturn": "暂无",
-        "avgOvernightReturn": "暂无",
-        "avgRelativeReturn": "暂无",
-        "equity": "100.00",
-        "maxDrawdown": "0.00%",
-        "bestStock": "暂无",
-        "weakStock": "暂无"
-      },
-      "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300750",
-                "name": "宁德时代",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-24",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-25",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-26",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-27",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-28",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-29",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300750",
-                "name": "宁德时代",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-30",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-10-31",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-11-01",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-11-02",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-11-03",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "300750",
-                "name": "宁德时代",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-11-04",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-11-05",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
-          "date": "2026-11-06",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        }
-      ],
-      "callRows": [
-        {
-          "date": "2026-11-03",
-          "time": "15:29:01",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "action": "收盘：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "249.32",
-          "buyZone": "247.33-250.82",
-          "takeProfit": "258.05-261.79",
-          "stopLoss": "243.09",
-          "nextOpen": "249.32",
-          "nextClose": "252.88",
-          "overnightReturn": "0.00%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "-4.97%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-29",
-          "time": "06:51:45",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "action": "盘中：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "230.27",
-          "buyZone": "228.43-231.65",
-          "takeProfit": "238.33-241.78",
-          "stopLoss": "224.51",
-          "nextOpen": "230.85",
-          "nextClose": "232.92",
-          "overnightReturn": "+0.25%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+5.28%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-23",
-          "time": "11:19:51",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "action": "收盘：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "237.60",
-          "buyZone": "235.70-239.03",
-          "takeProfit": "245.92-249.48",
-          "stopLoss": "231.66",
-          "nextOpen": "234.95",
-          "nextClose": "238.00",
-          "overnightReturn": "-1.12%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+1.88%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        }
-      ],
-      "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "220.00",
-          "high": "238.00",
-          "low": "216.51",
-          "close": "237.60",
-          "previousClose": "220.41",
-          "changePct": "+7.80%",
-          "volume": "111479879.0",
-          "quoteTime": "2026-10-23 15:35:15",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-26",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "234.95",
-          "high": "241.60",
-          "low": "229.60",
-          "close": "238.00",
-          "previousClose": "237.60",
-          "changePct": "+0.17%",
-          "volume": "61920704.0",
-          "quoteTime": "2026-10-26 16:29:15",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-27",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "238.80",
-          "high": "238.80",
-          "low": "232.67",
-          "close": "233.00",
-          "previousClose": "238.00",
-          "changePct": "-2.10%",
-          "volume": "37504953.0",
-          "quoteTime": "2026-10-27 16:29:15",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-28",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "233.34",
-          "high": "234.00",
-          "low": "228.60",
-          "close": "229.14",
-          "previousClose": "233.00",
-          "changePct": "-1.66%",
-          "volume": "44387920.0",
-          "quoteTime": "2026-10-28 15:35:30",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-29",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "226.86",
-          "high": "232.11",
-          "low": "225.45",
-          "close": "229.07",
-          "previousClose": "229.14",
-          "changePct": "-0.03%",
-          "volume": "37482175.0",
-          "quoteTime": "2026-10-29 15:35:45",
-          "source": "sina"
-        },
-        {
-          "date": "2026-10-30",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "230.85",
-          "high": "237.57",
-          "low": "228.02",
-          "close": "232.92",
-          "previousClose": "229.07",
-          "changePct": "+1.68%",
-          "volume": "44152616.0",
-          "quoteTime": "2026-10-30 15:35:45",
-          "source": "sina"
-        },
-        {
-          "date": "2026-11-02",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "235.00",
-          "high": "244.40",
-          "low": "233.39",
-          "close": "240.19",
-          "previousClose": "232.92",
-          "changePct": "+3.12%",
-          "volume": "52279321.0",
-          "quoteTime": "2026-11-02 15:35:15",
-          "source": "sina"
-        },
-        {
-          "date": "2026-11-03",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "240.95",
-          "high": "253.80",
-          "low": "240.20",
-          "close": "249.32",
-          "previousClose": "240.19",
-          "changePct": "+3.80%",
-          "volume": "62350283.0",
-          "quoteTime": "2026-11-03 15:35:30",
-          "source": "sina"
-        },
-        {
-          "date": "2026-11-04",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "249.32",
-          "high": "255.00",
-          "low": "245.50",
-          "close": "252.88",
-          "previousClose": "249.32",
-          "changePct": "+1.43%",
-          "volume": "56244087.0",
-          "quoteTime": "2026-11-04 15:35:30",
-          "source": "sina"
-        },
-        {
-          "date": "2026-11-05",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "257.40",
-          "high": "272.19",
-          "low": "255.93",
-          "close": "264.06",
-          "previousClose": "252.88",
-          "changePct": "+4.42%",
-          "volume": "69351191.0",
-          "quoteTime": "2026-11-05 15:35:45",
-          "source": "sina"
-        },
-        {
-          "date": "2026-11-06",
-          "market": "A股",
-          "symbol": "300750",
-          "name": "宁德时代",
-          "open": "258.78",
-          "high": "269.89",
-          "low": "251.88",
-          "close": "254.22",
-          "previousClose": "264.06",
-          "changePct": "-3.73%",
-          "volume": "57164793.0",
-          "quoteTime": "2026-11-06 15:35:00",
-          "source": "sina"
-        }
-      ]
-    },
     "A股|603501": {
       "key": "A股|603501",
       "market": "A股",
       "symbol": "603501",
       "name": "豪威集团",
       "metrics": {
-        "calls": 3,
+        "calls": 2,
         "reviewed": 0,
         "pending": 0,
         "wins": 0,
@@ -2525,32 +1950,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 1,
-            "more": 0,
-            "items": [
-              {
-                "market": "A股",
-                "symbol": "603501",
-                "name": "豪威集团",
-                "overnightScore": "75",
-                "result": "未触发"
-              }
-            ]
-          },
-          "calls": 1,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -2803,6 +2202,24 @@
         },
         {
           "date": "2026-11-06",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
           "stocks": {
             "total": 0,
             "more": 0,
@@ -2860,44 +2277,9 @@
           "relativeReturn": "-1.47%",
           "result": "未触发",
           "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-        },
-        {
-          "date": "2026-10-23",
-          "time": "11:19:51",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "action": "收盘：强势观察",
-          "overnightScore": "75",
-          "recommendedPrice": "82.20",
-          "buyZone": "81.54-82.69",
-          "takeProfit": "85.08-86.31",
-          "stopLoss": "80.14",
-          "nextOpen": "81.50",
-          "nextClose": "84.65",
-          "overnightReturn": "-0.85%",
-          "closeReturn": "待复盘",
-          "relativeReturn": "+3.02%",
-          "result": "未触发",
-          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "603501",
-          "name": "豪威集团",
-          "open": "78.00",
-          "high": "82.49",
-          "low": "77.23",
-          "close": "82.20",
-          "previousClose": "78.40",
-          "changePct": "+4.85%",
-          "volume": "20348368.0",
-          "quoteTime": "2026-10-23 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -3071,24 +2453,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-24",
           "stocks": {
             "total": 0,
@@ -3363,6 +2727,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -3428,21 +2810,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "601138",
-          "name": "工业富联",
-          "open": "47.00",
-          "high": "49.10",
-          "low": "45.55",
-          "close": "48.85",
-          "previousClose": "47.91",
-          "changePct": "+1.96%",
-          "volume": "105820513.0",
-          "quoteTime": "2026-10-23 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -3616,24 +2983,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-24",
           "stocks": {
             "total": 0,
@@ -3900,6 +3249,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -3945,21 +3312,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "美股",
-          "symbol": "AVGO",
-          "name": "Broadcom Inc.",
-          "open": "321.25",
-          "high": "327.70",
-          "low": "320.23",
-          "close": "321.68",
-          "previousClose": "323.24",
-          "changePct": "-0.48%",
-          "volume": "15826189.0",
-          "quoteTime": "2026-10-23T20:00:01+00:00",
-          "source": "yahoo_chart"
-        },
         {
           "date": "2026-10-26",
           "market": "美股",
@@ -4103,11 +3455,11 @@
           "open": "311.13",
           "high": "311.52",
           "low": "289.77",
-          "close": "293.05",
+          "close": "293.69",
           "previousClose": "291.53",
-          "changePct": "+0.52%",
-          "volume": "21696419.0",
-          "quoteTime": "2026-11-06T20:21:26+00:00",
+          "changePct": "+0.74%",
+          "volume": "32321600.0",
+          "quoteTime": "2026-11-06T21:00:01+00:00",
           "source": "yahoo_chart"
         }
       ]
@@ -4132,24 +3484,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -4417,6 +3751,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -4462,21 +3814,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "002371",
-          "name": "北方华创",
-          "open": "531.00",
-          "high": "542.09",
-          "low": "518.15",
-          "close": "537.49",
-          "previousClose": "542.00",
-          "changePct": "-0.83%",
-          "volume": "9758072.0",
-          "quoteTime": "2026-10-23 15:35:15",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -4650,24 +3987,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-24",
           "stocks": {
             "total": 0,
@@ -4934,6 +4253,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -4979,21 +4316,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "002463",
-          "name": "沪电股份",
-          "open": "103.50",
-          "high": "107.95",
-          "low": "99.00",
-          "close": "107.06",
-          "previousClose": "106.96",
-          "changePct": "+0.09%",
-          "volume": "58168528.0",
-          "quoteTime": "2026-10-23 15:35:45",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -5167,24 +4489,6 @@
       },
       "dailyRows": [
         {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
-        {
           "date": "2026-10-24",
           "stocks": {
             "total": 0,
@@ -5451,6 +4755,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -5496,21 +4818,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "603019",
-          "name": "中科曙光",
-          "open": "75.00",
-          "high": "78.48",
-          "low": "73.29",
-          "close": "78.11",
-          "previousClose": "76.20",
-          "changePct": "+2.51%",
-          "volume": "39357572.0",
-          "quoteTime": "2026-10-23 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -5663,6 +4970,508 @@
         }
       ]
     },
+    "A股|300750": {
+      "key": "A股|300750",
+      "market": "A股",
+      "symbol": "300750",
+      "name": "宁德时代",
+      "metrics": {
+        "calls": 2,
+        "reviewed": 0,
+        "pending": 0,
+        "wins": 0,
+        "winRate": "暂无",
+        "avgCloseReturn": "暂无",
+        "avgOvernightReturn": "暂无",
+        "avgRelativeReturn": "暂无",
+        "equity": "100.00",
+        "maxDrawdown": "0.00%",
+        "bestStock": "暂无",
+        "weakStock": "暂无"
+      },
+      "dailyRows": [
+        {
+          "date": "2026-10-24",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-25",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-26",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-27",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-28",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-29",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "300750",
+                "name": "宁德时代",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-30",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-10-31",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-01",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-02",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-03",
+          "stocks": {
+            "total": 1,
+            "more": 0,
+            "items": [
+              {
+                "market": "A股",
+                "symbol": "300750",
+                "name": "宁德时代",
+                "overnightScore": "75",
+                "result": "未触发"
+              }
+            ]
+          },
+          "calls": 1,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-04",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-05",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-06",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
+        }
+      ],
+      "callRows": [
+        {
+          "date": "2026-11-03",
+          "time": "15:29:01",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "action": "收盘：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "249.32",
+          "buyZone": "247.33-250.82",
+          "takeProfit": "258.05-261.79",
+          "stopLoss": "243.09",
+          "nextOpen": "249.32",
+          "nextClose": "252.88",
+          "overnightReturn": "0.00%",
+          "closeReturn": "待复盘",
+          "relativeReturn": "-4.97%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
+        },
+        {
+          "date": "2026-10-29",
+          "time": "06:51:45",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "action": "盘中：强势观察",
+          "overnightScore": "75",
+          "recommendedPrice": "230.27",
+          "buyZone": "228.43-231.65",
+          "takeProfit": "238.33-241.78",
+          "stopLoss": "224.51",
+          "nextOpen": "230.85",
+          "nextClose": "232.92",
+          "overnightReturn": "+0.25%",
+          "closeReturn": "待复盘",
+          "relativeReturn": "+5.28%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
+        }
+      ],
+      "priceRows": [
+        {
+          "date": "2026-10-26",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "234.95",
+          "high": "241.60",
+          "low": "229.60",
+          "close": "238.00",
+          "previousClose": "237.60",
+          "changePct": "+0.17%",
+          "volume": "61920704.0",
+          "quoteTime": "2026-10-26 16:29:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-10-27",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "238.80",
+          "high": "238.80",
+          "low": "232.67",
+          "close": "233.00",
+          "previousClose": "238.00",
+          "changePct": "-2.10%",
+          "volume": "37504953.0",
+          "quoteTime": "2026-10-27 16:29:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-10-28",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "233.34",
+          "high": "234.00",
+          "low": "228.60",
+          "close": "229.14",
+          "previousClose": "233.00",
+          "changePct": "-1.66%",
+          "volume": "44387920.0",
+          "quoteTime": "2026-10-28 15:35:30",
+          "source": "sina"
+        },
+        {
+          "date": "2026-10-29",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "226.86",
+          "high": "232.11",
+          "low": "225.45",
+          "close": "229.07",
+          "previousClose": "229.14",
+          "changePct": "-0.03%",
+          "volume": "37482175.0",
+          "quoteTime": "2026-10-29 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-10-30",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "230.85",
+          "high": "237.57",
+          "low": "228.02",
+          "close": "232.92",
+          "previousClose": "229.07",
+          "changePct": "+1.68%",
+          "volume": "44152616.0",
+          "quoteTime": "2026-10-30 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-11-02",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "235.00",
+          "high": "244.40",
+          "low": "233.39",
+          "close": "240.19",
+          "previousClose": "232.92",
+          "changePct": "+3.12%",
+          "volume": "52279321.0",
+          "quoteTime": "2026-11-02 15:35:15",
+          "source": "sina"
+        },
+        {
+          "date": "2026-11-03",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "240.95",
+          "high": "253.80",
+          "low": "240.20",
+          "close": "249.32",
+          "previousClose": "240.19",
+          "changePct": "+3.80%",
+          "volume": "62350283.0",
+          "quoteTime": "2026-11-03 15:35:30",
+          "source": "sina"
+        },
+        {
+          "date": "2026-11-04",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "249.32",
+          "high": "255.00",
+          "low": "245.50",
+          "close": "252.88",
+          "previousClose": "249.32",
+          "changePct": "+1.43%",
+          "volume": "56244087.0",
+          "quoteTime": "2026-11-04 15:35:30",
+          "source": "sina"
+        },
+        {
+          "date": "2026-11-05",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "257.40",
+          "high": "272.19",
+          "low": "255.93",
+          "close": "264.06",
+          "previousClose": "252.88",
+          "changePct": "+4.42%",
+          "volume": "69351191.0",
+          "quoteTime": "2026-11-05 15:35:45",
+          "source": "sina"
+        },
+        {
+          "date": "2026-11-06",
+          "market": "A股",
+          "symbol": "300750",
+          "name": "宁德时代",
+          "open": "258.78",
+          "high": "269.89",
+          "low": "251.88",
+          "close": "254.22",
+          "previousClose": "264.06",
+          "changePct": "-3.73%",
+          "volume": "57164793.0",
+          "quoteTime": "2026-11-06 15:35:00",
+          "source": "sina"
+        }
+      ]
+    },
     "A股|300274": {
       "key": "A股|300274",
       "market": "A股",
@@ -5683,24 +5492,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -5968,6 +5759,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -6013,21 +5822,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "300274",
-          "name": "阳光电源",
-          "open": "70.50",
-          "high": "72.42",
-          "low": "69.38",
-          "close": "72.20",
-          "previousClose": "70.51",
-          "changePct": "+2.40%",
-          "volume": "52394637.0",
-          "quoteTime": "2026-10-23 15:35:00",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -6200,24 +5994,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -6477,6 +6253,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -6502,21 +6296,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "002594",
-          "name": "比亚迪",
-          "open": "79.50",
-          "high": "81.65",
-          "low": "78.49",
-          "close": "81.42",
-          "previousClose": "80.02",
-          "changePct": "+1.75%",
-          "volume": "37207609.0",
-          "quoteTime": "2026-10-23 15:36:00",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -6689,24 +6468,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -6974,6 +6735,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -7019,21 +6798,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "688981",
-          "name": "中芯国际",
-          "open": "99.46",
-          "high": "104.28",
-          "low": "94.80",
-          "close": "104.10",
-          "previousClose": "100.09",
-          "changePct": "+4.01%",
-          "volume": "52490626.0",
-          "quoteTime": "2026-10-23 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -7206,24 +6970,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -7491,6 +7237,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -7536,21 +7300,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "601899",
-          "name": "紫金矿业",
-          "open": "26.99",
-          "high": "28.79",
-          "low": "26.60",
-          "close": "28.79",
-          "previousClose": "27.84",
-          "changePct": "+3.41%",
-          "volume": "267089553.0",
-          "quoteTime": "2026-10-23 15:34:59",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
@@ -7723,24 +7472,6 @@
         "weakStock": "暂无"
       },
       "dailyRows": [
-        {
-          "date": "2026-10-23",
-          "stocks": {
-            "total": 0,
-            "more": 0,
-            "items": []
-          },
-          "calls": 0,
-          "reviewed": 0,
-          "pending": 0,
-          "wins": 0,
-          "winRate": "暂无",
-          "avgCloseReturn": "暂无",
-          "avgOvernightReturn": "暂无",
-          "avgRelativeReturn": "暂无",
-          "equity": "100.00",
-          "equityValue": 100.0
-        },
         {
           "date": "2026-10-24",
           "stocks": {
@@ -8000,6 +7731,24 @@
           "avgRelativeReturn": "暂无",
           "equity": "100.00",
           "equityValue": 100.0
+        },
+        {
+          "date": "2026-11-07",
+          "stocks": {
+            "total": 0,
+            "more": 0,
+            "items": []
+          },
+          "calls": 0,
+          "reviewed": 0,
+          "pending": 0,
+          "wins": 0,
+          "winRate": "暂无",
+          "avgCloseReturn": "暂无",
+          "avgOvernightReturn": "暂无",
+          "avgRelativeReturn": "暂无",
+          "equity": "100.00",
+          "equityValue": 100.0
         }
       ],
       "callRows": [
@@ -8025,21 +7774,6 @@
         }
       ],
       "priceRows": [
-        {
-          "date": "2026-10-23",
-          "market": "A股",
-          "symbol": "000977",
-          "name": "浪潮信息",
-          "open": "55.86",
-          "high": "58.70",
-          "low": "55.00",
-          "close": "58.50",
-          "previousClose": "56.60",
-          "changePct": "+3.36%",
-          "volume": "55079576.0",
-          "quoteTime": "2026-10-23 15:36:00",
-          "source": "sina"
-        },
         {
           "date": "2026-10-26",
           "market": "A股",
