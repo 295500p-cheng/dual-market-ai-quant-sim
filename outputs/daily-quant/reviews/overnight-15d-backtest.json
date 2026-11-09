@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T17:23:50",
+  "updatedAt": "2026-11-09T23:21:48",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-26 至 2026-11-09",
@@ -26,9 +26,9 @@
       "key": "all",
       "label": "全部隔夜候选",
       "metrics": {
-        "calls": 24,
+        "calls": 25,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -465,9 +465,16 @@
         {
           "date": "2026-11-09",
           "stocks": {
-            "total": 1,
+            "total": 2,
             "more": 0,
             "items": [
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "待复盘"
+              },
               {
                 "market": "A股",
                 "symbol": "601138",
@@ -477,9 +484,9 @@
               }
             ]
           },
-          "calls": 1,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 2,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -523,14 +530,14 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "A股|002371",
@@ -1274,9 +1281,9 @@
       "key": "us_stock",
       "label": "美股隔夜候选",
       "metrics": {
-        "calls": 2,
+        "calls": 3,
         "reviewed": 0,
-        "pending": 0,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1559,13 +1566,21 @@
         {
           "date": "2026-11-09",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1581,14 +1596,14 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         }
       ]
     },
@@ -1596,9 +1611,9 @@
       "key": "high_score",
       "label": "高隔夜评分",
       "metrics": {
-        "calls": 5,
+        "calls": 6,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 2,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1897,9 +1912,16 @@
         {
           "date": "2026-11-09",
           "stocks": {
-            "total": 1,
+            "total": 2,
             "more": 0,
             "items": [
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "待复盘"
+              },
               {
                 "market": "A股",
                 "symbol": "601138",
@@ -1909,9 +1931,9 @@
               }
             ]
           },
-          "calls": 1,
+          "calls": 2,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 2,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1927,14 +1949,14 @@
           "market": "美股",
           "symbol": "AVGO",
           "name": "Broadcom Inc.",
-          "calls": 2,
+          "calls": 3,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "未触发"
+          "latestResult": "待复盘"
         },
         {
           "key": "A股|601138",
@@ -3050,9 +3072,9 @@
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
       "metrics": {
-        "calls": 2,
+        "calls": 3,
         "reviewed": 0,
-        "pending": 0,
+        "pending": 1,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -3335,13 +3357,21 @@
         {
           "date": "2026-11-09",
           "stocks": {
-            "total": 0,
+            "total": 1,
             "more": 0,
-            "items": []
+            "items": [
+              {
+                "market": "美股",
+                "symbol": "AVGO",
+                "name": "Broadcom Inc.",
+                "overnightScore": "85",
+                "result": "待复盘"
+              }
+            ]
           },
-          "calls": 0,
+          "calls": 1,
           "reviewed": 0,
-          "pending": 0,
+          "pending": 1,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -3352,6 +3382,26 @@
         }
       ],
       "callRows": [
+        {
+          "date": "2026-11-09",
+          "time": "23:21:47",
+          "market": "美股",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "action": "收盘：强势观察",
+          "overnightScore": "85",
+          "recommendedPrice": "319.48",
+          "buyZone": "316.92-321.40",
+          "takeProfit": "330.66-335.45",
+          "stopLoss": "311.49",
+          "nextOpen": "暂无",
+          "nextClose": "暂无",
+          "overnightReturn": "待复盘",
+          "closeReturn": "待复盘",
+          "relativeReturn": "待复盘",
+          "result": "待复盘",
+          "lesson": ""
+        },
         {
           "date": "2026-11-03",
           "time": "20:28:09",
@@ -3542,6 +3592,21 @@
           "changePct": "+0.74%",
           "volume": "32321600.0",
           "quoteTime": "2026-11-06T21:00:01+00:00",
+          "source": "yahoo_chart"
+        },
+        {
+          "date": "2026-11-09",
+          "market": "美股",
+          "symbol": "AVGO",
+          "name": "Broadcom Inc.",
+          "open": "305.13",
+          "high": "323.05",
+          "low": "304.29",
+          "close": "319.48",
+          "previousClose": "293.69",
+          "changePct": "+8.78%",
+          "volume": "36557862.0",
+          "quoteTime": "2026-11-09T21:00:01+00:00",
           "source": "yahoo_chart"
         }
       ]
