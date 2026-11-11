@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-11T15:38:16",
+  "updatedAt": "2026-11-11T21:13:44",
   "scoredCount": 41,
-  "target": "a_share",
+  "target": "us_stock",
   "aShareCandidates": 5,
-  "usStockCandidates": 0,
+  "usStockCandidates": 5,
   "top": {
     "a_share": [
       {
@@ -152,6 +152,152 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-11T21:00:00+00:00",
+        "rank": 1,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 128.40",
+        "buyZone": "127.37-129.17",
+        "takeProfit": "132.89-134.82",
+        "stopLoss": "125.19",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 88,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "云/数据库；相对基准 6.5171%。",
+        "risk": "中高风险；财报跳空;订单预期",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 14,
+          "relative_strength_score": 20,
+          "relative_return": 6.5171,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 13,
+          "total_score": 88
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "MU",
+        "name": "Micron Technology, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-11-11T21:00:01+00:00",
+        "rank": 2,
+        "action": "盘中：高风险强势观察",
+        "currentPrice": "当前 811.30",
+        "buyZone": "804.81-816.17",
+        "takeProfit": "839.70-864.03",
+        "stopLoss": "782.90",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 87,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "存储芯片；相对基准 7.0626%。",
+        "risk": "高风险；周期波动;财报跳空;库存周期",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 7.0626,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 13,
+          "total_score": 87
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AMAT",
+        "name": "Applied Materials, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-11-11T21:00:01+00:00",
+        "rank": 3,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 395.08",
+        "buyZone": "391.92-397.45",
+        "takeProfit": "408.91-414.83",
+        "stopLoss": "385.20",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 85,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 1.2293%。",
+        "risk": "中风险；订单周期;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 1.2293,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 85
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "LRCX",
+        "name": "Lam Research Corporation",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-11-11T21:00:00+00:00",
+        "rank": 4,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 235.88",
+        "buyZone": "233.99-237.30",
+        "takeProfit": "244.14-247.67",
+        "stopLoss": "229.98",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 85,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "半导体设备；相对基准 1.242%。",
+        "risk": "中风险；订单周期;财报风险",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 1.242,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 85
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-11-11T21:00:01+00:00",
+        "rank": 5,
+        "action": "盘中：高风险强势观察",
+        "currentPrice": "当前 552.90",
+        "buyZone": "548.48-556.22",
+        "takeProfit": "572.25-588.84",
+        "stopLoss": "533.55",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 83,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI GPU/半导体；相对基准 2.4916%。",
+        "risk": "高风险；高波动;产品预期;相对弱势风险",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 2.4916,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 13,
+          "total_score": 83
+        }
+      }
+    ]
   }
 }
