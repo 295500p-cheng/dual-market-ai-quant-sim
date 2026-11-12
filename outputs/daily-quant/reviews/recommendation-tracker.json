@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-11T21:13:44",
+  "updatedAt": "2026-11-12T02:09:42",
   "status": "自动记录，不用手记",
   "summary": "每次推荐会自动进入台账；第二天复盘面板会显示涨跌、隔夜收益、是否命中和优化结论。",
   "metrics": {
     "tracked": 30,
-    "pending": 20,
+    "pending": 15,
     "holding": 0,
-    "reviewed": 10
+    "reviewed": 15
   },
   "rows": [
     {
@@ -97,7 +97,7 @@
       "name": "Oracle Corporation",
       "action": "盘中：强势观察",
       "recommendedPrice": "128.40",
-      "currentPrice": "128.40",
+      "currentPrice": "128.38",
       "quoteDate": "2026-11-11",
       "changeSinceCall": "待次日复盘",
       "buyZone": "127.37-129.17",
@@ -325,9 +325,9 @@
       "stopLoss": "628.21",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-10",
@@ -345,9 +345,9 @@
       "stopLoss": "148.71",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-10",
@@ -357,17 +357,17 @@
       "name": "Taiwan Semiconductor Manufacturing Company Limited",
       "action": "盘中：强势观察",
       "recommendedPrice": "395.33",
-      "currentPrice": "413.26",
+      "currentPrice": "413.35",
       "quoteDate": "2026-11-11",
-      "changeSinceCall": "+4.54%",
+      "changeSinceCall": "+4.56%",
       "buyZone": "392.17-397.70",
       "takeProfit": "409.17-415.10",
       "stopLoss": "385.45",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-10",
@@ -385,9 +385,9 @@
       "stopLoss": "264.20",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-10",
@@ -405,9 +405,9 @@
       "stopLoss": "323.31",
       "execution": "等待触发",
       "executionExit": "未执行",
-      "reviewStatus": "待复盘",
-      "status": "已有次日行情，等待复盘脚本确认",
-      "nextAction": "运行复盘后会写入涨跌、隔夜收益和结论。"
+      "reviewStatus": "已复盘",
+      "status": "未触发",
+      "nextAction": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     },
     {
       "date": "2026-11-10",
