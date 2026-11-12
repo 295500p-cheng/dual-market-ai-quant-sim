@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T08:05:37",
+  "updatedAt": "2026-11-12T15:55:51",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-29 至 2026-11-12",
@@ -28,7 +28,7 @@
       "metrics": {
         "calls": 21,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -426,20 +426,20 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "002463",
                 "name": "沪电股份",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -503,12 +503,12 @@
           "name": "工业富联",
           "calls": 3,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|300274",
@@ -587,12 +587,12 @@
           "name": "沪电股份",
           "calls": 2,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|000977",
@@ -644,7 +644,7 @@
       "metrics": {
         "calls": 18,
         "reviewed": 0,
-        "pending": 2,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1020,20 +1020,20 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               },
               {
                 "market": "A股",
                 "symbol": "002463",
                 "name": "沪电股份",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 2,
           "reviewed": 0,
-          "pending": 2,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1097,12 +1097,12 @@
           "name": "工业富联",
           "calls": 3,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|300274",
@@ -1167,12 +1167,12 @@
           "name": "沪电股份",
           "calls": 2,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "A股|000977",
@@ -1554,7 +1554,7 @@
       "metrics": {
         "calls": 6,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -1850,13 +1850,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -1892,12 +1892,12 @@
           "name": "工业富联",
           "calls": 3,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
           "avgOvernightReturn": "暂无",
           "avgRelativeReturn": "暂无",
-          "latestResult": "待复盘"
+          "latestResult": "未触发"
         },
         {
           "key": "美股|AVGO",
@@ -2429,7 +2429,7 @@
           "previousClose": "246.66",
           "changePct": "-2.70%",
           "volume": "41795887.0",
-          "quoteTime": "2026-11-12 15:35:00",
+          "quoteTime": "2026-11-12 16:29:00",
           "source": "sina"
         }
       ]
@@ -2931,7 +2931,7 @@
       "metrics": {
         "calls": 3,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -3204,13 +3204,13 @@
                 "symbol": "601138",
                 "name": "工业富联",
                 "overnightScore": "100",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -3251,13 +3251,13 @@
           "buyZone": "45.20-45.83",
           "takeProfit": "47.15-47.84",
           "stopLoss": "44.42",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "44.78",
+          "nextClose": "43.35",
+          "overnightReturn": "-1.71%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "-5.58%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-11-09",
@@ -3980,7 +3980,7 @@
           "previousClose": "80.09",
           "changePct": "-2.28%",
           "volume": "52259709.0",
-          "quoteTime": "2026-11-12 15:35:45",
+          "quoteTime": "2026-11-12 16:29:45",
           "source": "sina"
         }
       ]
@@ -4469,7 +4469,7 @@
           "previousClose": "82.04",
           "changePct": "-2.10%",
           "volume": "33434558.0",
-          "quoteTime": "2026-11-12 15:35:15",
+          "quoteTime": "2026-11-12 16:29:15",
           "source": "sina"
         }
       ]
@@ -6046,7 +6046,7 @@
       "metrics": {
         "calls": 2,
         "reviewed": 0,
-        "pending": 1,
+        "pending": 0,
         "wins": 0,
         "winRate": "暂无",
         "avgCloseReturn": "暂无",
@@ -6311,13 +6311,13 @@
                 "symbol": "002463",
                 "name": "沪电股份",
                 "overnightScore": "75",
-                "result": "待复盘"
+                "result": "未触发"
               }
             ]
           },
           "calls": 1,
           "reviewed": 0,
-          "pending": 1,
+          "pending": 0,
           "wins": 0,
           "winRate": "暂无",
           "avgCloseReturn": "暂无",
@@ -6358,13 +6358,13 @@
           "buyZone": "88.71-89.97",
           "takeProfit": "92.56-93.90",
           "stopLoss": "87.19",
-          "nextOpen": "暂无",
-          "nextClose": "暂无",
-          "overnightReturn": "待复盘",
+          "nextOpen": "90.68",
+          "nextClose": "91.33",
+          "overnightReturn": "+1.40%",
           "closeReturn": "待复盘",
-          "relativeReturn": "待复盘",
-          "result": "待复盘",
-          "lesson": ""
+          "relativeReturn": "+2.90%",
+          "result": "未触发",
+          "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
         },
         {
           "date": "2026-11-04",
@@ -6550,7 +6550,7 @@
           "previousClose": "89.43",
           "changePct": "+2.12%",
           "volume": "90377548.0",
-          "quoteTime": "2026-11-12 15:35:00",
+          "quoteTime": "2026-11-12 16:29:00",
           "source": "sina"
         }
       ]
@@ -7039,7 +7039,7 @@
           "previousClose": "56.56",
           "changePct": "-1.03%",
           "volume": "59796443.0",
-          "quoteTime": "2026-11-12 15:36:00",
+          "quoteTime": "2026-11-12 16:30:00",
           "source": "sina"
         }
       ]
@@ -8017,7 +8017,7 @@
           "previousClose": "547.91",
           "changePct": "+1.99%",
           "volume": "12256953.0",
-          "quoteTime": "2026-11-12 15:35:30",
+          "quoteTime": "2026-11-12 16:29:30",
           "source": "sina"
         }
       ]
