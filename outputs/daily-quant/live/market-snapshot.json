@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-12T02:09:42",
+  "updatedAt": "2026-11-12T02:17:43",
   "marketUpdatedAt": {
-    "us_stock": "2026-11-12T02:09:42",
+    "us_stock": "2026-11-12T02:17:43",
     "a_share": "2026-11-11T15:38:16"
   },
   "fetchStatus": "success",
@@ -862,7 +862,7 @@
       "risk_flags": "高波动;产品预期;相对弱势风险",
       "current_price": 552.9,
       "previous_close": 515.21,
-      "open_price": 543.0599975585938,
+      "open_price": 532.989990234375,
       "high_price": 567.65,
       "low_price": 522.65,
       "change_pct": 7.3155,
