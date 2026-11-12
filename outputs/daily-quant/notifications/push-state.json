@@ -138,6 +138,7 @@
     "close:us_stock:2026-11-10",
     "close:a_share:2026-11-11",
     "close:us_stock:2026-11-11",
-    "close:a_share:2026-11-12"
+    "close:a_share:2026-11-12",
+    "close:us_stock:2026-11-12"
   ]
 }

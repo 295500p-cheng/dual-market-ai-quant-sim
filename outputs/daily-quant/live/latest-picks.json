@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-12T08:05:36",
-  "status": "盘中可核验行情候选",
-  "note": "已用新浪财经A股盘中行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-11-12T21:24:21",
+  "status": "开盘后可核验行情候选",
+  "note": "已用美股开盘后行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -150,6 +150,152 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "AVGO",
+        "name": "Broadcom Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-11-12T21:00:01+00:00",
+        "rank": 1,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 364.36",
+        "buyZone": "361.45-366.55",
+        "takeProfit": "377.11-382.58",
+        "stopLoss": "355.25",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 92,
+        "overnightScore": 85,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI芯片/网络；相对基准 6.5759%。",
+        "risk": "中高风险；大客户预期;财报跳空;估值波动",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 14,
+          "relative_strength_score": 20,
+          "relative_return": 6.5759,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 17,
+          "total_score": 92
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "benchmark": "SMH",
+        "sourceTimestamp": "2026-11-12T21:00:01+00:00",
+        "rank": 2,
+        "action": "盘中：高风险强势观察",
+        "currentPrice": "当前 585.30",
+        "buyZone": "580.62-588.81",
+        "takeProfit": "605.79-623.34",
+        "stopLoss": "564.81",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 87,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI GPU/半导体；相对基准 6.8916%。",
+        "risk": "高风险；高波动;产品预期;相对弱势风险",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 6.8916,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 13,
+          "total_score": 87
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "GOOGL",
+        "name": "Alphabet Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-12T21:00:01+00:00",
+        "rank": 3,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 298.70",
+        "buyZone": "296.31-300.49",
+        "takeProfit": "309.15-313.63",
+        "stopLoss": "291.23",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 85,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI应用/广告/云；相对基准 2.1092%。",
+        "risk": "中风险；监管;广告周期;财报跳空",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 2.1092,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 85
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "TSLA",
+        "name": "Tesla, Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-12T21:00:00+00:00",
+        "rank": 4,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 397.45",
+        "buyZone": "394.27-399.83",
+        "takeProfit": "411.36-423.28",
+        "stopLoss": "383.54",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 75,
+        "overnightScore": 30,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "电动车/机器人；相对基准 2.0175%。",
+        "risk": "高风险；高波动;交付数据;政策/舆情",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 2.0175,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 6,
+          "total_score": 75
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-12T21:00:01+00:00",
+        "rank": 5,
+        "action": "盘中：边缘观察",
+        "currentPrice": "当前 523.00",
+        "buyZone": "518.82-526.14",
+        "takeProfit": "541.30-549.15",
+        "stopLoss": "509.93",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 71,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI云/软件；相对基准 0.6799%。",
+        "risk": "中风险；监管;财报;AI资本开支担忧",
+        "scoreBreakdown": {
+          "trend_score": 13,
+          "volume_price_score": 11,
+          "relative_strength_score": 14,
+          "relative_return": 0.6799,
+          "sector_sync_score": 12,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 71
+        }
+      }
+    ]
   }
 }
