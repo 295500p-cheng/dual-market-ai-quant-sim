@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-13T15:42:04",
-  "status": "A股收盘快照候选",
-  "note": "已用新浪财经A股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-11-13T20:50:10",
+  "status": "开盘后可核验行情候选",
+  "note": "已用美股开盘后行情刷新候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -150,6 +150,65 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "META",
+        "name": "Meta Platforms, Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-13T20:50:07+00:00",
+        "rank": 1,
+        "action": "盘中：强势观察",
+        "currentPrice": "当前 642.25",
+        "buyZone": "637.11-646.10",
+        "takeProfit": "664.73-674.36",
+        "stopLoss": "626.19",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 87,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI应用/社交广告；相对基准 4.1559%。",
+        "risk": "中高风险；监管;广告周期;资本开支",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 4.1559,
+          "sector_sync_score": 15,
+          "event_risk_score": 6,
+          "overnight_fit_score": 13,
+          "total_score": 87
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-13T20:50:08+00:00",
+        "rank": 2,
+        "action": "盘中：候选观察",
+        "currentPrice": "当前 524.89",
+        "buyZone": "520.69-528.04",
+        "takeProfit": "543.26-551.13",
+        "stopLoss": "511.77",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 78,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI云/软件；相对基准 1.5283%。",
+        "risk": "中风险；监管;财报;AI资本开支担忧",
+        "scoreBreakdown": {
+          "trend_score": 13,
+          "volume_price_score": 15,
+          "relative_strength_score": 17,
+          "relative_return": 1.5283,
+          "sector_sync_score": 12,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 78
+        }
+      }
+    ]
   }
 }
