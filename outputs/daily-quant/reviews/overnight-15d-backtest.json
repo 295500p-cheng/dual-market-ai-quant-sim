@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T07:42:40",
+  "updatedAt": "2026-11-13T15:18:13",
   "status": "15天隔夜复盘已更新",
   "summary": "隔夜评分70分以上才纳入；同一交易日同一股票的15分钟重复观察只计一次。胜率只统计已复盘且结果为命中/失败的候选，待复盘不计入胜率。",
   "window": "2026-10-30 至 2026-11-13",
@@ -2940,7 +2940,7 @@
           "previousClose": "78.26",
           "changePct": "-0.98%",
           "volume": "43074249.0",
-          "quoteTime": "2026-11-13 15:35:30",
+          "quoteTime": "2026-11-13 16:11:30",
           "source": "sina"
         }
       ]
@@ -3429,7 +3429,7 @@
           "previousClose": "80.32",
           "changePct": "-0.41%",
           "volume": "26533819.0",
-          "quoteTime": "2026-11-13 15:35:15",
+          "quoteTime": "2026-11-13 16:11:15",
           "source": "sina"
         }
       ]
@@ -3918,7 +3918,7 @@
           "previousClose": "240.00",
           "changePct": "-0.96%",
           "volume": "30299488.0",
-          "quoteTime": "2026-11-13 15:35:45",
+          "quoteTime": "2026-11-13 16:11:45",
           "source": "sina"
         }
       ]
@@ -6027,7 +6027,7 @@
           "previousClose": "91.33",
           "changePct": "-10.00%",
           "volume": "89063413.0",
-          "quoteTime": "2026-11-13 15:36:00",
+          "quoteTime": "2026-11-13 16:11:00",
           "source": "sina"
         }
       ]
@@ -6516,7 +6516,7 @@
           "previousClose": "55.98",
           "changePct": "-3.36%",
           "volume": "49024771.0",
-          "quoteTime": "2026-11-13 15:36:00",
+          "quoteTime": "2026-11-13 16:11:00",
           "source": "sina"
         }
       ]
@@ -7494,7 +7494,7 @@
           "previousClose": "558.80",
           "changePct": "-1.04%",
           "volume": "10455828.0",
-          "quoteTime": "2026-11-13 15:35:30",
+          "quoteTime": "2026-11-13 16:11:30",
           "source": "sina"
         }
       ]
