@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-16T07:47:37",
+  "updatedAt": "2026-11-16T23:18:14",
   "scoredCount": 41,
-  "target": "a_share",
+  "target": "us_stock",
   "aShareCandidates": 5,
   "usStockCandidates": 0,
   "top": {
