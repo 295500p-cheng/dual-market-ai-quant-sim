@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-16T23:18:14",
+  "updatedAt": "2026-11-17T03:31:06",
   "marketUpdatedAt": {
-    "us_stock": "2026-11-16T23:18:14",
+    "us_stock": "2026-11-17T03:31:06",
     "a_share": "2026-11-16T16:56:17"
   },
   "fetchStatus": "success",
@@ -960,18 +960,18 @@
       "risk_level": "中",
       "overnight_fit": "中",
       "risk_flags": "出口限制;订单周期;欧洲ADR波动",
-      "current_price": 1406.785,
+      "current_price": 1406.79,
       "previous_close": 1495.16,
       "open_price": 1436.5999755859375,
       "high_price": 1446.36,
       "low_price": 1404.06,
-      "change_pct": -5.9107,
+      "change_pct": -5.9104,
       "volume": 1587468.0,
-      "turnover": 2233226170.38,
+      "turnover": 2233234107.72,
       "timestamp": "2026-11-16T21:00:01+00:00",
       "raw_time": 1794862801.0,
       "benchmark_change_pct": -5.1053,
-      "sector_change_pct": -6.0186
+      "sector_change_pct": -6.0185
     },
     {
       "market": "美股",
@@ -996,7 +996,7 @@
       "timestamp": "2026-11-16T21:00:01+00:00",
       "raw_time": 1794862801.0,
       "benchmark_change_pct": -5.1053,
-      "sector_change_pct": -6.0186
+      "sector_change_pct": -6.0185
     },
     {
       "market": "美股",
@@ -1021,7 +1021,7 @@
       "timestamp": "2026-11-16T21:00:01+00:00",
       "raw_time": 1794862801.0,
       "benchmark_change_pct": -5.1053,
-      "sector_change_pct": -6.0186
+      "sector_change_pct": -6.0185
     },
     {
       "market": "美股",
