@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-24T10:45:59",
-  "status": "A股收盘快照候选",
-  "note": "已用新浪财经A股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
+  "updatedAt": "2026-11-24T23:26:31",
+  "status": "美股收盘快照候选",
+  "note": "已用 Yahoo Finance 美股收盘快照刷新次日候选和模拟执行；仍属于量化研究与模拟交易，不是真实下单指令。",
   "markets": {
     "a_share": [
       {
@@ -150,6 +150,123 @@
         }
       }
     ],
-    "us_stock": []
+    "us_stock": [
+      {
+        "market": "美股",
+        "symbol": "CRM",
+        "name": "Salesforce, Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-24T21:00:02+00:00",
+        "rank": 1,
+        "action": "收盘：强势观察",
+        "currentPrice": "当前 193.26",
+        "buyZone": "191.71-194.42",
+        "takeProfit": "200.02-202.92",
+        "stopLoss": "188.43",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 84,
+        "overnightScore": 30,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "企业软件；相对基准 6.1919%。",
+        "risk": "中风险；业绩指引;估值",
+        "scoreBreakdown": {
+          "trend_score": 20,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 6.1919,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 6,
+          "total_score": 84
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "AAPL",
+        "name": "Apple Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-24T21:00:01+00:00",
+        "rank": 2,
+        "action": "收盘：强势观察",
+        "currentPrice": "当前 354.07",
+        "buyZone": "351.24-356.19",
+        "takeProfit": "366.46-371.77",
+        "stopLoss": "345.22",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 82,
+        "overnightScore": 30,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "消费电子/大科技；相对基准 3.4156%。",
+        "risk": "中风险；产品周期;中国市场;监管",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 15,
+          "relative_strength_score": 20,
+          "relative_return": 3.4156,
+          "sector_sync_score": 15,
+          "event_risk_score": 8,
+          "overnight_fit_score": 6,
+          "total_score": 82
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-24T21:00:01+00:00",
+        "rank": 3,
+        "action": "收盘：候选观察",
+        "currentPrice": "当前 496.13",
+        "buyZone": "492.16-499.11",
+        "takeProfit": "513.49-520.94",
+        "stopLoss": "483.73",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 79,
+        "overnightScore": 65,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI云/软件；相对基准 2.7232%。",
+        "risk": "中风险；监管;财报;AI资本开支担忧",
+        "scoreBreakdown": {
+          "trend_score": 15,
+          "volume_price_score": 14,
+          "relative_strength_score": 17,
+          "relative_return": 2.7232,
+          "sector_sync_score": 12,
+          "event_risk_score": 8,
+          "overnight_fit_score": 13,
+          "total_score": 79
+        }
+      },
+      {
+        "market": "美股",
+        "symbol": "PLTR",
+        "name": "Palantir Technologies Inc.",
+        "benchmark": "QQQ",
+        "sourceTimestamp": "2026-11-24T21:00:01+00:00",
+        "rank": 4,
+        "action": "收盘：候选观察",
+        "currentPrice": "当前 161.18",
+        "buyZone": "159.89-162.15",
+        "takeProfit": "166.82-171.66",
+        "stopLoss": "155.54",
+        "sellRule": "跌破观察区下沿、弱于基准、板块转弱或出现公告/新闻风险",
+        "dayScore": 77,
+        "overnightScore": 30,
+        "overnightView": "收盘前仍强于基准且无事件风险时，才进入隔夜观察",
+        "logic": "AI软件/数据分析；相对基准 3.1282%。",
+        "risk": "高风险；估值;财报跳空;高波动",
+        "scoreBreakdown": {
+          "trend_score": 18,
+          "volume_price_score": 14,
+          "relative_strength_score": 20,
+          "relative_return": 3.1282,
+          "sector_sync_score": 15,
+          "event_risk_score": 4,
+          "overnight_fit_score": 6,
+          "total_score": 77
+        }
+      }
+    ]
   }
 }
