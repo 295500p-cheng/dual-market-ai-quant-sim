@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-24T01:35:42",
+  "updatedAt": "2026-11-24T05:10:25",
   "marketUpdatedAt": {
-    "us_stock": "2026-11-24T01:35:42",
+    "us_stock": "2026-11-24T05:10:25",
     "a_share": "2026-11-23T19:10:18"
   },
   "fetchStatus": "success",
@@ -1401,11 +1401,11 @@
       "overnight_fit": "",
       "risk_flags": "",
       "current_price": 26.62,
-      "previous_close": 28.44,
+      "previous_close": 35.89,
       "open_price": 31.3799991607666,
       "high_price": 35.08,
       "low_price": 15.39,
-      "change_pct": -6.3994,
+      "change_pct": -25.8289,
       "volume": 0.0,
       "turnover": 0.0,
       "timestamp": "2026-11-23T21:15:01+00:00",
