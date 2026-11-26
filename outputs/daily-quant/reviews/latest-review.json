@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-26T03:24:49",
+  "updatedAt": "2026-11-26T17:40:13",
   "status": "候选次日复盘已更新",
-  "summary": "本轮复盘 4 个去重候选，候选次日命中率 38.7%；实际模拟平仓胜率请以成交胜率面板为准。",
+  "summary": "本轮复盘 1 个去重候选，候选次日命中率 38.7%；实际模拟平仓胜率请以成交胜率面板为准。",
   "scorecard": {
     "signalQuality": "38.7%",
     "overnightEffect": "33.8% / 68 笔",
@@ -11,50 +11,14 @@
   },
   "rows": [
     {
-      "symbol": "CRM",
-      "name": "Salesforce, Inc.",
-      "market": "美股",
-      "previousCall": "收盘：强势观察，买入区 191.71-194.42，止损 188.43",
-      "openResult": "开盘 190.36，相对推荐价 -1.50%",
-      "closeResult": "收盘 197.21，相对推荐价 +2.04%；执行 数据不足 ，退出 未执行 ",
-      "overnightReturn": "-1.50%",
-      "relativeReturn": "+2.69%",
-      "verdict": "未触发",
-      "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-    },
-    {
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "market": "美股",
-      "previousCall": "收盘：强势观察，买入区 351.24-356.19，止损 345.22",
-      "openResult": "开盘 353.59，相对推荐价 -0.14%",
-      "closeResult": "收盘 355.58，相对推荐价 +0.43%；执行 数据不足 ，退出 未执行 ",
-      "overnightReturn": "-0.14%",
-      "relativeReturn": "+1.08%",
-      "verdict": "未触发",
-      "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-    },
-    {
-      "symbol": "MSFT",
-      "name": "Microsoft Corporation",
-      "market": "美股",
-      "previousCall": "收盘：候选观察，买入区 492.16-499.11，止损 483.73",
-      "openResult": "开盘 485.42，相对推荐价 -2.16%",
-      "closeResult": "收盘 489.93，相对推荐价 -1.25%；执行 数据不足 ，退出 未执行 ",
-      "overnightReturn": "-2.16%",
-      "relativeReturn": "-0.60%",
-      "verdict": "未触发",
-      "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
-    },
-    {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies Inc.",
-      "market": "美股",
-      "previousCall": "收盘：候选观察，买入区 159.89-162.15，止损 155.54",
-      "openResult": "开盘 154.22，相对推荐价 -4.32%",
-      "closeResult": "收盘 163.59，相对推荐价 +1.50%；执行 数据不足 ，退出 未执行 ",
-      "overnightReturn": "-4.32%",
-      "relativeReturn": "+2.15%",
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "market": "A股",
+      "previousCall": "收盘：强势观察，买入区 1463.04-1483.69，止损 1437.97",
+      "openResult": "开盘 1470.00，相对推荐价 -0.33%",
+      "closeResult": "收盘 1469.00，相对推荐价 -0.40%；执行 数据不足 ，退出 未执行 ",
+      "overnightReturn": "-0.33%",
+      "relativeReturn": "-0.46%",
       "verdict": "未触发",
       "lesson": "模拟执行未进入买入观察区，不计入胜率；继续检验观察区是否过窄。"
     }
